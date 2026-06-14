@@ -1,0 +1,22 @@
+{
+  "version": "v039_49",
+  "from": "v039_47",
+  "source_battle_zip": "ten_otsu-main (6).zip",
+  "base_zip": "ten_otsu-main (8).zip",
+  "changed_files": [
+    "index.html",
+    "program/docs/v039_49_battle_extract_impl.md",
+    "program/v039/sales.js",
+    "program/v039/state.js",
+    "program/v039/battle.js",
+    "program/v039/battle.css"
+  ],
+  "checks": {
+    "indexLoadsBattleCss": true,
+    "indexLoadsBattleJs": true,
+    "battleJsExists": true,
+    "battleCssExists": true,
+    "salesLaunchesBattleProto": true,
+    "battleCloseDispatchesEvent": true
+  }
+}
