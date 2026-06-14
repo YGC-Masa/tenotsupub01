@@ -1,0 +1,88 @@
+{
+  "version": "v037_85",
+  "policy": {
+    "characters": "同じside/srcが連続する場合はcharacters指定を削除。表情が変わる時だけ指定。",
+    "expression": "characters指定を削除した場面ではexpression/expressionLabelも削除。",
+    "fade": "同じ背景が続く場合はbgEffect/effectを削除。"
+  },
+  "files": {
+    "intro_ai.json": {
+      "removedDuplicateCharacters": 12,
+      "removedDuplicateExpressionMeta": 24,
+      "removedFadeEffects": 2,
+      "keptCharacterChanges": 23
+    },
+    "intro_ayame.json": {
+      "removedDuplicateCharacters": 11,
+      "removedDuplicateExpressionMeta": 22,
+      "removedFadeEffects": 2,
+      "keptCharacterChanges": 33
+    },
+    "intro_hina.json": {
+      "removedDuplicateCharacters": 21,
+      "removedDuplicateExpressionMeta": 42,
+      "removedFadeEffects": 2,
+      "keptCharacterChanges": 28
+    },
+    "intro_kogane.json": {
+      "removedDuplicateCharacters": 8,
+      "removedDuplicateExpressionMeta": 16,
+      "removedFadeEffects": 2,
+      "keptCharacterChanges": 21
+    },
+    "intro_kohaku.json": {
+      "removedDuplicateCharacters": 15,
+      "removedDuplicateExpressionMeta": 30,
+      "removedFadeEffects": 2,
+      "keptCharacterChanges": 30
+    },
+    "intro_manaka.json": {
+      "removedDuplicateCharacters": 12,
+      "removedDuplicateExpressionMeta": 24,
+      "removedFadeEffects": 2,
+      "keptCharacterChanges": 20
+    },
+    "intro_midori.json": {
+      "removedDuplicateCharacters": 20,
+      "removedDuplicateExpressionMeta": 40,
+      "removedFadeEffects": 2,
+      "keptCharacterChanges": 19
+    },
+    "intro_misora.json": {
+      "removedDuplicateCharacters": 16,
+      "removedDuplicateExpressionMeta": 32,
+      "removedFadeEffects": 2,
+      "keptCharacterChanges": 25
+    },
+    "intro_moe.json": {
+      "removedDuplicateCharacters": 20,
+      "removedDuplicateExpressionMeta": 40,
+      "removedFadeEffects": 2,
+      "keptCharacterChanges": 29
+    },
+    "intro_momo.json": {
+      "removedDuplicateCharacters": 14,
+      "removedDuplicateExpressionMeta": 28,
+      "removedFadeEffects": 2,
+      "keptCharacterChanges": 31
+    },
+    "intro_satomi.json": {
+      "removedDuplicateCharacters": 7,
+      "removedDuplicateExpressionMeta": 14,
+      "removedFadeEffects": 2,
+      "keptCharacterChanges": 19
+    },
+    "intro_yozora.json": {
+      "removedDuplicateCharacters": 19,
+      "removedDuplicateExpressionMeta": 38,
+      "removedFadeEffects": 2,
+      "keptCharacterChanges": 28
+    },
+    "intro_yukino.json": {
+      "removedDuplicateCharacters": 11,
+      "removedDuplicateExpressionMeta": 22,
+      "removedFadeEffects": 2,
+      "keptCharacterChanges": 23
+    }
+  }
+}

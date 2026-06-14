@@ -1,0 +1,316 @@
+{
+  "id": "intro_moe",
+  "title": "自己紹介：草壁 萌",
+  "return": {
+    "mode": "members"
+  },
+  "format": "v039_steps",
+  "sourceFormat": "legacy_array",
+  "steps": [
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "bgMode": "replace",
+      "speaker": "",
+      "text": "【自己紹介】草壁 萌",
+      "clearStorySprites": true
+    },
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "speaker": "",
+      "text": "（お、萌ちゃんだ。）"
+    },
+    {
+      "speaker": "店長",
+      "text": "ちょっといい？萌ちゃん？。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "am",
+          "src": "images/assets/char/m10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "storySprites": [
+        {
+          "id": "am",
+          "src": "images/assets/char/m10201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "萌",
+      "text": "あっ。どうしたの？お兄ちゃん？"
+    },
+    {
+      "speaker": "店長",
+      "text": "カメラテストをしてるんだけどさ、萌の自己紹介してみてくれないかな。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "am",
+          "src": "images/assets/char/m10601.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "萌",
+      "text": "えっと……自己紹介、ですか？"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "am",
+          "src": "images/assets/char/m11201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "萌",
+      "text": "わ、わたし、あんまりこういうの得意じゃないんですけど……。"
+    },
+    {
+      "speaker": "萌",
+      "text": "でも、おにいちゃんが聞いてくれるなら、がんばりますね。"
+    },
+    {
+      "speaker": "萌",
+      "text": "改めまして、草壁萌（くさかべ もえ）といいます。"
+    },
+    {
+      "speaker": "萌",
+      "text": "21歳で、血液型はO型。"
+    },
+    {
+      "speaker": "萌",
+      "text": "誕生日は10月10日で、星座はてんびん座です。"
+    },
+    {
+      "speaker": "萌",
+      "text": "身長は151センチ。"
+    },
+    {
+      "speaker": "萌",
+      "text": "スリーサイズは・・あぶな。お兄ちゃん相手だから喋っちゃうところだった・・"
+    },
+    {
+      "speaker": "萌",
+      "text": "小柄なんですけど……色々大人だねってよく言われちゃいます。何言ってるんだろう、わたし。"
+    },
+    {
+      "speaker": "萌",
+      "text": "……こういうの、自分から言っちゃだめですよね。。。。"
+    },
+    {
+      "speaker": "萌",
+      "text": "お姉ちゃんは草壁翠。"
+    },
+    {
+      "speaker": "萌",
+      "text": "すごくしっかりしていて、できる人だから……尊敬してます。"
+    },
+    {
+      "speaker": "萌",
+      "text": "でも、憧れる分、比べちゃってコンプレックスになることもあります。"
+    },
+    {
+      "speaker": "萌",
+      "text": "性格は……そうですね。"
+    },
+    {
+      "speaker": "萌",
+      "text": "人からは「甘えん坊だね」って言われることが多いです。"
+    },
+    {
+      "speaker": "萌",
+      "text": "実際、おにいちゃんに甘えちゃうことも多いから、当たってるのかも。"
+    },
+    {
+      "speaker": "萌",
+      "text": "趣味は森林ウォーキング。"
+    },
+    {
+      "speaker": "萌",
+      "text": "自然の中を歩いてると、気持ちが落ち着くんです。"
+    },
+    {
+      "speaker": "萌",
+      "text": "木の匂いとか、風の音とか、そういうのが好きで。"
+    },
+    {
+      "speaker": "萌",
+      "text": "ちょっとした特技もあって……。"
+    },
+    {
+      "speaker": "萌",
+      "text": "実はタロット占いができるんです。"
+    },
+    {
+      "speaker": "萌",
+      "text": "そんなに本格的じゃないけど、みんなの気持ちを後押しするくらいならできると思います。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "am",
+          "src": "images/assets/char/m10901.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "萌",
+      "text": "得意なものは、エアコンとか季節家電の調整。"
+    },
+    {
+      "speaker": "萌",
+      "text": "なんだか変ですよね。"
+    },
+    {
+      "speaker": "萌",
+      "text": "でも、快適な環境をつくるのはけっこう好きなんです。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "am",
+          "src": "images/assets/char/m11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "萌",
+      "text": "逆に苦手なものは、乗り物酔い。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "am",
+          "src": "images/assets/char/m10401.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "萌",
+      "text": "だから長時間の移動とかはほんとにつらくて……。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "am",
+          "src": "images/assets/char/m10901.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "萌",
+      "text": "人混みも得意じゃなくて、ちょっと息苦しくなっちゃいます。"
+    },
+    {
+      "speaker": "萌",
+      "text": "食べ物の好みは……。"
+    },
+    {
+      "speaker": "萌",
+      "text": "好きなのは鍋料理。"
+    },
+    {
+      "speaker": "萌",
+      "text": "みんなで囲むとあったかい気持ちになるし、一人でも安心できます。"
+    },
+    {
+      "speaker": "萌",
+      "text": "好きな飲み物はワイン。"
+    },
+    {
+      "speaker": "萌",
+      "text": "でも強くはないから、あまり飲みすぎないようにしてます。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "am",
+          "src": "images/assets/char/m11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "萌",
+      "text": "嫌いなのは……貝類。どうしても苦手なんです。"
+    },
+    {
+      "speaker": "萌",
+      "text": "会社の皆さんも凄くステキで毎日楽しく過ごしてます"
+    },
+    {
+      "speaker": "萌",
+      "text": "おにいちゃんのことは、もちろん「おにいちゃん」って呼んでます。"
+    },
+    {
+      "speaker": "萌",
+      "text": "馴れ馴れしいかな？"
+    },
+    {
+      "speaker": "萌",
+      "text": "そう呼べる存在がいるのは、すごく心強くて。"
+    },
+    {
+      "speaker": "萌",
+      "text": "……だから、つい甘えちゃうんです。"
+    },
+    {
+      "speaker": "萌",
+      "text": "でも、甘えるだけじゃなくて……。"
+    },
+    {
+      "speaker": "萌",
+      "text": "わたしなりに、客観的に物事を見て、公正に判断できるつもりです。"
+    },
+    {
+      "speaker": "萌",
+      "text": "ちょっと一歩引いて考えるのが、癖みたいになってるから。"
+    },
+    {
+      "speaker": "萌",
+      "text": "だから、おにいちゃんやみんなの役に立てたら嬉しいです。"
+    },
+    {
+      "speaker": "萌",
+      "text": "わたしなりに支えたいと思ってるので。"
+    },
+    {
+      "speaker": "萌",
+      "text": "こんなわたしですが……。"
+    },
+    {
+      "speaker": "萌",
+      "text": "これから、どうぞよろしくお願いします。"
+    },
+    {
+      "speaker": "萌",
+      "text": "これから、どうぞよろしくお願いします。"
+    },
+    {
+      "speaker": "",
+      "text": "（萌の自己紹介を思い出に登録しました）"
+    },
+    {
+      "speaker": "",
+      "text": "",
+      "auto": true,
+      "wait": 500
+    }
+  ]
+}

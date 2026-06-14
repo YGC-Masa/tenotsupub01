@@ -1,0 +1,1003 @@
+{
+  "id": "yozora_affection_30_02_key",
+  "title": "美空の剣道の方がわかりやすい",
+  "version": "v039_165",
+  "return": {
+    "mode": "storyMenu",
+    "storyId": "yozora_affection_30_02_key",
+    "storyMenuTab": "key"
+  },
+  "format": "v039_steps",
+  "type": "character_key_story",
+  "characterId": "ai",
+  "route": "yozora",
+  "affectionRange": {
+    "min": 30,
+    "max": 40
+  },
+  "location": {
+    "id": "hidamari_store_warehouse",
+    "name": "ひだまりストア・倉庫奥"
+  },
+  "summary": "店長が夜空の弓道に興味を持つ。夜空は「美空の剣道の方が、見ていてわかりやすい」と自分を下げるが、美空は夜空の弓道が好きだとまっすぐ伝える。",
+  "purpose": "夜空の弓道日本一設定を少し表に出す。店長が夜空の弓道に興味を持つが、夜空は「美空の剣道の方が見ていてわかりやすい」と自分を下げる。美空への尊敬と、自分が見られることへの抵抗を強める。",
+  "tags": [
+    "夜空ルート",
+    "親愛度30-40",
+    "キーシナリオ",
+    "弓道",
+    "剣道",
+    "自分を下げる",
+    "美空への尊敬"
+  ],
+  "clearFlags": [
+    "yozora_key_30_02_cleared"
+  ],
+  "nextHint": "次のキー4-3では、夜空が仕事で小さな成功をするが、話題が美空に流れることで、嬉しさと痛みの感情をもう少し強める。",
+  "renderPolicy": {
+    "spritePosition": "logical_split_n_plus_1",
+    "eventCgLayer": "frontOfCharacters"
+  },
+  "steps": [
+    {
+      "speaker": "",
+      "text": "――ひだまりストア・倉庫奥――",
+      "bg": "images/assets/bg/bg_hidamari_warehouse.png",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true,
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空、この箱、こっちでいいか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\nその棚の下段。\n重いものは下に置いた方がいい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "了解。"
+    },
+    {
+      "speaker": "",
+      "text": "――閉店前の空き時間。\n店長と夜空は、倉庫の整理をしていた。\n少し離れたところでは、美空が棚卸し表を確認している。"
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、この在庫表って、こっちの棚番号で合ってる？",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "見せて。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "はい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……合ってる。\nでも、ここの記入だけ一段ずれてる。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "あ、本当だ。\nありがとう、夜空。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "別に。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空は、こういうズレに本当に強いな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "見ればわかるでしょ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そういえば、夜空。\n弓道の大会って、今も出てるのか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……急に何。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "この前、弓道具の手入れを見たから気になって。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "気にしなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、弓道すごいんですよ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "だって本当のことだもん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "美空から少し聞いた。\n日本一だったって。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……過去の話。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "今でもすごいよ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "今は、ただ続けてるだけ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "実際に見たことはないから、いつか見てみたいと思ってる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "見なくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "即答だな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "見ても面白くない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "そんなことないよ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空の剣道の方が、見ててわかりやすい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "わかりやすい？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\n美空の剣道は、動きがはっきりしてる。\n声も出るし、勢いもあるし、見てる人にも伝わりやすい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空の弓道は？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "地味。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "地味じゃないよ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "矢をつがえて、構えて、放つだけ。\n一瞬で終わる。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "でも、その一瞬に全部が出るんじゃないのか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……知ったようなこと言う。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "知ってるわけじゃない。\nそう見える気がしただけだ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "見てないのに。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "だから、見てみたい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空の弓道はね、すごく静かなの。\nでも、見てると空気が変わるんです。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "わたし、夜空が弓を引くところ好きだよ。\nすごく綺麗だから。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……そういうの、本当に言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "美空から見ると、夜空の弓道は綺麗なんだな。"
+    },
+    {
+      "speaker": "美空",
+      "text": "はい。\n夜空は、弓を持つとすごく集中するんです。\n普段よりもっと静かで、でも強い感じがして。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ごめん。\nでも、店長にも知ってほしいなって。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……なんで。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空のすごいところだから。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空は、美空の剣道がすごいと思ってる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "美空も、夜空の弓道がすごいと思ってる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……それは、美空が優しいから。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "違うよ。\nわたしは優しいから褒めてるんじゃないよ。\n本当に、夜空の弓道が好きなの。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空の矢が的に向かう瞬間、すごく綺麗なんだよ。\n静かなのに、まっすぐで。\nわたしにはできないなって思う。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "俺も、そう思う。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長はまだ見てないでしょ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "だから見たい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……本当にしつこい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "それでも、無理に見に行くつもりはない。\n夜空が嫌なら、行かない。\nでも、夜空がいつか嫌じゃなくなったら、教えてくれ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……そんな日、来るかわからない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、わたしも行きたいな。\n久しぶりに見たい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……考えておく。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "わかりやすいからすごい、ってわけでもないと思う。\n静かで、すぐにはわからないすごさもあるだろ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "それ、ぼくの話？",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "弓道の話。\n半分くらいは。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "残り半分は？",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空の話。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……そういうところ、本当にずるい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "悪い。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも……今日は、怒るほどじゃない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、少し嬉しそう。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "嬉しそうじゃない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は視線をそらしながらも、どこか落ち着かない様子だった。\n美空の剣道の方がわかりやすい。\nそう言って引いたはずなのに、店長と美空は、夜空自身の弓道を見ようとしている。\nそのことが、夜空にはまだ少し怖かった。"
+    },
+    {
+      "speaker": "店長",
+      "text": "無理に見せなくていい。\nでも、見せてもいいと思った時は、教えてくれ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……考えておく。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空はそう言って、弓道具の入った細長い布袋を少しだけ抱え直した。\nそれは、美空の反対を選んだだけだったはずのもの。\nけれど今は、自分だけの何かとして見られることを、少しだけ恐れているようにも見えた。"
+    }
+  ],
+  "keyScenarioIndex": 2
+}

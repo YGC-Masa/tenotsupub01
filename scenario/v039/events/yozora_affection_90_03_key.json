@@ -1,0 +1,2472 @@
+{
+  "id": "yozora_affection_90_03_key",
+  "title": "二人だから、少し素直になる",
+  "version": "v039_216",
+  "return": {
+    "mode": "storyMenu",
+    "storyId": "yozora_affection_90_03_key",
+    "storyMenuTab": "key"
+  },
+  "format": "v039_steps",
+  "type": "character_key_story",
+  "characterId": "ai",
+  "route": "yozora",
+  "affectionRange": {
+    "min": 90,
+    "max": 100
+  },
+  "keyScenarioIndex": 3,
+  "location": {
+    "id": "antstella_bookcafe_night",
+    "name": "アントステラ2階・夜のブックカフェ"
+  },
+  "summary": "夜空は店長とアントステラ2階の夜のブックカフェへ行き、赤いカップルシートで近距離に動揺しながらも、いつもありがとうまで伝える。",
+  "purpose": "90代締め。店長の隣にいることを選び、100「春の中で、ありがとう」へつなげる。",
+  "tags": [
+    "夜空ルート",
+    "親愛度90",
+    "アントステラ",
+    "ブックカフェ",
+    "カップルシート",
+    "ありがとう"
+  ],
+  "clearFlags": [
+    "yozora_key_90_03_cleared"
+  ],
+  "nextHint": "100「春の中で、ありがとう」へ。",
+  "unlockCondition": {
+    "requiredFlags": [
+      "yozora_key_90_02_cleared"
+    ]
+  },
+  "renderPolicy": {
+    "spritePosition": "logical_split_n_plus_1",
+    "eventCgLayer": "frontOfCharacters"
+  },
+  "steps": [
+    {
+      "speaker": "",
+      "text": "――ひだまりストア・閉店後――",
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true,
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――閉店後のひだまりストア。",
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "",
+      "text": "閉店業務も順調にすすみ、店内には静けさが漂っていた。",
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "",
+      "text": "今日は、アントステラの夜のブックカフェに行く日だった。",
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、準備は？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "してる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "美空",
+      "text": "本、持った？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "持った。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "美空",
+      "text": "ハンカチは？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "持った。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "美空",
+      "text": "ココア飲めるお店だよね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "確認済み。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "美空",
+      "text": "ふふっ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "笑わないで。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "美空",
+      "text": "ごめん。\nでも、夜空がちゃんと楽しみにしてるの、嬉しいから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "楽しみにしてるとは言ってない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\nまだ言ってないね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……まだ、じゃない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空、そろそろ行くか？",
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "なに。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "美空",
+      "text": "いってらっしゃい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……行ってきます。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\nちゃんと言えたね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\nでも、聞こえたよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……ずるい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "",
+      "text": "――美空は夜空のマフラーを少しだけ直す。\n夜空は一瞬だけ身を引きかけたが、そのままされるに任せた。",
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "美空",
+      "text": "よし。\nこれで大丈夫。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "子ども扱いしないで。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "美空",
+      "text": "大事な妹扱いです。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……それ、便利に使いすぎ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "美空",
+      "text": "便利だけど、本当だから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ずるい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は店長の隣へ歩き出す。\n美空は店先で小さく手を振っていた。\n夜空は振り返りかけて、少しだけ止まり、前を向いた。",
+      "bg": "images/assets/bg/bg_hidamari_store_salesfloor_night.png"
+    },
+    {
+      "speaker": "",
+      "text": "――ひだまりストア前・夜――",
+      "bg": "images/assets/bg/bg_hidamari_store_front_closed.png",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true,
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "店長",
+      "text": "寒くないか？",
+      "bg": "images/assets/bg/bg_hidamari_store_front_closed.png",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "夜空",
+      "text": "今日は、平気。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_front_closed.png"
+    },
+    {
+      "speaker": "店長",
+      "text": "その平気は信用していいやつか？",
+      "bg": "images/assets/bg/bg_hidamari_store_front_closed.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……今日は、信用していい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/bg_hidamari_store_front_closed.png"
+    },
+    {
+      "speaker": "店長",
+      "text": "――住宅街・夜――",
+      "bg": "images/assets/bg/bg_hidamari_store_front_closed.png",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空みたいなこと言う。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "美空なら聞くと思った。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空なら、もっとまっすぐ聞く。\n店長は遠回りのふりをして、結局まっすぐ来る。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "それ、前にも言われたな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "何回でも言う。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "美空みたいだな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "似てない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "即答だな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……少しだけなら、似ててもいいかもしれない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "",
+      "text": "――二人は夜の通りを歩く。\n夜空は半歩ほど離れている。\nけれど、それは逃げるための半歩ではなく、自分の呼吸を整えるための半歩だった。"
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "なに。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "今日は来てくれてありがとう。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "お礼を言うところじゃない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "でも、言いたかったから。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空みたい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "悪影響か？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……少しだけ、悪くない影響。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "",
+      "text": "――アントステラ・入口前――",
+      "bg": "images/assets/bg/bg_bookcafe_antostella_exterior_night.png",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true
+    },
+    {
+      "speaker": "",
+      "text": "――夜の通りに、控えめな橙色の灯りがともっている。"
+    },
+    {
+      "speaker": "",
+      "text": "木製の看板には「BOOKCAFE アントステラ」と書かれていた。"
+    },
+    {
+      "speaker": "",
+      "text": "窓の向こうには本棚と、暖かい照明、湯気の立つカップが見える。"
+    },
+    {
+      "speaker": "店長",
+      "text": "ここか。\nアントステラ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "思ってたより本格的だな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "一階は普通のカフェと書店。\n今日のブックカフェ企画は二階。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "確認済みか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "確認。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "落ち着いた雰囲気だな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\n外から見る限りは、悪くない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "それはかなりいい評価だな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――二人は店内へ入る。\n扉のベルが小さく鳴り、暖かい空気が流れてくる。\n外の寒さとは違う、木とコーヒーと紙の匂いがした。"
+    },
+    {
+      "speaker": "",
+      "text": "――アントステラ2階・夜のブックカフェ――",
+      "bg": "images/assets/bg/bg_bookcafe_antostella_2f_night.png",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true
+    },
+    {
+      "speaker": "",
+      "text": "――階段を上がると、二階フロアは暖かな橙色の照明に包まれていた。"
+    },
+    {
+      "speaker": "",
+      "text": "壁一面の本棚。"
+    },
+    {
+      "speaker": "",
+      "text": "窓の向こうには夜の街。"
+    },
+    {
+      "speaker": "",
+      "text": "赤い革張りのソファ席が並び、奥には少し沈み込むような丸いカップルシートも見える。"
+    },
+    {
+      "speaker": "店長",
+      "text": "ここが二階か。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "本棚に囲まれてるな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "静か。\n照明も強すぎない。\n……悪くない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空らしい評価だな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "今日は、その言い方も少しだけ平気。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "本当か？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "少しだけ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "じゃあ、少しだけ言う。\n夜空らしくていいと思う。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……褒めすぎ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "短くしたつもりだったんだけどな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、逃げない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "今日は、逃げない練習の続きだから。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――店員に案内された先は、二階奥の大型カップルシートだった。\n丸く囲まれたような座席で、普通のソファよりも距離が近い。\nテーブルには、読書灯がひとつ置かれている。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……ここ？",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "カップルシートって書いてあるな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "あ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "別の席にするか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "いい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "いいのか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "いい。\nたぶん、変えてくださいって言う方が恥ずかしい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "無理しなくていいぞ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "無理じゃない。\n……無理かもしれないけど、今日はやる。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "わかった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "わかってない顔。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "どんな顔だ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長の顔。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "難しいな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "難しくしてるのは、たぶん今日はぼく。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50_custom_star.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空はカップルシートの端に座る。\n店長は少し距離を空けて隣に座った。\n丸い座席のせいで、それでもいつもよりずっと近かった。"
+    },
+    {
+      "speaker": "店長",
+      "text": "距離、近くないか？",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora90_bookcafe_01_smile.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "夜空",
+      "text": "近い。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "離れるか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……離れなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "大丈夫か？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "大丈夫じゃない。\nでも、今日はそれでいい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん、も言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "難しいな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "本当に難しい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空はテーブルの読書灯を少し動かす。\n光が本に当たる位置を整えながら、視線は店長の方を見ない。"
+    },
+    {
+      "speaker": "店長",
+      "text": "ココアにするか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "決めるの早いな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "確認済みだから。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "俺も同じにする。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "真似しなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "飲みたくなった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……なら、いい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――注文を終えると、夜空は持ってきた本をテーブルに置いた。\n星座図鑑ではなく、短編小説の本だった。"
+    },
+    {
+      "speaker": "店長",
+      "text": "今日は星の本じゃないんだな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\n今日は、普通の本。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "どうして？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "星は、羽白湖で見たから。\n今日は、違うものを読んでもいいかなって。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……でも、聞こえててもいい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――しばらく、二人は静かに本を開く。\n店内には小さな音楽が流れ、ページをめくる音とカップが置かれる音だけが聞こえた。"
+    },
+    {
+      "speaker": "店員",
+      "text": "失礼いたします。お待たせいたしました。お飲み物になります。",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true,
+      "eventCg": "images/assets/cg/cg_yozora90_bookcafe_01_smile.png",
+      "showEventCg": true,
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――ココアが届く。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora90_bookcafe_02_cocoa.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "夜空は両手でカップを包み、小さく息を吐いた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "あったかい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "羽白湖とは違うな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\nあそこは寒かった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "でも、星は綺麗だった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。\n見に行ってよかった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "今日も、来てよかったか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……まだ確認中。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そうか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、たぶん……来てよかった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "",
+      "text": "――夜空はココアを一口飲む。\nそれから、少しだけ店長の方を見る。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "ん？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "今日は、美空がいない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そうだな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "少し、不安だった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、美空がいないから話せることもある気がする。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空のことを、置いてきたわけじゃない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "わかってる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空が背中を押してくれた。\nちゃんと行っておいでって。\n自分で選んでいいって。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "だから、今日は来た。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空が行きたいと思ったから？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "",
+      "text": "――夜空はカップを置く。\nそして、少し迷った後、店長の方へわずかに体を向けた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ],
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora90_bookcafe_03_shy_front.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "店長",
+      "text": "ん？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……今日は、もう少しだけ、練習する。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "練習？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "逃げない練習。\n頼る練習。\n褒められる練習。\n……あと、近い距離に慣れる練習。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "無理しなくていいぞ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "無理じゃない。\n……無理かもしれないけど、今日はやる。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "わかった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "わかってない顔。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "またその顔か。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長の顔。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は本を閉じる。\n両手を膝の上で握りしめる。\nそして、かなり小さな声で言った。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "み、美空が言ってた。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "美空が？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "こ、ここ、こうすると……。\nき……きっと、店長が喜んでくれるって。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "こうすると？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……聞き返さないで。\n今、言うだけで精一杯だから。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "悪い。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "謝らないで。\n余計に恥ずかしくなる。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は、ほんの少しだけ店長の方へ体を傾けた。\n赤いソファがわずかに沈み、自然に肩の距離が近くなる。\n触れるか触れないかの距離。\nそれだけで、夜空の耳が一気に赤くなる。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora90_bookcafe_04_shy_profile.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空、大丈夫か？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "大丈夫じゃない。\n近い。\n無理。\nでも、離れたくないのも困る。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "無理しなくていい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "無理じゃない。\n……練習。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空はもう少しだけ体を寄せる。\n肩が軽く触れる。\n一瞬、夜空の呼吸が止まったように見えた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……やっぱり無理。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "離れるか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "待って。\n離れるとは言ってない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空が言ってたのを真に受けた。\n自分には早かった。\n心臓がうるさい。\n店長、近い。\nいや、近づいたのはぼくだけど。\nでも、店長も近い。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "落ち着いたか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……少し。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "無理だったか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "無理。\nかなり無理。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも……悪くなかった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わないで。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "今のは、言えたところで止めたい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "わかった。"
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は少しだけ距離を戻す。\nけれど完全には離れなかった。\n肩が触れるか触れないか。\nその微妙な距離に落ち着く。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空はもとの位置に戻り、そのままテーブルに突っ伏した、顔が赤く紅潮しオーバーヒート寸前だ。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora90_bookcafe_05_overheat.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "夜空",
+      "text": "さっきの。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "嬉しかった？",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "即答しないで。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "悪い。\nでも、嬉しかった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……そう。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空は？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……恥ずかしかった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "怖かった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも……少しだけ、落ち着いた。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "",
+      "text": "――夜空はココアをもう一口飲む。\nそして、カップを置いたまま、今度は店長の方を見た。\n今までよりも長く。\n逃げずに。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "ん？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "いつも、ごめんね。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空……？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "茶化さないで。\n今なら、素直に言えそうだから。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……わかった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "すぐ逃げるし。\nすぐ怒るし。\n美空の方へ押し返すし。\n面倒なことばかり言う。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、店長はいつも待ってた。\n探してくれた。\n見つけても、逃げても、ちゃんとぼくを見ててくれた。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "探してくれて。\n待っててくれて。\n帰らないでいてくれて。\n何も言わずに、隣にいてくれて。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は一度言葉を切る。\n視線は揺れている。\nけれど、逃げない。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "いつも、ありがとう。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……夜空。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わないで。\n今なら、まだ言える。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "たぶん……ううん。\n最初から……ずっと……嬉しかったよ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――その言葉を言い終えた瞬間、夜空は顔を伏せた。\n耳まで赤い。\n手元のカップをぎゅっと握っている。"
+    },
+    {
+      "speaker": "店長",
+      "text": "……ありがとう。\n言ってくれて。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "お礼を言うところじゃない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "でも、言いたかった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……そういうところが、ずるい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、今日は……ずるくてもいい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は少しだけ息を整える。\nそれから、静かな声で続けた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "今日は、ここまで。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ],
+      "hideEventCg": true
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、来てよかった。\n店長と、ここに来てよかった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、今日はいい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は少しだけ笑った。\n照れくさそうで、困ったようで、それでも穏やかな笑みだった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "これ以上は、店長が調子に乗る。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "乗らないぞ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "信用できない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "少しだけなら？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……少しだけなら、信用してる。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……本当に、変な店長。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_bookcafe_blueknit_stand.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空はそう言って、もう一度本を開いた。\n店長はその隣で、静かにページをめくる。"
+    },
+    {
+      "speaker": "",
+      "text": "――二人の距離は、もう遠くない。\n近すぎて逃げたくなるほどでもなく、離れたくなるほどでもない。\n夜空が自分で選んだ距離だった。"
+    }
+  ]
+}

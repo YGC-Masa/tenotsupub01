@@ -1,0 +1,1998 @@
+{
+  "id": "yozora_affection_80_02_key",
+  "title": "行きたいって言ったら",
+  "version": "v039_198",
+  "return": {
+    "mode": "storyMenu",
+    "storyId": "yozora_affection_80_02_key",
+    "storyMenuTab": "key"
+  },
+  "format": "v039_steps",
+  "type": "character_key_story",
+  "characterId": "ai",
+  "route": "yozora",
+  "affectionRange": {
+    "min": 80,
+    "max": 90
+  },
+  "location": {
+    "id": "hidamari_store_closed",
+    "name": "ひだまりストア・閉店後の売り場"
+  },
+  "summary": "夜空は羽白湖の星空観察会に向けて準備をする中で、黒い手袋や小さなライトを「ぼくが星を見るために」選ぶ。「黒でいい」ではなく「黒がいい」と言えたことも成長点。",
+  "purpose": "羽白湖の星空観察会に向けて準備をする中で、夜空が「美空のため」ではなく「自分が見たいから」という理由で防寒具やライトを選ぶ。自分自身の希望を受け入れる練習を進める。",
+  "tags": [
+    "夜空ルート",
+    "親愛度80-90",
+    "羽白湖",
+    "本物の星",
+    "自分自身を受け入れる"
+  ],
+  "clearFlags": [
+    "yozora_key_80_02_cleared"
+  ],
+  "nextHint": "次のキー9-3では、当日前夜または移動前に、夜空が「楽しみ」と「怖さ」を同時に抱えていることを描く。",
+  "renderPolicy": {
+    "spritePosition": "logical_split_n_plus_1",
+    "eventCgLayer": "frontOfCharacters"
+  },
+  "steps": [
+    {
+      "speaker": "",
+      "text": "――ホームセンター店内――",
+      "bg": "images/assets/bg/bg_homecenter_outdoor_corner_day.png",
+      "bgMode": "cover",
+      "forceBackgroundReplace": true,
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "美空",
+      "text": "店長、夜空。\n羽白湖の星空観察会、今週末でしたよね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "ああ。\n天気がよければ、予定通り行けそうだな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……まだ天気は確定じゃない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "確かに。"
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、天気予報見てくれてたの？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "一応。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "一応？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "山側は天気が変わりやすいから。\n湖の近くだと風もあるし、雲が出たら星が見えない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "かなり調べてるな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "確認。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空の確認は前向きな時です。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ごめんごめん。\nでも、嬉しくて。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "言いたいから言うの。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "まっすぐすぎる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空は考えすぎ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "何回でも言うね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "何回でも言うよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は売り場の一角にあるアウトドア用品コーナーへ視線を向ける。\n懐中電灯、携帯ライト、ブランケット、折りたたみ椅子。\n小さな星空観察用の準備ができそうな品が並んでいた。"
+    },
+    {
+      "speaker": "店長",
+      "text": "当日、何を持っていけばいいかな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "防寒具。\n足元用のライト。\n温かい飲み物。\nあと、座るなら小さい敷物か折りたたみ椅子。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、すごい。\nもう準備リストみたいになってる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "必要そうなものを並べただけ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "その必要そうなものが助かる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……そういうの、言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "悪い。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "謝らなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "じゃあ、今日は少し準備していきますか？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空は手袋を持っていった方がいい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "わたし？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "夜は冷える。\n美空、手が冷えるとすぐ袖の中に隠すでしょ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "あ、見られてた。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "見ればわかる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空は？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼくはいい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "よくない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空も手袋持っていこう？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……必要なら。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "必要だと思うぞ。\n羽白湖の夜なら冷えるだろ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空が星を見たいなら、寒さで集中できないともったいないしな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……そういう言い方。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "余計だったか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "余計。\nでも、少しだけ正しい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "少しだけか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は手袋売り場の前に立つ。\n白やベージュ、ピンク系のやわらかい手袋。\n黒や紺、グレーの落ち着いた手袋。\n夜空は無意識に、美空の方を見る。"
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "わたしはこっちかな。\n白っぽいの、かわいいし。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\n美空は白が似合う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ありがとう。\n夜空は？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……黒でいい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "黒でいい、か。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "なに。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "いや。\n黒がいい、ではないのかと思って。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……黒が、いい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――言ってから、夜空は少しだけ目をそらした。\nその言い方は小さかったが、確かに「でいい」ではなかった。"
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、今の言い方、すごくよかった。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空も言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ごめん。\nでも、嬉しかったから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は黒い手袋を手に取る。\nシンプルで、指先が動かしやすそうなものだった。"
+    },
+    {
+      "speaker": "店長",
+      "text": "それ、弓道の時みたいに手元を大事にする夜空らしいな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……また夜空らしいって言う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "嫌だったか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "前よりは、少しだけ平気。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "",
+      "text": "――美空は白い手袋を選び、夜空は黒い手袋を選ぶ。\n以前ならそれだけで「美空が白なら、ぼくは黒」と言っていた。\nけれど今日は、夜空は自分の手の中の黒い手袋を、少しだけ確かめるように見ていた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……これは、動きやすそうだから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "星を見る時、メモを取るかもしれないし。\nスマホも触るかもしれないし。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、星のメモ取るの？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……取るかもしれない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、本当に楽しみにしてるんだね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……少しだけ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "少しだけ、か。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "それ以上言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "わかった。"
+    },
+    {
+      "speaker": "",
+      "text": "――次に、三人はライト売り場へ移動する。\n美空は小さな丸いライトを手に取り、目を輝かせる。"
+    },
+    {
+      "speaker": "美空",
+      "text": "これ、かわいいですね。\n丸くて月みたい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "明るすぎるかも。\n星を見るなら、足元だけ照らせればいい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "眩しいと目が慣れないのか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\n暗さに目が慣れるまで時間がかかるから、強すぎる光は避けた方がいい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、詳しい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "調べただけ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "それも準備だな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "悪い。\n言いすぎたか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "違う。\n今のは、少しだけ受け取る。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は、小さく明かりを調整できるライトを選ぶ。\n黒い本体に、控えめな青いラインが入っている。"
+    },
+    {
+      "speaker": "美空",
+      "text": "それ、夜空っぽい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "あ、ごめん。\n言いすぎた？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……今日は、平気。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、笑わないで。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\n笑わない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "それにするのか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "美空のため？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "違う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は、ライトを手に持ったまま小さく言った。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "これは、ぼくが使う。\nぼくが星を見るために。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――言い切った後、夜空はすぐに顔をそらした。\nけれど、今度は取り消さなかった。"
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。\nいいと思う。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、今日は……言われても、逃げない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、すごい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "すごくない。\n練習だから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\nでも、ちゃんと練習できてる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……まっすぐすぎる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空は考えすぎ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "何回でも言うね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "何回でも言うよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は手袋とライトをそっとカゴに置いた。\n黒い手袋。\n小さなライト。\nどちらも、美空のためだけではない。\n店長に言われたからだけでもない。\n夜空自身が、星を見るために選んだものだった。"
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "なに。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "準備、楽しそうだな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "言いすぎたか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "少し。\nでも、間違ってはいない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……たぶん、楽しみ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "少しだけ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\n少しだけ楽しみなんだね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "繰り返さなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ごめん。\nでも、覚えておきたくて。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "俺も覚えておく。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "二人とも、覚えなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "でも、忘れないよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空は、そういうところがずるい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空が楽しみにしてることなら、忘れたくないから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は少しだけ困ったような顔をした。\nでも、その目はチラシを見つけた時よりも、少しだけ明るかった。"
+    },
+    {
+      "speaker": "店長",
+      "text": "当日、晴れるといいな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "三人で、本物の星を見ましょうね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_coat_muffler_main50.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は小さくうなずく。\nその手には、自分で選んだ黒い手袋と小さなライトがあった。\nそれは、美空の反対として選んだ黒ではなく、夜空自身が星を見るために選んだ黒だった。"
+    }
+  ],
+  "keyScenarioIndex": 2
+}

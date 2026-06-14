@@ -1,0 +1,229 @@
+{
+  "id": "intro_yukino",
+  "title": "自己紹介：氷神 雪乃",
+  "return": {
+    "mode": "members"
+  },
+  "format": "v039_steps",
+  "sourceFormat": "legacy_array",
+  "steps": [
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "bgMode": "replace",
+      "speaker": "",
+      "text": "【自己紹介】氷神 雪乃",
+      "clearStorySprites": true
+    },
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "speaker": "",
+      "text": "（お、雪乃さんにお願いしよう。）"
+    },
+    {
+      "speaker": "店長",
+      "text": "雪乃さん、ちょっとお時間もらえる？"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ag",
+          "src": "images/assets/char/g10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ag",
+          "src": "images/assets/char/g10201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "雪乃",
+      "text": "あら？わたくしに何か御用でしょうか・・・？"
+    },
+    {
+      "speaker": "店長",
+      "text": "カメラテストをしてるんだけどさ、雪乃さんの自己紹介してみてくれないかな。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "わかりました。貴方様がそうおっしゃるなら・・参ります。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "はじめまして、氷神 雪乃(ひかみ ゆきの)と申します。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "…少しだけ、珍しい苗字でしょうか。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ag",
+          "src": "images/assets/char/g10701.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "雪乃",
+      "text": "昔から、名前を呼ばれるのは少しだけ照れくさいのです。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "私は…そうですね、年齢は二十六になります。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "貴方様から見れば、少し大人に映るのでしょうか。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "でも…中身はまだまだ、子供のままかもしれません。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ag",
+          "src": "images/assets/char/g10201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "雪乃",
+      "text": "人と話すのは、得意ではないんです。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "声が小さくて、すぐに言葉が途切れてしまいますから。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "…でも、こうして貴方様とお話できるのは、嬉しいのです。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "好きなことは、お菓子作り。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "甘いものを作っているときは、頭がすっきりします。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "特にナッツを砕く作業は…ふふ、ちょっとした快感です。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ag",
+          "src": "images/assets/char/g11101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "雪乃",
+      "text": "…ストレス解消、でしょうか。少し、怖いですか？"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "好きな食べ物は、和食全般です。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "だしの香り、お米の甘み、静かに温かい時間が好きです。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "お酒も…ええ、日本酒が好きです。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "けれど、あまり飲みすぎると…別の私が顔を出すかもしれませんね。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "……そのときは、どうかお手柔らかに。ふふっ。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ag",
+          "src": "images/assets/char/g11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "雪乃",
+      "text": "苦手なものは、ピクルス。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "あの酸味がどうしても、口に馴染めなくて。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "もし貴方様が好きでしたら、代わりに食べていただけますか？"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "自然や動物を愛しています。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "静かな森の中で、小さな動物に声をかけるときが"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "私にとって、一番心が穏やかになる時間です。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "人付き合いは…苦手でも、嫌いではないのです。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "むしろ、嬉しいんです。だから…"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "また私と、少しだけお話してくださいますか？"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "貴方様とこうして言葉を交わせるなら、"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "私の小さな世界に、あたたかな光が差し込む気がします。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "…ふふ、少しだけ大げさでしょうか。"
+    },
+    {
+      "speaker": "雪乃",
+      "text": "どうぞ、これからもよろしくお願いいたします、貴方様。"
+    },
+    {
+      "speaker": "",
+      "text": "（雪乃の自己紹介を思い出に登録しました）"
+    },
+    {
+      "speaker": "",
+      "text": "",
+      "auto": true,
+      "wait": 500
+    }
+  ]
+}

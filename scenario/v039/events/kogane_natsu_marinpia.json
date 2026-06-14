@@ -1,0 +1,395 @@
+{
+  "id": "kogane_natsu_marinpia",
+  "title": "マリンピアの海中トンネル",
+  "return": {
+    "mode": "town",
+    "season": "summer",
+    "eventId": "kogane_natsu_marinpia"
+  },
+  "format": "v039_steps",
+  "type": "summer_memory_event",
+  "summary": "小麦沢こがねと日向なつ、そして店長がマリンピアの海中トンネル展示を見に行く夏の外回りイベント。スマホ・写真・涼感家電・接客のヒントを絡めた、明るくほんわかした試作シナリオ。",
+  "steps": [
+    {
+      "bg": "images/assets/bgev/bg_beach.jpg",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true,
+      "speaker": "",
+      "text": "【思い出ストーリー】マリンピアの海中トンネル",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "店長",
+      "text": "夏の外回り。今日は、マリンピアの展示イベントを見に来ている。"
+    },
+    {
+      "speaker": "店長",
+      "text": "家電店なのに水族館……と思ったが、最近は館内演出もデジタル展示だらけなんだな。"
+    },
+    {
+      "speaker": "",
+      "text": "海沿いの施設からは、潮風とにぎやかな家族連れの声が流れてくる。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "店長ー！　こっちこっち！　入口のイルミ、めっちゃ映えるんだけど！",
+      "storySprites": [
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10501.webp",
+          "side": "left",
+          "left": "28%",
+          "opacity": 1
+        },
+        {
+          "id": "bc",
+          "src": "images/assets/rival/story_natsu_stand.png",
+          "side": "right",
+          "left": "72%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "わぁ～、水の音が涼しいね～。あちし、もうここ好きかも～。",
+      "storySprites": [
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10501.webp",
+          "side": "left",
+          "left": "28%",
+          "opacity": 1
+        },
+        {
+          "id": "bc",
+          "src": "images/assets/rival/story_natsu_stand.png",
+          "side": "right",
+          "left": "72%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "こがねとなつが一緒だと、夏休み感がすごいな。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "それ、褒めてる？　褒めてるよね？　じゃあ今日の案内役、あーしに任せて！"
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "あちしも案内するよ～。迷ったら、たぶん人の流れについていけば着くし～。"
+    },
+    {
+      "speaker": "店長",
+      "text": "不安になる案内だな。"
+    },
+    {
+      "speaker": "",
+      "text": "館内へ入ると、照明がすっと落ち、青い光が足元に広がった。"
+    },
+    {
+      "speaker": "",
+      "text": "壁一面の水槽には、銀色の魚たちが群れをつくって泳いでいる。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "わ、やば。水槽のライト、スマホ越しでもめっちゃきれい！　これ加工いらないやつ！",
+      "storySprites": [
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10701.webp",
+          "side": "left",
+          "left": "28%",
+          "opacity": 1
+        },
+        {
+          "id": "bc",
+          "src": "images/assets/rival/story_natsu_stand.png",
+          "side": "right",
+          "left": "72%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "お魚さんたち、みんなでお散歩してるみたいだね～。"
+    },
+    {
+      "speaker": "店長",
+      "text": "なつ、魚を見ても食べ物の話にならないんだな。"
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "ん～、ここでは見るだけ～。でも帰りにフルーツパフェは食べたいな～。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "結局食べるんじゃん！　でもパフェは賛成！"
+    },
+    {
+      "speaker": "",
+      "text": "順路を進むと、天井まで透明な水槽に包まれた大きなトンネルが見えてきた。"
+    },
+    {
+      "speaker": "店長",
+      "text": "これが海中トンネルか。上も横も水槽になってるんだな。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "すっご……！　店長、ちょっと待って！　これは写真撮る！　絶対撮る！",
+      "storySprites": [
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10301.webp",
+          "side": "left",
+          "left": "28%",
+          "opacity": 1
+        },
+        {
+          "id": "bc",
+          "src": "images/assets/rival/story_natsu_stand.png",
+          "side": "right",
+          "left": "72%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "ふふ～。こがねちゃん、目がきらきらしてる～。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "なっちゃんも立って立って！　イルカのヘアピンと水槽、相性よすぎだし！"
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "えへへ～。じゃあ、あちしも映えるポーズするね～。……こう？"
+    },
+    {
+      "speaker": "店長",
+      "text": "のんびりピースだな。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "そこがいいの！　なっちゃんは、ゆるさが最強なんだから！"
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "こがねちゃんは褒めるの上手だね～。お礼にあとでパフェ一口あげる～。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "やった！　じゃああーしはアイス一口あげる！"
+    },
+    {
+      "speaker": "店長",
+      "text": "その交換、平和だな。"
+    },
+    {
+      "speaker": "",
+      "text": "水槽の上を、大きなエイがゆっくりと通り過ぎていく。影が三人の足元をなぞった。"
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "わぁ～。お空を飛んでるみたいなお魚さんだ～。",
+      "storySprites": [
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10501.webp",
+          "side": "left",
+          "left": "28%",
+          "opacity": 1
+        },
+        {
+          "id": "bc",
+          "src": "images/assets/rival/story_natsu_stand.png",
+          "side": "right",
+          "left": "72%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "この光、店の展示にも使えないかな？　スマホコーナーで夜景撮影モードの体験とかさ。"
+    },
+    {
+      "speaker": "店長",
+      "text": "なるほど。水族館の演出を、店頭展示のヒントにするのか。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "そそ！　ただ商品を並べるだけじゃなくて、“使ったら楽しい”って見せる感じ！"
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "ビリビリ電機でも、涼しい家電の展示でこういう青い光を使ったら楽しそう～。"
+    },
+    {
+      "speaker": "店長",
+      "text": "お、なつも仕事モードか。"
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "うん～。暑い日に来たお客さんが、見ただけで涼しくなる売り場っていいな～って。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "なっちゃん、そういうの自然に言えるの強いよね。接客向きって感じ。"
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "そうかな～。あちし、難しいことは苦手だけど、お客さんがにこにこしてるのは好き～。"
+    },
+    {
+      "speaker": "店長",
+      "text": "それは十分、強みだと思うぞ。"
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "えへへ～。店長さんに言われると、ちょっと照れるね～。",
+      "storySprites": [
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10501.webp",
+          "side": "left",
+          "left": "28%",
+          "opacity": 1
+        },
+        {
+          "id": "bc",
+          "src": "images/assets/rival/story_natsu_stand.png",
+          "side": "right",
+          "left": "72%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "あ、今の空気いい！　青春っぽい！　店長、もう一回言って！"
+    },
+    {
+      "speaker": "店長",
+      "text": "言わない。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "えー！　照れなくていいのにー！"
+    },
+    {
+      "speaker": "",
+      "text": "その時、こがねのスマホに通知音が鳴った。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "あ、さっきの写真、もういい感じに撮れてる！　店長もなっちゃんも、めっちゃ自然！",
+      "storySprites": [
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10901.webp",
+          "side": "left",
+          "left": "28%",
+          "opacity": 1
+        },
+        {
+          "id": "bc",
+          "src": "images/assets/rival/story_natsu_stand.png",
+          "side": "right",
+          "left": "72%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "俺も写ってたのか。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "もちろん！　店長がいないと、ひだまり感出ないじゃん。"
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "うんうん。店長さんがいると、こがねちゃんも楽しそうだし～。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "ちょ、なっちゃん！？　それは言い方！"
+    },
+    {
+      "speaker": "店長",
+      "text": "こがね、顔が赤いぞ。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "水槽のライト！　青いライトのせい！　あと、ちょっと暑いだけ！",
+      "storySprites": [
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10601.webp",
+          "side": "left",
+          "left": "28%",
+          "opacity": 1
+        },
+        {
+          "id": "bc",
+          "src": "images/assets/rival/story_natsu_stand.png",
+          "side": "right",
+          "left": "72%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "館内、涼しいよ～？"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "なっちゃん、今だけ正確な温度感出さないで！"
+    },
+    {
+      "speaker": "",
+      "text": "海中トンネルを抜けると、出口側の休憩スペースに小さな売店があった。"
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "店長さん、こがねちゃん。パフェ、あったよ～。夏限定だって～。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "行こ行こ！　今日の反省会はパフェ会議で決まり！"
+    },
+    {
+      "speaker": "店長",
+      "text": "反省会というより、ご褒美会だな。"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "いいじゃん。ちゃんと仕事のヒントも見つけたし、写真も撮れたし！"
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "それに、三人で来ると楽しいって分かったしね～。"
+    },
+    {
+      "speaker": "店長",
+      "text": "そうだな。夏の外回りとしては、かなり収穫があった。"
+    },
+    {
+      "speaker": "",
+      "text": "海の青い光と、二人の明るい声。マリンピアでの時間は、夏らしい思い出として残った。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "【イベント終了】こがねとなつの距離が少し近づきました。"
+    }
+  ]
+}

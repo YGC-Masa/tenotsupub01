@@ -1,0 +1,334 @@
+{
+  "id": "intro_hina",
+  "title": "自己紹介：星野 緋奈",
+  "return": {
+    "mode": "members"
+  },
+  "format": "v039_steps",
+  "sourceFormat": "legacy_array",
+  "steps": [
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "bgMode": "replace",
+      "speaker": "",
+      "text": "【自己紹介】星野 緋奈",
+      "clearStorySprites": true
+    },
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "speaker": "",
+      "text": "（あ、いたいた、緋奈だ。）"
+    },
+    {
+      "speaker": "店長",
+      "text": "おーい？ひなー。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10501.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "緋奈",
+      "text": "おつかれさまです、店長！"
+    },
+    {
+      "speaker": "店長",
+      "text": "ちょっとカメラにむかってさ、自己紹介してみて。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "なんですか？あやしいなぁ・・、まぁいいですけど。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "改めまして、星野 緋奈（ほしの ひな）です。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "年齢は22歳、血液型はB型！"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "……って血液型とか要ります？"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "でもまあ、自己紹介ってそういうもんですよね。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "えーっと、誕生日は7月22日、かに座です。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10901.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "緋奈",
+      "text": "夏生まれだけど、夏はそんなに得意じゃないんですよね〜。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "暑いとアイスばっか食べちゃうし。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "まあ太るとか言いながら、食べるんですけど。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "身長は158センチ、普通でしょ？"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "でも胸は普通じゃないってよく言われます。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "これ、あたしの武器ですから！……なんてね。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10701.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "緋奈",
+      "text": "そこは触れないでください、恥ずかしいので。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "趣味はゲームと食べ歩き！"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "最近は夜にラーメン食べてからスイーツ食べるのがブームです。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "お財布と体型に悪いけど、幸せにはなれます。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "特技っていうほどじゃないけど、"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10901.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "緋奈",
+      "text": "テレビとか映像関係は得意です。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "新しいガジェットとか配線とか、けっこう詳しいんですよ？"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "意外と要領いいんです、あたし。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "でも暗算は全然だめ。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "この前もお釣り間違えて店長に助けてもらいました……。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "ほんと数字は鬼門です。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "好きな食べ物はカレー！"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "辛いのでも甘いのでも大好き。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "緋奈",
+      "text": "嫌いなのはなす。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "なすだけはどう頑張っても無理。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a11101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "緋奈",
+      "text": "なす農家さん、ごめんなさい。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "お酒も好きです。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "緋奈",
+      "text": "果実酒とかカクテル系とか、甘いやつ。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "店長、今度一緒に飲みに行きません？"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "あ、でもあんまり飲ませると絡み酒になるんで注意です。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10301.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "緋奈",
+      "text": "絡まれても怒らないでくださいね。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "呼び方はもちろん『店長』です。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "藍ちゃん、翠さん、こがねちゃん、琥珀ちゃん……"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "みんな仲良くしてくれて嬉しいです。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "でもたまに甘えすぎって怒られます。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "だって情にもろいんですもん、あたし。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "あ、あとギャップポイント！"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "こう見えて、意外と要領はいいです。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10901.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "緋奈",
+      "text": "ちょっとした裏技とか抜け道とか、探すの得意なんで。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10301.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "緋奈",
+      "text": "ただし真面目なとこでは怒られるので、そこは注意してます。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "……こんな感じで、"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "天真爛漫オールラウンダー、星野 緋奈でした！"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "これからもいっぱい甘やかしてくれていいんですよ？"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "冗談ですけど、冗談じゃないかもですけど……えへへ。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "改めて、よろしくお願いします、店長っ！"
+    },
+    {
+      "speaker": "",
+      "text": "（緋奈の自己紹介を思い出に登録しました）"
+    },
+    {
+      "speaker": "",
+      "text": "",
+      "auto": true,
+      "wait": 500
+    }
+  ]
+}

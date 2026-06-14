@@ -1,0 +1,507 @@
+{
+  "id": "event_black_kadenseijin_battle_unlock_003_ayame_line_fix",
+  "title": "イベントバトル解放：ブラック家電星人を助けて",
+  "return": {
+    "mode": "town",
+    "category": "other",
+    "eventId": "event_black_kadenseijin_battle_unlock_003_ayame_line_fix"
+  },
+  "unlockFlags": {
+    "unlock_event_battle": true,
+    "unlock_black_kadenseijin_event": true
+  },
+  "steps": [
+    {
+      "bg": "images/assets/bg/battle_store_lv1.png",
+      "bgMode": "replace",
+      "speaker": "",
+      "text": "【解禁ストーリー】イベントバトル解放：ブラック家電星人を助けて",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "家電星人",
+      "text": "店長、大変なの～！",
+      "storySprites": [
+        {
+          "id": "kd",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ],
+      "bg": "images/assets/bg/battle_store_lv1.png",
+      "bgMode": "replace"
+    },
+    {
+      "speaker": "店長",
+      "text": "どうした、そんなに慌てて。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "家電星人",
+      "text": "意地悪なブラック家電星人が、町の家電を困らせてるの～！",
+      "storySprites": [
+        {
+          "id": "kd",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "ブラック家電星人！？ なんか名前からして悪そう！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10501.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "家電星人",
+      "text": "でも、本当は悪い子じゃないの……。",
+      "storySprites": [
+        {
+          "id": "kd",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "家電星人",
+      "text": "僕らも、メンテナンスが足りなかったり、ずっと汚れたままだったりすると……ああなっちゃうんだ。",
+      "storySprites": [
+        {
+          "id": "kd",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "メンテナンスが足りてない家電星人が、ブラック化する……ということか。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "家電星人",
+      "text": "うん……。でも、大事な仲間だから、助けてほしいの……！",
+      "storySprites": [
+        {
+          "id": "kd",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "そんなの聞いたら、ほっとけないよ店長！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10501.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "でも、具体的にどう助ければいいんだ？",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "氷神 雪乃",
+      "text": "……汚れているならキレイに、故障は修理……などでしょうか……？",
+      "storySprites": [
+        {
+          "id": "ag",
+          "src": "images/assets/char/g10501.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "家電星人",
+      "text": "その通りなの。きっと元通りの姿になれば、心もキレイになるの。",
+      "storySprites": [
+        {
+          "id": "kd",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "その時、店の入口の自動ドアが開いた。",
+      "bg": "images/assets/bg/battle_store_lv1.png",
+      "bgMode": "replace",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "天神 小春",
+      "text": "遊びに……じゃなくて、視察に来たわよー、ちんまリストア！",
+      "storySprites": [
+        {
+          "id": "ba",
+          "src": "images/assets/rival/story_koharu_stand.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "小春ちゃん、今日は遊びじゃなかったんだ～。",
+      "storySprites": [
+        {
+          "id": "bc",
+          "src": "images/assets/rival/story_natsu_stand.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "霧島 真冬",
+      "text": "視察です。少なくとも、建前上は。",
+      "storySprites": [
+        {
+          "id": "bb",
+          "src": "images/assets/rival/story_mafuyu_stand.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "ちょうどいいところに来た。手伝え。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "天神 小春",
+      "text": "はぁ！？ なんでうちらがあんたらの手伝いをしなきゃいけないのよ！",
+      "storySprites": [
+        {
+          "id": "ba",
+          "src": "images/assets/rival/story_koharu_stand.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "いいじゃないか。同じ末端の組織の人間同士、困ったときは助け合おう。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "天神 小春",
+      "text": "いま、さらっと変な言い方したわね。",
+      "storySprites": [
+        {
+          "id": "ba",
+          "src": "images/assets/rival/story_koharu_stand.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "もちろん、手伝った分はお前らの売り上げにしてやるよ。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "霧島 真冬",
+      "text": "わかりました。やりましょう。",
+      "storySprites": [
+        {
+          "id": "bb",
+          "src": "images/assets/rival/story_mafuyu_stand.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "天神 小春",
+      "text": "ちょっと！ 真冬！？",
+      "storySprites": [
+        {
+          "id": "ba",
+          "src": "images/assets/rival/story_koharu_stand.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "霧島 真冬",
+      "text": "……ここは渡りに船です。",
+      "storySprites": [
+        {
+          "id": "bb",
+          "src": "images/assets/rival/story_mafuyu_stand.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "真冬は小春に近づき、そっと耳打ちする。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "霧島 真冬",
+      "text": "ブラック家電星人の発生原因と購買行動を観察できるうえ、売上も計上できる。断る理由がありません。",
+      "storySprites": [
+        {
+          "id": "bb",
+          "src": "images/assets/rival/story_mafuyu_stand.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "あちしはいいよ～。困ってる子は助けた方がいいし～。",
+      "storySprites": [
+        {
+          "id": "bc",
+          "src": "images/assets/rival/story_natsu_stand.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "天神 小春",
+      "text": "な、なによ！ あたしだって、そのくらいわかって手伝おうか？ っていうつもりだったわよ！",
+      "storySprites": [
+        {
+          "id": "ba",
+          "src": "images/assets/rival/story_koharu_stand.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "春日原 琥珀",
+      "text": "てんちょーが黒そうな話をしているぞ。",
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e10501.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "bg": "images/assets/bg/battle_store_lv1.png",
+      "bgMode": "replace"
+    },
+    {
+      "speaker": "芝桜 桃",
+      "text": "子供には理解できないね。これは大人の取引ってやつだよ、こっはー。",
+      "storySprites": [
+        {
+          "id": "aj",
+          "src": "images/assets/char/j10501.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "春日原 琥珀",
+      "text": "オレ、桃より年上なんだけどな。",
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e10501.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "紫藤 彩愛",
+      "text": "ふふ、敵陣まで巻き込むなんていけない人。けれど、味方として共闘するなら悪くありませんわ。",
+      "storySprites": [
+        {
+          "id": "ak",
+          "src": "images/assets/char/k10501.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "誤解するな。これは町の平和と売上のためだ。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "芝桜 桃",
+      "text": "ほら、やっぱり売上って言った。",
+      "storySprites": [
+        {
+          "id": "aj",
+          "src": "images/assets/char/j10501.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "家電星人",
+      "text": "みんな……手伝ってくれるの？",
+      "storySprites": [
+        {
+          "id": "kd",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "天神 小春",
+      "text": "やるからには本気よ！ ブラックだか何だか知らないけど、うちの販売力を見せつけてあげる！",
+      "storySprites": [
+        {
+          "id": "ba",
+          "src": "images/assets/rival/story_koharu_stand.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "霧島 真冬",
+      "text": "販売勝負ではなく、今回は共同作戦です。そこは間違えないでください。",
+      "storySprites": [
+        {
+          "id": "bb",
+          "src": "images/assets/rival/story_mafuyu_stand.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "日向 なつ",
+      "text": "みんなでやれば、なんとかなるよ～。",
+      "storySprites": [
+        {
+          "id": "bc",
+          "src": "images/assets/rival/story_natsu_stand.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "よーし！ ブラック家電星人さんも、ちゃんと助けてあげよう！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10501.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "家電星人",
+      "text": "ありがとうなの～！",
+      "storySprites": [
+        {
+          "id": "kd",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "よし、イベント営業開始だ。ブラック家電星人を助けるぞ！",
+      "bg": "images/assets/bg/battle_store_lv1.png",
+      "bgMode": "replace",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "システム",
+      "text": "イベントバトルが解放されました。",
+      "clearStorySprites": true
+    }
+  ],
+  "renderPolicy": {
+    "maxStorySprites": 1
+  }
+}

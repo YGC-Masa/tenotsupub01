@@ -1,0 +1,249 @@
+{
+  "id": "intro_midori",
+  "title": "自己紹介：草壁 翠",
+  "return": {
+    "mode": "members"
+  },
+  "format": "v039_steps",
+  "sourceFormat": "legacy_array",
+  "steps": [
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "bgMode": "replace",
+      "speaker": "",
+      "text": "【自己紹介】草壁 翠",
+      "clearStorySprites": true
+    },
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "speaker": "",
+      "text": "（あ、翠さんだ。）"
+    },
+    {
+      "speaker": "店長",
+      "text": "翠さｰん、ちょっとお願いが。。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "翠",
+      "text": "はい？どうしました？"
+    },
+    {
+      "speaker": "店長",
+      "text": "ちょっとこのカメラに自己紹介を。"
+    },
+    {
+      "speaker": "翠",
+      "text": "またあなたは変なことを・・。で、これに向かってすればいいのね？"
+    },
+    {
+      "speaker": "翠",
+      "text": "皆さん、はじめまして。草壁 翠(くさかべ みどり)といいます。"
+    },
+    {
+      "speaker": "翠",
+      "text": "名前は“みどり”、漢字は翡翠の「翠」です。"
+    },
+    {
+      "speaker": "翠",
+      "text": "年齢は27歳。"
+    },
+    {
+      "speaker": "翠",
+      "text": "おひつじ座の春生まれで、血液型はO型です。"
+    },
+    {
+      "speaker": "翠",
+      "text": "身長は153センチ。左利きです。"
+    },
+    {
+      "speaker": "翠",
+      "text": "体型は細めで、小柄と言われます。"
+    },
+    {
+      "speaker": "翠",
+      "text": "服は動きやすくシンプルなものが多いですね。"
+    },
+    {
+      "speaker": "翠",
+      "text": "緑色が好きで、何かと身につける色も緑系になりがちです。"
+    },
+    {
+      "speaker": "翠",
+      "text": "趣味はVODで映画やドラマを観ること。"
+    },
+    {
+      "speaker": "翠",
+      "text": "海外ドラマを一気見して夜更かし……なんてこともあります。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "翠",
+      "text": "得意なものはパソコンですかね。"
+    },
+    {
+      "speaker": "翠",
+      "text": "パソコンを触る時間が長く、設定やトラブル解決は得意です。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ac",
+          "src": "images/assets/char/c11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "翠",
+      "text": "逆に苦手なのは動物。"
+    },
+    {
+      "speaker": "翠",
+      "text": "可愛いとは思うんですけど……自分の距離感やペースが保てず苦手ですかね。。。"
+    },
+    {
+      "speaker": "翠",
+      "text": "好きな食べ物は野菜全般。"
+    },
+    {
+      "speaker": "翠",
+      "text": "蒸しただけ、焼いただけなどのシンプルな調理が一番美味しいと思います。"
+    },
+    {
+      "speaker": "翠",
+      "text": "好きな飲み物はコーヒー。"
+    },
+    {
+      "speaker": "翠",
+      "text": "ヘビーカフェインユーザーですかね。"
+    },
+    {
+      "speaker": "翠",
+      "text": "お酒は弱いので、飲み会では控えめです。"
+    },
+    {
+      "speaker": "翠",
+      "text": "嫌いな食べ物はレバー。匂いがどうしても……。"
+    },
+    {
+      "speaker": "翠",
+      "text": "性格は冷静でクール、とよく言われます。"
+    },
+    {
+      "speaker": "翠",
+      "text": "あまり感情を表に出さない方ですが、"
+    },
+    {
+      "speaker": "翠",
+      "text": "人並みに冗談を言ったり、人をからかうこともあります。"
+    },
+    {
+      "speaker": "翠",
+      "text": "嫌いなものは少なく、いろんな価値観に興味を持てる方です。"
+    },
+    {
+      "speaker": "翠",
+      "text": "勉強熱心な方ですが、それは単に好奇心が強いだけですかね。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10401.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "翠",
+      "text": "意外だねと言われるところは・・そうですね、涙もろいところですかね。"
+    },
+    {
+      "speaker": "翠",
+      "text": "映画やドラマも悲しいシーンだけじゃなく、優しいシーンでもすぐ涙が出てしまいます。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ac",
+          "src": "images/assets/char/c11101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "翠",
+      "text": "私本人はそんなつもりではないんですが、皆さん困ってしまいますね。"
+    },
+    {
+      "speaker": "翠",
+      "text": "職場では後輩の指導もします。"
+    },
+    {
+      "speaker": "翠",
+      "text": "緋奈さんや速水川さん、小麦沢さん、みんな個性的で面白いですね。"
+    },
+    {
+      "speaker": "翠",
+      "text": "萌は妹です。可愛いですが、肉親故に甘やかしすぎないようにしています。"
+    },
+    {
+      "speaker": "翠",
+      "text": "店長のことは……まぁ、時々からかってます。"
+    },
+    {
+      "speaker": "翠",
+      "text": "反応がわかりやすくて、つい。"
+    },
+    {
+      "speaker": "翠",
+      "text": "でも、困っていたらちゃんと助けますよ。"
+    },
+    {
+      "speaker": "翠",
+      "text": "そんな私ですが……"
+    },
+    {
+      "speaker": "翠",
+      "text": "これからもよろしくお願いしますね。店長。"
+    },
+    {
+      "speaker": "",
+      "text": "（翠の自己紹介を思い出に登録しました）"
+    },
+    {
+      "speaker": "",
+      "text": "",
+      "auto": true,
+      "wait": 500
+    }
+  ]
+}

@@ -1,0 +1,1873 @@
+{
+  "id": "yozora_affection_100_00_main",
+  "title": "春の中で、ありがとう",
+  "version": "v039_214",
+  "return": {
+    "mode": "storyMenu",
+    "storyId": "yozora_affection_100_00_main",
+    "storyMenuTab": "main"
+  },
+  "format": "v039_steps",
+  "type": "character_main_story",
+  "characterId": "ai",
+  "route": "yozora",
+  "affectionRange": {
+    "min": 100,
+    "max": 100
+  },
+  "mainScenarioIndex": 10,
+  "location": {
+    "id": "harumachi_flower_field_day",
+    "name": "春待ち花畑・昼"
+  },
+  "summary": "夜空が春待ち花畑で白いワンピースと花冠姿になり、店長に「ありがとう。私を見つけてくれて」と伝える。",
+  "purpose": "夜空ルート最終到達点。見つけてもらった夜空が、自分の名前を自分の言葉で差し出す。",
+  "tags": [
+    "夜空ルート",
+    "親愛度100",
+    "春待ち花畑",
+    "ありがとう",
+    "白いワンピース",
+    "花冠",
+    "最終解放"
+  ],
+  "clearFlags": [
+    "yozora_main_100_00_cleared"
+  ],
+  "nextHint": "夜空親愛度ルート完了。",
+  "renderPolicy": {
+    "spritePosition": "logical_split_n_plus_1",
+    "eventCgLayer": "frontOfCharacters"
+  },
+  "steps": [
+    {
+      "speaker": "",
+      "text": "――ひだまりストア・休憩室――",
+      "bg": "images/assets/bgev/bg_office_hidamari.png",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true,
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――昼休憩のひだまりストア。"
+    },
+    {
+      "speaker": "",
+      "text": "休憩室には、やわらかな春の日差しが差し込んでいた。"
+    },
+    {
+      "speaker": "",
+      "text": "テーブルの上には、白いマグカップと黒いマグカップ。"
+    },
+    {
+      "speaker": "",
+      "text": "その隣に、店長用の湯飲みが置かれている。"
+    },
+    {
+      "speaker": "",
+      "text": "――いつもの休憩室。"
+    },
+    {
+      "speaker": "",
+      "text": "いつもの香り。"
+    },
+    {
+      "speaker": "",
+      "text": "いつもの距離。"
+    },
+    {
+      "speaker": "",
+      "text": "けれど、今日は少しだけ違っていた。"
+    },
+    {
+      "speaker": "",
+      "text": "美空が、楽しそうにスマホを見ている。"
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空。\nここ、行ってみない？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "またどこか見つけたの。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\n春待ち花畑。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "花畑。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "今、春の花まつりをやってるんだって。\nいろんな色の花が咲いてて、花冠も作れるみたい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空が好きそう。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\n好き。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "じゃあ、美空が行けばいい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空も行こうよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼくは花畑って感じじゃない。\n黒と青だし、冬っぽいって言われるし。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "でも、夜空は白も好きになったでしょ？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……それを言うのはずるい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ずるい美空です。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "最近ずっとそう。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――美空はスマホの画面を夜空に見せる。\nそこには、一面の花畑が映っていた。\nピンク、黄色、白、青、紫。\nたくさんの色が、春の光の中で揺れている。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……色が多い。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\nカラフル。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "落ち着かない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "でも、見てる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……見てる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "認めた。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "今日は、そういう日かもしれない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――店長が湯飲みを手に、二人の方を見る。"
+    },
+    {
+      "speaker": "店長",
+      "text": "花畑か。\nきれいだな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空にも合うと思う。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "二人でそういうこと言わないで。\n……でも、今日は少しだけ聞いておく。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "なに。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "行きたい？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空はもう一度、スマホの画面を見る。\n花畑。\n白いワンピース。\n花冠。\n以前なら、すぐに「似合わない」と切り捨てていたもの。"
+    },
+    {
+      "speaker": "",
+      "text": "――でも今は、少し違う。\n美空の白に憧れて、白を選んだこと。\n黒と青だけではない自分に気づいたこと。\n店長の隣で、少しずつ逃げなくなったこと。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……行きたい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空に言われたからじゃない。\n店長に似合うって言われたいからでも……少しはあるけど。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "あるのか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "そこは拾わなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ふふっ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、行きたい。\n今のぼくで、そこに行ってみたい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10202.webp",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――その日の夜。\n夜空は双沢家のツインルームで、クローゼットの前に立っていた。\n黒と青の服。\n落ち着いた色のカーディガン。\nいつもの自分に近い服。",
+      "bg": "images/assets/bg/bg_sugosawa_room_night_light_on.png",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――その中で、白いワンピースだけが、少し浮いて見えた。"
+    },
+    {
+      "speaker": "美空",
+      "text": "それ、着てみる？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……これ？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\n白いワンピース。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "前なら、選ばなかった。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "白は、美空の色だと思ってた。\nでも、今は少し違う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "きっかけが美空でも。\n今、ぼくが選ぶなら……ぼくの白でもいいんだよね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\nそうだよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……じゃあ、これにする。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "今日は、ぼくが選ぶ。\nちゃんと。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――春待ち花畑・入口・昼――",
+      "bg": "images/assets/bg/bg_harumachi_flower_field_day.png",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true,
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――数日後。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "空はよく晴れていた。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "春待ち花畑には、色とりどりの花が一面に広がっている。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "風が吹くたびに、花びらが小さく揺れ、遠くで笑い声が聞こえた。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――店長は花畑の入口で待っていた。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "待ち合わせの時間より、少しだけ早い。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "手元の時計を確認していると、近くで小さな足音が止まった。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "夜空",
+      "text": "……店長。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――店長は言葉を止めた。\n目の前にいる夜空は、白いワンピースを着ていた。\n黒と青の髪が春の光の中でやわらかく揺れている。\nいつもの夜空なのに、いつもと少し違う。\nけれど、それは別人のような違いではなかった。\n夜空が、自分で選んだ新しい一歩だった。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "夜空",
+      "text": "……どう？",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……あ、ごめん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "何？",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "正直……見とれてた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "すごく似合ってる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……恥ずかしいじゃない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "悪い。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "謝らなくていい。\n……でも、嬉しい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\n今日は、ちゃんと受け取る。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空はワンピースの裾を少しだけ指でつまむ。\n照れている。\nけれど、悪態はつかなかった。\n似合わないとも言わなかった。\n店長の言葉を、正面からではないけれど、ちゃんと受け取っていた。"
+    },
+    {
+      "speaker": "店長",
+      "text": "今日は白なんだな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\n自分で選んだ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "前なら、選ばなかった。\nでも、今は……これで来たかった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "似合ってるよ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……二回目。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "何回でも言いたくなる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……それは、少し困る。\nでも、今日は怒らない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――店長と夜空は、花畑の中をゆっくり歩く。"
+    },
+    {
+      "speaker": "",
+      "text": "赤。"
+    },
+    {
+      "speaker": "",
+      "text": "白。"
+    },
+    {
+      "speaker": "",
+      "text": "黄色。"
+    },
+    {
+      "speaker": "",
+      "text": "青。"
+    },
+    {
+      "speaker": "",
+      "text": "紫。"
+    },
+    {
+      "speaker": "",
+      "text": "たくさんの色が、春の光の中で揺れていた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "落ち着かない。\n色が多いし、人もいる。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "戻るか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "戻らない。\n落ち着かないけど、きれいだとも思う。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "羽白湖の星も、最初は怖かった。\nアントステラの席も、近すぎて無理だった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、どっちも行ってよかった。\nだから、今日も……たぶん大丈夫。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "たぶんか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "たぶん。\nでも、逃げるためのたぶんじゃない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――花畑の奥に、花冠作りの小さな屋台があった。\n色とりどりの花が並び、来場者が思い思いの花を選んでいる。"
+    },
+    {
+      "speaker": "店長",
+      "text": "花冠、作れるみたいだな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空が言ってた。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "作ってみるか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。\n今日は、作ってみたい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は花の前に立つ。\n白い花。\n淡い青の花。\n小さな黄色い花。\nピンクの花。\nどれを選べばいいのか、少し迷う。"
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空なら、どれを選ぶ？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "白と青。\nそれから……少しだけピンク。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "美空の色か？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\n美空の色も、入れたい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は白い花と、淡い青の花。\nそれから、ほんの少しだけピンクの花を選んだ。\n自分の色。\n美空の色。\n春の色。\nそれらを、ひとつの輪にしていく。"
+    },
+    {
+      "speaker": "",
+      "text": "――指先は不器用だったが、夜空は途中で投げ出さなかった。\n店長は隣で、必要な時だけそっと手伝った。"
+    },
+    {
+      "speaker": "店長",
+      "text": "できたな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "かぶってみるか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……かぶる。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は花冠をそっと頭に乗せた。\n白いワンピース。\n黒と青の髪。\nその上に、白と青と少しのピンクの花冠。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora100_flower_crown.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――店長は、しばらく何も言わなかった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……また？",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。\n見とれてた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……恥ずかしいって言った。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "すごく似合ってる。\n女の子らしくて、でもちゃんと夜空らしい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "悪い。\n言いすぎたか？",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "夜空",
+      "text": "ううん。\n今日は、ちゃんと聞く。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は花冠にそっと触れる。\nすぐに外そうとはしない。\n少し照れて、少し落ち着かなくて。\nそれでも、ちゃんと受け取っていた。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――花畑・小さな丘――",
+      "bg": "images/assets/bg/bg_harumachi_flower_field_day.png",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true,
+      "clearStorySprites": true,
+      "hideEventCg": true
+    },
+    {
+      "speaker": "",
+      "text": "――花畑の奥に、少し開けた場所があった。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "色とりどりの花に囲まれた小さな丘。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "夜空はそこで足を止めた。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "店長",
+      "text": "ん？",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "夜空",
+      "text": "ここで、少し座っていい？",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "店長",
+      "text": "もちろん。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は花畑の中の小さな丘に座る。\n店長は少し距離を空けて隣に座った。\n近すぎず、遠すぎず。\n夜空が自分で選べる距離。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora100_sitting_flower_field.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "いろんな色が、同じ場所で揺れている。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "昔なら、たぶん来なかった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "自分には似合わないって思ってた。\nこういう明るい場所も。\n白い服も。\n花も。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、美空が教えてくれた。\nきっかけが誰でも、今好きなら、自分の好きでいいって。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "羽白湖では、見えなかった星が本当にあるってわかった。\nアントステラでは、店長の隣にいても逃げなくていいって、少し思えた。\n美空には、大好きって言えた。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "それでもまだ、怖いところはある。\n面倒なところも、暗いところもある。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、怖いだけじゃなくなった。\n苦しいだけでも、暗いだけでもなくなった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……こういう明るい場所にいても、ぼくはぼくなんだね。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そうだな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。\n今日は、それを聞きたかったのかもしれない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は少しだけ深呼吸をする。\n春の空気は、羽白湖の夜よりも暖かい。\nアントステラの空気よりも、少しだけ広い。"
+    },
+    {
+      "speaker": "",
+      "text": "――言える気がした。\nずっと怖かった言葉。\n何度も近づいて、何度も止まった言葉。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ],
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora100_closeup_flower_field.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "店長",
+      "text": "ん？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "今日は、必ず伝えるって決めてた。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "だから、茶化さないで。\nすぐ返事しないで。\nでも、聞いて。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は店長の方を見る。\n逃げるように視線をそらしかけて、やめた。\n花冠が少し揺れる。\n白いワンピースの裾を、指先で軽く握る。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ありがとう。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "私を見つけてくれて。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――その一言を言った瞬間、夜空は少しだけ目を伏せた。\nいつもの「ぼく」ではなく、「私」。\nそれは、誰かの真似ではない。\n双沢夜空という一人の自分を、少しだけ丁寧に差し出す言葉だった。"
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "待って。\nまだ、言えるから。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "逃げても。\n拗ねても。\n見ないでって言っても。\n言わなくていいって言っても。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長は、探してくれた。\n見つけてくれた。\n帰る場所を、残してくれた。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空の隣にいるぼくじゃなくて。\n美空の反対側にいるぼくでもなくて。\nちゃんと、双沢夜空として見てくれた。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "だから。\nありがとう。\n私を見つけてくれて。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "これは、忘れないで。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "忘れない。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は小さく笑う。\nそれから、もう一度まっすぐ店長を見た。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "ん？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "これからも、双沢夜空をよろしくお願いします。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――春の風が、花畑を揺らした。\n白い花も、青い花も、黄色い花も、全部が同じ風の中で揺れている。"
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は逃げなかった。\n照れ隠しも、言い直しもしなかった。\n自分の名前を、自分の言葉で、店長へ差し出した。"
+    },
+    {
+      "speaker": "店長",
+      "text": "こちらこそ。\nこれからもよろしくな、夜空。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "言ってくれてありがとう。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "お礼を言うところじゃない。\n……って言いそうになった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "言わないのか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "今日は、言わない。\nちゃんと受け取る。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は花冠にそっと触れる。\n自分で選んだ白。\n美空の色を少し入れた花。\n店長に見つけてもらった自分。"
+    },
+    {
+      "speaker": "",
+      "text": "――冬の夜みたいだった心に、春の光が差している。\nそれでも、夜空は夜空のままだった。\n暗いところも、怖いところも、面倒なところもある。\nでも、それだけではない。"
+    },
+    {
+      "speaker": "",
+      "text": "――白いワンピースの裾が、風に揺れる。\n夜空はもう一度、花畑を見渡した。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……来てよかった。\n店長と、ここに来てよかった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "今のは、言ってほしかった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……春って、少し眩しいね。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "苦手か？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "少し。\nでも、嫌じゃない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_story100_special.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――春の中で、夜空は少しだけ笑った。\nそれは、見つけてもらった夜空が、自分から顔を上げた笑顔だった。"
+    }
+  ]
+}

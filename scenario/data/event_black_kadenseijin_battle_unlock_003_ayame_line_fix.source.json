@@ -1,0 +1,408 @@
+{
+  "scenario_id": "event_black_kadenseijin_battle_unlock_003_ayame_line_fix",
+  "title": "イベントバトル解放：ブラック家電星人を助けて",
+  "type": "unlock_event_battle",
+  "version": "1.1.1",
+  "summary": "メンテナンス不足でブラック化した家電星人を、清掃・修理で元に戻すため、ひだまりストアとビリビリ電機が一時共闘するイベントバトル解放シーン。",
+  "unlock": {
+    "set_flags": [
+      "unlock_event_battle",
+      "unlock_black_kadenseijin_event"
+    ],
+    "next_tutorial": "tutorial_event_battle_black_kadenseijin_001"
+  },
+  "characters": {
+    "player": "店長",
+    "aa": "星野 緋奈",
+    "ae": "春日原 琥珀",
+    "aj": "芝桜 桃",
+    "ak": "紫藤 彩愛",
+    "ba": "天神 小春",
+    "bb": "霧島 真冬",
+    "bc": "日向 なつ",
+    "kd": "家電星人",
+    "bk": "ブラック家電星人",
+    "ag": "氷神 雪乃"
+  },
+  "scenes": [
+    {
+      "scene_id": "s01_hidamari_store_alert",
+      "background": "images/assets/bg/battle_store_lv1.png",
+      "bgm": "bgm_daily_hidamari",
+      "events": [
+        {
+          "cmd": "show_bg",
+          "name": "images/assets/bg/battle_store_lv1.png",
+          "transition": "fade"
+        },
+        {
+          "cmd": "play_bgm",
+          "name": "bgm_daily_hidamari"
+        },
+        {
+          "cmd": "show_character",
+          "id": "kd",
+          "position": "center",
+          "face": "panic"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "家電星人",
+          "face": "panic",
+          "text": "店長、大変なの～！"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "店長",
+          "face": "normal",
+          "text": "どうした、そんなに慌てて。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "家電星人",
+          "face": "cry",
+          "text": "意地悪なブラック家電星人が、町の家電を困らせてるの～！"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "星野 緋奈",
+          "face": "surprise",
+          "text": "ブラック家電星人！？ なんか名前からして悪そう！"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "家電星人",
+          "face": "sad",
+          "text": "でも、本当は悪い子じゃないの……。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "家電星人",
+          "face": "sad",
+          "text": "僕らも、メンテナンスが足りなかったり、ずっと汚れたままだったりすると……ああなっちゃうんだ。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "店長",
+          "face": "serious",
+          "text": "メンテナンスが足りてない家電星人が、ブラック化する……ということか。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "家電星人",
+          "face": "cry",
+          "text": "うん……。でも、大事な仲間だから、助けてほしいの……！"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "星野 緋奈",
+          "face": "determined",
+          "text": "そんなの聞いたら、ほっとけないよ店長！"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "店長",
+          "character": "player",
+          "face": "thinking",
+          "text": "でも、具体的にどう助ければいいんだ？"
+        },
+        {
+          "cmd": "show_character",
+          "character": "ag",
+          "name": "氷神 雪乃",
+          "position": "right",
+          "face": "thinking"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "氷神 雪乃",
+          "character": "ag",
+          "face": "thinking",
+          "text": "……汚れているならキレイに、故障は修理……などでしょうか……？"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "家電星人",
+          "character": "kd",
+          "face": "hopeful",
+          "text": "その通りなの。きっと元通りの姿になれば、心もキレイになるの。"
+        }
+      ]
+    },
+    {
+      "scene_id": "s02_biribiri_arrival_again",
+      "background": "images/assets/bg/battle_store_lv1.png",
+      "bgm": "bgm_comical_rival",
+      "events": [
+        {
+          "cmd": "play_bgm",
+          "name": "bgm_comical_rival",
+          "transition": "crossfade"
+        },
+        {
+          "cmd": "se",
+          "name": "se_store_door_open"
+        },
+        {
+          "cmd": "narration",
+          "text": "その時、店の入口の自動ドアが開いた。"
+        },
+        {
+          "cmd": "show_character",
+          "id": "ba",
+          "position": "left",
+          "face": "smirk"
+        },
+        {
+          "cmd": "show_character",
+          "id": "bb",
+          "position": "center",
+          "face": "normal"
+        },
+        {
+          "cmd": "show_character",
+          "id": "bc",
+          "position": "right",
+          "face": "smile"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "天神 小春",
+          "face": "smirk",
+          "text": "遊びに……じゃなくて、視察に来たわよー、ちんまリストア！"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "日向 なつ",
+          "face": "smile",
+          "text": "小春ちゃん、今日は遊びじゃなかったんだ～。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "霧島 真冬",
+          "face": "glance",
+          "text": "視察です。少なくとも、建前上は。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "店長",
+          "face": "idea",
+          "text": "ちょうどいいところに来た。手伝え。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "天神 小春",
+          "face": "angry",
+          "text": "はぁ！？ なんでうちらがあんたらの手伝いをしなきゃいけないのよ！"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "店長",
+          "face": "confident",
+          "text": "いいじゃないか。同じ末端の組織の人間同士、困ったときは助け合おう。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "天神 小春",
+          "face": "suspicious",
+          "text": "いま、さらっと変な言い方したわね。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "店長",
+          "face": "smile_dark",
+          "text": "もちろん、手伝った分はお前らの売り上げにしてやるよ。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "霧島 真冬",
+          "character": "bb",
+          "face": "calm",
+          "text": "わかりました。やりましょう。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "天神 小春",
+          "character": "ba",
+          "face": "surprised",
+          "text": "ちょっと！ 真冬！？"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "霧島 真冬",
+          "character": "bb",
+          "face": "cool",
+          "text": "……ここは渡りに船です。"
+        },
+        {
+          "cmd": "stage_direction",
+          "text": "真冬は小春に近づき、そっと耳打ちする。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "霧島 真冬",
+          "character": "bb",
+          "face": "whisper",
+          "text": "ブラック家電星人の発生原因と購買行動を観察できるうえ、売上も計上できる。断る理由がありません。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "日向 なつ",
+          "character": "bc",
+          "face": "smile",
+          "text": "あちしはいいよ～。困ってる子は助けた方がいいし～。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "天神 小春",
+          "character": "ba",
+          "face": "flustered",
+          "text": "な、なによ！ あたしだって、そのくらいわかって手伝おうか？ っていうつもりだったわよ！"
+        }
+      ]
+    },
+    {
+      "scene_id": "s03_hidamari_reactions",
+      "background": "images/assets/bg/battle_store_lv1.png",
+      "bgm": "bgm_comical_rival",
+      "events": [
+        {
+          "cmd": "show_character",
+          "id": "ae",
+          "position": "left",
+          "face": "surprise"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "春日原 琥珀",
+          "face": "surprise",
+          "text": "てんちょーが黒そうな話をしているぞ。"
+        },
+        {
+          "cmd": "show_character",
+          "id": "aj",
+          "position": "center",
+          "face": "smirk"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "芝桜 桃",
+          "face": "smirk",
+          "text": "子供には理解できないね。これは大人の取引ってやつだよ、こっはー。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "春日原 琥珀",
+          "face": "confused",
+          "text": "オレ、桃より年上なんだけどな。"
+        },
+        {
+          "cmd": "show_character",
+          "id": "ak",
+          "position": "right",
+          "face": "smile"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "紫藤 彩愛",
+          "face": "smile",
+          "text": "ふふ、敵陣まで巻き込むなんていけない人。けれど、味方として共闘するなら悪くありませんわ。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "店長",
+          "face": "normal",
+          "text": "誤解するな。これは町の平和と売上のためだ。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "芝桜 桃",
+          "face": "wink",
+          "text": "ほら、やっぱり売上って言った。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "家電星人",
+          "face": "hope",
+          "text": "みんな……手伝ってくれるの？"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "天神 小春",
+          "face": "determined",
+          "text": "やるからには本気よ！ ブラックだか何だか知らないけど、うちの販売力を見せつけてあげる！"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "霧島 真冬",
+          "face": "serious",
+          "text": "販売勝負ではなく、今回は共同作戦です。そこは間違えないでください。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "日向 なつ",
+          "face": "happy",
+          "text": "みんなでやれば、なんとかなるよ～。"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "星野 緋奈",
+          "face": "happy",
+          "text": "よーし！ ブラック家電星人さんも、ちゃんと助けてあげよう！"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "家電星人",
+          "face": "happy",
+          "text": "ありがとうなの～！"
+        }
+      ]
+    },
+    {
+      "scene_id": "s04_event_battle_unlock",
+      "background": "images/assets/bg/battle_store_lv1.png",
+      "bgm": "bgm_event_start",
+      "events": [
+        {
+          "cmd": "play_bgm",
+          "name": "bgm_event_start",
+          "transition": "crossfade"
+        },
+        {
+          "cmd": "dialogue",
+          "speaker": "店長",
+          "face": "determined",
+          "text": "よし、イベント営業開始だ。ブラック家電星人を助けるぞ！"
+        },
+        {
+          "cmd": "system_message",
+          "text": "イベントバトルが解放されました。"
+        },
+        {
+          "cmd": "set_flag",
+          "name": "unlock_event_battle",
+          "value": true
+        },
+        {
+          "cmd": "set_flag",
+          "name": "unlock_black_kadenseijin_event",
+          "value": true
+        },
+        {
+          "cmd": "next_tutorial",
+          "name": "tutorial_event_battle_black_kadenseijin_001"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "ブラック家電星人は、悪役というより『大事にされず汚れたことで拗ねてしまった仲間』として扱う。",
+    "店長の交渉は黒く見えるが、目的は救助と売上確保の両立。",
+    "ビリビリ電機はライバルだが、このイベントでは一時共闘する導線にする。",
+    "真冬は合理性で参加を肯定し、小春は勢いで乗り、なつは優しさで受け入れる。"
+  ],
+  "conversion_note": "v039_99 runtime reconverted: command tags are not emitted as dialogue text; set_flag/next_tutorial are stored as unlock flags.",
+  "conversion_notes": [
+    "v039_100: runtime steps reconverted to speaker-only sprite replacement to avoid center overlay buildup; player/system/narration steps clear sprites."
+  ]
+}

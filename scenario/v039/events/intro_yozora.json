@@ -1,0 +1,290 @@
+{
+  "id": "intro_yozora",
+  "title": "自己紹介：双沢 夜空",
+  "return": {
+    "mode": "members"
+  },
+  "format": "v039_steps",
+  "sourceFormat": "legacy_array",
+  "steps": [
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "bgMode": "replace",
+      "speaker": "",
+      "text": "【自己紹介】双沢 夜空",
+      "clearStorySprites": true
+    },
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "speaker": "",
+      "text": "（お、夜空がいる。）"
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空、ちょっといいかな？"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "夜空",
+      "text": "急用？ぼく、ちょっと忙しいのだけど？"
+    },
+    {
+      "speaker": "店長",
+      "text": "カメラテストをしてるんだけどさ、ちょっと自己紹介してみてくれないかな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "なんでそんな事に付き合わなきゃ・・・たく。これに始めればいいの？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "はじめまして、双沢 夜空（すごさわ よぞら）って言うんだ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "歳は20。双子なんだよ、姉の美空（みそら）がいる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "見た目は似てるって言われるけど、"
+    },
+    {
+      "speaker": "夜空",
+      "text": "性格も趣味も、ほとんど逆だと思う。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼくはクールだとか言われるけど、"
+    },
+    {
+      "speaker": "夜空",
+      "text": "別に冷たいわけじゃないんだよ。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "夜空",
+      "text": "ただ、空気を読むのは正直ちょっと苦手だ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "お世辞とか、うまく返せないしさ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空は明るくて可愛いから、"
+    },
+    {
+      "speaker": "夜空",
+      "text": "昔から何でも美空優先にしてきた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "そしたら気がついたら、"
+    },
+    {
+      "speaker": "夜空",
+      "text": "好きな物も、嫌いな物も、利き手まで真逆になってた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "趣味はウィンターアクティビティ。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "夜空",
+      "text": "雪が好きでさ、滑るのも得意だし。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "加湿器とか、冬物の管理は任せて。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "弓道も好き。実は日本一なんだよ、これでも。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "好きな食べ物は中華。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "何でも美味しいし、辛いのも平気。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "お酒はダメなんだ、すぐ酔っちゃうから。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "だから飲むならソフトドリンクでいい。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "夜空",
+      "text": "嫌いな食べ物？　ほや。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "匂いが無理。ごめん、あれだけは無理。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "あ、ちなみに、ぼくの一人称は「ぼく」だから。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "変だって言われても変える気はないよ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "呼び方？　あんたのことは「あんた」って呼ぶ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "緋奈さんは緋奈さん。真花ちゃんは真花ちゃん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "姉の美空のことは、美空って呼び捨てだよ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼくにとっては、誰より大事だから。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空のことは尊敬してるんだ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼくにないものを全部持ってるからさ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "コンプレックス？　まぁ、あるけど…"
+    },
+    {
+      "speaker": "夜空",
+      "text": "別にいいんだ。美空が幸せなら、ぼくもそれでいい。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10901.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "夜空",
+      "text": "得意なことは冬物管理と弓道。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "夜空",
+      "text": "苦手なのはお世辞と空気読むこと。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、嘘はつかないから、そこは信用して。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "約束は、守るから。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "こんなぼくだけど、"
+    },
+    {
+      "speaker": "夜空",
+      "text": "仲良くしてくれたら嬉しいな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "まぁ、無理に合わせなくていいよ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "気が向いたときに、声かけてくれればいい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "…あんたのこと、ちょっと気に入ったら、"
+    },
+    {
+      "speaker": "夜空",
+      "text": "たぶん、ちゃんと笑うから。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "だからその時まで、覚えてて。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "双沢 夜空を、よろしく。"
+    },
+    {
+      "speaker": "",
+      "text": "（夜空の自己紹介を思い出に登録しました）"
+    },
+    {
+      "speaker": "",
+      "text": "",
+      "auto": true,
+      "wait": 500
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "id": "intro_ayame",
+  "title": "自己紹介：紫藤 彩愛",
+  "return": {
+    "mode": "members"
+  },
+  "format": "v039_steps",
+  "sourceFormat": "legacy_array",
+  "steps": [
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "bgMode": "replace",
+      "speaker": "",
+      "text": "【自己紹介】紫藤 彩愛",
+      "clearStorySprites": true
+    },
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "speaker": "",
+      "text": "（お、彩愛さんがいる。）"
+    },
+    {
+      "speaker": "店長",
+      "text": "ちょっといい？彩愛さん。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ak",
+          "src": "images/assets/char/k10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ak",
+          "src": "images/assets/char/k10201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "彩愛",
+      "text": "はい？何でございましょう？"
+    },
+    {
+      "speaker": "店長",
+      "text": "カメラテストをしてるんだけどさ、彩愛さんの自己紹介してみてくれないかな。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "はじめまして、紫藤 彩愛と申しますわ。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "ええ、読みは“しどう あやめ”でございます。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "どうぞご記憶いただけますと幸いですわ。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "わたくし、昔から“お嬢様みたい”と"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "言われることが多うございますけれど、"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "実のところ育ちはごく普通の家庭ですの。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "両親も特別なお家柄ではございませんし、"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "商店街のお肉屋さんと仲良くさせていただいておりますの。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "けれども、小さい頃から理想の淑女というものに"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "憧れがございまして……"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ak",
+          "src": "images/assets/char/k11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "彩愛",
+      "text": "わたくしなりに、身の振る舞いや言葉遣いを"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "少しずつ磨いてまいりましたの。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "おかげさまで、今では人前では"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "このように品の良い口調を心がけておりますが……"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "家に戻れば、まぁ、それなりに庶民の彩愛に戻りますのよ。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "趣味は家事全般でございますわ。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ak",
+          "src": "images/assets/char/k10901.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "彩愛",
+      "text": "掃除機のかけ方には少々自信がございますの。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "洗濯機の柔軟剤の量にも、ちょっとしたこだわりがございまして。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "ああ、それからお料理も好きですのよ。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "特に、すき焼きを作るのが得意でございます。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "良いお肉を見つけますと、つい財布の紐がゆるんでしまいますわ。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ak",
+          "src": "images/assets/char/k11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "彩愛",
+      "text": "ただ、運動は本当に苦手で……"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "とくに水泳だけは、どうしても……"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "泳ぐどころか、プールに足をつけただけで"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "寒気がしてしまいますの。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "そうそう、お酒も少々たしなみますのよ。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "ビールをくぅっと飲む瞬間が、わたくしにとっては"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "ささやかな楽しみでございますわ。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "あら、意外ですの？"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "淑女とビールは相性が悪いと申しますけれど、"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "わたくしにとっては、これもまた人間らしさでございましょう？"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "そして……"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "こんなわたくしではございますが、"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "心のどこかでは、いつか素敵な方と結ばれて"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "穏やかな家庭を築くのが夢でございますの。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ak",
+          "src": "images/assets/char/k10901.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "彩愛",
+      "text": "掃除もお洗濯も、お料理もお任せくださいませ。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "わたくし、家のことは全力で支えますわ。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "……ふふっ、少々本音が漏れてしまいましたかしら。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "ともあれ、これが紫藤 彩愛でございます。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "これからどうぞ、末永くお見知りおきを。"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "貴方にとって、わたくしが"
+    },
+    {
+      "speaker": "彩愛",
+      "text": "少しでも心安らぐ存在になれますように……。"
+    },
+    {
+      "speaker": "",
+      "text": "（彩愛の自己紹介を思い出に登録しました）"
+    },
+    {
+      "speaker": "",
+      "text": "",
+      "auto": true,
+      "wait": 500
+    }
+  ]
+}

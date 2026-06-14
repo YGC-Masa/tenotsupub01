@@ -1,0 +1,97 @@
+{
+  "version": "v037_85",
+  "policy": "基本表情＋強い感情のみ。細かな通常変化は削除。",
+  "files": {
+    "intro_ai.json": {
+      "setBase": 1,
+      "setStrongEmotion": 5,
+      "returnedToBase": 4,
+      "removedCharacterCommands": 13,
+      "keptCharacterCommands": 10
+    },
+    "intro_ayame.json": {
+      "setBase": 1,
+      "setStrongEmotion": 5,
+      "returnedToBase": 5,
+      "removedCharacterCommands": 21,
+      "keptCharacterCommands": 11
+    },
+    "intro_hina.json": {
+      "setBase": 1,
+      "setStrongEmotion": 10,
+      "returnedToBase": 8,
+      "removedCharacterCommands": 11,
+      "keptCharacterCommands": 19
+    },
+    "intro_kogane.json": {
+      "setBase": 1,
+      "setStrongEmotion": 5,
+      "returnedToBase": 5,
+      "removedCharacterCommands": 10,
+      "keptCharacterCommands": 11
+    },
+    "intro_kohaku.json": {
+      "setBase": 1,
+      "setStrongEmotion": 14,
+      "returnedToBase": 8,
+      "removedCharacterCommands": 7,
+      "keptCharacterCommands": 23
+    },
+    "intro_manaka.json": {
+      "setBase": 1,
+      "setStrongEmotion": 9,
+      "returnedToBase": 4,
+      "removedCharacterCommands": 6,
+      "keptCharacterCommands": 14
+    },
+    "intro_midori.json": {
+      "setBase": 1,
+      "setStrongEmotion": 7,
+      "returnedToBase": 5,
+      "removedCharacterCommands": 6,
+      "keptCharacterCommands": 13
+    },
+    "intro_misora.json": {
+      "setBase": 1,
+      "setStrongEmotion": 7,
+      "returnedToBase": 5,
+      "removedCharacterCommands": 13,
+      "keptCharacterCommands": 13
+    },
+    "intro_moe.json": {
+      "setBase": 1,
+      "setStrongEmotion": 7,
+      "returnedToBase": 4,
+      "removedCharacterCommands": 19,
+      "keptCharacterCommands": 12
+    },
+    "intro_momo.json": {
+      "setBase": 1,
+      "setStrongEmotion": 3,
+      "returnedToBase": 3,
+      "removedCharacterCommands": 23,
+      "keptCharacterCommands": 7
+    },
+    "intro_satomi.json": {
+      "setBase": 1,
+      "setStrongEmotion": 6,
+      "returnedToBase": 4,
+      "removedCharacterCommands": 9,
+      "keptCharacterCommands": 11
+    },
+    "intro_yozora.json": {
+      "setBase": 1,
+      "setStrongEmotion": 7,
+      "returnedToBase": 6,
+      "removedCharacterCommands": 14,
+      "keptCharacterCommands": 14
+    },
+    "intro_yukino.json": {
+      "setBase": 1,
+      "setStrongEmotion": 5,
+      "returnedToBase": 5,
+      "removedCharacterCommands": 11,
+      "keptCharacterCommands": 11
+    }
+  }
+}

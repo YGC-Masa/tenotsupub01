@@ -1,0 +1,775 @@
+{
+  "id": "sample_hina_kogane_new_juice_002",
+  "title": "事務所にて緋奈＆こがね：新作ジュースは何の味？",
+  "version": "v039_106",
+  "return": {
+    "mode": "town",
+    "season": "other",
+    "eventId": "sample_hina_kogane_new_juice_002"
+  },
+  "format": "v039_steps",
+  "renderPolicy": {
+    "background": "forceReplace",
+    "sprites": "storyOnly"
+  },
+  "summary": "事務所の机に置かれた入手困難な新作ジュースをきっかけに、緋奈が照れて、こがねが無邪気にかき回し、翠が紙コップと分別の一言で締める日常会話サンプル。",
+  "steps": [
+    {
+      "bg": "images/assets/bgev/bg_office_hidamari.png",
+      "speaker": "",
+      "text": "【事務所イベント】新作ジュースは何の味？",
+      "bgMode": "forceReplace",
+      "clearStorySprites": true,
+      "forceBackgroundReplace": true
+    },
+    {
+      "speaker": "",
+      "text": "事務所の机に、入手困難だと噂の新作ジュースが置かれていた。",
+      "storySprites": []
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "……ん？　あれ？　店長～？　この机の上のやつ……もしかして、今話題の新作ジュースじゃないですか？",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10501.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "ん？　ああ、コンビニで見かけてな。気になって買ったんだけど、まだ飲んでない。",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10501.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "え～！　いいな～！　あたしもそれ、気になってたんですよ！でも人気があるらしく、全然見かけないんですよね！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10202.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "評判だと、甘いけど後味はスッキリらしいな。緋奈、一口飲んでみるか？",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10202.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "えっ……え！？　い、いいんですか……？",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10301.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "いいよ。少しくらい飲んじゃっても。",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10301.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "あ……でも、あの……缶、開けたら……その……あたしが飲んだら……店長……そのあと……",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10401.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……ああ。そうか。間接的に、ってことか？",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10401.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "～～～～っ！　ち、違います！　違わないけど、違いますっ！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10801.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "悪い悪い。そういうつもりじゃなかったんだ。そうだな、じゃあ全部あげるよ。",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10801.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "そ、それはそれで……もったいないというか……なんだか悪いというか……！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10601.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "？？？",
+      "text": "あーーーしが飲んじゃえばいーじゃん！！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10601.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "えっ……こ、こがねちゃん……！？",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10301.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10501.webp",
+          "side": "right",
+          "left": "72%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "店長の、それ！　新作でしょ～？　一口ちょーだいっ！（ぷしっ！）",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10301.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10701.webp",
+          "side": "right",
+          "left": "72%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "あ、おい、こがね――",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10301.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10701.webp",
+          "side": "right",
+          "left": "72%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "ん～！　……ぷはっ！　うまっ！　なにこれ、やばっ！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10301.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10201.webp",
+          "side": "right",
+          "left": "72%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "あー……っ！　そ、そんなことしたら……か、かかっ……間接キスに……！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10801.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10201.webp",
+          "side": "right",
+          "left": "72%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "ん？　あーしはそんなの気にしないしー。店長、ごちそーさまー♪",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10801.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10501.webp",
+          "side": "right",
+          "left": "72%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "あ、ああ……。",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10801.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10501.webp",
+          "side": "right",
+          "left": "72%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "んじゃ、またね～☆",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10801.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10701.webp",
+          "side": "right",
+          "left": "72%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "こがねは満足そうに手を振って、事務所を出ていった。",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10801.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "………………っ！　……飲みます……！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10701.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "えっ？",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10701.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "あたしも……飲みますっ！！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10701.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "ま、待て、緋奈……！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10701.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "草壁 翠",
+      "text": "……二人とも、紙コップあるわよ。",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10701.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10501.webp",
+          "side": "center",
+          "left": "50%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うわっ……！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10701.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10501.webp",
+          "side": "center",
+          "left": "50%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "きゃああっ……！　み、翠さん……！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10301.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10501.webp",
+          "side": "center",
+          "left": "50%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "草壁 翠",
+      "text": "……何よ、そんなに驚いて。ごみはちゃんと分別しておいてね。",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10301.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "翠が、机の上に紙コップをそっと置いた。",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10301.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "あ、はい……ありがとう、翠さん。",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10301.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "……良かった……コップが……あったんだ……。",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10501.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "ん……でも……？　こがねちゃんと店長の……。",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10602.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "ダメーーー！！　やっぱりそんなのダメーーー！！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10801.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "緋奈！？",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10801.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "んっ……！！　んぐっ、んぐっ……！！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10701.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "ぷはっ……！　店長、ご馳走様ですっ！　新しいの、買ってきます！！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10202.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "お、おい……！",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10202.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "草壁 翠",
+      "text": "……ほんと、騒がしいわね……ふふ。",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10202.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10201.webp",
+          "side": "center",
+          "left": "50%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "こうして、事務所の新作ジュース騒動は、にぎやかな余韻を残して終わった。",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10202.webp",
+          "side": "left",
+          "left": "28%",
+          "zIndex": 2500,
+          "opacity": 1
+        },
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10201.webp",
+          "side": "center",
+          "left": "50%",
+          "zIndex": 2500,
+          "opacity": 1
+        }
+      ]
+    }
+  ]
+}

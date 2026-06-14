@@ -1,0 +1,330 @@
+[
+  {
+    "bg": "bg011.jpg",
+    "bgEffect": "fadein",
+    "effect": "fadein",
+    "bgm": "main.mp3",
+    "textareashow": true,
+    "name": "",
+    "text": "【自己紹介】春日原 琥珀"
+  },
+  {
+    "bg": "bg011.jpg",
+    "name": "",
+    "text": "（あ、琥珀がいる。）",
+    "textareashow": true,
+    "bgm": "main.mp3"
+  },
+  {
+    "name": "店長",
+    "text": "琥珀ー、ちょっといいかー？"
+  },
+  {
+    "characters": [
+      {
+        "side": "center",
+        "src": "e10101.webp"
+      }
+    ]
+  },
+  {
+    "name": "琥珀",
+    "text": "お、店長？オレに用か？",
+    "characters": [
+      {
+        "side": "center",
+        "src": "e10501.webp"
+      }
+    ],
+    "expression": "05",
+    "expressionLabel": "笑顔"
+  },
+  {
+    "name": "店長",
+    "text": "はい！このカメラに向かって自己紹介！スタート！"
+  },
+  {
+    "name": "琥珀",
+    "text": "お？あ。おーっす！こんちわー！あ、初めての人もいるかな！？",
+    "characters": [
+      {
+        "side": "center",
+        "src": "e11201.webp"
+      }
+    ],
+    "expression": "12",
+    "expressionLabel": "動揺"
+  },
+  {
+    "name": "琥珀",
+    "text": "オレの名前は春日原 琥珀（かすがはら こはく)だぞー！"
+  },
+  {
+    "name": "琥珀",
+    "text": "年齢は25歳！しし座の自分でいうのもなんだが元気だけが取り柄だ！"
+  },
+  {
+    "name": "琥珀",
+    "text": "身長は160センチ、でも筋肉でちょっとガッチリしてるんだ！"
+  },
+  {
+    "name": "琥珀",
+    "text": "見た目もだが、中身も野生児ってよく言われる！"
+  },
+  {
+    "name": "琥珀",
+    "text": "スポーツはだいたい全部大好き！走るのも跳ぶのも泳ぐのもぜーんぶ好き！"
+  },
+  {
+    "name": "琥珀",
+    "text": "最近はバスケとランニングに夢中だ！"
+  },
+  {
+    "name": "琥珀",
+    "text": "あとイヤホン集めも趣味なんだ！自己トレ中に使えるからいっぱい持ってるぞー！"
+  },
+  {
+    "name": "琥珀",
+    "text": "水泳用の防水とか、ランニング用に外の音が聞こえるとか色々使い分けてるぞ！"
+  },
+  {
+    "name": "琥珀",
+    "text": "やっぱ好きな音楽があるとテンションもパフォーマンスもアガるからな！"
+  },
+  {
+    "name": "琥珀",
+    "text": "好きな食べ物はもちろんお肉！ステーキも焼き肉もガンガンいく！"
+  },
+  {
+    "name": "琥珀",
+    "text": "逆に魚卵は勘弁してくれー！あのプチプチが無理なんだ！",
+    "characters": [
+      {
+        "side": "center",
+        "src": "e11001.webp"
+      }
+    ],
+    "expression": "10",
+    "expressionLabel": "軽い嫌悪"
+  },
+  {
+    "name": "琥珀",
+    "text": "飲み物はスポーツドリンクが一番落ち着く！"
+  },
+  {
+    "name": "琥珀",
+    "text": "水分補給は大事だからな、旦那もちゃんと飲めよ！"
+  },
+  {
+    "name": "琥珀",
+    "text": "苦手なものはお化け！マジで怖いんだって！"
+  },
+  {
+    "name": "琥珀",
+    "text": "ホラー映画とか見せたら泣くかも…いや絶対泣くな！",
+    "characters": [
+      {
+        "side": "center",
+        "src": "e10401.webp"
+      }
+    ],
+    "expression": "04",
+    "expressionLabel": "悲しみ"
+  },
+  {
+    "name": "琥珀",
+    "text": "勉強も嫌いでさ、机に座るとすぐ体がうずくんだ！",
+    "characters": [
+      {
+        "side": "center",
+        "src": "e11001.webp"
+      }
+    ],
+    "expression": "10",
+    "expressionLabel": "軽い嫌悪"
+  },
+  {
+    "name": "琥珀",
+    "text": "でもでも、花も好きだったりして、乙女なとこもあるんだぞ！"
+  },
+  {
+    "name": "琥珀",
+    "text": "ちいさな鉢植えだけどガーベラとかを育ててるんだ！意外だろー！？",
+    "characters": [
+      {
+        "side": "center",
+        "src": "e11201.webp"
+      }
+    ],
+    "expression": "12",
+    "expressionLabel": "動揺"
+  },
+  {
+    "name": "琥珀",
+    "text": "性格は姉御肌！困ってるやつはほっとけないタイプだ！",
+    "characters": [
+      {
+        "side": "center",
+        "src": "e11101.webp"
+      }
+    ],
+    "expression": "11",
+    "expressionLabel": "心配不安"
+  },
+  {
+    "name": "琥珀",
+    "text": "でも先走ってドジしちゃうことも多いんだよな！"
+  },
+  {
+    "name": "琥珀",
+    "text": "まぁ、落ち込むより次！ってすぐ切り替えるんだ！"
+  },
+  {
+    "name": "琥珀",
+    "text": "オレ、単純明快！悩んでもすぐ忘れちゃうタイプ！"
+  },
+  {
+    "name": "琥珀",
+    "text": "店長のことは旦那って呼んでるぞ！"
+  },
+  {
+    "name": "琥珀",
+    "text": "緋奈は緋奈！藍は藍！翠は翠！こがねはこがね！"
+  },
+  {
+    "name": "琥珀",
+    "text": "他のみんなも呼び捨てか短く呼んでるな！"
+  },
+  {
+    "name": "琥珀",
+    "text": "敬語？そんなの普段はあんまり使わない！でも礼儀はあるつもり！"
+  },
+  {
+    "name": "琥珀",
+    "text": "相性？誰とでも仲良くやれる方だぞ！"
+  },
+  {
+    "name": "琥珀",
+    "text": "特に旦那と緋奈と翠とこがねとはバッチリ！",
+    "characters": [
+      {
+        "side": "center",
+        "src": "e10901.webp"
+      }
+    ],
+    "expression": "09",
+    "expressionLabel": "得意げ"
+  },
+  {
+    "name": "琥珀",
+    "text": "運動会やったら絶対優勝させるからなー！"
+  },
+  {
+    "name": "琥珀",
+    "text": "基本、体を動かして発散するタイプ！"
+  },
+  {
+    "name": "琥珀",
+    "text": "ストレス？走ってるうちにぶっとんじゃうんだ！"
+  },
+  {
+    "name": "琥珀",
+    "text": "イヤホンで音楽聴いてるときは話しかけんなよ！集中してるからな！"
+  },
+  {
+    "name": "琥珀",
+    "text": "でもまぁ、怒ってもすぐ忘れるから安心しろ！",
+    "characters": [
+      {
+        "side": "center",
+        "src": "e10301.webp"
+      }
+    ],
+    "expression": "03",
+    "expressionLabel": "怒り"
+  },
+  {
+    "name": "琥珀",
+    "text": "休日はジョギングと花の手入れ！あと寝坊も多いけどな！"
+  },
+  {
+    "name": "琥珀",
+    "text": "料理は苦手だけど肉料理だけは自信あり！",
+    "characters": [
+      {
+        "side": "center",
+        "src": "e11001.webp"
+      }
+    ],
+    "expression": "10",
+    "expressionLabel": "軽い嫌悪"
+  },
+  {
+    "name": "琥珀",
+    "text": "バーベキューの火加減は任せろ！",
+    "characters": [
+      {
+        "side": "center",
+        "src": "e10901.webp"
+      }
+    ],
+    "expression": "09",
+    "expressionLabel": "得意げ"
+  },
+  {
+    "name": "琥珀",
+    "text": "裁縫もできるけど、たまに縫い目が曲がる！ドジでしょ！？",
+    "characters": [
+      {
+        "side": "center",
+        "src": "e11201.webp"
+      }
+    ],
+    "expression": "12",
+    "expressionLabel": "動揺"
+  },
+  {
+    "name": "琥珀",
+    "text": "怖い話のときは絶対オレの隣にいてくれよ！",
+    "characters": [
+      {
+        "side": "center",
+        "src": "e11101.webp"
+      }
+    ],
+    "expression": "11",
+    "expressionLabel": "心配不安"
+  },
+  {
+    "name": "琥珀",
+    "text": "でないとマジでぎゅーってしがみついちゃうぞ！"
+  },
+  {
+    "name": "琥珀",
+    "text": "あー！でもオレ、元気いっぱいすぎて周り引くかも！？",
+    "characters": [
+      {
+        "side": "center",
+        "src": "e11201.webp"
+      }
+    ],
+    "expression": "12",
+    "expressionLabel": "動揺"
+  },
+  {
+    "name": "琥珀",
+    "text": "まぁ気にしない！元気が取り柄だしな！"
+  },
+  {
+    "name": "琥珀",
+    "text": "こんなオレだけど、旦那もみんなもよろしくなー！"
+  },
+  {
+    "name": "",
+    "text": "（琥珀の自己紹介を思い出に登録しました）"
+  },
+  {
+    "auto": true,
+    "wait": 500
+  }
+]

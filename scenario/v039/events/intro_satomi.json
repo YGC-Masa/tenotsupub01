@@ -1,0 +1,215 @@
+{
+  "id": "intro_satomi",
+  "title": "自己紹介：餅月 里美",
+  "return": {
+    "mode": "members"
+  },
+  "format": "v039_steps",
+  "sourceFormat": "legacy_array",
+  "steps": [
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "bgMode": "replace",
+      "speaker": "",
+      "text": "【自己紹介】餅月 里美",
+      "clearStorySprites": true
+    },
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "speaker": "",
+      "text": "（あ、いたいた里美ちゃん）"
+    },
+    {
+      "speaker": "店長",
+      "text": "おーい。さとみちゃーん"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "al",
+          "src": "images/assets/char/l10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "storySprites": [
+        {
+          "id": "al",
+          "src": "images/assets/char/l10201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "里美",
+      "text": "はい～、おつかれさまです～てんちょ～"
+    },
+    {
+      "speaker": "店長",
+      "text": "ちょっとさ、カメラに向かって自己紹介してもらってもいいかな？"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "al",
+          "src": "images/assets/char/l10601.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "里美",
+      "text": "えっと……自己紹介ですか～？"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "al",
+          "src": "images/assets/char/l10701.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "里美",
+      "text": "うーん、なんだか恥ずかしいですけど……がんばります～。"
+    },
+    {
+      "speaker": "里美",
+      "text": "自分、餅月 里美（もちづき さとみ）って言います～。"
+    },
+    {
+      "speaker": "里美",
+      "text": "“もちづき”って名前、もちもちしてるみたいで、ちょっと気に入ってます～。"
+    },
+    {
+      "speaker": "里美",
+      "text": "身長は155cmで、ちょっとぽっちゃりな感じです～。"
+    },
+    {
+      "speaker": "里美",
+      "text": "お菓子が大好きで、ついつい食べすぎちゃうこともあるんですけど……"
+    },
+    {
+      "speaker": "里美",
+      "text": "まあ、ゆる～く気にしてるくらいで、気楽にやってます～。"
+    },
+    {
+      "speaker": "里美",
+      "text": "お仕事は家電屋さんの事務をやってます～。"
+    },
+    {
+      "speaker": "里美",
+      "text": "伝票とか、数字とか…そういうのをパソコンでぽちぽちしてるのがメインです～。"
+    },
+    {
+      "speaker": "里美",
+      "text": "手先はけっこう器用で、細かい作業もわりと平気なんですよ～。"
+    },
+    {
+      "speaker": "里美",
+      "text": "家電はそんなに詳しくないですけど、"
+    },
+    {
+      "speaker": "里美",
+      "text": "便利そうなキッチン家電とか見てると「これならあのメニューが楽になるかな～」なんて、つい想像しちゃいます～。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "al",
+          "src": "images/assets/char/l11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "里美",
+      "text": "性格はのんびり屋で、あんまり急ぐのは苦手です～。"
+    },
+    {
+      "speaker": "里美",
+      "text": "みんなが忙しそうだと「大丈夫ですか～？」って声かけちゃう、ちょっとおせっかいさんかもです～。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "al",
+          "src": "images/assets/char/l10601.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "里美",
+      "text": "おしゃべりも好きで、みんなとゆったり過ごす時間はほんとにホッとします～。"
+    },
+    {
+      "speaker": "里美",
+      "text": "疲れてる人にはそっとお茶を渡したり、気づかいは小さなことから～って思ってます～。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "al",
+          "src": "images/assets/char/l11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "里美",
+      "text": "苦手なのは方向音痴なところで、地図を見てもつい迷っちゃいます～。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "al",
+          "src": "images/assets/char/l10701.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "里美",
+      "text": "あと、狭いところがちょっとドキドキしちゃって苦手なんです～。"
+    },
+    {
+      "speaker": "里美",
+      "text": "体型はちょっと気にしてますけど、まあまあ好きになろうって思ってます～。"
+    },
+    {
+      "speaker": "里美",
+      "text": "お菓子はやめられないので、その分少しだけ歩いたりして調整してる感じです～。"
+    },
+    {
+      "speaker": "里美",
+      "text": "休日は、ゆる～くカフェに行ったり、本を読んだり…"
+    },
+    {
+      "speaker": "里美",
+      "text": "かわいい雑貨屋さんをのぞくのも好きです～。"
+    },
+    {
+      "speaker": "里美",
+      "text": "ちょっとしたプレゼントを探す時間は、なんだかワクワクします～。"
+    },
+    {
+      "speaker": "里美",
+      "text": "こんな自分ですが、これからもよろしくお願いします～。"
+    },
+    {
+      "speaker": "",
+      "text": "（里美の自己紹介を思い出に登録しました）"
+    },
+    {
+      "speaker": "",
+      "text": "",
+      "auto": true,
+      "wait": 500
+    }
+  ]
+}

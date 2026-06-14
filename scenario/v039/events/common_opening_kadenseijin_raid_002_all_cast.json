@@ -1,0 +1,1406 @@
+{
+  "id": "common_opening_kadenseijin_raid_002_all_cast",
+  "title": "共通オープニング：家電星人襲来・全員登場版",
+  "return": {
+    "mode": "town",
+    "townTab": "other",
+    "eventId": "common_opening_kadenseijin_raid_002_all_cast"
+  },
+  "sourceVersion": "v039_95_asset_text_frame_fix",
+  "summary": "倉庫在庫消失事件をきっかけに、ひだまりストア全員が家電星人と出会う共通導入イベント。家電星人の謝罪、金属生成、売上黒字化を経て、店長が家電星人を接客対象として迎える流れ。",
+  "renderPolicy": {
+    "forceCenterSprites": false,
+    "enemyStoryFrame": "centerCard"
+  },
+  "steps": [
+    {
+      "bg": "images/assets/bgev/bg_office_hidamari.png",
+      "bgMode": "replace",
+      "speaker": "",
+      "text": "【共通オープニング】家電星人襲来・全員登場版",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "速水川 藍",
+      "text": "……むむむ。",
+      "bg": "images/assets/bgev/bg_office_hidamari.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ab",
+          "src": "images/assets/char/b10101.webp",
+          "side": "left",
+          "left": "27%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "草壁 萌",
+      "text": "……藍ちゃん、このカードって……。",
+      "bg": "images/assets/bgev/bg_office_hidamari.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "am",
+          "src": "images/assets/char/m10101.webp",
+          "side": "right",
+          "left": "73%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "速水川 藍",
+      "text": "悪い兆候……ですね。お店に、何か大きな変化が起きそうです。",
+      "bg": "images/assets/bgev/bg_office_hidamari.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ab",
+          "src": "images/assets/char/b10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "草壁 萌",
+      "text": "でも、こっちのカードは……うまく切り替えれば、事態が好転するって出てます。",
+      "bg": "images/assets/bgev/bg_office_hidamari.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "am",
+          "src": "images/assets/char/m10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "朝からずいぶん物騒な占いだな……。",
+      "bg": "images/assets/bgev/bg_office_hidamari.png",
+      "bgMode": "replace"
+    },
+    {
+      "speaker": "速水川 藍",
+      "text": "てんちょー、今日は全体的に気をつけた方がいいかもしれません。",
+      "bg": "images/assets/bgev/bg_office_hidamari.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ab",
+          "src": "images/assets/char/b10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "草壁 萌",
+      "text": "おにいちゃん……何もないといいけど。",
+      "bg": "images/assets/bgev/bg_office_hidamari.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "am",
+          "src": "images/assets/char/m10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "店長！　大変です！",
+      "bg": "images/assets/bgev/bg_office_hidamari.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "緋奈！？　どうした、そんなに慌てて。",
+      "bg": "images/assets/bgev/bg_office_hidamari.png",
+      "bgMode": "replace"
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "倉庫の在庫が……！",
+      "bg": "images/assets/bgev/bg_office_hidamari.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "なくなっています！！",
+      "bg": "images/assets/bgev/bg_office_hidamari.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "速水川 藍",
+      "text": "……占い、当たっちゃいました。",
+      "bg": "images/assets/bgev/bg_office_hidamari.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ab",
+          "src": "images/assets/char/b10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "草壁 萌",
+      "text": "おにいちゃん、早く行こう……！",
+      "bg": "images/assets/bgev/bg_office_hidamari.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "am",
+          "src": "images/assets/char/m10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "これは……本当に中身だけないな。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace"
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "テレビも、調理家電も、季節家電も……箱だけ残って、中身がすっからかんです！",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10101.webp",
+          "side": "left",
+          "left": "27%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "草壁 翠",
+      "text": "箱と説明書は残っている。通常の盗難にしては不自然ですね。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "right",
+          "left": "73%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "双沢 夜空",
+      "text": "……売り物だけ消えてるなら、最悪じゃない。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "氷神 雪乃",
+      "text": "商品が無いと……困りますね。お客様にも、お店にも……。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ag",
+          "src": "images/assets/char/g10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "紫藤 彩愛",
+      "text": "在庫表と照合いたしますわ。……いえ、照合するまでもなく、大損害ですわね。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ak",
+          "src": "images/assets/char/k10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "餅月 里美",
+      "text": "は～い……これ、給料日前に見る景色じゃないですね～。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "al",
+          "src": "images/assets/char/l10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "ん？え、今なんか動かなかった？　すみっこの箱のとこ！",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "芝桜 桃",
+      "text": "ウチも見た！　なんか、ぴょこってした！",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "aj",
+          "src": "images/assets/char/j10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "何かいる……？",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace"
+    },
+    {
+      "speaker": "家電星人",
+      "text": "……ゴメンナサイ。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "enemy_common_001",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "しゃ、しゃべった！？",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10101.webp",
+          "side": "left",
+          "left": "27%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "え、なにこの子！　家電？　生き物？　どっち！？",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10101.webp",
+          "side": "right",
+          "left": "73%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "お前は……何者だ？",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace"
+    },
+    {
+      "speaker": "家電星人",
+      "text": "ワタシタチ、家電星人。遠いところから来ました。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "enemy_common_001",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "家電星人",
+      "text": "でも……お腹が空いて、我慢できなくて……。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "enemy_common_001",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "家電星人",
+      "text": "この店の家電を、食べてしまいました。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "enemy_common_001",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "草壁 翠",
+      "text": "食べた……？　比喩ではなく、摂取したという意味ですか。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "家電星人",
+      "text": "ワタシタチにとって、家電はエネルギー。構造を理解して、からだを強くする大切なもの。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "enemy_common_001",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "家電星人",
+      "text": "一緒に入っていた説明書と、パソコンのデータも読みました。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "enemy_common_001",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "家電星人",
+      "text": "だから、この星の言葉と文化を、少しだけ覚えました。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "enemy_common_001",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "速水川 藍",
+      "text": "説明書とパソコンのデータで……言葉を。すごいような、怖いような……。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ab",
+          "src": "images/assets/char/b10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "草壁 萌",
+      "text": "悪気があったわけじゃ、なさそう……かな。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "am",
+          "src": "images/assets/char/m10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "……なんか、かわいい～！！",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "わかる！　ちっちゃいし、しょんぼりしてるし、なんか守りたくなる系じゃん！",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "双沢 夜空",
+      "text": "ふん。ばっかじゃないの。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "夜空ちゃん！？",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "双沢 夜空",
+      "text": "いくら可愛くても、こいつら商品をなくしちゃったのよ。泥棒と一緒よ。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "大道寺 真花",
+      "text": "で、でも……怖いエイリアン、という感じではなさそうです……。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "af",
+          "src": "images/assets/char/f10101.webp",
+          "side": "left",
+          "left": "27%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "ビューティマカロン星人",
+      "text": "ぴょんっ。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "enemy_beauty_macaron",
+          "src": "images/assets/enemy/enemy_beauty_macaron_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "大道寺 真花",
+      "text": "ひぃっ！？　こ、こっちにも来ましたぁ……！",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "af",
+          "src": "images/assets/char/f10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "双沢 美空",
+      "text": "真花ちゃん、落ち着いて。……たぶん、今のところは襲ってこないから。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10101.webp",
+          "side": "right",
+          "left": "73%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "氷神 雪乃",
+      "text": "商品がなくなったのは困りますが……お腹が空いていた、という事情は少し気の毒ですね。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ag",
+          "src": "images/assets/char/g10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "ね、店長。ゆるしてあげましょうよ。悪気はなさそうですし……。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "うんうん！　ちゃんと謝ってるし、まずは話聞いてあげよ？",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "しかしだな……。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace"
+    },
+    {
+      "speaker": "店長",
+      "text": "売り物はない。お金もない。このままだと、みんなの給料も払えない。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace"
+    },
+    {
+      "speaker": "餅月 里美",
+      "text": "そ、そ、それは自分、だいぶ困ります～。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "al",
+          "src": "images/assets/char/l10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "紫藤 彩愛",
+      "text": "経営としては、情だけで済ませられる状況ではございませんわね。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ak",
+          "src": "images/assets/char/k10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "双沢 夜空",
+      "text": "ほら。可愛いだけじゃ、店は回らない。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "家電星人",
+      "text": "ゴメンナサイ……。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "enemy_common_001",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "家電星人",
+      "text": "この星で、価値がありそうなもの……。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "enemy_common_001",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "家電星人",
+      "text": "吸収した物質から、生成できます。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "enemy_common_001",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "家電星人",
+      "text": "(ぷりっ。)……これ、どうぞ。",
+      "storySprites": [
+        {
+          "id": "enemy_common_001",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ],
+      "noBgChangeNote": "v039_96: この台詞表示時は直前背景を維持"
+    },
+    {
+      "speaker": "芝桜 桃",
+      "text": "これって……もしかして、う〇――",
+      "storySprites": [
+        {
+          "id": "aj",
+          "src": "images/assets/char/j11201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "双沢 美空",
+      "text": "やめなさい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10101.webp",
+          "side": "right",
+          "left": "73%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "芝桜 桃",
+      "text": "まだ最後まで言ってないじゃん！",
+      "storySprites": [
+        {
+          "id": "aj",
+          "src": "images/assets/char/j10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "双沢 美空",
+      "text": "言わなくていいの。絶対に。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "で、でも……きらきらしてるよ？",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "え、これガチで高そうじゃない？",
+      "storySprites": [
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "紫藤 彩愛",
+      "text": "これは……金塊では？",
+      "storySprites": [
+        {
+          "id": "ak",
+          "src": "images/assets/char/k10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "紫藤 彩愛",
+      "text": "里美さん。いかがですの？",
+      "storySprites": [
+        {
+          "id": "ak",
+          "src": "images/assets/char/k10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "餅月 里美",
+      "text": "は～い……見た目、重さ、質感……。",
+      "storySprites": [
+        {
+          "id": "al",
+          "src": "images/assets/char/l10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "餅月 里美",
+      "text": "金ですね～。たぶん、かなり純度高めです～。",
+      "storySprites": [
+        {
+          "id": "al",
+          "src": "images/assets/char/l10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "草壁 翠",
+      "text": "ちょっと拝見。",
+      "storySprites": [
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "草壁 翠",
+      "text": "……質量、体積、比重。ざっくりですが、金として見てよさそうです。",
+      "storySprites": [
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "草壁 翠",
+      "text": "いま1グラム……今日の相場で……。",
+      "storySprites": [
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "草壁 翠",
+      "text": "……！",
+      "storySprites": [
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "店長",
+      "text": "翠？",
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "草壁 翠",
+      "text": "店長。これ、換金して売り上げにしたら……。",
+      "storySprites": [
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "草壁 翠",
+      "text": "全然、黒字ですよ。",
+      "storySprites": [
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "餅月 里美",
+      "text": "収益が～、給料が～、息を吹き返しました～。",
+      "storySprites": [
+        {
+          "id": "al",
+          "src": "images/assets/char/l10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "紫藤 彩愛",
+      "text": "損害どころか、お得意様による臨時売上ですわね。",
+      "storySprites": [
+        {
+          "id": "ak",
+          "src": "images/assets/char/k10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "双沢 夜空",
+      "text": "……結果だけ見れば、だけど。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "速水川 藍",
+      "text": "悪い兆候から、事態が好転……。",
+      "storySprites": [
+        {
+          "id": "ab",
+          "src": "images/assets/char/b10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "草壁 萌",
+      "text": "タロットの通りになったね、藍ちゃん。",
+      "storySprites": [
+        {
+          "id": "am",
+          "src": "images/assets/char/m10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "noBgChangeNote": "v039_103: step 59-80 keep previous background"
+    },
+    {
+      "speaker": "店長",
+      "text": "よし！",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace"
+    },
+    {
+      "speaker": "店長",
+      "text": "あなたたちは、うちのお店でもてなす！",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace"
+    },
+    {
+      "speaker": "星野 緋奈",
+      "text": "やったー！　店長、さっすがぁ！",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "aa",
+          "src": "images/assets/char/a10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "小麦沢 こがね",
+      "text": "よかったね、家電星人ちゃんたち！",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ad",
+          "src": "images/assets/char/d10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "双沢 夜空",
+      "text": "……店長、売上確保って顔してる。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/i10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "双沢 美空",
+      "text": "でも、ちゃんと面倒を見るって決めたなら、私たちも協力しなきゃね。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "大道寺 真花",
+      "text": "こ、怖くない子からなら……わたしも、少しずつ頑張ります。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "af",
+          "src": "images/assets/char/f10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "氷神 雪乃",
+      "text": "必要な家電を、きちんと選んで差し上げればよいのですね。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ag",
+          "src": "images/assets/char/g10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "紫藤 彩愛",
+      "text": "無断で食べるのではなく、正しく購入していただく。大切なことですわ。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ak",
+          "src": "images/assets/char/k10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "餅月 里美",
+      "text": "お会計は自分にお任せください～。金でも現金でも、帳簿につけます～。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "al",
+          "src": "images/assets/char/l10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "草壁 翠",
+      "text": "金塊もこの形だと・・そうね。コインの形とかに出来ないかしら？",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ac",
+          "src": "images/assets/char/c10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "速水川 藍",
+      "text": "金貨だったら見た目もいいですね！",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ab",
+          "src": "images/assets/char/b10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "草壁 萌",
+      "text": "お腹が空きすぎないように、ちゃんと順番を決めてあげたいね。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "am",
+          "src": "images/assets/char/m10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "芝桜 桃",
+      "text": "ウチ、家電星人ちゃんの紹介動画撮りたい！　絶対バズるって！",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "aj",
+          "src": "images/assets/char/j10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "春日原 琥珀",
+      "text": "よかったな、おまえら～！",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "春日原 琥珀",
+      "text": "オレもお前らの面倒みるからなー！　困ったら遠慮なく言えよ！",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "家電星人",
+      "text": "アリガトウ……店長。ミナサン。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "enemy_common_001",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "家電星人",
+      "text": "これからは、ちゃんと買って、ちゃんと食べます。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace",
+      "storySprites": [
+        {
+          "id": "enemy_common_001",
+          "src": "images/assets/enemy/enemy_tv_popcorn_test.png",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1,
+          "frame": "enemy",
+          "variant": "storyEnemyCard"
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "・・・もういいって。これからよろしくな。",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace"
+    },
+    {
+      "speaker": "全員",
+      "text": "やったー！",
+      "bg": "images/assets/bgev/bg_large_product_warehouse.png",
+      "bgMode": "replace"
+    }
+  ]
+}

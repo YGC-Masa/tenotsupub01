@@ -1,0 +1,597 @@
+{
+  "scenario_id": "biribiri_intro_rival_battle_unlock_003_flow_fix",
+  "title": "ビリビリ電機登場：初来店と販売勝負",
+  "version": "v3",
+  "type": "rival_intro_event",
+  "recommended_position": "家電星人襲来後／通常営業チュートリアル後／対戦モード解放前",
+  "summary": "ひだまりストア店頭に、来店チャイムとともにビリビリ電機の小春・真冬・なつが来店。緋奈・こがね・翠が競合他社の敵情視察だと反応し、売上の秘密を探ろうとする小春たちとコミカルに衝突。挑発合戦の末、小春が販売勝負を宣言し、対戦モードが解放される。",
+  "characters": [
+    {
+      "id": "player",
+      "name": "店長"
+    },
+    {
+      "id": "ba",
+      "name": "天神 小春"
+    },
+    {
+      "id": "bb",
+      "name": "霧島 真冬"
+    },
+    {
+      "id": "bc",
+      "name": "日向 なつ"
+    },
+    {
+      "id": "aa",
+      "name": "星野 緋奈"
+    },
+    {
+      "id": "ac",
+      "name": "草壁 翠"
+    },
+    {
+      "id": "ad",
+      "name": "小麦沢 こがね"
+    },
+    {
+      "id": "enemy_common_001",
+      "name": "家電星人"
+    }
+  ],
+  "notes": [
+    "v3では冒頭の流れを、店長が店頭にいる→来店チャイムとともにビリビリ電機3人組が入店→緋奈たちが警戒→ビリビリ側の第一声、に整理した。",
+    "店長の家電星人に関する内心セリフは、表示テキスト上でも丸括弧付きにする。",
+    "v2では冒頭に緋奈・こがね・翠の警戒会話を追加。ひだまり側のコミカルな反論を強化する。",
+    "ビリビリ電機3人組の初登場イベント。小春は強気で挑発、真冬は商圏と売上の矛盾を分析、なつはマイペースに店を気に入る役割。",
+    "店長が珍しく店頭にいるところから始める。小春は店長を一般スタッフだと思い、途中で店長だと知って『はぁ？』と反応する。",
+    "ひだまりストアの好調理由は家電星人たちのおかげだが、ビリビリ側には明かしすぎない。店長の内心で軽く示す。",
+    "『ひだまりっていうか、ちんまりストア』の挑発から、ひだまり側が『こだわりストア』として言い返すコミカルノリ。",
+    "イベント終了時に対戦モードを解放する。初回販売勝負チュートリアルへ接続可能。",
+    "こがねは怒りと可愛さの評価が混ざり、翠が冷静にツッコミ役を担う。店長は反論に言葉遊びを混ぜようとして翠に止められる。"
+  ],
+  "assets": {
+    "backgrounds": {
+      "store_front": "images/assets/bg/battle_store_lv1.png",
+      "store_floor": "images/assets/bg/battle_store_lv1.png",
+      "store_floor_rival": "images/assets/bg/battle_store_lv1.png",
+      "versus_cutin": "images/assets/rival/biribiri_battle_eyecatch.jpeg"
+    },
+    "bgm": {
+      "daily_store": "bgm_daily_store_light",
+      "rival_sneak": "bgm_rival_sneak_comedy",
+      "comedy_tension": "bgm_comedy_tension",
+      "rival_challenge": "bgm_rival_challenge",
+      "mode_unlock": "bgm_mode_unlock_fanfare"
+    },
+    "sfx": {
+      "door_chime": "se_store_door_chime",
+      "footsteps": "se_three_people_steps",
+      "item_pick": "se_item_pick_light",
+      "question": "se_question_pop",
+      "impact": "se_impact_light",
+      "spark": "se_electric_spark",
+      "versus": "se_versus_slam",
+      "unlock": "se_mode_unlock"
+    }
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_001_storefront_unusual_manager",
+      "background": "store_front",
+      "bgm": "daily_store",
+      "lines": [
+        {
+          "speaker": "ナレーション",
+          "text": "その日、ひだまりストアの店頭には、珍しく店長が立っていた。"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "今日は店頭の様子も見ておくか。家電星人たちが来てから、客層も少し変わってきたしな。"
+        },
+        {
+          "cmd": "play_sfx",
+          "name": "door_chime"
+        },
+        {
+          "speaker": "？？？",
+          "text": "カランコロン♪"
+        },
+        {
+          "speaker": "ナレーション",
+          "text": "来店チャイムとともに、赤黒い制服の三人組が店内へ入ってきた。"
+        },
+        {
+          "speaker": "星野 緋奈",
+          "character_id": "aa",
+          "face": "normal",
+          "position": "left",
+          "text": "ね、店長。あの三人……明らかに競合他社の子っぽくない？"
+        },
+        {
+          "speaker": "小麦沢 こがね",
+          "character_id": "ad",
+          "face": "thinking",
+          "position": "right",
+          "text": "ん～、あれ、最近できたおっきい店の子たちかなー？ 赤黒の制服、めっちゃ目立つし。"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "堂々と敵情視察とはな……うちの恐ろしさを思い知るがよい……。"
+        },
+        {
+          "speaker": "草壁 翠",
+          "character_id": "ac",
+          "face": "tsukkomi",
+          "position": "center",
+          "text": "はいはい、店長。仕事してください。"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_002_biribiri_enters",
+      "background": "store_floor",
+      "bgm": "rival_sneak",
+      "lines": [
+        {
+          "cmd": "play_sfx",
+          "name": "footsteps"
+        },
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "smirk",
+          "position": "center",
+          "text": "へぇ、意外と狭いのね。"
+        },
+        {
+          "speaker": "霧島 真冬",
+          "character_id": "bb",
+          "face": "analysis",
+          "position": "right",
+          "text": "この大きさと、この商圏で一体……。"
+        },
+        {
+          "speaker": "日向 なつ",
+          "character_id": "bc",
+          "face": "smile",
+          "position": "left",
+          "text": "あちしは意外と好きだけどな～。なんか、あったかい感じするし～。"
+        },
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "confident",
+          "text": "なつ、視察中にのんびりしない。ビリビリ電機の名にかけて、敵情視察は真剣にやるの。"
+        },
+        {
+          "speaker": "日向 なつ",
+          "character_id": "bc",
+          "face": "smile",
+          "text": "は～い。小春ちゃん、今日もぴりぴりしてるね～。"
+        },
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "flustered",
+          "text": "ぴりぴりじゃなくて、ビリビリ！　うちの誇りでしょ！"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_003_store_inspection",
+      "background": "store_floor_rival",
+      "bgm": "rival_sneak",
+      "lines": [
+        {
+          "cmd": "play_sfx",
+          "name": "item_pick"
+        },
+        {
+          "speaker": "霧島 真冬",
+          "character_id": "bb",
+          "face": "thinking",
+          "position": "right",
+          "text": "棚数、導線、展示密度……いずれも大型店には及ばない。にもかかわらず、最近の評判は異常に高い。"
+        },
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "serious",
+          "position": "center",
+          "text": "そう。それが納得いかないのよ。こんな、ひだまりっていうか……。"
+        },
+        {
+          "speaker": "日向 なつ",
+          "character_id": "bc",
+          "face": "smile",
+          "position": "left",
+          "text": "ぽかぽかストア？"
+        },
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "grin",
+          "text": "ちんまりストア。"
+        },
+        {
+          "speaker": "日向 なつ",
+          "character_id": "bc",
+          "face": "surprised",
+          "text": "あ～、それはちょっと言いすぎかも～。"
+        },
+        {
+          "speaker": "霧島 真冬",
+          "character_id": "bb",
+          "face": "analysis",
+          "text": "ただ、規模に対して売上が見合っていないのは事実。何らかの特殊要因があると見るべきです。"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_004_koharu_catches_manager",
+      "background": "store_floor",
+      "bgm": "comedy_tension",
+      "lines": [
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "pointing",
+          "position": "center",
+          "text": "ちょっと、そこのあんた！"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "……俺？"
+        },
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "confident",
+          "text": "そう、あんた。ここの人でしょ？　この店、最近ずいぶん調子いいらしいじゃない。"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "まあ、ありがたいことにな。"
+        },
+        {
+          "speaker": "霧島 真冬",
+          "character_id": "bb",
+          "face": "cool",
+          "position": "right",
+          "text": "客単価、回転率、在庫消化速度、紹介率。可能な範囲で教えてください。"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "急に業務資料みたいな質問が来たな。"
+        },
+        {
+          "speaker": "日向 なつ",
+          "character_id": "bc",
+          "face": "smile",
+          "position": "left",
+          "text": "あちしはね～、休憩スペースがあるかだけ知りたいかな～。"
+        },
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "annoyed",
+          "text": "なつは黙ってて！　今、大事なところだから！"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_005_manager_revealed",
+      "background": "store_floor",
+      "bgm": "comedy_tension",
+      "lines": [
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "smirk",
+          "position": "center",
+          "text": "で、あんた。責任者呼んできて。話が早い人がいいわ。"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "一応、俺が店長なんだけど。"
+        },
+        {
+          "cmd": "play_sfx",
+          "name": "impact"
+        },
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "surprised",
+          "text": "はぁ！？　あんたが！？"
+        },
+        {
+          "speaker": "日向 なつ",
+          "character_id": "bc",
+          "face": "smile",
+          "position": "left",
+          "text": "へぇ～、店長さんだったんだ～。なんか普通っぽくていいね～。"
+        },
+        {
+          "speaker": "霧島 真冬",
+          "character_id": "bb",
+          "face": "analysis",
+          "position": "right",
+          "text": "店長が店頭に立つ小規模運営。人件費圧縮、接客密度向上……しかし、それだけでは説明不能。"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "まあ、色々あってな。"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "monologue": true,
+          "text": "（実は家電星人たちのおかげなんだけどな。さすがに初対面で説明する話でもない。）"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_006_hidamari_pushback",
+      "background": "store_floor",
+      "bgm": "comedy_tension",
+      "lines": [
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "provoking",
+          "position": "center",
+          "text": "ふーん。でも納得いかないわね。こんな、ひだまりっていうか、ちんまりストアのくせに。"
+        },
+        {
+          "cmd": "play_sfx",
+          "name": "impact"
+        },
+        {
+          "speaker": "星野 緋奈",
+          "character_id": "aa",
+          "face": "angry",
+          "position": "left",
+          "text": "なにおー！ うちはちんまりじゃなくて、あったかいお店なんだからね！"
+        },
+        {
+          "speaker": "小麦沢 こがね",
+          "character_id": "ad",
+          "face": "angry",
+          "position": "right",
+          "text": "そうだし！ てか、ちんまりって言い方かわいくない？ いや、でも失礼だし！"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "うちは、ひだまりストアのこだわりストアだ。おまえらこそ、おだまりストアだ！"
+        },
+        {
+          "speaker": "草壁 翠",
+          "character_id": "ac",
+          "face": "tsukkomi",
+          "position": "right",
+          "text": "小麦沢さん、怒る方向を統一してください。店長も反論に面白いことを混ぜて言おうとしないでください。"
+        },
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "flustered",
+          "position": "center",
+          "text": "な、なによその謎の語呂合わせ！ ちょっと悔しいじゃない！"
+        },
+        {
+          "speaker": "霧島 真冬",
+          "character_id": "bb",
+          "face": "analysis",
+          "position": "right",
+          "text": "店名を用いた即興反論。論理性は低いですが、場の空気を維持する効果はあります。"
+        },
+        {
+          "speaker": "日向 なつ",
+          "character_id": "bc",
+          "face": "smile",
+          "position": "left",
+          "text": "あちし、ちんまりもこだわりも、どっちもかわいいと思うけどな～。"
+        },
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "angry",
+          "text": "なつ！ そこで丸くしない！"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_007_suspicion_of_kadenseijin",
+      "background": "store_floor",
+      "bgm": "comedy_tension",
+      "lines": [
+        {
+          "cmd": "play_sfx",
+          "name": "question"
+        },
+        {
+          "speaker": "霧島 真冬",
+          "character_id": "bb",
+          "face": "thinking",
+          "position": "right",
+          "text": "……ただ、この店内。通常の客とは異なる導線の痕跡がありますね。大型家電売り場に妙な消耗跡がある。"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "ぎくっ。"
+        },
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "suspicious",
+          "position": "center",
+          "text": "ぎくって言った。今、ぎくって顔したわよね。"
+        },
+        {
+          "speaker": "星野 緋奈",
+          "character_id": "aa",
+          "face": "panic",
+          "position": "left",
+          "text": "し、してないしてない！　店長はいつも通りの店長だよ！"
+        },
+        {
+          "speaker": "小麦沢 こがね",
+          "character_id": "ad",
+          "face": "wink",
+          "position": "right",
+          "text": "そうそう！　うちはただ、ちょーっと個性的なお客様が多いだけだし！"
+        },
+        {
+          "speaker": "霧島 真冬",
+          "character_id": "bb",
+          "face": "analysis",
+          "text": "個性的なお客様。なるほど、特殊要因の候補として記録します。"
+        },
+        {
+          "speaker": "日向 なつ",
+          "character_id": "bc",
+          "face": "smile",
+          "position": "left",
+          "text": "お客さんが楽しいなら、いいんじゃないかな～。"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_008_challenge_declared",
+      "background": "store_floor",
+      "bgm": "rival_challenge",
+      "lines": [
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "angry",
+          "position": "center",
+          "text": "もう、納得いかない！"
+        },
+        {
+          "cmd": "play_sfx",
+          "name": "spark"
+        },
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "confident",
+          "text": "だったら、実際に販売勝負で決着つけてやるわ！"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "販売勝負？"
+        },
+        {
+          "speaker": "霧島 真冬",
+          "character_id": "bb",
+          "face": "cool",
+          "position": "right",
+          "text": "同一条件下での接客効率、売上、満足度、継続率を比較する。合理的です。"
+        },
+        {
+          "speaker": "日向 なつ",
+          "character_id": "bc",
+          "face": "smile",
+          "position": "left",
+          "text": "勝負か～。おもしろそうだね～。終わったらお茶しよ～。"
+        },
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "pointing",
+          "text": "あんたたち、逃げないでしょうね？"
+        },
+        {
+          "speaker": "星野 緋奈",
+          "character_id": "aa",
+          "face": "confident",
+          "position": "left",
+          "text": "逃げないよ！　店長とうちのみんなの接客、見せてあげるんだから！"
+        },
+        {
+          "speaker": "草壁 翠",
+          "character_id": "ac",
+          "face": "smile",
+          "position": "right",
+          "text": "売上条件と評価項目は、こちらでも確認させていただきます。公平な勝負なら、受ける価値はありますね。"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "よし。そこまで言うなら受けて立つ。ひだまりストアの接客、見せてやろう。"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_009_versus_mode_unlock",
+      "background": "versus_cutin",
+      "bgm": "mode_unlock",
+      "lines": [
+        {
+          "cmd": "play_sfx",
+          "name": "versus"
+        },
+        {
+          "speaker": "システム",
+          "text": "ビリビリ電機との販売勝負が始まります。"
+        },
+        {
+          "speaker": "天神 小春",
+          "character_id": "ba",
+          "face": "grin",
+          "position": "center",
+          "text": "覚悟しなさい、ひだまりストア！　うちが本物の販売力ってやつを見せてあげる！"
+        },
+        {
+          "speaker": "霧島 真冬",
+          "character_id": "bb",
+          "face": "cool",
+          "position": "right",
+          "text": "データで証明しましょう。どちらの接客が市場に適しているのかを。"
+        },
+        {
+          "speaker": "日向 なつ",
+          "character_id": "bc",
+          "face": "smile",
+          "position": "left",
+          "text": "店長さんたちも、小春ちゃんたちも、がんばれ～。あ、あちしたちもか～。"
+        },
+        {
+          "cmd": "play_sfx",
+          "name": "unlock"
+        },
+        {
+          "speaker": "システム",
+          "text": "対戦モードが解放されました。"
+        },
+        {
+          "cmd": "set_flag",
+          "name": "unlock_vs_biribiri",
+          "value": true
+        },
+        {
+          "cmd": "set_flag",
+          "name": "rival_intro_seen",
+          "value": true
+        },
+        {
+          "cmd": "next_tutorial",
+          "name": "tutorial_vs_battle_001"
+        }
+      ]
+    }
+  ]
+}

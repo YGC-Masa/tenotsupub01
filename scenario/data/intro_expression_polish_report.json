@@ -1,0 +1,3552 @@
+{
+  "version": "v037_85",
+  "description": "自己紹介シナリオへ現在の表情画像データを反映",
+  "rules": {
+    "source": "scenario/data/character_expressions.json",
+    "method": "speaker name + dialogue heuristic",
+    "fallback": "requested expression -> 微笑み -> 笑顔 -> 澄まし"
+  },
+  "files": {
+    "intro_ai.json": [
+      {
+        "index": 4,
+        "speaker": "藍",
+        "expression": "03",
+        "src": "b10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 6,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 7,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 8,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 9,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 10,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 11,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 12,
+        "speaker": "藍",
+        "expression": "02",
+        "src": "b10201.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 13,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 14,
+        "speaker": "藍",
+        "expression": "09",
+        "src": "b10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 15,
+        "speaker": "藍",
+        "expression": "02",
+        "src": "b10201.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 16,
+        "speaker": "藍",
+        "expression": "03",
+        "src": "b10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 17,
+        "speaker": "藍",
+        "expression": "02",
+        "src": "b10201.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 18,
+        "speaker": "藍",
+        "expression": "06",
+        "src": "b10601.webp",
+        "reason": "驚き"
+      },
+      {
+        "index": 19,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 20,
+        "speaker": "藍",
+        "expression": "11",
+        "src": "b11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 21,
+        "speaker": "藍",
+        "expression": "11",
+        "src": "b11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 22,
+        "speaker": "藍",
+        "expression": "09",
+        "src": "b10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 23,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 24,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 25,
+        "speaker": "藍",
+        "expression": "06",
+        "src": "b10601.webp",
+        "reason": "驚き"
+      },
+      {
+        "index": 26,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 27,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 28,
+        "speaker": "藍",
+        "expression": "02",
+        "src": "b10201.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 29,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 30,
+        "speaker": "藍",
+        "expression": "02",
+        "src": "b10201.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 31,
+        "speaker": "藍",
+        "expression": "02",
+        "src": "b10201.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 32,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 33,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 34,
+        "speaker": "藍",
+        "expression": "02",
+        "src": "b10201.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 35,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 36,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 37,
+        "speaker": "藍",
+        "expression": "01",
+        "src": "b10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 38,
+        "speaker": "藍",
+        "expression": "05",
+        "src": "b10501.webp",
+        "reason": "笑顔"
+      }
+    ],
+    "intro_ayame.json": [
+      {
+        "index": 4,
+        "speaker": "彩愛",
+        "expression": "03",
+        "src": "k10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 6,
+        "speaker": "彩愛",
+        "expression": "02",
+        "src": "k10201.webp",
+        "reason": "微笑み"
+      },
+      {
+        "index": 7,
+        "speaker": "彩愛",
+        "expression": "10",
+        "src": "k11001.webp",
+        "reason": "軽い嫌悪"
+      },
+      {
+        "index": 8,
+        "speaker": "彩愛",
+        "expression": "02",
+        "src": "k10201.webp",
+        "reason": "微笑み"
+      },
+      {
+        "index": 9,
+        "speaker": "彩愛",
+        "expression": "03",
+        "src": "k10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 10,
+        "speaker": "彩愛",
+        "expression": "02",
+        "src": "k10201.webp",
+        "reason": "微笑み"
+      },
+      {
+        "index": 11,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 12,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 13,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 14,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 15,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 16,
+        "speaker": "彩愛",
+        "expression": "10",
+        "src": "k11001.webp",
+        "reason": "軽い嫌悪"
+      },
+      {
+        "index": 17,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 18,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 19,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 20,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 21,
+        "speaker": "彩愛",
+        "expression": "02",
+        "src": "k10201.webp",
+        "reason": "微笑み"
+      },
+      {
+        "index": 22,
+        "speaker": "彩愛",
+        "expression": "09",
+        "src": "k10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 23,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 24,
+        "speaker": "彩愛",
+        "expression": "08",
+        "src": "k10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 25,
+        "speaker": "彩愛",
+        "expression": "09",
+        "src": "k10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 26,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 27,
+        "speaker": "彩愛",
+        "expression": "06",
+        "src": "k10601.webp",
+        "reason": "驚き"
+      },
+      {
+        "index": 28,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 29,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 30,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 31,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 32,
+        "speaker": "彩愛",
+        "expression": "03",
+        "src": "k10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 33,
+        "speaker": "彩愛",
+        "expression": "08",
+        "src": "k10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 34,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 35,
+        "speaker": "彩愛",
+        "expression": "02",
+        "src": "k10201.webp",
+        "reason": "微笑み"
+      },
+      {
+        "index": 36,
+        "speaker": "彩愛",
+        "expression": "03",
+        "src": "k10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 37,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 38,
+        "speaker": "彩愛",
+        "expression": "03",
+        "src": "k10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 39,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 40,
+        "speaker": "彩愛",
+        "expression": "02",
+        "src": "k10201.webp",
+        "reason": "微笑み"
+      },
+      {
+        "index": 41,
+        "speaker": "彩愛",
+        "expression": "09",
+        "src": "k10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 42,
+        "speaker": "彩愛",
+        "expression": "03",
+        "src": "k10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 43,
+        "speaker": "彩愛",
+        "expression": "05",
+        "src": "k10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 44,
+        "speaker": "彩愛",
+        "expression": "02",
+        "src": "k10201.webp",
+        "reason": "微笑み"
+      },
+      {
+        "index": 45,
+        "speaker": "彩愛",
+        "expression": "02",
+        "src": "k10201.webp",
+        "reason": "微笑み"
+      },
+      {
+        "index": 46,
+        "speaker": "彩愛",
+        "expression": "03",
+        "src": "k10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 47,
+        "speaker": "彩愛",
+        "expression": "01",
+        "src": "k10101.webp",
+        "reason": "澄まし"
+      }
+    ],
+    "intro_hina.json": [
+      {
+        "index": 4,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 6,
+        "speaker": "緋奈",
+        "expression": "03",
+        "src": "a10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 7,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 8,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 9,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 10,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 11,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 12,
+        "speaker": "緋奈",
+        "expression": "09",
+        "src": "a10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 13,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 14,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 15,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 16,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 17,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 18,
+        "speaker": "緋奈",
+        "expression": "07",
+        "src": "a10701.webp",
+        "reason": "照れ"
+      },
+      {
+        "index": 19,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 20,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 21,
+        "speaker": "緋奈",
+        "expression": "08",
+        "src": "a10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 22,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 23,
+        "speaker": "緋奈",
+        "expression": "09",
+        "src": "a10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 24,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 25,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 26,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 27,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 28,
+        "speaker": "緋奈",
+        "expression": "06",
+        "src": "a10601.webp",
+        "reason": "驚き"
+      },
+      {
+        "index": 29,
+        "speaker": "緋奈",
+        "expression": "08",
+        "src": "a10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 30,
+        "speaker": "緋奈",
+        "expression": "08",
+        "src": "a10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 31,
+        "speaker": "緋奈",
+        "expression": "10",
+        "src": "a11001.webp",
+        "reason": "軽い嫌悪"
+      },
+      {
+        "index": 32,
+        "speaker": "緋奈",
+        "expression": "11",
+        "src": "a11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 33,
+        "speaker": "緋奈",
+        "expression": "11",
+        "src": "a11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 34,
+        "speaker": "緋奈",
+        "expression": "08",
+        "src": "a10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 35,
+        "speaker": "緋奈",
+        "expression": "10",
+        "src": "a11001.webp",
+        "reason": "軽い嫌悪"
+      },
+      {
+        "index": 36,
+        "speaker": "緋奈",
+        "expression": "08",
+        "src": "a10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 37,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 38,
+        "speaker": "緋奈",
+        "expression": "03",
+        "src": "a10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 39,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 40,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 41,
+        "speaker": "緋奈",
+        "expression": "08",
+        "src": "a10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 42,
+        "speaker": "緋奈",
+        "expression": "03",
+        "src": "a10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 43,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 44,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 45,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 46,
+        "speaker": "緋奈",
+        "expression": "03",
+        "src": "a10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 47,
+        "speaker": "緋奈",
+        "expression": "03",
+        "src": "a10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 48,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 49,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 50,
+        "speaker": "緋奈",
+        "expression": "01",
+        "src": "a10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 51,
+        "speaker": "緋奈",
+        "expression": "07",
+        "src": "a10701.webp",
+        "reason": "照れ"
+      },
+      {
+        "index": 52,
+        "speaker": "緋奈",
+        "expression": "12",
+        "src": "a11201.webp",
+        "reason": "動揺系"
+      }
+    ],
+    "intro_kogane.json": [
+      {
+        "index": 4,
+        "speaker": "こがね",
+        "expression": "01",
+        "src": "d10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 6,
+        "speaker": "こがね",
+        "expression": "05",
+        "src": "d10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 7,
+        "speaker": "こがね",
+        "expression": "01",
+        "src": "d10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 8,
+        "speaker": "こがね",
+        "expression": "01",
+        "src": "d10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 9,
+        "speaker": "こがね",
+        "expression": "05",
+        "src": "d10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 10,
+        "speaker": "こがね",
+        "expression": "01",
+        "src": "d10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 11,
+        "speaker": "こがね",
+        "expression": "10",
+        "src": "d11001.webp",
+        "reason": "軽い嫌悪"
+      },
+      {
+        "index": 12,
+        "speaker": "こがね",
+        "expression": "01",
+        "src": "d10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 13,
+        "speaker": "こがね",
+        "expression": "08",
+        "src": "d10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 14,
+        "speaker": "こがね",
+        "expression": "08",
+        "src": "d10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 15,
+        "speaker": "こがね",
+        "expression": "11",
+        "src": "d11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 16,
+        "speaker": "こがね",
+        "expression": "01",
+        "src": "d10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 17,
+        "speaker": "こがね",
+        "expression": "05",
+        "src": "d10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 18,
+        "speaker": "こがね",
+        "expression": "01",
+        "src": "d10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 19,
+        "speaker": "こがね",
+        "expression": "01",
+        "src": "d10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 20,
+        "speaker": "こがね",
+        "expression": "02",
+        "src": "d10201.webp",
+        "reason": "動揺系"
+      },
+      {
+        "index": 21,
+        "speaker": "こがね",
+        "expression": "01",
+        "src": "d10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 22,
+        "speaker": "こがね",
+        "expression": "09",
+        "src": "d10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 23,
+        "speaker": "こがね",
+        "expression": "01",
+        "src": "d10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 24,
+        "speaker": "こがね",
+        "expression": "09",
+        "src": "d10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 25,
+        "speaker": "こがね",
+        "expression": "01",
+        "src": "d10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 26,
+        "speaker": "こがね",
+        "expression": "01",
+        "src": "d10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 27,
+        "speaker": "こがね",
+        "expression": "01",
+        "src": "d10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 28,
+        "speaker": "こがね",
+        "expression": "01",
+        "src": "d10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 29,
+        "speaker": "こがね",
+        "expression": "09",
+        "src": "d10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 30,
+        "speaker": "こがね",
+        "expression": "01",
+        "src": "d10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 31,
+        "speaker": "こがね",
+        "expression": "08",
+        "src": "d10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 32,
+        "speaker": "こがね",
+        "expression": "08",
+        "src": "d10801.webp",
+        "reason": "期待"
+      }
+    ],
+    "intro_kohaku.json": [
+      {
+        "index": 4,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 6,
+        "speaker": "琥珀",
+        "expression": "12",
+        "src": "e11201.webp",
+        "reason": "動揺系"
+      },
+      {
+        "index": 7,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 8,
+        "speaker": "琥珀",
+        "expression": "09",
+        "src": "e10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 9,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 10,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 11,
+        "speaker": "琥珀",
+        "expression": "08",
+        "src": "e10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 12,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 13,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 14,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 15,
+        "speaker": "琥珀",
+        "expression": "08",
+        "src": "e10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 16,
+        "speaker": "琥珀",
+        "expression": "08",
+        "src": "e10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 17,
+        "speaker": "琥珀",
+        "expression": "11",
+        "src": "e11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 18,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 19,
+        "speaker": "琥珀",
+        "expression": "12",
+        "src": "e11201.webp",
+        "reason": "動揺系"
+      },
+      {
+        "index": 20,
+        "speaker": "琥珀",
+        "expression": "11",
+        "src": "e11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 21,
+        "speaker": "琥珀",
+        "expression": "04",
+        "src": "e10401.webp",
+        "reason": "悲しみ"
+      },
+      {
+        "index": 22,
+        "speaker": "琥珀",
+        "expression": "10",
+        "src": "e11001.webp",
+        "reason": "軽い嫌悪"
+      },
+      {
+        "index": 23,
+        "speaker": "琥珀",
+        "expression": "08",
+        "src": "e10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 24,
+        "speaker": "琥珀",
+        "expression": "12",
+        "src": "e11201.webp",
+        "reason": "動揺系"
+      },
+      {
+        "index": 25,
+        "speaker": "琥珀",
+        "expression": "11",
+        "src": "e11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 26,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 27,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 28,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 29,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 30,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 31,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 32,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 33,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 34,
+        "speaker": "琥珀",
+        "expression": "09",
+        "src": "e10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 35,
+        "speaker": "琥珀",
+        "expression": "09",
+        "src": "e10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 36,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 37,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 38,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 39,
+        "speaker": "琥珀",
+        "expression": "03",
+        "src": "e10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 40,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 41,
+        "speaker": "琥珀",
+        "expression": "11",
+        "src": "e11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 42,
+        "speaker": "琥珀",
+        "expression": "09",
+        "src": "e10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 43,
+        "speaker": "琥珀",
+        "expression": "12",
+        "src": "e11201.webp",
+        "reason": "動揺系"
+      },
+      {
+        "index": 44,
+        "speaker": "琥珀",
+        "expression": "11",
+        "src": "e11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 45,
+        "speaker": "琥珀",
+        "expression": "01",
+        "src": "e10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 46,
+        "speaker": "琥珀",
+        "expression": "12",
+        "src": "e11201.webp",
+        "reason": "動揺系"
+      },
+      {
+        "index": 47,
+        "speaker": "琥珀",
+        "expression": "09",
+        "src": "e10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 48,
+        "speaker": "琥珀",
+        "expression": "05",
+        "src": "e10501.webp",
+        "reason": "笑顔"
+      }
+    ],
+    "intro_manaka.json": [
+      {
+        "index": 4,
+        "speaker": "真花",
+        "expression": "01",
+        "src": "f10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 6,
+        "speaker": "真花",
+        "expression": "12",
+        "src": "f11201.webp",
+        "reason": "動揺系"
+      },
+      {
+        "index": 7,
+        "speaker": "真花",
+        "expression": "11",
+        "src": "f11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 8,
+        "speaker": "真花",
+        "expression": "01",
+        "src": "f10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 9,
+        "speaker": "真花",
+        "expression": "12",
+        "src": "f11201.webp",
+        "reason": "動揺系"
+      },
+      {
+        "index": 10,
+        "speaker": "真花",
+        "expression": "11",
+        "src": "f11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 11,
+        "speaker": "真花",
+        "expression": "01",
+        "src": "f10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 12,
+        "speaker": "真花",
+        "expression": "01",
+        "src": "f10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 13,
+        "speaker": "真花",
+        "expression": "01",
+        "src": "f10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 14,
+        "speaker": "真花",
+        "expression": "01",
+        "src": "f10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 15,
+        "speaker": "真花",
+        "expression": "01",
+        "src": "f10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 16,
+        "speaker": "真花",
+        "expression": "01",
+        "src": "f10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 17,
+        "speaker": "真花",
+        "expression": "11",
+        "src": "f11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 18,
+        "speaker": "真花",
+        "expression": "01",
+        "src": "f10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 19,
+        "speaker": "真花",
+        "expression": "01",
+        "src": "f10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 20,
+        "speaker": "真花",
+        "expression": "03",
+        "src": "f10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 21,
+        "speaker": "真花",
+        "expression": "01",
+        "src": "f10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 22,
+        "speaker": "真花",
+        "expression": "08",
+        "src": "f10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 23,
+        "speaker": "真花",
+        "expression": "11",
+        "src": "f11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 24,
+        "speaker": "真花",
+        "expression": "08",
+        "src": "f10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 25,
+        "speaker": "真花",
+        "expression": "08",
+        "src": "f10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 26,
+        "speaker": "真花",
+        "expression": "01",
+        "src": "f10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 27,
+        "speaker": "真花",
+        "expression": "01",
+        "src": "f10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 28,
+        "speaker": "真花",
+        "expression": "01",
+        "src": "f10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 29,
+        "speaker": "真花",
+        "expression": "03",
+        "src": "f10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 30,
+        "speaker": "真花",
+        "expression": "11",
+        "src": "f11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 31,
+        "speaker": "真花",
+        "expression": "07",
+        "src": "f10701.webp",
+        "reason": "照れ"
+      },
+      {
+        "index": 32,
+        "speaker": "真花",
+        "expression": "07",
+        "src": "f10701.webp",
+        "reason": "照れ"
+      },
+      {
+        "index": 33,
+        "speaker": "真花",
+        "expression": "11",
+        "src": "f11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 34,
+        "speaker": "真花",
+        "expression": "05",
+        "src": "f10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 35,
+        "speaker": "真花",
+        "expression": "05",
+        "src": "f10501.webp",
+        "reason": "笑顔"
+      }
+    ],
+    "intro_midori.json": [
+      {
+        "index": 4,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 6,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 7,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 8,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 9,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 10,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 11,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 12,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 13,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 14,
+        "speaker": "翠",
+        "expression": "02",
+        "src": "c10201.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 15,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 16,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 17,
+        "speaker": "翠",
+        "expression": "09",
+        "src": "c10902.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 18,
+        "speaker": "翠",
+        "expression": "09",
+        "src": "c10902.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 19,
+        "speaker": "翠",
+        "expression": "11",
+        "src": "c11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 20,
+        "speaker": "翠",
+        "expression": "11",
+        "src": "c11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 21,
+        "speaker": "翠",
+        "expression": "02",
+        "src": "c10201.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 22,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 23,
+        "speaker": "翠",
+        "expression": "02",
+        "src": "c10201.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 24,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 25,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 26,
+        "speaker": "翠",
+        "expression": "10",
+        "src": "c11001.webp",
+        "reason": "軽い嫌悪"
+      },
+      {
+        "index": 27,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 28,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 29,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 30,
+        "speaker": "翠",
+        "expression": "10",
+        "src": "c11001.webp",
+        "reason": "軽い嫌悪"
+      },
+      {
+        "index": 31,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 32,
+        "speaker": "翠",
+        "expression": "04",
+        "src": "c10401.webp",
+        "reason": "悲しみ"
+      },
+      {
+        "index": 33,
+        "speaker": "翠",
+        "expression": "04",
+        "src": "c10401.webp",
+        "reason": "悲しみ"
+      },
+      {
+        "index": 34,
+        "speaker": "翠",
+        "expression": "11",
+        "src": "c11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 35,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 36,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 37,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 38,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 39,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 40,
+        "speaker": "翠",
+        "expression": "11",
+        "src": "c11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 41,
+        "speaker": "翠",
+        "expression": "01",
+        "src": "c10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 42,
+        "speaker": "翠",
+        "expression": "05",
+        "src": "c10501.webp",
+        "reason": "笑顔"
+      }
+    ],
+    "intro_misora.json": [
+      {
+        "index": 4,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 6,
+        "speaker": "美空",
+        "expression": "06",
+        "src": "h10601.webp",
+        "reason": "驚き"
+      },
+      {
+        "index": 7,
+        "speaker": "美空",
+        "expression": "07",
+        "src": "h10701.webp",
+        "reason": "照れ"
+      },
+      {
+        "index": 8,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 9,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 10,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 11,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 12,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 13,
+        "speaker": "美空",
+        "expression": "12",
+        "src": "h11201.webp",
+        "reason": "動揺系"
+      },
+      {
+        "index": 14,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 15,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 16,
+        "speaker": "美空",
+        "expression": "03",
+        "src": "h10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 17,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 18,
+        "speaker": "美空",
+        "expression": "08",
+        "src": "h10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 19,
+        "speaker": "美空",
+        "expression": "08",
+        "src": "h10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 20,
+        "speaker": "美空",
+        "expression": "09",
+        "src": "h10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 21,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 22,
+        "speaker": "美空",
+        "expression": "08",
+        "src": "h10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 23,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 24,
+        "speaker": "美空",
+        "expression": "11",
+        "src": "h11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 25,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 26,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 27,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 28,
+        "speaker": "美空",
+        "expression": "11",
+        "src": "h11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 29,
+        "speaker": "美空",
+        "expression": "11",
+        "src": "h11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 30,
+        "speaker": "美空",
+        "expression": "06",
+        "src": "h10601.webp",
+        "reason": "驚き"
+      },
+      {
+        "index": 31,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 32,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 33,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 34,
+        "speaker": "美空",
+        "expression": "09",
+        "src": "h10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 35,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 36,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 37,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 38,
+        "speaker": "美空",
+        "expression": "08",
+        "src": "h10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 39,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 40,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 41,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 42,
+        "speaker": "美空",
+        "expression": "03",
+        "src": "h10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 43,
+        "speaker": "美空",
+        "expression": "01",
+        "src": "h10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 44,
+        "speaker": "美空",
+        "expression": "12",
+        "src": "h11201.webp",
+        "reason": "動揺系"
+      }
+    ],
+    "intro_moe.json": [
+      {
+        "index": 4,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 6,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 7,
+        "speaker": "萌",
+        "expression": "12",
+        "src": "m11201.webp",
+        "reason": "動揺系"
+      },
+      {
+        "index": 8,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 9,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 10,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 11,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 12,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 13,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 14,
+        "speaker": "萌",
+        "expression": "03",
+        "src": "m10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 15,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 16,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 17,
+        "speaker": "萌",
+        "expression": "09",
+        "src": "m10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 18,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 19,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 20,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 21,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 22,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 23,
+        "speaker": "萌",
+        "expression": "03",
+        "src": "m10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 24,
+        "speaker": "萌",
+        "expression": "08",
+        "src": "m10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 25,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 26,
+        "speaker": "萌",
+        "expression": "09",
+        "src": "m10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 27,
+        "speaker": "萌",
+        "expression": "09",
+        "src": "m10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 28,
+        "speaker": "萌",
+        "expression": "09",
+        "src": "m10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 29,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 30,
+        "speaker": "萌",
+        "expression": "03",
+        "src": "m10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 31,
+        "speaker": "萌",
+        "expression": "11",
+        "src": "m11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 32,
+        "speaker": "萌",
+        "expression": "06",
+        "src": "m10601.webp",
+        "reason": "驚き"
+      },
+      {
+        "index": 33,
+        "speaker": "萌",
+        "expression": "09",
+        "src": "m10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 34,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 35,
+        "speaker": "萌",
+        "expression": "08",
+        "src": "m10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 36,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 37,
+        "speaker": "萌",
+        "expression": "08",
+        "src": "m10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 38,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 39,
+        "speaker": "萌",
+        "expression": "11",
+        "src": "m11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 40,
+        "speaker": "萌",
+        "expression": "08",
+        "src": "m10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 41,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 42,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 43,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 44,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 45,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 46,
+        "speaker": "萌",
+        "expression": "09",
+        "src": "m10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 47,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 48,
+        "speaker": "萌",
+        "expression": "08",
+        "src": "m10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 49,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 50,
+        "speaker": "萌",
+        "expression": "01",
+        "src": "m10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 51,
+        "speaker": "萌",
+        "expression": "05",
+        "src": "m10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 52,
+        "speaker": "萌",
+        "expression": "05",
+        "src": "m10501.webp",
+        "reason": "笑顔"
+      }
+    ],
+    "intro_momo.json": [
+      {
+        "index": 4,
+        "speaker": "桃",
+        "expression": "05",
+        "src": "j10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 6,
+        "speaker": "桃",
+        "expression": "12",
+        "src": "j11201.webp",
+        "reason": "動揺系"
+      },
+      {
+        "index": 7,
+        "speaker": "桃",
+        "expression": "05",
+        "src": "j10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 8,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 9,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 10,
+        "speaker": "桃",
+        "expression": "08",
+        "src": "j10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 11,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 12,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 13,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 14,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 15,
+        "speaker": "桃",
+        "expression": "05",
+        "src": "j10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 16,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 17,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 18,
+        "speaker": "桃",
+        "expression": "05",
+        "src": "j10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 19,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 20,
+        "speaker": "桃",
+        "expression": "08",
+        "src": "j10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 21,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 22,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 23,
+        "speaker": "桃",
+        "expression": "11",
+        "src": "j11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 24,
+        "speaker": "桃",
+        "expression": "11",
+        "src": "j11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 25,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 26,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 27,
+        "speaker": "桃",
+        "expression": "05",
+        "src": "j10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 28,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 29,
+        "speaker": "桃",
+        "expression": "08",
+        "src": "j10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 30,
+        "speaker": "桃",
+        "expression": "08",
+        "src": "j10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 31,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 32,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 33,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 34,
+        "speaker": "桃",
+        "expression": "05",
+        "src": "j10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 35,
+        "speaker": "桃",
+        "expression": "09",
+        "src": "j10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 36,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 37,
+        "speaker": "桃",
+        "expression": "08",
+        "src": "j10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 38,
+        "speaker": "桃",
+        "expression": "12",
+        "src": "j11201.webp",
+        "reason": "動揺系"
+      },
+      {
+        "index": 39,
+        "speaker": "桃",
+        "expression": "11",
+        "src": "j11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 40,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 41,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 42,
+        "speaker": "桃",
+        "expression": "08",
+        "src": "j10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 43,
+        "speaker": "桃",
+        "expression": "08",
+        "src": "j10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 44,
+        "speaker": "桃",
+        "expression": "05",
+        "src": "j10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 45,
+        "speaker": "桃",
+        "expression": "05",
+        "src": "j10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 46,
+        "speaker": "桃",
+        "expression": "01",
+        "src": "j10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 47,
+        "speaker": "桃",
+        "expression": "05",
+        "src": "j10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 48,
+        "speaker": "桃",
+        "expression": "12",
+        "src": "j11201.webp",
+        "reason": "動揺系"
+      }
+    ],
+    "intro_satomi.json": [
+      {
+        "index": 4,
+        "speaker": "里美",
+        "expression": "01",
+        "src": "l10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 6,
+        "speaker": "里美",
+        "expression": "01",
+        "src": "l10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 7,
+        "speaker": "里美",
+        "expression": "07",
+        "src": "l10701.webp",
+        "reason": "照れ"
+      },
+      {
+        "index": 8,
+        "speaker": "里美",
+        "expression": "01",
+        "src": "l10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 9,
+        "speaker": "里美",
+        "expression": "01",
+        "src": "l10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 10,
+        "speaker": "里美",
+        "expression": "01",
+        "src": "l10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 11,
+        "speaker": "里美",
+        "expression": "08",
+        "src": "l10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 12,
+        "speaker": "里美",
+        "expression": "01",
+        "src": "l10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 13,
+        "speaker": "里美",
+        "expression": "01",
+        "src": "l10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 14,
+        "speaker": "里美",
+        "expression": "01",
+        "src": "l10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 15,
+        "speaker": "里美",
+        "expression": "03",
+        "src": "l10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 16,
+        "speaker": "里美",
+        "expression": "01",
+        "src": "l10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 17,
+        "speaker": "里美",
+        "expression": "01",
+        "src": "l10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 18,
+        "speaker": "里美",
+        "expression": "11",
+        "src": "l11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 19,
+        "speaker": "里美",
+        "expression": "01",
+        "src": "l10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 20,
+        "speaker": "里美",
+        "expression": "06",
+        "src": "l10601.webp",
+        "reason": "驚き"
+      },
+      {
+        "index": 21,
+        "speaker": "里美",
+        "expression": "01",
+        "src": "l10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 22,
+        "speaker": "里美",
+        "expression": "11",
+        "src": "l11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 23,
+        "speaker": "里美",
+        "expression": "07",
+        "src": "l10701.webp",
+        "reason": "照れ"
+      },
+      {
+        "index": 24,
+        "speaker": "里美",
+        "expression": "08",
+        "src": "l10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 25,
+        "speaker": "里美",
+        "expression": "10",
+        "src": "l11001.webp",
+        "reason": "軽い嫌悪"
+      },
+      {
+        "index": 26,
+        "speaker": "里美",
+        "expression": "01",
+        "src": "l10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 27,
+        "speaker": "里美",
+        "expression": "08",
+        "src": "l10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 28,
+        "speaker": "里美",
+        "expression": "01",
+        "src": "l10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 29,
+        "speaker": "里美",
+        "expression": "05",
+        "src": "l10501.webp",
+        "reason": "笑顔"
+      }
+    ],
+    "intro_yozora.json": [
+      {
+        "index": 4,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 6,
+        "speaker": "夜空",
+        "expression": "03",
+        "src": "i10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 7,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 8,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 9,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 10,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 11,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 12,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 13,
+        "speaker": "夜空",
+        "expression": "11",
+        "src": "i11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 14,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 15,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 16,
+        "speaker": "夜空",
+        "expression": "03",
+        "src": "i10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 17,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 18,
+        "speaker": "夜空",
+        "expression": "10",
+        "src": "i11001.webp",
+        "reason": "軽い嫌悪"
+      },
+      {
+        "index": 19,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 20,
+        "speaker": "夜空",
+        "expression": "09",
+        "src": "i10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 21,
+        "speaker": "夜空",
+        "expression": "09",
+        "src": "i10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 22,
+        "speaker": "夜空",
+        "expression": "09",
+        "src": "i10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 23,
+        "speaker": "夜空",
+        "expression": "08",
+        "src": "i10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 24,
+        "speaker": "夜空",
+        "expression": "03",
+        "src": "i10301.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 25,
+        "speaker": "夜空",
+        "expression": "11",
+        "src": "i11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 26,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 27,
+        "speaker": "夜空",
+        "expression": "10",
+        "src": "i11001.webp",
+        "reason": "軽い嫌悪"
+      },
+      {
+        "index": 28,
+        "speaker": "夜空",
+        "expression": "11",
+        "src": "i11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 29,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 30,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 31,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 32,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 33,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 34,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 35,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 36,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 37,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 38,
+        "speaker": "夜空",
+        "expression": "08",
+        "src": "i10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 39,
+        "speaker": "夜空",
+        "expression": "09",
+        "src": "i10901.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 40,
+        "speaker": "夜空",
+        "expression": "11",
+        "src": "i11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 41,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 42,
+        "speaker": "夜空",
+        "expression": "08",
+        "src": "i10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 43,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 44,
+        "speaker": "夜空",
+        "expression": "08",
+        "src": "i10801.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 45,
+        "speaker": "夜空",
+        "expression": "11",
+        "src": "i11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 46,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 47,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 48,
+        "speaker": "夜空",
+        "expression": "05",
+        "src": "i10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 49,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 50,
+        "speaker": "夜空",
+        "expression": "01",
+        "src": "i10101.webp",
+        "reason": "笑顔"
+      }
+    ],
+    "intro_yukino.json": [
+      {
+        "index": 4,
+        "speaker": "雪乃",
+        "expression": "02",
+        "src": "g10201.webp",
+        "reason": "怒り"
+      },
+      {
+        "index": 6,
+        "speaker": "雪乃",
+        "expression": "02",
+        "src": "g10201.webp",
+        "reason": "微笑み"
+      },
+      {
+        "index": 7,
+        "speaker": "雪乃",
+        "expression": "02",
+        "src": "g10201.webp",
+        "reason": "微笑み"
+      },
+      {
+        "index": 8,
+        "speaker": "雪乃",
+        "expression": "01",
+        "src": "g10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 9,
+        "speaker": "雪乃",
+        "expression": "07",
+        "src": "g10701.webp",
+        "reason": "照れ"
+      },
+      {
+        "index": 10,
+        "speaker": "雪乃",
+        "expression": "01",
+        "src": "g10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 11,
+        "speaker": "雪乃",
+        "expression": "01",
+        "src": "g10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 12,
+        "speaker": "雪乃",
+        "expression": "01",
+        "src": "g10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 13,
+        "speaker": "雪乃",
+        "expression": "02",
+        "src": "g10201.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 14,
+        "speaker": "雪乃",
+        "expression": "01",
+        "src": "g10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 15,
+        "speaker": "雪乃",
+        "expression": "02",
+        "src": "g10201.webp",
+        "reason": "得意げ"
+      },
+      {
+        "index": 16,
+        "speaker": "雪乃",
+        "expression": "02",
+        "src": "g10201.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 17,
+        "speaker": "雪乃",
+        "expression": "01",
+        "src": "g10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 18,
+        "speaker": "雪乃",
+        "expression": "02",
+        "src": "g10201.webp",
+        "reason": "微笑み"
+      },
+      {
+        "index": 19,
+        "speaker": "雪乃",
+        "expression": "11",
+        "src": "g11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 20,
+        "speaker": "雪乃",
+        "expression": "02",
+        "src": "g10201.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 21,
+        "speaker": "雪乃",
+        "expression": "02",
+        "src": "g10201.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 22,
+        "speaker": "雪乃",
+        "expression": "02",
+        "src": "g10201.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 23,
+        "speaker": "雪乃",
+        "expression": "01",
+        "src": "g10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 24,
+        "speaker": "雪乃",
+        "expression": "05",
+        "src": "g10501.webp",
+        "reason": "笑顔"
+      },
+      {
+        "index": 25,
+        "speaker": "雪乃",
+        "expression": "11",
+        "src": "g11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 26,
+        "speaker": "雪乃",
+        "expression": "01",
+        "src": "g10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 27,
+        "speaker": "雪乃",
+        "expression": "02",
+        "src": "g10201.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 28,
+        "speaker": "雪乃",
+        "expression": "01",
+        "src": "g10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 29,
+        "speaker": "雪乃",
+        "expression": "01",
+        "src": "g10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 30,
+        "speaker": "雪乃",
+        "expression": "01",
+        "src": "g10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 31,
+        "speaker": "雪乃",
+        "expression": "11",
+        "src": "g11101.webp",
+        "reason": "心配不安"
+      },
+      {
+        "index": 32,
+        "speaker": "雪乃",
+        "expression": "02",
+        "src": "g10201.webp",
+        "reason": "期待"
+      },
+      {
+        "index": 33,
+        "speaker": "雪乃",
+        "expression": "01",
+        "src": "g10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 34,
+        "speaker": "雪乃",
+        "expression": "01",
+        "src": "g10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 35,
+        "speaker": "雪乃",
+        "expression": "01",
+        "src": "g10101.webp",
+        "reason": "澄まし"
+      },
+      {
+        "index": 36,
+        "speaker": "雪乃",
+        "expression": "02",
+        "src": "g10201.webp",
+        "reason": "微笑み"
+      },
+      {
+        "index": 37,
+        "speaker": "雪乃",
+        "expression": "05",
+        "src": "g10501.webp",
+        "reason": "笑顔"
+      }
+    ]
+  },
+  "note": "v037_85で同一立ち絵連続指定を削除。表情変更がある場面のみcharacters指定を残す。"
+}

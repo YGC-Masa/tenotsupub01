@@ -1,0 +1,233 @@
+{
+  "id": "intro_ai",
+  "title": "自己紹介：速水川 藍",
+  "return": {
+    "mode": "members"
+  },
+  "format": "v039_steps",
+  "sourceFormat": "legacy_array",
+  "steps": [
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "bgMode": "replace",
+      "speaker": "",
+      "text": "【自己紹介】速水川 藍",
+      "clearStorySprites": true
+    },
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "speaker": "",
+      "text": "（あ、藍ちゃんがいるな。）"
+    },
+    {
+      "speaker": "店長",
+      "text": "おーい。藍ちゃーん"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ab",
+          "src": "images/assets/char/b10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ab",
+          "src": "images/assets/char/b10201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "藍",
+      "text": "はい？何でしょう？"
+    },
+    {
+      "speaker": "店長",
+      "text": "ちょっとカメラに向かって自己紹介とかできるかな？"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ab",
+          "src": "images/assets/char/b10601.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "藍",
+      "text": "…あ、えっと……私の自己紹介、ですよね？やってみます・・"
+    },
+    {
+      "speaker": "藍",
+      "text": "はい、はじめまして。速水川 藍(はやみがわ あい)といいます。"
+    },
+    {
+      "speaker": "藍",
+      "text": "年齢は……こう見えて二十四歳です。"
+    },
+    {
+      "speaker": "藍",
+      "text": "よく“中学生くらい？”って言われるんですけど……もう慣れました。"
+    },
+    {
+      "speaker": "藍",
+      "text": "背は150センチで、一般的には小さい方だと思います。"
+    },
+    {
+      "speaker": "藍",
+      "text": "ええと、あまり目立つタイプじゃないのですが、おとなしいわけでもありません。"
+    },
+    {
+      "speaker": "藍",
+      "text": "でも静かに過ごすほうが好き…なのかな？"
+    },
+    {
+      "speaker": "藍",
+      "text": "趣味は読書です。小説もエッセイも、ラノベなんかも、ジャンル問わず読みます。"
+    },
+    {
+      "speaker": "藍",
+      "text": "カフェや図書館で新しい本を開く時間は、私にとって別の人生体験ができる楽しい時間なのです。"
+    },
+    {
+      "speaker": "藍",
+      "text": "あ、パンも好きなので、パン屋さんに寄り道しちゃうことも多いですね。"
+    },
+    {
+      "speaker": "藍",
+      "text": "体が小さいからか、いくつも食べられないけど、いろいろなパンを少しずつ味わうのが好きなんです。"
+    },
+    {
+      "speaker": "藍",
+      "text": "好きな飲み物は……焼酎、です。"
+    },
+    {
+      "speaker": "藍",
+      "text": "こんな見た目なので驚かれますけど、お酒の味や香りがわかるのが楽しくて。"
+    },
+    {
+      "speaker": "藍",
+      "text": "ロックで飲むと、その銘柄ごとの個性がよく感じられる気がします。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ab",
+          "src": "images/assets/char/b11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "藍",
+      "text": "反対に苦手なのはパクチー。"
+    },
+    {
+      "speaker": "藍",
+      "text": "味も香りも…どうしても苦手なのです…。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ab",
+          "src": "images/assets/char/b10901.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "藍",
+      "text": "得意な家電はドライヤーです。"
+    },
+    {
+      "speaker": "藍",
+      "text": "特技はブローなどのドライヤーの使い方。"
+    },
+    {
+      "speaker": "藍",
+      "text": "このアンテナ毛……頑張って直すんですけど、数時間で元に戻っちゃうんですよね。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ab",
+          "src": "images/assets/char/b11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "藍",
+      "text": "逆に、パソコンは本当に苦手です。"
+    },
+    {
+      "speaker": "藍",
+      "text": "専門用語が多く難しくて・・、どこから触っていいのか迷ってしまうんです。"
+    },
+    {
+      "speaker": "藍",
+      "text": "もし必要なときは、翠さんとか詳しい人に助けてもらってます。"
+    },
+    {
+      "speaker": "藍",
+      "text": "あとは意外だと言われるんですが、爬虫類が大好きです。"
+    },
+    {
+      "speaker": "藍",
+      "text": "イラストやぬいぐるみだとヘビもトカゲも可愛いと思うんですよね。"
+    },
+    {
+      "speaker": "藍",
+      "text": "かえるさんの可愛いグッズなんかも大好きです！"
+    },
+    {
+      "speaker": "藍",
+      "text": "えと、あと。今のお仕事場も楽しくて好きです。"
+    },
+    {
+      "speaker": "藍",
+      "text": "女子高みたいな？感じで、にぎやかだけど温かい雰囲気があります。"
+    },
+    {
+      "speaker": "藍",
+      "text": "ひなちゃんとは……あ、星野さんとは、よく趣味の話をしますね。"
+    },
+    {
+      "speaker": "藍",
+      "text": "てんちょーは、見た目で判断せず、ちゃんと大人として見てくれるので嬉しいです。"
+    },
+    {
+      "speaker": "藍",
+      "text": "見た目の印象のせいか、初対面ではよく“おとなしい子”で終わっちゃうんですが、"
+    },
+    {
+      "speaker": "藍",
+      "text": "結構、年相応に活動的ではないかな？と思います。"
+    },
+    {
+      "speaker": "藍",
+      "text": "ええと、こんなくらいでどうでしょう？"
+    },
+    {
+      "speaker": "藍",
+      "text": "以上となりますが、これからもよろしくお願いします。"
+    },
+    {
+      "speaker": "",
+      "text": "（藍の自己紹介を思い出に登録しました）"
+    },
+    {
+      "speaker": "",
+      "text": "",
+      "auto": true,
+      "wait": 500
+    }
+  ]
+}

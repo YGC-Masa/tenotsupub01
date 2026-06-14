@@ -1,0 +1,3982 @@
+{
+  "id": "yozora_affection_80_00_main",
+  "title": "一緒だね",
+  "version": "v039_196",
+  "return": {
+    "mode": "storyMenu",
+    "storyId": "yozora_affection_80_00_main",
+    "storyMenuTab": "main"
+  },
+  "format": "v039_steps",
+  "type": "character_main_story",
+  "characterId": "ai",
+  "route": "yozora",
+  "affectionRange": {
+    "min": 70,
+    "max": 80
+  },
+  "location": {
+    "id": "sugosawa_twin_room_night",
+    "name": "双沢家・ツインルーム・夜"
+  },
+  "summary": "美空と夜空が双沢家のツインルームで二人だけの時間を過ごし、互いの影響で好きになったものも自分の好きでいいと確認する。",
+  "purpose": "白と黒、甘さと苦さ、互いの影響を受け入れ、美空との絆を比較ではなく姉妹の愛情として再確認する。",
+  "tags": [
+    "夜空ルート",
+    "親愛度70-80",
+    "双沢姉妹",
+    "美空",
+    "心の解放",
+    "姉妹の絆"
+  ],
+  "clearFlags": [
+    "yozora_main_80_00_cleared"
+  ],
+  "nextHint": "次は羽白湖で本物の星を見る80代メインへ進む。",
+  "renderPolicy": {
+    "spritePosition": "logical_split_n_plus_1",
+    "eventCgLayer": "frontOfCharacters"
+  },
+  "steps": [
+    {
+      "speaker": "",
+      "text": "――双沢家・ツインルーム・夜――",
+      "bg": "images/assets/bg/bg_sugosawa_room_night_light_on.png",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true,
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――双沢家のツインルームは、二人の性格がそのまま並んでいるような部屋だった。"
+    },
+    {
+      "speaker": "",
+      "text": "窓際には、白いカーテン。"
+    },
+    {
+      "speaker": "",
+      "text": "美空のベッドには、淡い白とピンクのクッション。"
+    },
+    {
+      "speaker": "",
+      "text": "夜空のベッドには、黒と深い青のブランケット。"
+    },
+    {
+      "speaker": "",
+      "text": "同じ部屋なのに、左右で少しだけ空気が違う。"
+    },
+    {
+      "speaker": "",
+      "text": "けれど、不思議とちぐはぐには見えなかった。"
+    },
+    {
+      "speaker": "",
+      "text": "――小さなテーブルの上には、二つのカップが置かれている。"
+    },
+    {
+      "speaker": "",
+      "text": "美空の前には、白くて甘いホットミルク。"
+    },
+    {
+      "speaker": "",
+      "text": "夜空の前には、少し濃いめのココア。"
+    },
+    {
+      "speaker": "",
+      "text": "湯気がゆっくり上がって、部屋の明かりに溶けていく。"
+    },
+    {
+      "speaker": "美空",
+      "text": "熱くない？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "平気。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "本当に？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空まで、店長みたいなこと言う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ふふっ。\n店長が夜空みたいになったのかも。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "それはない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "即答だね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長は店長。\nぼくはぼく。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\nそうだね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――美空はホットミルクを両手で包み、少しだけ息を吹きかける。\n白い湯気が、ふわりと上がる。\n夜空はその様子を見て、少しだけ目を細めた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空って、そういうの好きだよね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "そういうの？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "白くて、甘いやつ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\n好き。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空らしい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "そうかな。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "そう。\n白くて、甘くて、あったかい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、それ褒めてる？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "たぶん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "たぶんなんだ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……褒めてる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ふふっ。\nありがとう。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "でも、言いたかったから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空は、そういうところ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "まっすぐすぎる？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空は考えすぎ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……何回でも言うね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "何回でも言うよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――いつものやり取り。\nけれど、今夜はいつもより少しだけ柔らかかった。\n夜空はココアのカップを手に取り、少しだけ口をつける。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "甘い。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ココアだからね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、美空のホットミルクよりは甘くない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "そうかな。\n夜空のココアも、けっこう甘いと思うよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空の方が甘い。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "わたし、甘いの好きだから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "知ってる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "でもね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "なに。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "わたし、黒いコーヒーも好きだよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……え。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "あれ。\nそんなに意外？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "意外。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "そう？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空は、白くて甘いホットミルクの方が似合う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ふふっ。\nそれは嬉しいけど、コーヒーも好き。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "ブラック？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "最初は黒いよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "最初は？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ミルクとお砂糖を入れるから、最後は茶色になるけどね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……それは、黒いコーヒーが好きって言っていいの？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "いいの。\n黒いところから、好きな味にするのも楽しいから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空らしくない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "そうかな。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\nでも……少し美空らしい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "どっち？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "どっちも。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ふふっ。\nじゃあ、どっちもでいいね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――美空はホットミルクを一口飲む。\n白いカップを置く音が、部屋の中に小さく響いた。"
+    },
+    {
+      "speaker": "美空",
+      "text": "わたし、白も好きだけど、ピンクも好きだよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "知ってる。\n美空のクッション、だいたい白かピンク。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\nでも、夜空の黒と青も好き。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……ぼくの？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\nかっこいいと思う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空の黒いブランケットも、青い小物も。\n静かで、きれいで、少しかっこいい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空には、白とかピンクの方が似合う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "白も好き。\nピンクも好き。\nでも、黒も好き。\n青も好き。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "どっちも？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "どっちも。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……ずるい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ずるい？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "どっちかじゃなくていいみたいに言うから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "どっちかじゃなくていいんだよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "簡単に言う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "簡単には思ってないよ。\nでも、好きなものが一つじゃなくてもいいと思う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "白も好き。\nピンクも好き。\n黒も好き。\n青も好き。\n甘いホットミルクも好き。\nミルクと砂糖を入れたコーヒーも好き。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "最後は茶色。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\n最後は茶色。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "めちゃくちゃ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "そうかな。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、美空っぽい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ふふっ。\nありがとう。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "言いたかったから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は少しだけ黙る。\nそれから、部屋のハンガーにかかった店の制服へ視線を向けた。\nそこには、二人のベストが並んでいる。\n美空の黒いベスト。\n夜空の白いベスト。\nお店で着る、いつもの制服。\n二人の色が、少しだけ入れ替わったようにも見える。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "なに？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "お店の黒いベスト、嫌じゃないの。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "嫌じゃないよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空、普段はあんまり黒い服、着ないでしょ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\nあんまり着ない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "なのに。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "好きだよ。\n大事に着てる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……どうして。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "少し、夜空みたいだから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼく？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\n黒くて、落ち着いてて。\nでも、白いブラウスと合わせると重くなりすぎなくて。\n夜空の黒と青みたいに、静かでかっこいいなって思う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "わたしには普段あまりない色だから、最初は少し不思議だったけど。\n着てみたら、なんだか嬉しかった。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "嬉しい？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\n夜空の好きな色を、少し借りてるみたいで。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……そんなふうに思ってたの。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "思ってたよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "言ってない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "今、言った。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "遅い。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ごめんね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "謝らなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも……少し、変。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "変？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空が黒を大事に着てるのが。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "嫌？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "嫌じゃない。\n……嫌じゃないけど、変な感じ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空の色だから？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……たぶん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "じゃあ、嬉しい？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "聞かないで。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\nじゃあ、聞かない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、少しだけなら……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……嬉しいかもしれない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ふふっ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "笑わないで。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ごめん。\nでも、嬉しくて。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "嬉しくならなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "嬉しいから、嬉しいの。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "そういうところ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は自分の方の白いベストを見る。\nハンガーにかかったそれは、夜空の部屋の黒や青とは違う。\n明るくて、清潔で、少しだけ柔らかい。\n美空の色に近い。\nだから最初は、自分が適当に選んだものだと思っていた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼくは、白が好きなのは美空のせいだと思ってた。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ],
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora80_twins_room_01.png",
+      "cgFit": "cover",
+      "cgAlign": "center center"
+    },
+    {
+      "speaker": "美空",
+      "text": "わたしのせい？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "せい、は違うかも。\nきっかけ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "きっかけ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空が白いものを好きだから。\n美空が白い服を選ぶから。\n美空が白いリボンをつけるから。\nぼくも、白を選んでたのかなって。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "お店の白いベストも、最初はそう。\n美空が黒だから、今回はぼくは白かなって。\nもう、これでいいかなって。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空と逆にしておけば、わかりやすいと思った。\n白は美空っぽい色だから、ぼくには違うって思ってたのに。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、着てるうちに。\n白いベストも、悪くないって思うようになった。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……違う。\n悪くない、じゃない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "好き、かもしれない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "最初は、美空の影響だったのかもしれない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、今は……ぼくが選んでる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "これは……あ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼく、白も好きじゃん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "きっかけは、美空かも。\nでも……こだわる必要、なかったじゃん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空が好きだから好きになったものでも。\n今、ぼくが好きなら……ぼくの好きでいいんだ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\nそうだよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……もっと早く言って。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "今、夜空が自分で気づいたから、きっと大事なんだと思う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "そういうところ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ずるい？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\n少しずるい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ふふっ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "笑わないで。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ごめん。\nでも、嬉しい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "嬉しくならなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "嬉しいから、嬉しいの。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "まっすぐすぎる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空は考えすぎ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……何回でも言うね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "何回でも言うよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は少しだけ笑いそうになって、カップで口元を隠した。\n美空はそれに気づいたが、何も言わなかった。\n言わないでいてくれることも、美空の優しさだと、夜空は少し知っている。"
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "なに。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "わたしもね、夜空の影響で好きになったもの、たくさんあるよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼくの？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "ないでしょ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "あるよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "例えば。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜の散歩。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……それ、美空は眠くなるって言ってた。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "今でも眠くなるよ。\nでも、夜空と歩く夜の空気は好き。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "それは、夜が好きなんじゃなくて。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空と一緒だから好き。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……そういうこと、すぐ言う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "思ったことだから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "まっすぐすぎる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空は考えすぎ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……何回でも言うね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "何回でも言うよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "あと、青い小物も好きになった。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "青？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\n夜空が青を選ぶから。\n夜空の青は、静かでかっこいいなって思って。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空には白の方が似合う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "白も好き。\nでも、青も好き。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……どっちも。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\nどっちも。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "ずるい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空も、どっちもでいいんだよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ね、一緒。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……一緒？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\n夜空がわたしを見て好きになったものもある。\nわたしが夜空を見て好きになったものもある。\nきっかけはお互いでも、今はちゃんと自分の好き。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……一緒。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\n一緒だね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――その言葉は、夜空の胸の中にゆっくり落ちてきた。\n比べる言葉ではなかった。\n片方が片方に合わせる言葉でもなかった。\n同じ場所に並んでいる、という言葉だった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "なに？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "一緒って、少しずるい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "どうして？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "安心する。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "じゃあ、ずるくてもいいかな。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……今日はいい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空はカップを置く。\nまだ温かい。\n甘さも残っている。\nけれど、さっきよりも飲みやすくなっていた。"
+    },
+    {
+      "speaker": "美空",
+      "text": "ね、夜空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "なに。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "隣、いっていい？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "えい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "わ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――隣に来た美空が、夜空をそっと抱きしめる。\nふわりとしたシャンプーの香りと、やわらかなぬくもりが夜空を包む。\n――不意打ちだった。\nいつもの夜空なら、急に抱きつかないでと言っていたかもしれない。\nけれど、今日は言わなかった。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora80_twins_room_02.png",
+      "cgFit": "cover",
+      "cgAlign": "center center"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "なあに？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……あったかい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……落ち着く。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――美空は少しだけ、嬉しそうに笑った。"
+    },
+    {
+      "speaker": "美空",
+      "text": "ふふ。\nよーぞら？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "なに、美空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "だーい好き。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "今日は、言わなくていいって言わないんだ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……言わない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "どうして？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空には……言ってほしいから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "……うん。\n何回でも言うよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空のこと、だーい好き。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。\n聞こえてる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "ちゃんと、聞いてる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……ぼくも、美空のこと。\n大好きだよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――美空はそれ以上、何も言わなかった。\nただ、夜空を抱きしめる腕に、少しだけ力を込めた。"
+    },
+    {
+      "speaker": "",
+      "text": "――白い部屋の中で、白いベストを好きだと気づいた夜空が、美空の腕の中にいる。\n黒いベストを大事に着る美空が、夜空を抱きしめている。\nそれは、どちらかがどちらかに合わせた色ではなく、二人で並んでいてもいい色だった。"
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は、逃げなかった。"
+    }
+  ],
+  "mainScenarioIndex": 8,
+  "unlockCondition": {
+    "requiredFlags": [
+      "yozora_key_70_01_cleared",
+      "yozora_key_70_02_cleared",
+      "yozora_key_70_03_cleared"
+    ]
+  }
+}

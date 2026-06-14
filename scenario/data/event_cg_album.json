@@ -1,0 +1,180 @@
+{
+  "version": "v037_87",
+  "description": "イベントCG鑑賞モード用アルバム索引",
+  "items": [
+    {
+      "id": "aa_memory_spring_bento_001",
+      "title": "春の公園でのお弁当タイム",
+      "characterId": "aa",
+      "characterName": "星野 緋奈",
+      "type": "memory_cg",
+      "file": "aa_memory_spring_bento_cg.png",
+      "path": "images/assets/cg/aa_memory_spring_bento_cg.png",
+      "thumbnailColor": "images/assets/thumb/aa_memory_spring_bento_thumb_color.png",
+      "thumbnailMono": "images/assets/thumb/aa_memory_spring_bento_thumb_mono.png",
+      "scenario": "memory_hina_spring_bento.json",
+      "storyId": "aa_memory_spring_bento_001",
+      "unlock": "緋奈と思い出ストーリー解放",
+      "isUnlocked": true,
+      "description": "春の公園で、緋奈の手作り弁当から切り分けたひと口ハンバーグを分けてもらう思い出。"
+    },
+    {
+      "id": "ab_memory_spring_book_bread_share_001",
+      "title": "桜木陰のしおり・半分こ",
+      "characterId": "ab",
+      "characterName": "速水川 藍",
+      "type": "memory_cg",
+      "file": "ab_memory_spring_book_bread_share_cg.png",
+      "path": "images/assets/cg/ab_memory_spring_book_bread_share_cg.png",
+      "thumbnailColor": "images/assets/thumb/ab_memory_spring_book_bread_share_thumb_color.png",
+      "thumbnailMono": "images/assets/thumb/ab_memory_spring_book_bread_share_thumb_mono.png",
+      "scenario": "memory_ai_spring_book_bread.json",
+      "storyId": "ab_memory_spring_book_bread_001",
+      "unlock": "藍と思い出ストーリー解放",
+      "isUnlocked": true,
+      "description": "若葉中央公園で、藍が桜モチーフのパンを差し出して半分こを提案する思い出。"
+    },
+    {
+      "id": "ab_memory_spring_book_bread_close_001",
+      "title": "桜木陰のしおり",
+      "characterId": "ab",
+      "characterName": "速水川 藍",
+      "type": "memory_cg",
+      "file": "ab_memory_spring_book_bread_close_cg.png",
+      "path": "images/assets/cg/ab_memory_spring_book_bread_close_cg.png",
+      "thumbnailColor": "images/assets/thumb/ab_memory_spring_book_bread_close_thumb_color.png",
+      "thumbnailMono": "images/assets/thumb/ab_memory_spring_book_bread_close_thumb_mono.png",
+      "scenario": "memory_ai_spring_book_bread.json",
+      "storyId": "ab_memory_spring_book_bread_001",
+      "unlock": "藍と思い出ストーリー解放",
+      "isUnlocked": true,
+      "description": "桜の木陰で、静かで穏やかな春の時間が好きだと藍が打ち明ける思い出。"
+    },
+    {
+      "id": "a01ev02",
+      "title": "a01ev02",
+      "type": "ev",
+      "file": "a01ev02.png",
+      "path": "images/assets/ev/a01ev02.png"
+    },
+    {
+      "id": "a01ev03",
+      "title": "a01ev03",
+      "type": "ev",
+      "file": "a01ev03.png",
+      "path": "images/assets/ev/a01ev03.png"
+    },
+    {
+      "id": "a01ev04",
+      "title": "a01ev04",
+      "type": "ev",
+      "file": "a01ev04.png",
+      "path": "images/assets/ev/a01ev04.png"
+    },
+    {
+      "id": "a01ev05",
+      "title": "a01ev05",
+      "type": "ev",
+      "file": "a01ev05.png",
+      "path": "images/assets/ev/a01ev05.png"
+    },
+    {
+      "id": "b01ev01",
+      "title": "b01ev01",
+      "type": "ev",
+      "file": "b01ev01.png",
+      "path": "images/assets/ev/b01ev01.png"
+    },
+    {
+      "id": "b01ev02",
+      "title": "b01ev02",
+      "type": "ev",
+      "file": "b01ev02.png",
+      "path": "images/assets/ev/b01ev02.png"
+    },
+    {
+      "id": "c01ev01",
+      "title": "c01ev01",
+      "type": "ev",
+      "file": "c01ev01.png",
+      "path": "images/assets/ev/c01ev01.png"
+    },
+    {
+      "id": "c01ev02",
+      "title": "c01ev02",
+      "type": "ev",
+      "file": "c01ev02.png",
+      "path": "images/assets/ev/c01ev02.png"
+    },
+    {
+      "id": "d01ev01",
+      "title": "d01ev01",
+      "type": "ev",
+      "file": "d01ev01.png",
+      "path": "images/assets/ev/d01ev01.png"
+    },
+    {
+      "id": "d01ev02",
+      "title": "d01ev02",
+      "type": "ev",
+      "file": "d01ev02.png",
+      "path": "images/assets/ev/d01ev02.png"
+    },
+    {
+      "id": "e01ev01",
+      "title": "e01ev01",
+      "type": "ev",
+      "file": "e01ev01.png",
+      "path": "images/assets/ev/e01ev01.png"
+    },
+    {
+      "id": "e01ev02",
+      "title": "e01ev02",
+      "type": "ev",
+      "file": "e01ev02.png",
+      "path": "images/assets/ev/e01ev02.png"
+    },
+    {
+      "id": "ev01",
+      "title": "ev01",
+      "type": "ev",
+      "file": "ev01.png",
+      "path": "images/assets/ev/ev01.png"
+    },
+    {
+      "id": "ev_rooftop",
+      "title": "ev_rooftop",
+      "type": "ev",
+      "file": "ev_rooftop.png",
+      "path": "images/assets/ev/ev_rooftop.png"
+    },
+    {
+      "id": "evc10001",
+      "title": "evc10001",
+      "type": "ev",
+      "file": "evc10001.webp",
+      "path": "images/assets/ev/evc10001.webp"
+    },
+    {
+      "id": "evc10001_01",
+      "title": "evc10001_01",
+      "type": "ev",
+      "file": "evc10001_01.webp",
+      "path": "images/assets/ev/evc10001_01.webp"
+    },
+    {
+      "id": "evc10001_2",
+      "title": "evc10001_2",
+      "type": "ev",
+      "file": "evc10001_2.webp",
+      "path": "images/assets/ev/evc10001_2.webp"
+    },
+    {
+      "id": "cg01",
+      "title": "cg01",
+      "type": "cg",
+      "file": "cg01.png",
+      "path": "images/assets/cg/cg01.png"
+    }
+  ]
+}

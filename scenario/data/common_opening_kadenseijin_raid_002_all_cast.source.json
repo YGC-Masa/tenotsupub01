@@ -1,0 +1,853 @@
+{
+  "scenario_id": "common_opening_kadenseijin_raid_002_all_cast",
+  "title": "共通オープニング：家電星人襲来・全員登場版",
+  "version": "v2_all_cast_v039_95",
+  "type": "common_opening_event",
+  "recommended_position": "初回チュートリアル前／通常営業解放前",
+  "summary": "倉庫在庫消失事件をきっかけに、ひだまりストア全員が家電星人と出会う共通導入イベント。家電星人の謝罪、金属生成、売上黒字化を経て、店長が家電星人を接客対象として迎える流れ。",
+  "characters": [
+    {
+      "id": "player",
+      "name": "店長"
+    },
+    {
+      "id": "aa",
+      "name": "星野 緋奈"
+    },
+    {
+      "id": "ab",
+      "name": "速水川 藍"
+    },
+    {
+      "id": "ac",
+      "name": "草壁 翠"
+    },
+    {
+      "id": "ad",
+      "name": "小麦沢 こがね"
+    },
+    {
+      "id": "ae",
+      "name": "春日原 琥珀"
+    },
+    {
+      "id": "af",
+      "name": "大道寺 真花"
+    },
+    {
+      "id": "ag",
+      "name": "氷神 雪乃"
+    },
+    {
+      "id": "ah",
+      "name": "双沢 美空"
+    },
+    {
+      "id": "ai",
+      "name": "双沢 夜空"
+    },
+    {
+      "id": "aj",
+      "name": "芝桜 桃"
+    },
+    {
+      "id": "ak",
+      "name": "紫藤 彩愛"
+    },
+    {
+      "id": "al",
+      "name": "餅月 里美"
+    },
+    {
+      "id": "am",
+      "name": "草壁 萌"
+    },
+    {
+      "id": "enemy_common_001",
+      "name": "家電星人"
+    },
+    {
+      "id": "enemy_beauty_macaron",
+      "name": "ビューティマカロン星人"
+    }
+  ],
+  "notes": [
+    "全員登場版。冒頭で藍と萌のタロットにより不穏さと好転の伏線を入れる。",
+    "かわいい反応は緋奈とこがねを中心にする。",
+    "夜空は厳しめ、美空はツッコミ、真花は怖がり、雪乃は困りつつ現実的な反応。",
+    "桃の危ない発言は伏せ字で止め、美空が困惑しながら制止する。",
+    "彩愛と里美が金属の正体を確認し、翠が相場計算で黒字化を示す。",
+    "最後は琥珀が面倒を見ると言い、全員で家電星人を受け入れる流れにする。",
+    "金相場は実装時に固定値・ダミー値・ゲーム内相場のいずれかに置き換え可能。",
+    "v039_95: 倉庫背景を添付版へ変更し、家電星人表示は中央フレーム表示にする。",
+    "v039_103: 桃「これって……もしかして」付近のステップ59〜80では背景を切り替えず、倉庫背景を維持する。"
+  ],
+  "assets": {
+    "backgrounds": {
+      "office": "bg_office_day",
+      "warehouse": "bg_large_product_warehouse",
+      "warehouse_closeup": "bg_large_product_warehouse",
+      "metal_closeup": "cg_gold_metal_lump"
+    },
+    "bgm": {
+      "office_normal": "bgm_daily_office",
+      "ominous_cute": "bgm_mystery_cute_ominous",
+      "panic": "bgm_panic_light",
+      "mystery": "bgm_mystery_cute",
+      "comedy": "bgm_comedy_light",
+      "success": "bgm_result_positive"
+    },
+    "sfx": {
+      "card_flip": "se_card_flip",
+      "door_open": "se_door_open_fast",
+      "run": "se_running_steps",
+      "box_rustle": "se_box_rustle",
+      "pop": "se_pop",
+      "jump": "se_jump_small",
+      "shine": "se_shine",
+      "cash": "se_cash_register",
+      "cheer": "se_cheer_small"
+    }
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_001_tarot_warning",
+      "background": "office",
+      "bgm": "ominous_cute",
+      "lines": [
+        {
+          "speaker": "速水川 藍",
+          "character_id": "ab",
+          "face": "serious",
+          "position": "left",
+          "text": "……むむむ。"
+        },
+        {
+          "speaker": "草壁 萌",
+          "character_id": "am",
+          "face": "worried",
+          "position": "right",
+          "text": "……藍ちゃん、このカードって……。"
+        },
+        {
+          "cmd": "play_sfx",
+          "name": "card_flip"
+        },
+        {
+          "speaker": "速水川 藍",
+          "character_id": "ab",
+          "face": "troubled",
+          "text": "悪い兆候……ですね。お店に、何か大きな変化が起きそうです。"
+        },
+        {
+          "speaker": "草壁 萌",
+          "character_id": "am",
+          "face": "think",
+          "text": "でも、こっちのカードは……うまく切り替えれば、事態が好転するって出てます。"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "朝からずいぶん物騒な占いだな……。"
+        },
+        {
+          "speaker": "速水川 藍",
+          "character_id": "ab",
+          "face": "soft_smile",
+          "text": "てんちょー、今日は全体的に気をつけた方がいいかもしれません。"
+        },
+        {
+          "speaker": "草壁 萌",
+          "character_id": "am",
+          "face": "worried",
+          "text": "おにいちゃん……何もないといいけど。"
+        },
+        {
+          "cmd": "play_sfx",
+          "name": "run"
+        },
+        {
+          "cmd": "play_sfx",
+          "name": "door_open"
+        },
+        {
+          "cmd": "change_bgm",
+          "name": "panic"
+        },
+        {
+          "speaker": "星野 緋奈",
+          "character_id": "aa",
+          "face": "panic",
+          "position": "center",
+          "text": "店長！　大変です！"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "緋奈！？　どうした、そんなに慌てて。"
+        },
+        {
+          "speaker": "星野 緋奈",
+          "character_id": "aa",
+          "face": "surprised",
+          "text": "倉庫の在庫が……！"
+        },
+        {
+          "speaker": "星野 緋奈",
+          "character_id": "aa",
+          "face": "panic",
+          "text": "なくなっています！！"
+        },
+        {
+          "speaker": "速水川 藍",
+          "character_id": "ab",
+          "face": "surprised",
+          "text": "……占い、当たっちゃいました。"
+        },
+        {
+          "speaker": "草壁 萌",
+          "character_id": "am",
+          "face": "panic",
+          "text": "おにいちゃん、早く行こう……！"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_002_warehouse_empty_all",
+      "background": "warehouse",
+      "bgm": "panic",
+      "lines": [
+        {
+          "cmd": "transition",
+          "type": "fade",
+          "duration": 0.5
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "これは……本当に中身だけないな。"
+        },
+        {
+          "speaker": "星野 緋奈",
+          "character_id": "aa",
+          "face": "worried",
+          "position": "left",
+          "text": "テレビも、調理家電も、季節家電も……箱だけ残って、中身がすっからかんです！"
+        },
+        {
+          "speaker": "草壁 翠",
+          "character_id": "ac",
+          "face": "think",
+          "position": "right",
+          "text": "箱と説明書は残っている。通常の盗難にしては不自然ですね。"
+        },
+        {
+          "speaker": "双沢 夜空",
+          "character_id": "ai",
+          "face": "serious",
+          "text": "……売り物だけ消えてるなら、最悪じゃない。"
+        },
+        {
+          "speaker": "氷神 雪乃",
+          "character_id": "ag",
+          "face": "worried",
+          "text": "商品が無いと……困りますね。お客様にも、お店にも……。"
+        },
+        {
+          "speaker": "紫藤 彩愛",
+          "character_id": "ak",
+          "face": "serious",
+          "text": "在庫表と照合いたしますわ。……いえ、照合するまでもなく、大損害ですわね。"
+        },
+        {
+          "speaker": "餅月 里美",
+          "character_id": "al",
+          "face": "shock",
+          "text": "は～い……これ、給料日前に見る景色じゃないですね～。"
+        },
+        {
+          "cmd": "play_sfx",
+          "name": "box_rustle"
+        },
+        {
+          "speaker": "小麦沢 こがね",
+          "character_id": "ad",
+          "face": "surprised",
+          "text": "ん？え、今なんか動かなかった？　すみっこの箱のとこ！"
+        },
+        {
+          "speaker": "芝桜 桃",
+          "character_id": "aj",
+          "face": "excited",
+          "text": "ウチも見た！　なんか、ぴょこってした！"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "何かいる……？"
+        },
+        {
+          "cmd": "change_background",
+          "name": "warehouse_closeup"
+        },
+        {
+          "cmd": "change_bgm",
+          "name": "mystery"
+        },
+        {
+          "cmd": "play_sfx",
+          "name": "box_rustle"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_003_first_contact_all",
+      "background": "warehouse_closeup",
+      "bgm": "mystery",
+      "lines": [
+        {
+          "speaker": "家電星人",
+          "character_id": "enemy_common_001",
+          "face": "apologetic",
+          "position": "center",
+          "text": "……ゴメンナサイ。",
+          "display": "center_framed_enemy_card"
+        },
+        {
+          "speaker": "星野 緋奈",
+          "character_id": "aa",
+          "face": "surprised",
+          "position": "left",
+          "text": "しゃ、しゃべった！？"
+        },
+        {
+          "speaker": "小麦沢 こがね",
+          "character_id": "ad",
+          "face": "surprised",
+          "position": "right",
+          "text": "え、なにこの子！　家電？　生き物？　どっち！？"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "お前は……何者だ？"
+        },
+        {
+          "speaker": "家電星人",
+          "character_id": "enemy_common_001",
+          "face": "apologetic",
+          "text": "ワタシタチ、家電星人。遠いところから来ました。",
+          "display": "center_framed_enemy_card",
+          "position": "center"
+        },
+        {
+          "speaker": "家電星人",
+          "character_id": "enemy_common_001",
+          "face": "down",
+          "text": "でも……お腹が空いて、我慢できなくて……。",
+          "display": "center_framed_enemy_card",
+          "position": "center"
+        },
+        {
+          "speaker": "家電星人",
+          "character_id": "enemy_common_001",
+          "face": "cry",
+          "text": "この店の家電を、食べてしまいました。",
+          "display": "center_framed_enemy_card",
+          "position": "center"
+        },
+        {
+          "speaker": "草壁 翠",
+          "character_id": "ac",
+          "face": "shock",
+          "text": "食べた……？　比喩ではなく、摂取したという意味ですか。"
+        },
+        {
+          "speaker": "家電星人",
+          "character_id": "enemy_common_001",
+          "face": "explain",
+          "text": "ワタシタチにとって、家電はエネルギー。構造を理解して、からだを強くする大切なもの。",
+          "display": "center_framed_enemy_card",
+          "position": "center"
+        },
+        {
+          "speaker": "家電星人",
+          "character_id": "enemy_common_001",
+          "face": "normal",
+          "text": "一緒に入っていた説明書と、パソコンのデータも読みました。",
+          "display": "center_framed_enemy_card",
+          "position": "center"
+        },
+        {
+          "speaker": "家電星人",
+          "character_id": "enemy_common_001",
+          "face": "smile",
+          "text": "だから、この星の言葉と文化を、少しだけ覚えました。",
+          "display": "center_framed_enemy_card",
+          "position": "center"
+        },
+        {
+          "speaker": "速水川 藍",
+          "character_id": "ab",
+          "face": "think",
+          "text": "説明書とパソコンのデータで……言葉を。すごいような、怖いような……。"
+        },
+        {
+          "speaker": "草壁 萌",
+          "character_id": "am",
+          "face": "worried",
+          "text": "悪気があったわけじゃ、なさそう……かな。"
+        },
+        {
+          "speaker": "星野 緋奈",
+          "character_id": "aa",
+          "face": "soft_smile",
+          "text": "……なんか、かわいい～！！"
+        },
+        {
+          "speaker": "小麦沢 こがね",
+          "character_id": "ad",
+          "face": "happy",
+          "text": "わかる！　ちっちゃいし、しょんぼりしてるし、なんか守りたくなる系じゃん！"
+        },
+        {
+          "speaker": "双沢 夜空",
+          "character_id": "ai",
+          "face": "annoyed",
+          "text": "ふん。ばっかじゃないの。"
+        },
+        {
+          "speaker": "星野 緋奈",
+          "character_id": "aa",
+          "face": "surprised",
+          "text": "夜空ちゃん！？"
+        },
+        {
+          "speaker": "双沢 夜空",
+          "character_id": "ai",
+          "face": "serious",
+          "text": "いくら可愛くても、こいつら商品をなくしちゃったのよ。泥棒と一緒よ。"
+        },
+        {
+          "speaker": "大道寺 真花",
+          "character_id": "af",
+          "face": "timid",
+          "position": "left",
+          "text": "で、でも……怖いエイリアン、という感じではなさそうです……。"
+        },
+        {
+          "cmd": "play_sfx",
+          "name": "jump"
+        },
+        {
+          "speaker": "ビューティマカロン星人",
+          "character_id": "enemy_beauty_macaron",
+          "face": "happy",
+          "position": "center",
+          "text": "ぴょんっ。",
+          "display": "center_framed_enemy_card"
+        },
+        {
+          "speaker": "大道寺 真花",
+          "character_id": "af",
+          "face": "panic",
+          "text": "ひぃっ！？　こ、こっちにも来ましたぁ……！"
+        },
+        {
+          "speaker": "双沢 美空",
+          "character_id": "ah",
+          "face": "confused",
+          "position": "right",
+          "text": "真花ちゃん、落ち着いて。……たぶん、今のところは襲ってこないから。"
+        },
+        {
+          "speaker": "氷神 雪乃",
+          "character_id": "ag",
+          "face": "soft_worried",
+          "text": "商品がなくなったのは困りますが……お腹が空いていた、という事情は少し気の毒ですね。"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_004_money_problem",
+      "background": "warehouse_closeup",
+      "bgm": "comedy",
+      "lines": [
+        {
+          "speaker": "星野 緋奈",
+          "character_id": "aa",
+          "face": "pleading",
+          "text": "ね、店長。ゆるしてあげましょうよ。悪気はなさそうですし……。"
+        },
+        {
+          "speaker": "小麦沢 こがね",
+          "character_id": "ad",
+          "face": "pleading",
+          "text": "うんうん！　ちゃんと謝ってるし、まずは話聞いてあげよ？"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "しかしだな……。"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "売り物はない。お金もない。このままだと、みんなの給料も払えない。"
+        },
+        {
+          "speaker": "餅月 里美",
+          "character_id": "al",
+          "face": "pale",
+          "text": "そ、そ、それは自分、だいぶ困ります～。"
+        },
+        {
+          "speaker": "紫藤 彩愛",
+          "character_id": "ak",
+          "face": "serious",
+          "text": "経営としては、情だけで済ませられる状況ではございませんわね。"
+        },
+        {
+          "speaker": "双沢 夜空",
+          "character_id": "ai",
+          "face": "serious",
+          "text": "ほら。可愛いだけじゃ、店は回らない。"
+        },
+        {
+          "speaker": "家電星人",
+          "character_id": "enemy_common_001",
+          "face": "cry",
+          "text": "ゴメンナサイ……。",
+          "display": "center_framed_enemy_card",
+          "position": "center"
+        },
+        {
+          "speaker": "家電星人",
+          "character_id": "enemy_common_001",
+          "face": "think",
+          "text": "この星で、価値がありそうなもの……。",
+          "display": "center_framed_enemy_card",
+          "position": "center"
+        },
+        {
+          "speaker": "家電星人",
+          "character_id": "enemy_common_001",
+          "face": "explain",
+          "text": "吸収した物質から、生成できます。",
+          "display": "center_framed_enemy_card",
+          "position": "center"
+        },
+        {
+          "cmd": "play_sfx",
+          "name": "pop"
+        },
+        {
+          "cmd": "play_sfx",
+          "name": "shine"
+        },
+        {
+          "speaker": "家電星人",
+          "character_id": "enemy_common_001",
+          "face": "smile",
+          "text": "(ぷりっ。)……これ、どうぞ。",
+          "display": "center_framed_enemy_card",
+          "position": "center"
+        },
+        {
+          "speaker": "芝桜 桃",
+          "character_id": "aj",
+          "face": "stare",
+          "text": "これって……もしかして、う〇――"
+        },
+        {
+          "speaker": "双沢 美空",
+          "character_id": "ah",
+          "face": "confused",
+          "position": "right",
+          "text": "やめなさい。"
+        },
+        {
+          "speaker": "芝桜 桃",
+          "character_id": "aj",
+          "face": "mischief",
+          "text": "まだ最後まで言ってないじゃん！"
+        },
+        {
+          "speaker": "双沢 美空",
+          "character_id": "ah",
+          "face": "confused",
+          "text": "言わなくていいの。絶対に。"
+        },
+        {
+          "speaker": "星野 緋奈",
+          "character_id": "aa",
+          "face": "awkward",
+          "text": "で、でも……きらきらしてるよ？"
+        },
+        {
+          "speaker": "小麦沢 こがね",
+          "character_id": "ad",
+          "face": "surprised",
+          "text": "え、これガチで高そうじゃない？"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_005_gold_check",
+      "background": "metal_closeup",
+      "bgm": "mystery",
+      "lines": [
+        {
+          "speaker": "紫藤 彩愛",
+          "character_id": "ak",
+          "face": "serious",
+          "text": "これは……金塊では？"
+        },
+        {
+          "speaker": "紫藤 彩愛",
+          "character_id": "ak",
+          "face": "look",
+          "text": "里美さん。いかがですの？"
+        },
+        {
+          "speaker": "餅月 里美",
+          "character_id": "al",
+          "face": "serious",
+          "text": "は～い……見た目、重さ、質感……。"
+        },
+        {
+          "speaker": "餅月 里美",
+          "character_id": "al",
+          "face": "surprised",
+          "text": "金ですね～。たぶん、かなり純度高めです～。"
+        },
+        {
+          "speaker": "草壁 翠",
+          "character_id": "ac",
+          "face": "serious",
+          "position": "center",
+          "text": "ちょっと拝見。"
+        },
+        {
+          "speaker": "草壁 翠",
+          "character_id": "ac",
+          "face": "think",
+          "text": "……質量、体積、比重。ざっくりですが、金として見てよさそうです。"
+        },
+        {
+          "speaker": "草壁 翠",
+          "character_id": "ac",
+          "face": "surprised",
+          "text": "いま1グラム……今日の相場で……。"
+        },
+        {
+          "speaker": "草壁 翠",
+          "character_id": "ac",
+          "face": "shock",
+          "text": "……！"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "翠？"
+        },
+        {
+          "speaker": "草壁 翠",
+          "character_id": "ac",
+          "face": "excited",
+          "text": "店長。これ、換金して売り上げにしたら……。"
+        },
+        {
+          "speaker": "草壁 翠",
+          "character_id": "ac",
+          "face": "smile",
+          "text": "全然、黒字ですよ。"
+        },
+        {
+          "cmd": "play_sfx",
+          "name": "cash"
+        },
+        {
+          "speaker": "餅月 里美",
+          "character_id": "al",
+          "face": "happy",
+          "text": "収益が～、給料が～、息を吹き返しました～。"
+        },
+        {
+          "speaker": "紫藤 彩愛",
+          "character_id": "ak",
+          "face": "relief",
+          "text": "損害どころか、お得意様による臨時売上ですわね。"
+        },
+        {
+          "speaker": "双沢 夜空",
+          "character_id": "ai",
+          "face": "awkward",
+          "text": "……結果だけ見れば、だけど。"
+        },
+        {
+          "speaker": "速水川 藍",
+          "character_id": "ab",
+          "face": "soft_smile",
+          "text": "悪い兆候から、事態が好転……。"
+        },
+        {
+          "speaker": "草壁 萌",
+          "character_id": "am",
+          "face": "happy",
+          "text": "タロットの通りになったね、藍ちゃん。"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_006_welcome_kadenseijin",
+      "background": "warehouse",
+      "bgm": "success",
+      "lines": [
+        {
+          "cmd": "change_background",
+          "name": "warehouse"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "よし！"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "あなたたちは、うちのお店でもてなす！"
+        },
+        {
+          "speaker": "星野 緋奈",
+          "character_id": "aa",
+          "face": "happy",
+          "text": "やったー！　店長、さっすがぁ！"
+        },
+        {
+          "speaker": "小麦沢 こがね",
+          "character_id": "ad",
+          "face": "happy",
+          "text": "よかったね、家電星人ちゃんたち！"
+        },
+        {
+          "speaker": "双沢 夜空",
+          "character_id": "ai",
+          "face": "annoyed",
+          "text": "……店長、売上確保って顔してる。"
+        },
+        {
+          "speaker": "双沢 美空",
+          "character_id": "ah",
+          "face": "smile",
+          "text": "でも、ちゃんと面倒を見るって決めたなら、私たちも協力しなきゃね。"
+        },
+        {
+          "speaker": "大道寺 真花",
+          "character_id": "af",
+          "face": "timid_smile",
+          "text": "こ、怖くない子からなら……わたしも、少しずつ頑張ります。"
+        },
+        {
+          "speaker": "氷神 雪乃",
+          "character_id": "ag",
+          "face": "smile",
+          "text": "必要な家電を、きちんと選んで差し上げればよいのですね。"
+        },
+        {
+          "speaker": "紫藤 彩愛",
+          "character_id": "ak",
+          "face": "smile",
+          "text": "無断で食べるのではなく、正しく購入していただく。大切なことですわ。"
+        },
+        {
+          "speaker": "餅月 里美",
+          "character_id": "al",
+          "face": "smile",
+          "text": "お会計は自分にお任せください～。金でも現金でも、帳簿につけます～。"
+        },
+        {
+          "speaker": "草壁 翠",
+          "character_id": "ac",
+          "face": "smile",
+          "text": "金塊もこの形だと・・そうね。コインの形とかに出来ないかしら？"
+        },
+        {
+          "speaker": "速水川 藍",
+          "character_id": "ab",
+          "face": "smile",
+          "text": "金貨だったら見た目もいいですね！"
+        },
+        {
+          "speaker": "草壁 萌",
+          "character_id": "am",
+          "face": "soft_smile",
+          "text": "お腹が空きすぎないように、ちゃんと順番を決めてあげたいね。"
+        },
+        {
+          "speaker": "芝桜 桃",
+          "character_id": "aj",
+          "face": "excited",
+          "text": "ウチ、家電星人ちゃんの紹介動画撮りたい！　絶対バズるって！"
+        },
+        {
+          "speaker": "春日原 琥珀",
+          "character_id": "ae",
+          "face": "big_smile",
+          "position": "center",
+          "text": "よかったな、おまえら～！"
+        },
+        {
+          "speaker": "春日原 琥珀",
+          "character_id": "ae",
+          "face": "proud",
+          "text": "オレもお前らの面倒みるからなー！　困ったら遠慮なく言えよ！"
+        },
+        {
+          "speaker": "家電星人",
+          "character_id": "enemy_common_001",
+          "face": "happy",
+          "text": "アリガトウ……店長。ミナサン。",
+          "display": "center_framed_enemy_card",
+          "position": "center"
+        },
+        {
+          "speaker": "家電星人",
+          "character_id": "enemy_common_001",
+          "face": "happy",
+          "text": "これからは、ちゃんと買って、ちゃんと食べます。",
+          "display": "center_framed_enemy_card",
+          "position": "center"
+        },
+        {
+          "speaker": "店長",
+          "character_id": "player",
+          "text": "・・・もういいって。これからよろしくな。"
+        },
+        {
+          "cmd": "play_sfx",
+          "name": "cheer"
+        },
+        {
+          "speaker": "全員",
+          "character_id": "group_hidamari",
+          "face": "happy",
+          "text": "やったー！"
+        },
+        {
+          "cmd": "set_flag",
+          "name": "opening_kadenseijin_raid_cleared",
+          "value": true
+        },
+        {
+          "cmd": "unlock",
+          "target": "tutorial_customer_battle"
+        },
+        {
+          "cmd": "next",
+          "scenario_id": "tutorial_kadenseijin_customer_battle_001"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "id": "intro_misora",
+  "title": "自己紹介：双沢 美空",
+  "return": {
+    "mode": "members"
+  },
+  "format": "v039_steps",
+  "sourceFormat": "legacy_array",
+  "steps": [
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "bgMode": "replace",
+      "speaker": "",
+      "text": "【自己紹介】双沢 美空",
+      "clearStorySprites": true
+    },
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "speaker": "",
+      "text": "（お、美空がいる。）"
+    },
+    {
+      "speaker": "店長",
+      "text": "美空、ちょっといいかな？"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "美空",
+      "text": "あら？お疲れ様。店長。"
+    },
+    {
+      "speaker": "店長",
+      "text": "カメラテストをしてるんだけどさ、美空の可愛いところ。自己紹介してみてくれないかな。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10701.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "美空",
+      "text": "やだぁ！カワイイだなんて本当の事言われると照れちゃうな～。じゃ、やってみるね。"
+    },
+    {
+      "speaker": "美空",
+      "text": "えへへっ、こんにちは！"
+    },
+    {
+      "speaker": "美空",
+      "text": "わたし、双沢 美空(すごさわ みそら)って言います。"
+    },
+    {
+      "speaker": "美空",
+      "text": "「ふたざわ」とかじゃないから、間違えないでね？"
+    },
+    {
+      "speaker": "美空",
+      "text": "名前の通り、空みたいに明るく自由でいたいなって思ってるの。"
+    },
+    {
+      "speaker": "美空",
+      "text": "じつは双子なんだけど、わたしがお姉ちゃんで、"
+    },
+    {
+      "speaker": "美空",
+      "text": "妹の夜空（よぞら）とは正反対のタイプって、よく言われるよ。"
+    },
+    {
+      "speaker": "美空",
+      "text": "性格は……そうだな、明るくて元気？"
+    },
+    {
+      "speaker": "美空",
+      "text": "でも実は芯が強いって言われることもあるんだ〜。"
+    },
+    {
+      "speaker": "美空",
+      "text": "自分の意見はちゃんと言わなきゃって思ってるから。"
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空がすごく優しくて、なんでも譲ってくれるから、"
+    },
+    {
+      "speaker": "美空",
+      "text": "わたしもお姉ちゃんとして、もっと返したいんだよね。"
+    },
+    {
+      "speaker": "美空",
+      "text": "好きなことは夏のアクティビティ！"
+    },
+    {
+      "speaker": "美空",
+      "text": "海もプールも、太陽の下で動くのが大好き。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10901.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "美空",
+      "text": "除湿とか夏物アイテムの管理も得意で、"
+    },
+    {
+      "speaker": "美空",
+      "text": "夏が一番わたしらしくいられる気がするの。"
+    },
+    {
+      "speaker": "美空",
+      "text": "好きな食べ物は中華！"
+    },
+    {
+      "speaker": "美空",
+      "text": "特に麻婆豆腐は外せないっ。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "美空",
+      "text": "逆に山菜はちょっと苦手……"
+    },
+    {
+      "speaker": "美空",
+      "text": "独特な苦味がどうもねぇ……。"
+    },
+    {
+      "speaker": "美空",
+      "text": "それから、わたしお酒弱いから、"
+    },
+    {
+      "speaker": "美空",
+      "text": "いつもソフトドリンク派！"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h11101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "美空",
+      "text": "乾杯するときもジュースでごめんね？"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "美空",
+      "text": "あ、あと苦手なものと言えば英語……"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10601.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "美空",
+      "text": "ほんとにダメで、テストは赤点ギリギリだったよ……。"
+    },
+    {
+      "speaker": "美空",
+      "text": "でも、意外って言われるんだけど、"
+    },
+    {
+      "speaker": "美空",
+      "text": "わたし剣道は全国レベルなんだよ？"
+    },
+    {
+      "speaker": "美空",
+      "text": "小さい頃からやってて、"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/h10901.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "美空",
+      "text": "一応日本一にもなったことがあるの！"
+    },
+    {
+      "speaker": "美空",
+      "text": "だから見た目だけで甘く見ないでね？"
+    },
+    {
+      "speaker": "美空",
+      "text": "いざとなったら竹刀一本で守ってあげるから。"
+    },
+    {
+      "speaker": "美空",
+      "text": "呼び方はみんなのことはちゃん付けかさん付けで呼んでるよ。"
+    },
+    {
+      "speaker": "美空",
+      "text": "わたしのことは「美空」って気軽に呼んでくれると嬉しいな。"
+    },
+    {
+      "speaker": "美空",
+      "text": "あ、あなたのことは「あなた」って呼んでもいい？"
+    },
+    {
+      "speaker": "美空",
+      "text": "ちょっと特別感あるでしょ？"
+    },
+    {
+      "speaker": "美空",
+      "text": "こんなわたしだけど、"
+    },
+    {
+      "speaker": "美空",
+      "text": "これからたくさん一緒に思い出作ろうね？"
+    },
+    {
+      "speaker": "美空",
+      "text": "わたしも、あなたのこと……"
+    },
+    {
+      "speaker": "美空",
+      "text": "もっともっと知りたいからさっ！"
+    },
+    {
+      "speaker": "",
+      "text": "（美空の自己紹介を思い出に登録しました）"
+    },
+    {
+      "speaker": "",
+      "text": "",
+      "auto": true,
+      "wait": 500
+    }
+  ]
+}

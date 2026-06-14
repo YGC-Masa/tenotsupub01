@@ -1,0 +1,2643 @@
+{
+  "id": "yozora_affection_60_00_main",
+  "title": "夜空のままで",
+  "version": "v039_158",
+  "return": {
+    "mode": "storyMenu",
+    "storyId": "yozora_affection_60_00_main",
+    "storyMenuTab": "main"
+  },
+  "format": "v039_steps",
+  "type": "character_main_story",
+  "characterId": "ai",
+  "route": "yozora",
+  "affectionRange": {
+    "min": 50,
+    "max": 60
+  },
+  "location": {
+    "id": "yunagi_observatory_night",
+    "name": "夕凪展望台・夜"
+  },
+  "summary": "キー5-3で美空への黒い感情を漏らしてしまった夜空が、自己嫌悪のまま夕凪展望台へ逃げる。店長が追いつくことでさらに爆発し、拒絶の勢いで店長を突き飛ばしてしまう。店長が階段から落ちたことで夜空は本気で取り乱し、大声で泣きながら謝罪と本音を吐露する。最後は、店長から「いつもの夜空のままで」と受け止められ、「うちに帰ろう。き",
+  "purpose": "キー5-3で美空への黒い感情を漏らしてしまった夜空が、自己嫌悪のまま夕凪展望台へ逃げる。店長が追いつくことでさらに爆発し、拒絶の勢いで店長を突き飛ばしてしまう。店長が階段から落ちたことで夜空は本気で取り乱し、大声で泣きながら謝罪と本音を吐露する。最後は、店長から「いつもの夜空のままで」と受け止められ、「うちに帰ろう。きっと美空とココアが待ってる」と帰る道へ向かう。",
+  "tags": [
+    "夜空ルート",
+    "親愛度50-60",
+    "双沢姉妹",
+    "店長",
+    "美空"
+  ],
+  "clearFlags": [
+    "yozora_main_60_00_cleared"
+  ],
+  "nextHint": "次の親愛度60〜70帯では、事故後の謝罪と「忘れて、でも忘れないで」へ進む。",
+  "renderPolicy": {
+    "spritePosition": "logical_split_n_plus_1",
+    "eventCgLayer": "frontOfCharacters"
+  },
+  "steps": [
+    {
+      "speaker": "",
+      "text": "――夕凪展望台・夜――",
+      "bg": "images/assets/bg/bg_yunagi_observatory_night.png",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true,
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――夜の夕凪展望台は、街の灯りを遠くに見下ろしていた。\n海から上がってくる風が、手すりを冷たく撫でる。\n下の道から続く階段には街灯が少なく、展望台の周りだけが淡い光に浮かんでいる。"
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は手すりのそばで立ち止まっていた。\n息が乱れている。\nみなと公園からここまで、振り返らずに走ってきた。\n逃げたかった。\n店長から。\n美空から。\nそして、自分の口から出た言葉から。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――胸が苦しい。\n走ったせいだけではない。\nさっき言ってしまった言葉が、何度も頭の中で響いている。"
+    },
+    {
+      "speaker": "",
+      "text": "――美空ばっかり。\nずるい。\nどうして、美空は見つけてもらえるの。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……最低。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――自分で言った言葉なのに、自分で耐えられない。\n美空は何も悪くない。\n美空は優しくて、明るくて、誰よりも大事な姉なのに。\nそれなのに、羨ましかった。\n苦しかった。\nずるいと思ってしまった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼくは……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――階段の下から、足音が聞こえた。"
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空！"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……っ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は振り返る。\n店長が息を切らしながら、階段を上がってくるところだった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "来ないでって言った。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "言われた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "なら、どうして来るの。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "放っておけなかった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "・・・はは。やっと追いついた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "・・・どうして・・・",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "悪い。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "謝らないで。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "でも、追いかけたのは俺だから。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "そういうところが嫌なの。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん、じゃない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "やっぱり、運動してると体力が違うな……。\nはは、……追いつくの。\n……かなり大変だった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……そんなこと、今言う？",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "悪い。\nでも、本当に大変だった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長は、本当に変。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そうかもしれない。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "認めないで。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――店長は夜空から少し離れた場所で足を止めた。\n近づきすぎない。\n逃げ道を塞がない。\nけれど、帰るつもりもない距離だった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "どうして……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "ん？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "どうして、そこまで来るの。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空が心配だから。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "それ、さっきも聞いた。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "何度でも言う。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "でも、そうだから。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "だから、それが嫌なの！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空の声が、夜の展望台に響いた。\n風が二人の間を抜ける。\n店長は言い返さず、ただ夜空を見る。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "心配だからって来ないで。\n放っておけないからって来ないで。\n見ないでって言ってるのに、見つけないで。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "呼ばないで。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長が来ると、隠せなくなる。\n店長が見ると、なかったことにできなくなる。\nぼくが、どんなことを思ってたのか。\nどんなに嫌なことを考えてたのか。\n全部、見られる。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "全部は見えない。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "見える。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "見えてるなら、俺はもっと上手くできてる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "そういう返し、しないで。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "悪い。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "謝らないでって言った！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "もう、謝らないで。\n優しくしないで。\n落ち着けって言わないで。\n大丈夫って言わないで。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "言わない。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "そうやって、すぐ受け止めるところも嫌。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "何を言っても、店長は怒らない。\n突き放さない。\nだから、どんどん言ってしまう。\n言いたくないことまで、出てくる。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "それでもいい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "よくない！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は手すりから離れ、一歩店長へ近づいた。\n怒っているようで、泣きそうで、どちらにも見える。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "よくないよ。\n美空の悪口みたいなこと、言った。\n美空は何も悪くないのに。\nぼくが勝手に苦しくなって。\n勝手に羨ましがって。\n勝手に、ずるいって思って。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空、それは悪口じゃ――"
+    },
+    {
+      "speaker": "夜空",
+      "text": "違うって言わないで！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "違わない。\n美空ばっかりって言った。\nずるいって思った。\nちゃんと見つけられていいねって、思った。\nそんなの、悪口じゃないなら何なの。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼくは、美空のことが大事なのに。\n大好きなのに。\n美空が笑ってると安心するのに。\n美空が褒められると嬉しいのに。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "なのに、苦しい。\n嬉しいのに、痛い。\n大事なのに、羨ましい。\n大好きなのに、ずるいって思う。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空の声が震えていく。\nそれでも止まらない。\n止められない。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "こんなの、最低だよ。\nこんなの、美空に知られたらだめ。\n店長にも、知られたくなかった。\n誰にも、見られたくなかった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "なのに、店長が見つけた。\nまた見つけた。\n見つけないでって言ったのに。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……ごめん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "謝らないで！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空はさらに一歩近づく。\n店長は動かない。\n動けないのではなく、夜空を追い詰めないために、あえて動かない。"
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空、今は帰ろう。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "帰れない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "美空が心配してる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空の名前を出さないで！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "帰れるわけない。\nあんなこと言ったまま、美空のところに帰れるわけない。\nどんな顔をすればいいの。\n美空が「おかえり」って言ったら、ぼくはどうすればいいの。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そのまま帰ればいい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "簡単に言わないで。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "簡単には思ってない。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "思ってる。\n店長はいつもそう。\n話せばいい。\n帰ればいい。\n大丈夫。\nそんなふうに言う。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "大丈夫とは言ってない。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言いそうな顔をしてる！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼくは、大丈夫じゃない。\n美空のところにも帰れない。\n店長にも見られたくない。\nなのに、一人になるのも怖い。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……一人にしない。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "だから、それが嫌なの！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空の両手が、店長の胸元へ伸びた。\n押し返すための手。\n離れさせるための手。\n本当は、触れるつもりさえなかった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "もう放っておいて！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼくに構わないで！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は店長から離れようとした。\nただ、目の前にいる店長を遠ざけたかった。\nこれ以上、見られたくなかった。\nこれ以上、優しくされたくなかった。"
+    },
+    {
+      "speaker": "",
+      "text": "――だから、両手を伸ばした。\n押し返すつもりだった。\n距離を取るだけのつもりだった。"
+    },
+    {
+      "speaker": "",
+      "text": "――けれど、指先に力が入った。\n胸の奥で暴れていた感情が、そのまま腕に乗ってしまった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "こないでっ！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空の両手が、店長の胸を強く押した。"
+    },
+    {
+      "speaker": "店長",
+      "text": "……っ！"
+    },
+    {
+      "speaker": "",
+      "text": "――店長の足元が、階段の縁にかかる。\nほんの一瞬、店長の体が後ろへ傾いた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "え――",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――目の前にいたはずの店長が、スローモーションのように夜空の視界から消えていく。"
+    },
+    {
+      "speaker": "",
+      "text": "――次の瞬間、鈍い音が、夜の展望台に響く。"
+    },
+    {
+      "speaker": "",
+      "text": "――風の音も、遠くの街のざわめきも、すべてが遠のく。\n後に残ったのは、静寂だけだった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空の頭が真っ白になった。\n自分が何をしたのか、すぐには理解できなかった。\nただ、店長がいない。\nさっきまで目の前にいた店長が、視界の中から消えた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "てん……ちょう……？",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――声が、うまく出ない。\n喉が震えて、息が詰まる。"
+    },
+    {
+      "speaker": "",
+      "text": "――遅れて、階段の下を見る。\n数段下の踊り場で、店長が肩を押さえながら体を起こそうとしていた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――足が勝手に動いた。\nさっきまで逃げようとしていたのに、今度は一瞬で階段を駆け下りる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ],
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main60_cry_reach.png"
+    },
+    {
+      "speaker": "店長",
+      "text": "……っ、だ、大丈夫だ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "大丈夫じゃない！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空、落ち着――"
+    },
+    {
+      "speaker": "夜空",
+      "text": "落ち着けない！\n店長、店長、どこ打ったの。\n痛い？\n頭は？\n動ける？\n血、出てない？\n店長、ねえ、店長……！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空、聞いて。\n大したことない。\n数段落ちただけだ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "数段って……！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "大丈夫だ。\n本当に。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "嘘。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "嘘じゃない。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "嘘。\nだって、落ちた。\nぼくが押した。\nぼくが……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空の声が崩れる。\n手が震えている。\nどこに触れればいいのかもわからず、店長のそばで固まっていた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "てんちょう……。\nだいじょうぶ……？",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "大丈夫だ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "てんちょ……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――その瞬間、店長は夜空の腕をそっと引き寄せた。\n強引ではない。\nけれど、逃げようとした夜空を逃がさないように、ぎゅうっと抱きしめる。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main60_hug_01.png"
+    },
+    {
+      "speaker": "店長",
+      "text": "やっと捕まえた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……っ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "本当に、やっと捕まえた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "もう走るな。\n今日は、ここまで。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "俺は大丈夫だから。\nだから、ここにいろ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……っ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空の体から力が抜けた。\n張りつめていたものが、音を立てて切れたようだった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ごめんなさい。\nごめんなさい。\nごめんなさいぃ……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ごめんなさい、店長。\nごめんなさい。\nぼく、ぼく……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "押すつもりじゃなかった。\n落とすつもりなんてなかった。\n傷つけるつもりなんて、なかった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "わかってる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "わかってない。\nわかってないよ。\nぼく、店長にひどいこと言った。\n美空にもひどいこと思った。\nそれで、逃げて。\n追いかけてきた店長を、突き飛ばした。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "最低だ。\n本当に最低だ。\nぼくは、ぼくは……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空の声がそこで詰まった。\n次の言葉を探そうとして、でも見つからなくて。\n代わりに、喉の奥から、押し殺しきれない泣き声が漏れた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……っ、う……。\nう、うう……っ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "やだ……。\nやだよ……。\nこんなの、やだ……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は店長の服を掴む。\n指先が震えて、布をくしゃりと握りしめる。\nもう顔を隠す余裕も、声を抑える余裕もなかった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "やだぁ……っ。\nごめんなさい……！\nごめんなさい、店長……！\nぼく、こんなことしたくなかった……！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ],
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main60_hug_02.png"
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空のこと、大好きなのに……！\n大好きなのに、嫌なこと思った……！\nずるいって思った……！\nそんなこと思いたくなかったのに……！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "見ないでって言ったのに……。\nでも、見つけてほしかった……！\n放っておいてって言ったのに……。\nでも、一人にされたら怖かった……！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "わかんない……！\nぼく、自分がわかんない……！\n美空が大事なのに、苦しい……！\n店長に見られるの怖いのに、いなくならないでほしい……！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は、とうとう声を上げて泣いた。\n今まで飲み込んできた言葉も、抑えてきた息も、全部まとめて吐き出すように。\n夜の展望台に、夜空の泣き声だけが響いた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うわぁぁ……っ。\nごめんなさい……！\nごめんなさいぃ……！\nぼく、もう、どうしたらいいかわかんないよぉ……！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……うん。\nわからなくていい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "よくない……！\nよくないよぉ……！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "今は、わからなくていい。\n泣いていい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……っ、う、うあぁ……っ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "全部、今じゃなくていい。\nでも、泣けるなら泣いていい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長……。\nてんちょう……っ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "ここにいる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "いなくならないで……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "いなくならない。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "怒らないで……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "怒ってない。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "嫌いにならないで……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "ならない。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……っ、うあぁぁ……！",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空はもう一度、大きく泣いた。\n泣き声は震えていて、苦しそうで、それでも少しずつ胸の奥に溜まっていたものを外へ出していくようだった。\n謝罪も、恐怖も、自己嫌悪も、全部涙に混ざってこぼれていく。"
+    },
+    {
+      "speaker": "",
+      "text": "――しばらくして、夜空の泣き声は少しずつ小さくなっていった。\n呼吸はまだ乱れている。\n目元も赤い。\nそれでも、さっきまでのように胸を押さえて苦しむような硬さは、少しだけ抜けていた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……はぁ……っ。\n……っ、う……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ],
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main60_hug_03.png"
+    },
+    {
+      "speaker": "店長",
+      "text": "少し、息できるか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……少し。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも……今は、少しだけ……聞こえててもいい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は店長の服を掴んだまま、何度か深く息を吸った。\n泣きすぎて、声はかすれていた。\nけれど、その目はさっきより少しだけ、こちらを見ていた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……ごめんなさい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "まだ、何も解決してない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも……少し、軽くなった気がする。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "泣いたからか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……たぶん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも……今日は、少しだけ言われてもいい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "なに。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空の心の痛みは、俺には直せない。\n美空への気持ちも、夜空の苦しさも、俺が簡単に消せるものじゃない。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "でも、話してくれるだけで少し楽になるなら。\nそのために隣にいられるなら、俺は嬉しい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……心の痛みは、直せない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、話すだけで……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "少し楽になることもある。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "全部きれいに話さなくていい。\n順番も、正しさもいらない。\n嫌なことも、言いたくないことも、言えるところだけでいい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……ぼく。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼくは、美空が大好き。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ],
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main60_hug_04.png"
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "本当に大好き。\n美空が笑ってると安心する。\n美空が褒められると嬉しい。\n美空が誰かに大事にされるのも、嬉しい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、苦しい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空の隣にいると、比べられる。\n美空は明るい。\nぼくは暗い。\n美空はまっすぐ。\nぼくは面倒くさい。\n美空はすぐ見つけてもらえる。\nぼくは、隠れてる方が楽。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、見つけてもらえないのも苦しい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "隠れていたいのに、見つけてほしい。\n見つけてほしいのに、見られるのは怖い。\n美空のことが大事なのに、美空が羨ましい。\n羨ましいのに、そんな自分が嫌い。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ずっと、それをなかったことにしてた。\n美空は大事。\n美空は悪くない。\nそれだけ言ってれば、黒いところは消えると思ってた。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "消えなかったんだな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\n消えなかった。\nずっとあった。\n見ないふりしてただけだった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長に見つけられて、もう隠せなくなった。\nだから怖かった。\n怒った。\n逃げた。\nそれで、店長を傷つけた。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "俺は大丈夫だ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、傷つけた。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。\n押されたのは痛かった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "でも、夜空が傷つけようとしたわけじゃないのはわかってる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……そんなの、わからない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "わかる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "わからないよ。\nぼく、自分でもわからなかった。\n止められなかった。\n店長を突き飛ばして、落として、それでもまだ……怖くて。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼく、何をするかわからない。\nまた傷つけるかもしれない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "それでも、今は逃げなくていい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "俺はここにいる。\nちゃんと話を聞ける。\nだから、今は逃げなくていい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……店長。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……怖い。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空に知られるのも怖い。\n店長に嫌われるのも怖い。\n自分が、こんなことを思ってたって認めるのも怖い。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも……もう、隠せない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……全部、出ちゃった。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "それでも、夜空はここにいる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "逃げずに、ここにいる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……店長が、捕まえたから。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。\nやっと捕まえた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……ずるい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main60_hug_05.png"
+    },
+    {
+      "speaker": "夜空",
+      "text": "そんな言い方されたら、話してしまう。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "話してくれるなら、俺は嬉しい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……全部、言った気がする。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "少し楽になったか？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……少し。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、今日は……少しだけ言われてもいい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そっか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は涙を拭う。\nそれでも、まだ目元は赤い。\n顔を上げるのに時間がかかった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "ん？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空に、どう言えばいい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "全部は今日じゃなくていい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "まずは帰ろう。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "帰れるかな。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "帰れる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空、怒ってるかな。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "心配してると思う。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "それと、きっとココアを用意して待ってる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空なら、そうする。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "温かいやつ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "たぶんな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "甘いやつ。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "きっとな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……ずるい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "美空が？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "二人とも。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そうか。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――店長はゆっくり立ち上がる。\n少し足元を確認し、問題なく歩けることを夜空に見せた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "本当に大丈夫？",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ],
+      "hideEventCg": true
+    },
+    {
+      "speaker": "店長",
+      "text": "大丈夫だ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "痛かったら言って。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "言う。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "我慢しないで。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "しない。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長、すぐ我慢する。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空もな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……今日は、言い返せない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "じゃあ、今日はお互い様だ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "お互い様にしないで。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "悪い。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも……少しだけ、助かる。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――二人は階段をゆっくり上る。\n今度は夜空が、店長の少し後ろではなく、横に立っていた。\n何度も店長の足元を見る。\nそのたびに店長が「大丈夫」と小さく言う。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "ん？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "帰ったら、美空に……謝る。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "全部は言えないかもしれない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "それでいい。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、逃げたことと、心配させたことは謝る。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "あと、店長を押したことも。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "それは美空に言ったら、すごく心配するぞ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わない方がいい？",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "隠すのとは違うけど、まずは俺が大丈夫だって見せてからだな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うちに帰ろう。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うち。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "ひだまりストアでも、双沢家でも。\n夜空が帰る場所に。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "きっと美空とココアが待ってる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "行こう。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は小さく頷く。\nまだ怖い。\nまだ苦しい。\n美空に何を言えばいいのかも、全部はわからない。"
+    },
+    {
+      "speaker": "",
+      "text": "――でも、さっきより少しだけ、息ができる。\n全部を消せたわけじゃない。\nけれど、隠していたものを言葉にしたことで、胸の奥にあった重さが少しだけ形を変えていた。"
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は店長の隣を歩く。\n半歩後ろではなく、逃げ出すためでもなく。\n今日は、帰るために。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……店長。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "ん？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "まだ、変なところがある。\n美空に謝れるかわからない。\nまた泣くかもしれない。\nうまく話せないかもしれない。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "それでもいいんじゃないかな。\nいつもの夜空のままで。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……夜空のままで？",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空のままで。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "美空も、そう言うと思う。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……ずるい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも……今日は、少しだけ信じる。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……でも、聞こえててもいい。",
+      "storySprites": [
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_coat_main50.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は小さく息を吐く。\n涙で少し赤くなった目のまま、夜の坂道を見下ろした。\n帰るのは怖い。\nでも、逃げるためではなく、帰るために歩ける気がした。"
+    }
+  ],
+  "mainScenarioIndex": 6,
+  "unlockCondition": {
+    "requiredFlags": [
+      "yozora_key_50_01_cleared",
+      "yozora_key_50_02_cleared",
+      "yozora_key_50_03_cleared"
+    ]
+  }
+}

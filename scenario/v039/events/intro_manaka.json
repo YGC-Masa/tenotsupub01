@@ -1,0 +1,257 @@
+{
+  "id": "intro_manaka",
+  "title": "自己紹介：大道寺 真花",
+  "return": {
+    "mode": "members"
+  },
+  "format": "v039_steps",
+  "sourceFormat": "legacy_array",
+  "steps": [
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "bgMode": "replace",
+      "speaker": "",
+      "text": "【自己紹介】大道寺 真花",
+      "clearStorySprites": true
+    },
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "speaker": "",
+      "text": "（あ、真花がいる。よし。）"
+    },
+    {
+      "speaker": "店長",
+      "text": "真花ー、ちょっといいかなー？"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "af",
+          "src": "images/assets/char/f10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "storySprites": [
+        {
+          "id": "af",
+          "src": "images/assets/char/f10201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "真花",
+      "text": "あ、店長。お疲れ様です。"
+    },
+    {
+      "speaker": "店長",
+      "text": "カメラテストをしてるんだけどさ、真花の自己紹介してみて。あ、もう録画してるよ。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "af",
+          "src": "images/assets/char/f11201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "真花",
+      "text": "え？・・・ええぇー、わ、わた、私の自己紹介ですか…？"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "af",
+          "src": "images/assets/char/f11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "真花",
+      "text": "うう…店長…わたしがそういうの苦手なの、知っているのに…。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "af",
+          "src": "images/assets/char/f10601.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "真花",
+      "text": "……えっと、それじゃあ…頑張ってみます…。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "af",
+          "src": "images/assets/char/f11201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "真花",
+      "text": "は、はじめまして…わ、わたし、大道寺 真花（だいどうじ　まなか）と申します…。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "af",
+          "src": "images/assets/char/f10601.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "真花",
+      "text": "えっと…こういう場って、緊張しますね…。"
+    },
+    {
+      "speaker": "真花",
+      "text": "1月1日生まれの、やぎ座です。"
+    },
+    {
+      "speaker": "真花",
+      "text": "年齢は22歳、血液型はO型です。"
+    },
+    {
+      "speaker": "真花",
+      "text": "身長は152センチで…小さいほう、かな。"
+    },
+    {
+      "speaker": "真花",
+      "text": "周りからは「お嬢様っぽい」って言われるんですけど…"
+    },
+    {
+      "speaker": "真花",
+      "text": "そ、そんな立派なものじゃないんです…っ。"
+    },
+    {
+      "speaker": "真花",
+      "text": "実家は建築会社で、現場には屈強な男性がいっぱいで…。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "af",
+          "src": "images/assets/char/f11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "真花",
+      "text": "あの…正直、そういう方たちは、ちょっと…苦手で…。"
+    },
+    {
+      "speaker": "真花",
+      "text": "初対面だと、声がうわずっちゃうこともあります。"
+    },
+    {
+      "speaker": "真花",
+      "text": "でも、弱いだけじゃないつもりです。"
+    },
+    {
+      "speaker": "真花",
+      "text": "意外と…芯は強いほうなんですよ？ たぶん…。"
+    },
+    {
+      "speaker": "真花",
+      "text": "趣味はエステに行ったり、美容品を試すこと。"
+    },
+    {
+      "speaker": "真花",
+      "text": "自分磨きは毎日の楽しみです。"
+    },
+    {
+      "speaker": "真花",
+      "text": "好きな食べ物はパスタで、苦手なのは…お魚。"
+    },
+    {
+      "speaker": "真花",
+      "text": "飲み物はカクテルが好きです。"
+    },
+    {
+      "speaker": "真花",
+      "text": "好きな色はグレーで、落ち着きと品を意識してます…できてるかは別として…。"
+    },
+    {
+      "speaker": "真花",
+      "text": "お話するときは、店長のことは「店長」とお呼びします。"
+    },
+    {
+      "speaker": "真花",
+      "text": "速水川さんや氷神さんのような落ち着いた方は安心します。"
+    },
+    {
+      "speaker": "真花",
+      "text": "草壁おねぇ様や彩愛様には、つい甘えてしまいそうです。"
+    },
+    {
+      "speaker": "真花",
+      "text": "こがねちゃんや美空ちゃん、夜空ちゃんとは…たくさんおしゃべりしたいです。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "af",
+          "src": "images/assets/char/f11101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "真花",
+      "text": "星野さんや琥珀さんみたいに明るい方は…まだちょっと緊張しちゃいますけど。"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "af",
+          "src": "images/assets/char/f10701.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "真花",
+      "text": "お嬢様っぽいって言われるのは、やっぱり恥ずかしいですけど…"
+    },
+    {
+      "speaker": "真花",
+      "text": "その分、ちゃんと恥ずかしくない中身になりたいと思ってます。"
+    },
+    {
+      "speaker": "真花",
+      "text": "あ、でも…プレッシャーを感じすぎると、すぐテンパっちゃうので…"
+    },
+    {
+      "speaker": "真花",
+      "text": "そのときは、ちょっと笑って見守ってください…。"
+    },
+    {
+      "speaker": "真花",
+      "text": "そ、そんな感じのわたしですが…これから、よろしくお願いしますっ。"
+    },
+    {
+      "speaker": "",
+      "text": "（真花の自己紹介を思い出に登録しました）"
+    },
+    {
+      "speaker": "",
+      "text": "",
+      "auto": true,
+      "wait": 500
+    }
+  ]
+}

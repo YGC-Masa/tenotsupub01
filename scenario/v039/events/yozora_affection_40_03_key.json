@@ -1,0 +1,3851 @@
+{
+  "id": "yozora_affection_40_03_key",
+  "title": "美空の大事なものなのに",
+  "version": "v039_166",
+  "return": {
+    "mode": "storyMenu",
+    "storyId": "yozora_affection_40_03_key",
+    "storyMenuTab": "key"
+  },
+  "format": "v039_steps",
+  "type": "character_key_story",
+  "characterId": "ai",
+  "route": "yozora",
+  "affectionRange": {
+    "min": 40,
+    "max": 50
+  },
+  "location": {
+    "id": "sugosawa_white_black_twin_room",
+    "name": "双沢家・白黒ツインルーム"
+  },
+  "summary": "夜空は美空との会話で、店長に見られることが嫌なのに、見られないことも嫌だと認める。さらに、店長が美空の大事な人であるにもかかわらず、自分も店長に見つけてほしいと思ってしまう罪悪感が出る。",
+  "purpose": "夜空が美空と店長の関係を意識し、自分も店長に見つけてほしいと思ってしまうことへの罪悪感を出す。メイン50へつなぐ。",
+  "tags": [
+    "夜空ルート",
+    "親愛度40-50",
+    "避ける夜空",
+    "探さないで前兆"
+  ],
+  "clearFlags": [
+    "yozora_key_40_03_cleared"
+  ],
+  "nextHint": "次はメイン50「探さないで、の前兆」で、夜空が店長へ直接「ぼくがいなくなっても、探さないで」と示唆する。",
+  "renderPolicy": {
+    "spritePosition": "logical_split_n_plus_1",
+    "eventCgLayer": "frontOfCharacters"
+  },
+  "steps": [
+    {
+      "speaker": "",
+      "text": "――双沢家・白黒ツインルーム・夜――",
+      "bg": "images/assets/bg/bg_sugosawa_room_night_light_on.png",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true,
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、今日も店長とあんまり話してなかったね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……見てたの。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "見てたよ。\n夜空が、店長に話しかけられるたびに棚の方を向いてたから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "商品棚を見てただけ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\nでも、店長の方を見ないようにしてた。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "なに。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "店長のこと、嫌になった？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "違う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "じゃあ、怖い？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ごめん。\n言いたくないなら、無理に言わなくていいよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "そういうところ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "え？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空は、すぐそうやって逃げ道を作る。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空が苦しそうだから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "苦しそうに見える？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……そっか。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "text": "――夜空は黒いマグカップを両手で包む。",
+      "speaker": ""
+    },
+    {
+      "text": "中身は少し冷めたココアだった。\n美空の白いマグカップも、中央のテーブルに並んでいる。"
+    },
+    {
+      "speaker": "美空",
+      "text": "店長、心配してたよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "知ってる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "わかるんだ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長は、わかりやすいところと、わかりにくいところがある。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "たしかに、まっすぐだけど、たまに何考えてるかわからない時あるよね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "でも、夜空のことはちゃんと見ようとしてると思う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……それが困る。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "見られるのが？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "でも、夜空、店長に見られるの、本当に嫌なだけ？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ごめん。\n踏み込みすぎた？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……嫌なら、もっと楽だった。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長に見られるの、嫌。\n見透かされるのも嫌。\n苦しいところを見つけられるのも嫌。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、店長が見てくれないのも……たぶん嫌。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "そういうのが、嫌。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "店長のことを、気にしてるんだね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……言わないで。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ごめん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "謝らなくていい。\n美空は悪くない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空はすぐそう言うね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "だって、美空は悪くないから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "でも、今の話は、わたしが悪いかどうかじゃないよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空が、どう思ってるかの話。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……どう思ってるかなんて、わからない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、わからないのに、胸の奥がざらざらする。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ざらざら？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長が美空と話してる時。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空が店長に笑ってる時。\n店長が美空を褒める時。\n美空が、店長の話を楽しそうにする時。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "違う。\n美空にそうするなって言いたいわけじゃない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空が楽しそうなのは嬉しい。\n店長が美空を見てくれるのも、嬉しい。\n美空はちゃんと見つけてもらえるべきだから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "text": "――夜空はそこで言葉を止める。",
+      "speaker": ""
+    },
+    {
+      "text": "黒いマグカップに映った自分の顔を、見ないように目をそらした。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……でも、たまに思う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長が、ぼくの方を見ると。\n困るのに。\n嫌なのに。\n逃げたいのに。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "少しだけ、嬉しい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わないで。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。\n言わない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空の大事なものなのに。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "え？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長は、美空の大事な人でしょ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空は店長を信頼してる。\n店長も美空をちゃんと見てる。\n美空が店長と話してる時、すごく楽しそうにする。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "なのに、ぼくまで店長に見てほしいって思うのは、変でしょ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "変じゃないよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "変だよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "変じゃない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空はそう言う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "本当にそう思ってるから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "まっすぐすぎる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空は考えすぎ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……何回でも言うね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "何回でも言うよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空はずるい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "わたし？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\n美空は、優しくて、明るくて、まっすぐで。\nぼくが嫌なことを考えても、受け止めようとする。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空が嫌な子だから受け止めるんじゃないよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空が大事だから、知りたいの。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "それに、店長はわたしの大事な人だけど。\n夜空にとっても、大事な人になっていいんだよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……そんな簡単に言わないで。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "簡単じゃないよ。\nでも、夜空が苦しいなら、わたしはそう言う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空が誰かに見つけてもらって嬉しいなら、わたしも嬉しい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空は、そう言えるんだ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空が嬉しいことなら、嬉しいよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……ぼくは、そんなふうに思えない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "今は？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……今も。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "そっか。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空が店長に褒められるのは嬉しい。\nでも苦しい。\n美空が店長と楽しそうにしてるのも嬉しい。\nでも、たまに、苦しい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "そんな自分が嫌。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わないで。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "text": "――部屋の中央に置かれた小さなテーブル。",
+      "speaker": ""
+    },
+    {
+      "text": "白いマグカップと黒いマグカップ。\n同じココアを飲んでいるはずなのに、今は二つの距離が少し遠く見えた。"
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、店長と話した方がいいと思う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "無理。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "今すぐじゃなくていいよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "今すぐじゃなくても、無理。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "でも、避け続ける方が苦しいんじゃない？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空が店長に見つけられるのが怖いなら、そう言ってもいいと思う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "言えない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "どうして？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "言ったら、店長はたぶん、また優しくする。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "それが困る。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "困るんだ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\n優しくされたら、怒れない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "怒りたいの？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "怒れた方が楽。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "店長に？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "でも、本当は怒りたいわけじゃない？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……たぶん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "そっか。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空はすぐ、わかったみたいな顔をする。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "わかりたいから。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……やっぱり、ずるい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "今日は、わたしもずるい担当？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\n店長と同じ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ふふっ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "笑わないで。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ごめんね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "text": "――その時、夜空のスマホが小さく震えた。",
+      "speaker": ""
+    },
+    {
+      "text": "画面には、店長からのメッセージが表示されている。"
+    },
+    {
+      "speaker": "店長",
+      "text": "『今日は無理に話さなくていい。発注確認、助かった。ありがとう』"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "店長？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "なんて？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……何でもない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "本当に何でもない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "そう。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "text": "――夜空はスマホの画面を消そうとして、少しだけ指を止める。",
+      "speaker": ""
+    },
+    {
+      "text": "返信欄を開き、文字を打とうとして、消す。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "返事、しないの？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "しない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "したい？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……わからない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "そっか。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、今返したら。\nまた店長は、ちゃんと見てるって言う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "たぶん言うね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "それが怖い。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……でも、返さないと、少し気になる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "本当に、面倒。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空が？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼくが。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "わたしは、面倒だと思わないよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空はそう言う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "言うよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "text": "――夜空は短く返信を打つ。",
+      "speaker": ""
+    },
+    {
+      "speaker": "夜空",
+      "text": "『別に。仕事だから』",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "text": "――送信。",
+      "speaker": ""
+    },
+    {
+      "text": "それだけの短い返事だった。"
+    },
+    {
+      "speaker": "美空",
+      "text": "送った？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "えらい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "褒めるほどじゃない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "でも、逃げなかった。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……逃げてるよ。\n言いたいことは、何も言ってない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "それでも、返した。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "text": "――すぐに店長から返信が来る。",
+      "speaker": ""
+    },
+    {
+      "speaker": "店長",
+      "text": "『それでも助かった。気をつけて帰れよ』"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "また店長？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "なんて？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……気をつけて帰れって。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ふふっ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "笑わないで。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ごめん。\nでも、店長らしいなって。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。\n変な店長。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、少し嬉しそう。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "嬉しそうじゃない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "そういうことにしておくね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……また、それ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "text": "――夜空はスマホを伏せる。",
+      "speaker": ""
+    },
+    {
+      "text": "けれど、その黒い画面をすぐには手放さなかった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "なに？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼくが店長を避けたら、美空は困る？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "困るというか……心配する。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空が？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "店長じゃなくて？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "店長も心配すると思う。\nでも、わたしも心配するよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……そっか。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空がどこかに行っちゃいそうで、少し怖い。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "行かない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "本当？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……たぶん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "たぶんなんだ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "今は、たぶん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "もし。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "もし、少し一人になりたいって言ったら。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空は、探す？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "探すよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……だよね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空が本当に一人でいたいなら、少し待つかもしれない。\nでも、いなくなったら探す。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "そっか。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "店長も、たぶん探すと思う。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "探さなくていいのに。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空がそう言っても、探すと思うよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……だから困る。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "困っていいよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "よくない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "よくなくても、困ってる夜空を置いていけないよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空は、本当にまっすぐすぎる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空は考えすぎ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……何回でも言うんだね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "何回でも言うよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "text": "――夜空は黒いマグカップを持ち上げる。",
+      "speaker": ""
+    },
+    {
+      "text": "ココアはもう冷めている。\nそれでも、一口だけ飲んだ。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……甘い。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "冷めても？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "冷めても。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "そっか。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……でも、少し苦い。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "ココアなのに？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "今は、そう感じる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_pajama_generic.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_pajama_generic.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "text": "――夜空はそう言って、視線を窓の外へ向けた。",
+      "speaker": ""
+    },
+    {
+      "text": "美空の大事な人。\n自分も見つけてほしい人。\nその二つが同じになってしまったことが、夜空にはまだ、どうしようもなく怖かった。"
+    }
+  ],
+  "keyScenarioIndex": 3
+}

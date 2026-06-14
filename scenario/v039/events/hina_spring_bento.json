@@ -1,0 +1,272 @@
+{
+  "id": "hina_spring_bento",
+  "title": "春の公園でのお弁当タイム",
+  "return": {
+    "mode": "town",
+    "season": "spring"
+  },
+  "steps": [
+    {
+      "bg": "images/assets/bgev/bg_park_spring.png",
+      "bgMode": "replace",
+      "speaker": "",
+      "text": "【思い出ストーリー】春の公園でのお弁当タイム",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "店長",
+      "text": "春の昼下がり。外回りの途中で少し時間が空いた。"
+    },
+    {
+      "speaker": "店長",
+      "text": "若葉中央公園も近いし、休憩がてら寄っていくか。"
+    },
+    {
+      "speaker": "",
+      "text": "公園には、春の陽射しがやわらかく差し込んでいた。"
+    },
+    {
+      "speaker": "",
+      "text": "桜の花びらが、風に乗ってゆっくりと舞っている。"
+    },
+    {
+      "speaker": "",
+      "text": "ベンチの並ぶ広場へ向かうと、見慣れた赤い髪が目に入った。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "あっ、店長！　お疲れさまです！",
+      "storySprites": [
+        {
+          "id": "hina",
+          "src": "images/assets/char/a10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "緋奈？　こんなところで会うとは思わなかったな。昼休みか？"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "はいっ。今日は天気がよかったので、外でお弁当にしようかなって。",
+      "storySprites": [
+        {
+          "id": "hina",
+          "src": "images/assets/char/a10701.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "なるほど。公園で弁当か、いいな。"
+    },
+    {
+      "speaker": "",
+      "text": "緋奈の膝の上には、クロスを敷いたお弁当箱が広げられていた。"
+    },
+    {
+      "speaker": "店長",
+      "text": "それ、手作りか？"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "もちろんです！　あたし、こう見えて料理はけっこうできるんですよ？",
+      "storySprites": [
+        {
+          "id": "hina",
+          "src": "images/assets/char/a10901.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "へえ……うまそうだな。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "えへへ。じゃあ……一口、食べてみます？",
+      "storySprites": [
+        {
+          "id": "hina",
+          "src": "images/assets/char/a10202.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "いいのか？"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "はい。小さいハンバーグですけど、味には自信あります！"
+    },
+    {
+      "bg": "images/assets/bgev/bg_memory_hina_spring_bento.png",
+      "bgMode": "replace",
+      "speaker": "",
+      "text": "緋奈は赤い箸で、お弁当のハンバーグをひと口分だけ切り分けると、少し照れた顔でこちらへ差し出してきた。",
+      "clearStorySprites": true,
+      "spriteMode": "cg-clear"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "ほら、店長。あーん……です。"
+    },
+    {
+      "speaker": "店長",
+      "text": "……いただきます。"
+    },
+    {
+      "speaker": "",
+      "text": "甘辛いソースの香りがふわりと広がる。ひと口噛むと、肉の旨みとやさしい味付けがちょうどよく混ざった。"
+    },
+    {
+      "speaker": "店長",
+      "text": "……うまい。これ、本当に緋奈が作ったのか？"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "本当ですよ！？　もう、そこ疑うところじゃないですって！"
+    },
+    {
+      "speaker": "店長",
+      "text": "いや、素直に驚いた。これはかなりうまい。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "えへへ……そこまで言われると、ちょっと照れますね。"
+    },
+    {
+      "bg": "images/assets/bgev/bg_park_spring.png",
+      "bgMode": "replace",
+      "speaker": "店長",
+      "text": "この腕前なら、いいお嫁さんになれるよ。",
+      "storySprites": [
+        {
+          "id": "hina",
+          "src": "images/assets/char/a10501.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "緋奈",
+      "text": "へっ……？",
+      "storySprites": [
+        {
+          "id": "hina",
+          "src": "images/assets/char/a11101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "緋奈の顔が、みるみる赤く染まっていった。"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "あ、あ、あたしが・・お嫁さん？！",
+      "storySprites": [
+        {
+          "id": "hina",
+          "src": "images/assets/char/a11201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "・・・・？"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "・・・・・！"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "あ、あたし。もう戻りますね！",
+      "storySprites": [
+        {
+          "id": "hina",
+          "src": "images/assets/char/a11201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "え？　もう行くのか？"
+    },
+    {
+      "speaker": "緋奈",
+      "text": "はいっ！　お、お店でまた！",
+      "storySprites": [
+        {
+          "id": "hina",
+          "src": "images/assets/char/a11201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "緋奈はお弁当を慌てて片づけると、小走りで公園を出ていった。",
+      "clearStorySprites": true,
+      "spriteMode": "hide"
+    },
+    {
+      "speaker": "店長",
+      "text": "……急にあわててどうしたんだろう・・・？"
+    },
+    {
+      "speaker": "",
+      "text": "春の風が花びらと遊ぶように、さっきまでの慌ただしさをそっとさらう。"
+    },
+    {
+      "speaker": "",
+      "text": "ベンチに残った春の陽射しと、口の中に広がるハンバーグの味だけが、しばらく店長の記憶に残っていた。"
+    },
+    {
+      "speaker": "",
+      "text": "【思い出アルバムに追加】緋奈「春の公園でのお弁当タイム」"
+    }
+  ],
+  "format": "tenotsu-v039-story-v2",
+  "renderPolicy": {
+    "skipSameBackground": true,
+    "skipSameSprites": true,
+    "noDebugFlash": true,
+    "noFadeDuringStep": true,
+    "showSpritesAfterEncounter": true,
+    "bottomAlignSprites": true,
+    "clearSpritesOnEventCg": true,
+    "spritesBehindText": true,
+    "multipleSpriteVariants": true,
+    "forceCenterSprites": true,
+    "hideSpritesOnClear": true
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "id": "intro_kohaku",
+  "title": "自己紹介：春日原 琥珀",
+  "return": {
+    "mode": "members"
+  },
+  "format": "v039_steps",
+  "sourceFormat": "legacy_array",
+  "steps": [
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "bgMode": "replace",
+      "speaker": "",
+      "text": "【自己紹介】春日原 琥珀",
+      "clearStorySprites": true
+    },
+    {
+      "bg": "images/assets/bgev/bg011.jpg",
+      "speaker": "",
+      "text": "（あ、琥珀がいる。）"
+    },
+    {
+      "speaker": "店長",
+      "text": "琥珀ー、ちょっといいかー？"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e10101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e10501.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "琥珀",
+      "text": "お、店長？オレに用か？"
+    },
+    {
+      "speaker": "店長",
+      "text": "はい！このカメラに向かって自己紹介！スタート！"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e11201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "琥珀",
+      "text": "お？あ。おーっす！こんちわー！あ、初めての人もいるかな！？"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "オレの名前は春日原 琥珀（かすがはら こはく)だぞー！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "年齢は25歳！しし座の自分でいうのもなんだが元気だけが取り柄だ！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "身長は160センチ、でも筋肉でちょっとガッチリしてるんだ！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "見た目もだが、中身も野生児ってよく言われる！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "スポーツはだいたい全部大好き！走るのも跳ぶのも泳ぐのもぜーんぶ好き！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "最近はバスケとランニングに夢中だ！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "あとイヤホン集めも趣味なんだ！自己トレ中に使えるからいっぱい持ってるぞー！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "水泳用の防水とか、ランニング用に外の音が聞こえるとか色々使い分けてるぞ！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "やっぱ好きな音楽があるとテンションもパフォーマンスもアガるからな！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "好きな食べ物はもちろんお肉！ステーキも焼き肉もガンガンいく！"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "琥珀",
+      "text": "逆に魚卵は勘弁してくれー！あのプチプチが無理なんだ！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "飲み物はスポーツドリンクが一番落ち着く！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "水分補給は大事だからな、旦那もちゃんと飲めよ！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "苦手なものはお化け！マジで怖いんだって！"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e10401.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "琥珀",
+      "text": "ホラー映画とか見せたら泣くかも…いや絶対泣くな！"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "琥珀",
+      "text": "勉強も嫌いでさ、机に座るとすぐ体がうずくんだ！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "でもでも、花も好きだったりして、乙女なとこもあるんだぞ！"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e11201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "琥珀",
+      "text": "ちいさな鉢植えだけどガーベラとかを育ててるんだ！意外だろー！？"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e11101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "琥珀",
+      "text": "性格は姉御肌！困ってるやつはほっとけないタイプだ！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "でも先走ってドジしちゃうことも多いんだよな！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "まぁ、落ち込むより次！ってすぐ切り替えるんだ！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "オレ、単純明快！悩んでもすぐ忘れちゃうタイプ！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "店長のことは旦那って呼んでるぞ！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "緋奈は緋奈！藍は藍！翠は翠！こがねはこがね！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "他のみんなも呼び捨てか短く呼んでるな！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "敬語？そんなの普段はあんまり使わない！でも礼儀はあるつもり！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "相性？誰とでも仲良くやれる方だぞ！"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e10901.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "琥珀",
+      "text": "特に旦那と緋奈と翠とこがねとはバッチリ！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "運動会やったら絶対優勝させるからなー！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "基本、体を動かして発散するタイプ！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "ストレス？走ってるうちにぶっとんじゃうんだ！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "イヤホンで音楽聴いてるときは話しかけんなよ！集中してるからな！"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e10301.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "琥珀",
+      "text": "でもまぁ、怒ってもすぐ忘れるから安心しろ！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "休日はジョギングと花の手入れ！あと寝坊も多いけどな！"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e11001.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "琥珀",
+      "text": "料理は苦手だけど肉料理だけは自信あり！"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e10901.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "琥珀",
+      "text": "バーベキューの火加減は任せろ！"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e11201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "琥珀",
+      "text": "裁縫もできるけど、たまに縫い目が曲がる！ドジでしょ！？"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e11101.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "琥珀",
+      "text": "怖い話のときは絶対オレの隣にいてくれよ！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "でないとマジでぎゅーってしがみついちゃうぞ！"
+    },
+    {
+      "storySprites": [
+        {
+          "id": "ae",
+          "src": "images/assets/char/e11201.webp",
+          "side": "center",
+          "left": "50%",
+          "opacity": 1
+        }
+      ],
+      "speaker": "琥珀",
+      "text": "あー！でもオレ、元気いっぱいすぎて周り引くかも！？"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "まぁ気にしない！元気が取り柄だしな！"
+    },
+    {
+      "speaker": "琥珀",
+      "text": "こんなオレだけど、旦那もみんなもよろしくなー！"
+    },
+    {
+      "speaker": "",
+      "text": "（琥珀の自己紹介を思い出に登録しました）"
+    },
+    {
+      "speaker": "",
+      "text": "",
+      "auto": true,
+      "wait": 500
+    }
+  ]
+}

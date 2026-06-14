@@ -1,0 +1,1495 @@
+{
+  "id": "yozora_affection_40_00_main",
+  "title": "嬉しいのに、苦しい",
+  "version": "v039_210",
+  "return": {
+    "mode": "storyMenu",
+    "storyId": "yozora_affection_40_00_main",
+    "storyMenuTab": "main"
+  },
+  "format": "v039_steps",
+  "type": "character_main_story",
+  "characterId": "ai",
+  "route": "yozora",
+  "affectionRange": {
+    "min": 30,
+    "max": 40
+  },
+  "location": {
+    "id": "hiyorizaka_bujutsu_hounousai_stage_day",
+    "name": "日和坂市 武術演武奉納祭・特設演舞場"
+  },
+  "summary": "美空の剣道演武は華やかで拍手が大きく、夜空の弓道演武は静かで強い印象を残す。夜空は「美空が褒められるのは嬉しい。本当。でも、たまに苦しくなる」と初めて明確に漏らす。",
+  "purpose": "美空の剣道演武は華やかで拍手が多く、夜空の弓道演武は静かで分かる人には分かる凄さを見せる。店長が夜空の凄さに気づくことで、夜空の中にある「美空が褒められるのは嬉しい。でも苦しくなる」という感情が初めて明確に漏れる。",
+  "tags": [
+    "夜空ルート",
+    "親愛度30-40",
+    "メインシナリオ",
+    "総合運動公園",
+    "弓道",
+    "剣道",
+    "嬉しいのに苦しい"
+  ],
+  "clearFlags": [
+    "yozora_main_40_00_cleared"
+  ],
+  "nextHint": "次の親愛度40〜50帯では、店長に見透かされた反動で夜空が再び避け始め、「美空のところに行けば」「探さないで」の前兆へ進む。",
+  "renderPolicy": {
+    "spritePosition": "logical_split_n_plus_1",
+    "eventCgLayer": "frontOfCharacters"
+  },
+  "steps": [
+    {
+      "speaker": "",
+      "text": "――日和坂総合運動公園・武道イベント会場――",
+      "bg": "images/assets/bg/bg_hiyorizaka_bujutsu_hounousai_stage_day.png",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true,
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "美空",
+      "text": "店長、来てくださってありがとうございます。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "こちらこそ、誘ってくれてありがとう。\n地域の武道イベントって、思ったより人が多いんだな。"
+    },
+    {
+      "speaker": "美空",
+      "text": "はい。\n今日は剣道、弓道、柔道、空手の演武があるみたいです。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空の剣道演武があるから、人が増えてるだけ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、それは言いすぎだよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "言いすぎじゃない。\n美空の名前、ポスターにも出てた。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "そうなのか？"
+    },
+    {
+      "speaker": "美空",
+      "text": "小さくですよ。\n地域大会の紹介枠みたいなものなので。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "小さくても、ちゃんと見えるところにあった。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空も今日は弓道の演武があるんだろ？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……一応。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "一応じゃないよ。\n夜空の演武もすごいんです。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空の剣道の方がわかりやすい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "でも、今日は夜空の弓道も見られるんだな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……見なくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "見るつもりで来た。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "勝手に。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "わたしが店長に来てほしかったんです。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――会場の中では、すでに観客が集まっていた。\n武道場の中央には剣道の演武スペースが作られ、その奥には弓道場へ続く通路が見える。"
+    },
+    {
+      "speaker": "アナウンス",
+      "text": "続きまして、剣道演武を行います。"
+    },
+    {
+      "speaker": "美空",
+      "text": "あ、わたしの番です。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "頑張って。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空。\n深呼吸。\n足元、滑りやすいから。\n踏み込み、少しだけ抑えて。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "わかった。\nありがとう、夜空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――美空は竹刀を手に、演武スペースへ向かう。\nその背筋は伸びていて、普段の柔らかさとは違う凛とした空気があった。"
+    },
+    {
+      "speaker": "店長",
+      "text": "美空、雰囲気が変わるな。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空も緊張してる？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ぼくは見てるだけ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "でも、さっきから美空の足元ばかり見てる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "滑りやすいって言ったでしょ。\n心配なんだな。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "美空は強いんだろ？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "強い。\nでも、強いからって心配しなくていいわけじゃない。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――美空の演武が始まる。\n木刀が空を切る音。\n踏み込みの音。\n澄んだ気合いの声。\n会場の空気が、一瞬で引き締まった。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_misora_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "観客",
+      "text": "おお……。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_misora_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "観客",
+      "text": "すごいな、あの子。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_misora_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "観客",
+      "text": "動きが綺麗。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_misora_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "店長",
+      "text": "……すごいな。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_misora_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "夜空",
+      "text": "うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ],
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_misora_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "店長",
+      "text": "見ていて分かりやすい強さだ。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_misora_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "夜空",
+      "text": "でしょ。\n美空は、ちゃんと人に届く。\n声も、動きも、気持ちも。\n見てる人に、すぐ伝わる。\nそういうところが、美空のすごいところ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ],
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_misora_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――美空が最後の型を決める。\n一瞬の静寂のあと、会場に大きな拍手が起こった。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_misora_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "美空",
+      "text": "ありがとうございました。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ],
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_misora_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――美空は丁寧に礼をし、少し照れたように戻ってくる。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_misora_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "店長",
+      "text": "すごかった。\n本当に見入ったよ。",
+      "hideEventCg": true,
+      "bg": "images/assets/bg/bg_hiyorizaka_bujutsu_hounousai_stage_day.png",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true
+    },
+    {
+      "speaker": "夜空",
+      "text": "踏み込み、ちゃんと抑えてた。\nよかった。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空も、次だよね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空の演武も楽しみにしてる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "楽しみにしなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "店長、夜空はそう言ってますけど、すごく綺麗なのでちゃんと見てくださいね。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は、細長い弓袋を手に取る。\nその動きはいつも通り静かだったが、指先にほんの少しだけ力が入っているように見えた。"
+    },
+    {
+      "speaker": "店長",
+      "text": "無理にとは言わないけど、ちゃんと見る。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……見なくていいって言った。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "それでも、見たい。"
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は小さく息を吐き、特設スペースへ向かう。\n美空は心配そうに、その背中を見送った。"
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、大丈夫かな。\n夜空は人に見られるの、あまり得意じゃないから。\nでも、夜空の弓道は本当に綺麗なんです。\n静かで、まっすぐで。\n夜空にしかできない感じがして。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "ちゃんと見るよ。"
+    },
+    {
+      "speaker": "",
+      "text": "――弓道場の空気は、剣道場とはまるで違っていた。\n声はなく、観客も自然と息をひそめる。\n夜空は射位に立ち、静かに弓を構えた。"
+    },
+    {
+      "speaker": "アナウンス",
+      "text": "続きまして、弓道演武です。"
+    },
+    {
+      "speaker": "",
+      "text": "――夜空の表情から、余計な感情が消える。\n視線はただ的へ向かい、呼吸がゆっくり整っていく。\n弦が引かれる。\n音が消える。\n時間が、細く張りつめる。\nそして、矢が放たれた。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_yozora_kyudo_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "観客",
+      "text": "……。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_yozora_kyudo_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――的を射抜く音が、静かに響く。\n派手な歓声はない。\nけれど、会場にいた何人かが、小さく息をのんだ。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_yozora_kyudo_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "店長",
+      "text": "……すごい。\n今の、すごいな。\n一瞬だったのに、目が離せなかった。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_yozora_kyudo_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空の弓道って、そうなんです。\n静かなのに、全部持っていかれる感じがするんです。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ],
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_yozora_kyudo_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は続けて矢をつがえる。\n二射目、三射目。\nどれも静かで、乱れがなく、的へ吸い込まれるように飛んでいった。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_yozora_kyudo_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "観客",
+      "text": "あの子、すごいな。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_yozora_kyudo_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "観客",
+      "text": "静かだけど、綺麗だね。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_yozora_kyudo_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "観客",
+      "text": "弓道って、こんなに迫力あるんだ。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_yozora_kyudo_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "",
+      "text": "――演武が終わる。\n夜空は深く礼をして、静かに戻ってきた。",
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_yozora_kyudo_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、お疲れさま。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ],
+      "showEventCg": true,
+      "eventCg": "images/assets/cg/cg_yozora_main40_yozora_kyudo_enbu.png",
+      "cgFit": "cover",
+      "cgAlign": "center center",
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "夜空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ],
+      "hideEventCg": true,
+      "bg": "images/assets/bg/bg_hiyorizaka_bujutsu_hounousai_stage_day.png",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空。\nすごかった。\n静かで、でも強かった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……言わなくていい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "美空の剣道とは違う。\nでも、同じくらい目が離せなかった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……同じくらいって、比べてる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "比べたつもりはなかった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも、並べた。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……悪い。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "謝らなくていい。\nそうなるのは、わかってる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "比べたかったわけじゃない。\nただ、二人とも違う形ですごかった。\n美空は、見ている人を前から引っ張るみたいだった。\n夜空は、静かに空気を変えるみたいだった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……そういうの、本当に。\n余計。\nでも……少しだけ、嫌じゃなかった。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空は、すごい。\nやっぱり美空はすごい。\nさっきの演武、みんな見てた。\n拍手も大きかった。\nお客様も、観客も、美空をすぐ見つける。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空だって見られてたよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "それは、弓道の時だけ。\n美空は、何をしてても見つけられる。\n笑ってるだけで、そこが明るくなる。\n声を出せば、みんな振り向く。\n美空が褒められるのは嬉しい。\n美空が見つけられるのも、嬉しい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "うん。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "でも……。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空はそこで言葉を止めた。\n手にした弓袋を、少しだけ強く握る。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……たまに、苦しくなる。\n美空が褒められるのは嬉しい。\nそれは、本当。\n美空がすごいのも、本当。\nでも、たまに。\nほんの少しだけ。\n自分が、どこに立ってればいいのかわからなくなる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "……。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空の隣に立てば比べられる。\n後ろにいれば安心できる。\nでも、後ろにいると、誰にも見えない。\nいいの。\nそれでいいって思ってた。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "今は？"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……わからない。\n美空が褒められると、嬉しい。\n本当に嬉しい。\nなのに、胸の奥が少し痛い時がある。\nそんな自分が嫌。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "言わないで。\n今、何か言われたら、たぶん逃げる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "わかった。\n言わない。"
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "美空も、今は言わないで。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "……うん。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――三人の間に、少しだけ沈黙が落ちる。\n会場の外では、別の演武を終えた観客たちの声が聞こえていた。\nその明るさが、少しだけ遠く感じる。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "ごめん。\n今のは、美空に言うことじゃなかった。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "謝らないで。\n言ってくれてよかった。\n夜空が苦しいなら、知りたい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空は、本当にまっすぐすぎる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空は、考えすぎ。\n何回でも言うよ。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――美空は夜空へ近づこうとして、少しだけ迷う。\n夜空が逃げないことを確認するように、ゆっくり隣に立った。"
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空の弓道、今日も綺麗だった。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……今、それ言う？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "言うよ。\nわたしが言いたいから。\n夜空がわたしをすごいって思ってくれるのと同じくらい、わたしも夜空をすごいって思ってる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……同じくらい。\n比べてる。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "これは比べてないよ。\n大事って言ってるの。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……ずるい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空がどこに立てばいいかわからないなら、今すぐ決めなくていいと思う。\n美空の隣でも、後ろでも、別の場所でも。\n今日の夜空は、ちゃんとここにいた。\n少なくとも、俺には見えてた。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……余計。\nでも……今日は、少しだけ覚えておく。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空は弓袋を抱え直す。\nまだ表情は晴れていない。\nけれど、さっきまでより少しだけ、呼吸が落ち着いているように見えた。"
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空、帰りに何か温かいもの飲む？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空が飲むなら。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "美空",
+      "text": "夜空も。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "夜空",
+      "text": "……考えておく。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――三人は会場を出る。\n美空は少し前を歩き、夜空はその半歩後ろを歩く。\nけれど今日は、その距離がいつもより少しだけ揺れて見えた。"
+    },
+    {
+      "speaker": "",
+      "text": "――日和坂総合運動公園・夕方――",
+      "bg": "images/assets/bg/bg_hiyorizaka_sports_park_evening.png",
+      "bgMode": "forceReplace",
+      "forceBackgroundReplace": true,
+      "clearStorySprites": true
+    },
+    {
+      "speaker": "店長",
+      "text": "夜空。\n今日は、見に来てよかった。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……美空の剣道が？",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "店長",
+      "text": "それも。\n夜空の弓道も。\nどっちも。"
+    },
+    {
+      "speaker": "夜空",
+      "text": "……そう。\n……なら、いい。",
+      "storySprites": [
+        {
+          "id": "ah",
+          "src": "images/assets/char/misora_budo_gi_main40.png",
+          "opacity": 1
+        },
+        {
+          "id": "ai",
+          "src": "images/assets/char/yozora_budo_gi_main40.png",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "speaker": "",
+      "text": "――夜空はそれだけ言って、夕方の空へ視線を向けた。\n美空が褒められるのは嬉しい。\n夜空自身も、それは疑っていない。\nけれど、その嬉しさの奥にある小さな痛みを、店長に見つけられてしまった。\n夜空はそのことがまだ怖くて、でも少しだけ、逃げずにいられた。"
+    }
+  ],
+  "mainScenarioIndex": 4,
+  "unlockCondition": {
+    "requiredFlags": [
+      "yozora_key_30_01_cleared",
+      "yozora_key_30_02_cleared",
+      "yozora_key_30_03_cleared"
+    ]
+  }
+}
