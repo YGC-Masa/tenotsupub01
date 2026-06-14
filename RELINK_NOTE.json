@@ -1,0 +1,11 @@
+{
+  "source_upload": "ten_otsu-main (8).zip",
+  "detected_version_title": "v039_47",
+  "included_roots": [
+    "index.html",
+    "program/v039",
+    "program/docs/v039_47_*",
+    "scenario"
+  ],
+  "note": "Reconstructed scenario bundle from uploaded full project; excludes large image/audio assets."
+}

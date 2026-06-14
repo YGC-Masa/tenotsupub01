@@ -1,0 +1,21 @@
+{
+  "version": "v039_104",
+  "base": "v039_103",
+  "rightMenuLabelsChanged": true,
+  "salesMenuLabel": "店舗営業（バトル）",
+  "townMenuLabel": "外営業（ストーリー）",
+  "memberIntroButtonAdded": true,
+  "introScenarioFilesConverted": 13,
+  "introScenarioReturnModeMembers": true,
+  "storyPlayerReturnMembersAdded": true,
+  "otherLegacyScenariosConverted": [
+    "shop_exchange_intro_sakuya",
+    "c10002"
+  ],
+  "otherCategoryContainsShopExchange": true,
+  "otherCategoryContainsC10002": true,
+  "noImageGenerationPerformed": true,
+  "jsSyntaxOk": true,
+  "jsonSyntaxOk": true,
+  "zipIntegrityOk": true
+}
