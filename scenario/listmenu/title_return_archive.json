@@ -1,0 +1,43 @@
+{
+  "title": "タイトル後メニュー",
+  "items": [
+    {
+      "text": "6大メニューへ戻る",
+      "action": "list",
+      "list": "office6.json"
+    },
+    {
+      "text": "メンバー一覧",
+      "action": "custom",
+      "custom": "member-list"
+    },
+    {
+      "text": "思い出",
+      "action": "custom",
+      "custom": "memory-list"
+    },
+    {
+      "text": "ストーリー管理表",
+      "action": "custom",
+      "custom": "story-table"
+    },
+    {
+      "text": "店舗営業プロトタイプ",
+      "action": "battle"
+    },
+    {
+      "text": "外回り",
+      "action": "outer"
+    },
+    {
+      "text": "ショップ",
+      "action": "list",
+      "list": "shop.json"
+    },
+    {
+      "text": "設定",
+      "action": "menu",
+      "menu": "menu01.json"
+    }
+  ]
+}

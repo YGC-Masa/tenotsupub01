@@ -1,0 +1,35 @@
+{
+  "title": "シナリオ素材メモ",
+  "items": [
+    {
+      "text": "緋奈サンプル",
+      "action": "jump",
+      "jump": "start000.json"
+    },
+    {
+      "text": "藍サンプル",
+      "action": "jump",
+      "jump": "goto_library.json"
+    },
+    {
+      "text": "こがねサンプル",
+      "action": "jump",
+      "jump": "kogane_sample.json"
+    },
+    {
+      "text": "琥珀サンプル",
+      "action": "jump",
+      "jump": "kohaku_sample.json"
+    },
+    {
+      "text": "藍：桜木陰のしおり",
+      "action": "jump",
+      "jump": "memory_ai_spring_book_bread.json"
+    },
+    {
+      "text": "事務所へ戻る",
+      "action": "list",
+      "list": "office6.json"
+    }
+  ]
+}

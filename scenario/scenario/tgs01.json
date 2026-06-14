@@ -1,0 +1,104 @@
+[
+  {
+    "auto": true,
+    "textareashow": false,
+    "bg": "tgstitle.png",
+    "bgEffect": "fadein",
+    "effect": "fadein",
+    "bgm": "main.mp3"
+  },
+  {
+    "wait": "4000"
+  },
+  {
+    "textareashow": true,
+    "bg": "momo01.webp",
+    "bgEffect": "fadein",
+    "effect": "fadein"
+  },
+  {
+    "name": "",
+    "fontSize": "30px",
+    "text": "TGS2025をお楽しみの皆さん。こんにちは。"
+  },
+  {
+    "name": "",
+    "fontSize": "30px",
+    "text": "ね？知ってる？最近ヤマダゲームがいいらしいよ？"
+  },
+  {
+    "bg": "GT30.png",
+    "bgEffect": "fadein",
+    "name": "",
+    "fontSize": "30px",
+    "text": "遊べるゲームは全部で30種類以上！単純にジャンプする物や簡単なパズルなどもあるみたい。",
+    "effect": "fadein"
+  },
+  {
+    "name": "",
+    "fontSize": "30px",
+    "text": "ブラウザゲームだからインストール不要でPCもスマホもOK"
+  },
+  {
+    "name": "",
+    "fontSize": "30px",
+    "text": "ホームに登録しておけばすぐアクセスできるし、ゲームごとのアイコンも増えないし"
+  },
+  {
+    "bg": "tgsb06.png",
+    "bgEffect": "fadein",
+    "name": "",
+    "fontSize": "30px",
+    "text": "正直、子供に遊ばせたり、暇つぶしくらいはこれでもいいのよね・・・",
+    "effect": "fadein"
+  },
+  {
+    "name": "",
+    "fontSize": "30px",
+    "text": "過度な過激な露出や演出がないので安心して遊ぶことができるのも利点だよね"
+  },
+  {
+    "bg": "tgs02.png",
+    "bgEffect": "fadein",
+    "name": "",
+    "fontSize": "30px",
+    "text": "それになんと。ログインボーナスなどでポイントがもらえちゃうゲームもあるんだ。",
+    "effect": "fadein"
+  },
+  {
+    "name": "",
+    "fontSize": "30px",
+    "text": "新しいポイ活？みたいな？楽しんでポイントまでもらえちゃうなんて"
+  },
+  {
+    "bg": "momo02.png",
+    "bgEffect": "fadein",
+    "name": "",
+    "fontSize": "30px",
+    "text": "意外といいじゃん。ヤマダゲーム",
+    "effect": "fadein"
+  },
+  {
+    "name": "",
+    "fontSize": "30px",
+    "text": "正規ユーザー登録をしないと正しくポイントがもらえないみたいだから"
+  },
+  {
+    "name": "",
+    "fontSize": "30px",
+    "text": "みんなもよかったら登録してみてね。"
+  },
+  {
+    "name": "",
+    "fontSize": "30px",
+    "text": "以上、ヤマダゲームからのお知らせでした"
+  },
+  {
+    "textareashow": false,
+    "bg": "yglogo.png",
+    "bgEffect": "fadein",
+    "name": "",
+    "text": "",
+    "effect": "fadein"
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "bg": "title.jpg",
+    "effect": "whitein",
+    "name": "System",
+    "text": "翠のシナリオは現在準備中です。"
+  },
+  {
+    "auto": false,
+    "showlist": "title.json",
+    "textareashow": false
+  }
+]

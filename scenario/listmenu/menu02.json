@@ -1,0 +1,9 @@
+{
+  "items": [
+    { "text": "⑥ 藍と遊ぶ", "action": "jump", "jump": "b00000.json" },
+    { "text": "⑦ 翠と遊ぶ", "action": "jump", "jump": "c00000.json" },
+    { "text": "⑧ こがねと遊ぶ", "action": "jump", "jump": "d00000.json" },
+    { "text": "⑨ 琥珀と遊ぶ", "action": "jump", "jump": "e00000.json" },
+    { "text": "⑩ タイトルへ戻る", "action": "jump", "jump": "000start.json" }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "title": "表情マスター",
+  "items": [
+    {
+      "text": "星野 緋奈 表情一覧",
+      "action": "custom",
+      "custom": "expression-character",
+      "characterId": "aa"
+    },
+    {
+      "text": "速水川 藍 表情一覧",
+      "action": "custom",
+      "custom": "expression-character",
+      "characterId": "ab"
+    },
+    {
+      "text": "草壁 翠 表情一覧",
+      "action": "custom",
+      "custom": "expression-character",
+      "characterId": "ac"
+    },
+    {
+      "text": "小麦沢 こがね 表情一覧",
+      "action": "custom",
+      "custom": "expression-character",
+      "characterId": "ad"
+    },
+    {
+      "text": "春日原 琥珀 表情一覧",
+      "action": "custom",
+      "custom": "expression-character",
+      "characterId": "ae"
+    },
+    {
+      "text": "大道寺 真花 表情一覧",
+      "action": "custom",
+      "custom": "expression-character",
+      "characterId": "af"
+    },
+    {
+      "text": "氷神 雪乃 表情一覧",
+      "action": "custom",
+      "custom": "expression-character",
+      "characterId": "ag"
+    },
+    {
+      "text": "双沢 美空 表情一覧",
+      "action": "custom",
+      "custom": "expression-character",
+      "characterId": "ah"
+    },
+    {
+      "text": "双沢 夜空 表情一覧",
+      "action": "custom",
+      "custom": "expression-character",
+      "characterId": "ai"
+    },
+    {
+      "text": "芝桜 桃 表情一覧",
+      "action": "custom",
+      "custom": "expression-character",
+      "characterId": "aj"
+    },
+    {
+      "text": "紫藤 彩愛 表情一覧",
+      "action": "custom",
+      "custom": "expression-character",
+      "characterId": "ak"
+    },
+    {
+      "text": "餅月 里美 表情一覧",
+      "action": "custom",
+      "custom": "expression-character",
+      "characterId": "al"
+    },
+    {
+      "text": "草壁 萌 表情一覧",
+      "action": "custom",
+      "custom": "expression-character",
+      "characterId": "am"
+    },
+    {
+      "text": "戻る",
+      "action": "list",
+      "list": "members.json"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "title": "メンバー一覧",
+  "items": [
+    {
+      "text": "店長",
+      "action": "custom",
+      "custom": "memory-character",
+      "characterId": "manager"
+    },
+    {
+      "text": "星野 緋奈",
+      "action": "custom",
+      "custom": "memory-character",
+      "characterId": "aa"
+    },
+    {
+      "text": "速水川 藍",
+      "action": "custom",
+      "custom": "memory-character",
+      "characterId": "ab"
+    },
+    {
+      "text": "草壁 翠",
+      "action": "custom",
+      "custom": "memory-character",
+      "characterId": "ac"
+    },
+    {
+      "text": "小麦沢 こがね",
+      "action": "custom",
+      "custom": "memory-character",
+      "characterId": "ad"
+    },
+    {
+      "text": "春日原 琥珀",
+      "action": "custom",
+      "custom": "memory-character",
+      "characterId": "ae"
+    },
+    {
+      "text": "大道寺 真花",
+      "action": "custom",
+      "custom": "memory-character",
+      "characterId": "af"
+    },
+    {
+      "text": "氷神 雪乃",
+      "action": "custom",
+      "custom": "memory-character",
+      "characterId": "ag"
+    },
+    {
+      "text": "双沢 美空",
+      "action": "custom",
+      "custom": "memory-character",
+      "characterId": "ah"
+    },
+    {
+      "text": "双沢 夜空",
+      "action": "custom",
+      "custom": "memory-character",
+      "characterId": "ai"
+    },
+    {
+      "text": "芝桜 桃",
+      "action": "custom",
+      "custom": "memory-character",
+      "characterId": "aj"
+    },
+    {
+      "text": "紫藤 彩愛",
+      "action": "custom",
+      "custom": "memory-character",
+      "characterId": "ak"
+    },
+    {
+      "text": "餅月 里美",
+      "action": "custom",
+      "custom": "memory-character",
+      "characterId": "al"
+    },
+    {
+      "text": "草壁 萌",
+      "action": "custom",
+      "custom": "memory-character",
+      "characterId": "am"
+    },
+    {
+      "text": "タイトル後メニュー",
+      "action": "custom",
+      "custom": "title-return-archive"
+    },
+    {
+      "text": "ストーリー管理表",
+      "action": "custom",
+      "custom": "story-table"
+    },
+    {
+      "text": "戻る",
+      "action": "list",
+      "list": "members.json"
+    }
+  ]
+}

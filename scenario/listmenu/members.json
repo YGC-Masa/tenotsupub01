@@ -1,0 +1,40 @@
+{
+  "title": "メンバー",
+  "items": [
+    {
+      "text": "メンバー一覧",
+      "action": "custom",
+      "custom": "member-list"
+    },
+    {
+      "text": "表情マスター",
+      "action": "list",
+      "list": "expression_master.json"
+    },
+    {
+      "text": "自己紹介",
+      "action": "list",
+      "list": "intro_scenarios.json"
+    },
+    {
+      "text": "思い出アルバム",
+      "action": "custom",
+      "custom": "memory-album"
+    },
+    {
+      "text": "ストーリー管理表",
+      "action": "custom",
+      "custom": "story-table"
+    },
+    {
+      "text": "タイトル後メニュー",
+      "action": "custom",
+      "custom": "title-return-archive"
+    },
+    {
+      "text": "戻る",
+      "action": "list",
+      "list": "office6.json"
+    }
+  ]
+}

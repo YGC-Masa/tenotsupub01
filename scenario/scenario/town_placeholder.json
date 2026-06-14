@@ -1,0 +1,11 @@
+[
+  {
+    "bg": "title.jpg",
+    "name": "System",
+    "text": "外回りは準備中です。町探索・交流メニューとして実装予定です。"
+  },
+  {
+    "showlist": "mainmenu.json",
+    "textareashow": false
+  }
+]

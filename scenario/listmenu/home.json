@@ -1,0 +1,15 @@
+{
+  "title": "店舗",
+  "items": [
+    {
+      "text": "店長・店舗ステータス",
+      "action": "list",
+      "list": "home.json"
+    },
+    {
+      "text": "戻る",
+      "action": "list",
+      "list": "office6.json"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "title": "自己紹介",
+  "items": [
+    {
+      "text": "星野 緋奈",
+      "action": "jump",
+      "jump": "intro_hina.json"
+    },
+    {
+      "text": "速水川 藍",
+      "action": "jump",
+      "jump": "intro_ai.json"
+    },
+    {
+      "text": "草壁 翠",
+      "action": "jump",
+      "jump": "intro_midori.json"
+    },
+    {
+      "text": "小麦沢 こがね",
+      "action": "jump",
+      "jump": "intro_kogane.json"
+    },
+    {
+      "text": "春日原 琥珀",
+      "action": "jump",
+      "jump": "intro_kohaku.json"
+    },
+    {
+      "text": "大道寺 真花",
+      "action": "jump",
+      "jump": "intro_manaka.json"
+    },
+    {
+      "text": "氷神 雪乃",
+      "action": "jump",
+      "jump": "intro_yukino.json"
+    },
+    {
+      "text": "双沢 美空",
+      "action": "jump",
+      "jump": "intro_misora.json"
+    },
+    {
+      "text": "双沢 夜空",
+      "action": "jump",
+      "jump": "intro_yozora.json"
+    },
+    {
+      "text": "芝桜 桃",
+      "action": "jump",
+      "jump": "intro_momo.json"
+    },
+    {
+      "text": "紫藤 彩愛",
+      "action": "jump",
+      "jump": "intro_ayame.json"
+    },
+    {
+      "text": "餅月 里美",
+      "action": "jump",
+      "jump": "intro_satomi.json"
+    },
+    {
+      "text": "草壁 萌",
+      "action": "jump",
+      "jump": "intro_moe.json"
+    },
+    {
+      "text": "戻る",
+      "action": "list",
+      "list": "members.json"
+    }
+  ]
+}

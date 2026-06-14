@@ -1,0 +1,27 @@
+{
+  "title": "システムメニュー",
+  "items": [
+    {
+      "text": "オートプレイ",
+      "action": "auto"
+    },
+    {
+      "text": "スキップ",
+      "action": "skip"
+    },
+    {
+      "text": "メインメニュー",
+      "action": "list",
+      "list": "office6.json"
+    },
+    {
+      "text": "タイトルに戻る",
+      "action": "list",
+      "list": "office6.json"
+    },
+    {
+      "text": "キャッシュ削除",
+      "action": "cacheclear"
+    }
+  ]
+}

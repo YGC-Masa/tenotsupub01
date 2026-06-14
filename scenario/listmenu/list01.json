@@ -1,0 +1,6 @@
+{
+  "items": [
+    { "text": "タイトルへ戻る", "action": "jump", "jump": "000start.json" },
+    { "text": "前のメニュー", "action": "list", "list": "title.json" }
+  ]
+}
