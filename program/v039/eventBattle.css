@@ -1,0 +1,903 @@
+/* v039_91 event battle: card layout / top support panel */
+#event-battle-root.event-battle-root {
+  position: fixed;
+  inset: 0;
+  z-index: 31000;
+  width: 100vw;
+  height: var(--app-height, 100vh);
+  color: #fff;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(105, 50, 170, 0.52), transparent 34%),
+    radial-gradient(circle at 70% 60%, rgba(24, 90, 148, 0.34), transparent 40%),
+    linear-gradient(135deg, #070510, #16051e 58%, #050407);
+  overflow: hidden;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+#event-battle-root.hidden { display: none !important; }
+#event-battle-root[data-phase="result"] { touch-action: pan-y; }
+
+#event-battle-root .event-battle-stage {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: auto minmax(104px, 22vh) 1fr;
+  gap: 7px;
+  box-sizing: border-box;
+  padding: calc(env(safe-area-inset-top) + 7px) calc(env(safe-area-inset-right) + 92px) calc(env(safe-area-inset-bottom) + 7px) calc(env(safe-area-inset-left) + 10px);
+}
+#event-battle-root .event-battle-hud,
+#event-battle-root .event-battle-boss-area,
+#event-battle-root .event-run-panel,
+#event-battle-root .event-result-panel,
+#event-battle-root .event-cleaning-battle {
+  border: 2px solid rgba(184, 120, 255, 0.38);
+  border-radius: 18px;
+  background: rgba(8, 5, 18, 0.80);
+  box-shadow: 0 0 24px rgba(150, 70, 240, 0.20);
+  backdrop-filter: blur(4px);
+}
+#event-battle-root .event-battle-hud { padding: 7px 12px; }
+#event-battle-root .event-battle-title { font-weight: 1000; font-size: clamp(14px, 2.4vw, 23px); }
+#event-battle-root .event-battle-stats { display: flex; flex-wrap: wrap; gap: 5px 14px; margin-top: 3px; font-size: clamp(10px, 1.45vw, 14px); color: rgba(255,255,255,0.78); }
+#event-battle-root .event-battle-stats b { color: #85f6ff; }
+
+#event-battle-root .event-battle-boss-area { padding: 9px 10px; min-height: 0; overflow: hidden; }
+#event-battle-root .event-battle-boss-card { display: flex; align-items: center; gap: 11px; }
+#event-battle-root .event-battle-boss-crystal {
+  width: clamp(46px, 7vw, 74px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  font-size: clamp(24px, 4.8vw, 48px);
+  color: #191020;
+  text-shadow: 0 0 10px #c694ff;
+  border: 3px solid #b455ff;
+  border-radius: 18px;
+  transform: rotate(45deg);
+  background: radial-gradient(circle at 38% 28%, #d8b6ff, #6b1aa0 58%, #160020 100%);
+  box-shadow: 0 0 28px rgba(196, 91, 255, 0.65), inset 0 0 14px rgba(255,255,255,0.25);
+}
+#event-battle-root .event-battle-boss-copy { min-width: 0; }
+#event-battle-root .event-battle-boss-name { font-weight: 1000; font-size: clamp(16px, 2.7vw, 27px); }
+#event-battle-root .event-battle-boss-desc { margin-top: 2px; color: rgba(255,255,255,0.72); font-size: clamp(10px, 1.35vw, 13px); line-height: 1.45; }
+#event-battle-root .event-battle-gauges { display: grid; gap: 5px; margin-top: 6px; }
+#event-battle-root .event-gauge { display: grid; grid-template-columns: 80px 1fr 78px; gap: 8px; align-items: center; font-size: clamp(10px, 1.42vw, 13px); }
+#event-battle-root .event-gauge span { color: rgba(255,255,255,0.68); font-weight: 900; }
+#event-battle-root .event-gauge i { display: block; height: 10px; border-radius: 999px; background: rgba(255,255,255,0.11); overflow: hidden; border: 1px solid rgba(255,255,255,0.15); }
+#event-battle-root .event-gauge b { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #8bf6ff, #d15bff); transition: width 0.16s ease; }
+#event-battle-root .event-gauge.power b { background: linear-gradient(90deg, #ff7a7a, #ffd86c); }
+#event-battle-root .event-gauge.chance b { background: linear-gradient(90deg, #77ffa5, #7bc6ff); }
+#event-battle-root .event-gauge em { font-style: normal; text-align: right; color: rgba(255,255,255,0.82); }
+#event-battle-root .event-battle-message { margin-top: 5px; font-weight: 900; color: #fff4b8; font-size: clamp(11px, 1.55vw, 14px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+#event-battle-root .event-run-panel,
+#event-battle-root .event-result-panel { min-height: 0; padding: 10px; overflow: hidden; }
+#event-battle-root .event-run-card,
+#event-battle-root .event-result-card { max-width: 1000px; margin: 0 auto; text-align: center; }
+#event-battle-root .event-run-card b,
+#event-battle-root .event-result-title { display: block; font-weight: 1000; font-size: clamp(19px, 3.3vw, 32px); }
+#event-battle-root .event-run-card p,
+#event-battle-root .event-result-card p { color: rgba(255,255,255,0.75); margin: 6px 0 10px; line-height: 1.55; }
+#event-battle-root button {
+  border: 0;
+  border-radius: 14px;
+  padding: 10px 16px;
+  color: #fff;
+  background: linear-gradient(135deg, #753cff, #da3dff);
+  font-weight: 1000;
+  cursor: pointer;
+  touch-action: none;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.28);
+}
+#event-battle-root button:disabled { opacity: 0.45; filter: grayscale(0.4); cursor: default; }
+#event-battle-root button:active:not(:disabled) { transform: translateY(1px) scale(0.99); }
+#event-battle-root .event-sub-button { background: linear-gradient(135deg, #354058, #252938); }
+
+#event-battle-root .event-route-line { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 14px auto; max-width: 620px; }
+#event-battle-root .event-route-line span { height: 10px; border-radius: 999px; background: linear-gradient(90deg, rgba(118,245,255,0.25), rgba(219,91,255,0.75)); box-shadow: 0 0 14px rgba(122,245,255,0.25); }
+#event-battle-root .event-run-progress { max-width: 720px; height: 18px; margin: 12px auto 4px; border: 1px solid rgba(255,255,255,0.20); border-radius: 999px; overflow: hidden; background: rgba(255,255,255,0.10); }
+#event-battle-root .event-run-progress i { display: block; height: 100%; background: linear-gradient(90deg, #7df9ff, #db5dff); border-radius: inherit; transition: width 0.18s ease; }
+#event-battle-root .event-encounter-info { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 10px 0 12px; }
+#event-battle-root .event-encounter-info span { border-radius: 999px; padding: 5px 10px; background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.14); color: rgba(255,255,255,0.88); font-weight: 800; }
+#event-battle-root .event-action-row,
+#event-battle-root .event-result-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px; }
+
+#event-battle-root .event-cleaning-battle { min-height: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto auto auto; gap: 8px; padding: 10px; overflow: hidden; }
+#event-battle-root .event-clean-enemy-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; min-height: 0; }
+#event-battle-root .event-clean-enemy { position: relative; min-width: 0; min-height: 86px; display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto auto auto; gap: 2px 8px; align-items: center; text-align: left; border: 2px solid color-mix(in srgb, var(--enemy-color), #ffffff 20%); background: linear-gradient(135deg, rgba(25,16,34,0.92), rgba(38,18,52,0.84)); border-radius: 14px; padding: 8px; }
+#event-battle-root .event-clean-enemy.selected { box-shadow: 0 0 0 3px rgba(255,255,255,0.22), 0 0 22px var(--enemy-color); }
+#event-battle-root .event-clean-enemy.cleaned { opacity: 0.58; filter: saturate(0.65); }
+#event-battle-root .event-clean-enemy-crystal { grid-row: 1 / 4; width: 36px; aspect-ratio: 1; display: grid; place-items: center; border-radius: 12px; background: radial-gradient(circle, #fbf1ff, var(--enemy-color)); color: #160020; transform: rotate(45deg); box-shadow: 0 0 14px var(--enemy-color); }
+#event-battle-root .event-clean-enemy b { font-size: clamp(12px, 1.75vw, 16px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#event-battle-root .event-clean-enemy small { color: rgba(255,255,255,0.68); font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#event-battle-root .event-clean-enemy i { grid-column: 2; height: 9px; border-radius: 999px; background: rgba(255,255,255,0.12); overflow: hidden; border: 1px solid rgba(255,255,255,0.16); }
+#event-battle-root .event-clean-enemy i em { display: block; height: 100%; background: linear-gradient(90deg, #ff5d85, #ffd66d); border-radius: inherit; }
+#event-battle-root .event-clean-enemy strong { color: #fff4b8; font-size: 12px; }
+#event-battle-root .event-clean-status-row { display: flex; flex-wrap: wrap; gap: 6px 10px; justify-content: center; font-size: clamp(10px, 1.35vw, 13px); color: rgba(255,255,255,0.78); }
+#event-battle-root .event-clean-status-row span { border: 1px solid rgba(255,255,255,0.14); background: rgba(255,255,255,0.08); border-radius: 999px; padding: 4px 9px; }
+#event-battle-root .event-clean-member-row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+#event-battle-root .event-clean-member { min-height: 72px; border: 2px solid var(--member-color); border-radius: 14px; background: linear-gradient(180deg, rgba(255,255,255,0.13), rgba(20,18,28,0.85)); display: grid; gap: 2px; justify-items: start; text-align: left; padding: 8px; }
+#event-battle-root .event-clean-member.ready { box-shadow: 0 0 16px color-mix(in srgb, var(--member-color), #ffffff 18%); }
+#event-battle-root .event-clean-member.match { animation: eventMatchGlow 0.82s ease-in-out infinite alternate; }
+@keyframes eventMatchGlow { from { filter: brightness(1); } to { filter: brightness(1.25); } }
+#event-battle-root .event-clean-member.cooldown { opacity: 0.48; }
+#event-battle-root .event-clean-member span { font-weight: 1000; font-size: clamp(12px, 1.7vw, 16px); }
+#event-battle-root .event-clean-member b { color: #fff4b8; font-size: 12px; }
+#event-battle-root .event-clean-member small, #event-battle-root .event-clean-member em { color: rgba(255,255,255,0.75); font-size: 11px; font-style: normal; }
+
+#event-battle-root .event-buff-panel { margin-top: 10px; max-width: 1080px; margin-left: auto; margin-right: auto; border: 1px solid rgba(126,245,255,0.22); border-radius: 14px; background: rgba(5,15,24,0.38); padding: 8px; text-align: left; }
+#event-battle-root .event-buff-head { display: flex; justify-content: space-between; gap: 8px; align-items: center; color: #d9fcff; font-weight: 900; margin-bottom: 6px; }
+#event-battle-root .event-buff-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+#event-battle-root .event-buff-card { display: grid; gap: 4px; border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; background: rgba(255,255,255,0.06); padding: 8px; }
+#event-battle-root .event-buff-card b { color: #fff4b8; }
+#event-battle-root .event-buff-card small, #event-battle-root .event-buff-card span { color: rgba(255,255,255,0.72); font-size: 11px; line-height: 1.35; }
+#event-battle-root .event-buff-actions { display: grid; grid-template-columns: 1fr 0.8fr; gap: 6px; }
+#event-battle-root .event-buff-actions button { padding: 7px 8px; border-radius: 10px; font-size: 11px; }
+
+#event-battle-root .event-result-panel { overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; -webkit-overflow-scrolling: touch; }
+#event-battle-root .event-result-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; }
+#event-battle-root .event-result-grid div { border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; padding: 8px; background: rgba(255,255,255,0.08); }
+#event-battle-root .event-result-grid span { display: block; color: rgba(255,255,255,0.65); font-size: 11px; }
+#event-battle-root .event-result-grid b { display: block; font-size: clamp(17px, 2.6vw, 24px); }
+#event-battle-root .event-result-lore { margin-top: 10px; text-align: left; border: 1px solid rgba(154, 90, 255, 0.26); border-radius: 14px; padding: 10px; background: rgba(48, 18, 78, 0.34); }
+#event-battle-root .event-result-lore b { color: #dcb8ff; }
+#event-battle-root .event-result-lore p { margin: 4px 0 0; font-size: clamp(11px, 1.45vw, 14px); }
+#event-battle-root .event-ladder-panel { margin-top: 10px; text-align: left; }
+#event-battle-root .event-ladder-panel > b { display: block; margin-bottom: 6px; color: #fff4b8; }
+#event-battle-root .event-ladder-row { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center; margin-top: 6px; border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 7px; background: rgba(255,255,255,0.06); }
+#event-battle-root .event-ladder-row.is-reached { border-color: rgba(126,245,255,0.32); background: rgba(78, 178, 210, 0.12); }
+#event-battle-root .event-ladder-row.is-claimed { opacity: 0.72; }
+#event-battle-root .event-ladder-row small { display: block; color: rgba(255,255,255,0.68); margin-top: 2px; }
+#event-battle-root .event-ladder-row button { padding: 8px 12px; min-width: 92px; }
+body.event-battle-screen { overscroll-behavior: none; }
+
+@media (max-width: 760px) {
+  #event-battle-root .event-battle-stage { padding-right: calc(env(safe-area-inset-right) + 8px); grid-template-rows: auto minmax(96px, 25vh) 1fr; }
+  #event-battle-root .event-clean-enemy-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #event-battle-root .event-clean-member-row { grid-template-columns: repeat(5, minmax(58px, 1fr)); gap: 5px; }
+  #event-battle-root .event-buff-grid { grid-template-columns: 1fr; }
+  #event-battle-root .event-result-grid { grid-template-columns: repeat(2, 1fr); }
+  #event-battle-root .event-ladder-row { grid-template-columns: 1fr; }
+  #event-battle-root .event-ladder-row button { width: 100%; }
+}
+
+
+/* === v039_89 event cleaning layout refinement === */
+#event-battle-root .event-battle-stage {
+  grid-template-rows: minmax(118px, 30vh) minmax(0, 1fr);
+  gap: 8px;
+}
+#event-battle-root .event-top-shell {
+  min-height: 0;
+  border: 2px solid rgba(184, 120, 255, 0.42);
+  border-radius: 18px;
+  background: rgba(8, 5, 18, 0.82);
+  box-shadow: 0 0 24px rgba(150, 70, 240, 0.22);
+  backdrop-filter: blur(5px);
+  display: grid;
+  grid-template-columns: minmax(170px, 0.72fr) minmax(250px, 1fr) minmax(360px, 1.32fr);
+  gap: 8px;
+  padding: 8px;
+  overflow: hidden;
+}
+#event-battle-root .event-top-shell .event-battle-hud,
+#event-battle-root .event-top-shell .event-battle-boss-area {
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.045);
+  box-shadow: none;
+  backdrop-filter: none;
+}
+#event-battle-root .event-top-shell .event-battle-boss-area { padding: 7px 8px; }
+#event-battle-root .event-top-shell .event-battle-boss-crystal {
+  width: clamp(32px, 4.5vw, 56px);
+  border-radius: 14px;
+  font-size: clamp(18px, 3vw, 34px);
+}
+#event-battle-root .event-top-shell .event-battle-boss-desc {
+  font-size: clamp(9px, 1.05vw, 12px);
+  line-height: 1.32;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#event-battle-root .event-top-shell .event-battle-gauges { gap: 3px; margin-top: 4px; }
+#event-battle-root .event-top-shell .event-gauge { grid-template-columns: 66px 1fr 62px; gap: 6px; font-size: clamp(9px, 1.05vw, 12px); }
+#event-battle-root .event-top-shell .event-battle-message { font-size: clamp(9px, 1.1vw, 12px); margin-top: 3px; }
+#event-battle-root .event-support-panel {
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid rgba(126,245,255,0.22);
+  border-radius: 14px;
+  background: rgba(5,15,24,0.36);
+  padding: 7px;
+}
+#event-battle-root .event-support-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: clamp(10px, 1.2vw, 13px);
+  font-weight: 900;
+  color: #d9fcff;
+  margin-bottom: 5px;
+}
+#event-battle-root .event-support-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 5px;
+  min-height: 0;
+}
+#event-battle-root .event-support-card {
+  min-width: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  gap: 2px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 11px;
+  background: rgba(255,255,255,0.06);
+  padding: 6px;
+}
+#event-battle-root .event-support-card.premium { border-color: rgba(255,215,120,0.38); background: rgba(70,48,12,0.20); }
+#event-battle-root .event-support-card b { color: #fff4b8; font-size: clamp(9px, 1.05vw, 12px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#event-battle-root .event-support-card small,
+#event-battle-root .event-support-card span { color: rgba(255,255,255,0.70); font-size: clamp(8px, .92vw, 10px); line-height: 1.25; overflow: hidden; }
+#event-battle-root .event-support-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+#event-battle-root .event-support-actions button { padding: 5px 4px; border-radius: 9px; font-size: clamp(8px, .9vw, 10px); }
+
+#event-battle-root .event-cleaning-battle {
+  grid-template-rows: minmax(92px, 1fr) auto minmax(86px, auto);
+  gap: 8px;
+}
+#event-battle-root .event-clean-enemy-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+}
+#event-battle-root .event-clean-enemy {
+  min-height: 118px;
+  grid-template-columns: 32px minmax(0, 1fr) clamp(58px, 7vw, 92px);
+  grid-template-rows: 1fr;
+  align-items: stretch;
+  gap: 7px;
+}
+#event-battle-root .event-clean-enemy-crystal { grid-row: auto; align-self: center; width: 30px; }
+#event-battle-root .event-clean-enemy-main { min-width: 0; display: grid; grid-template-rows: auto auto auto auto auto; gap: 2px; align-content: center; }
+#event-battle-root .event-clean-enemy-main i { grid-column: auto; }
+#event-battle-root .event-clean-enemy-art {
+  width: 100%;
+  height: 100%;
+  min-height: 80px;
+  object-fit: contain;
+  object-position: center right;
+  filter: drop-shadow(0 0 10px rgba(175,76,255,0.45));
+  align-self: center;
+}
+#event-battle-root .event-change-hint { color: rgba(255,240,170,0.74) !important; font-size: clamp(8px, .95vw, 10px) !important; }
+#event-battle-root .event-clean-member-row { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+#event-battle-root .event-clean-member {
+  min-height: 92px;
+  grid-template-columns: minmax(0, 1fr) clamp(42px, 5.2vw, 70px);
+  align-items: stretch;
+  gap: 6px;
+  padding: 7px;
+}
+#event-battle-root .event-clean-member-main { min-width: 0; display: grid; gap: 1px; align-content: center; }
+#event-battle-root .event-clean-member-art {
+  width: 100%;
+  height: 100%;
+  max-height: 82px;
+  object-fit: contain;
+  object-position: bottom right;
+  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--member-color), #ffffff 28%));
+  align-self: end;
+}
+#event-battle-root .event-clean-member span,
+#event-battle-root .event-clean-member b,
+#event-battle-root .event-clean-member small,
+#event-battle-root .event-clean-member em { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#event-battle-root .event-clean-status-row { font-size: clamp(9px, 1.1vw, 12px); }
+
+@media (max-width: 900px) {
+  #event-battle-root .event-battle-stage { grid-template-rows: minmax(118px, 34vh) minmax(0, 1fr); }
+  #event-battle-root .event-top-shell { grid-template-columns: 0.7fr 1fr; grid-template-areas: "hud boss" "items items"; overflow-y: auto; }
+  #event-battle-root .event-top-shell .event-battle-hud { grid-area: hud; }
+  #event-battle-root .event-top-shell .event-battle-boss-area { grid-area: boss; }
+  #event-battle-root .event-top-shell .event-support-panel { grid-area: items; }
+  #event-battle-root .event-support-grid { grid-template-columns: repeat(5, minmax(90px, 1fr)); }
+}
+
+@media (max-width: 760px) {
+  #event-battle-root .event-battle-stage { grid-template-rows: minmax(128px, 38vh) minmax(0, 1fr); }
+  #event-battle-root .event-clean-enemy-grid { grid-template-columns: repeat(4, minmax(86px, 1fr)); overflow-x: auto; }
+  #event-battle-root .event-clean-enemy { min-width: 112px; grid-template-columns: minmax(0, 1fr) 48px; }
+  #event-battle-root .event-clean-enemy-crystal { display: none; }
+  #event-battle-root .event-clean-member-row { grid-template-columns: repeat(5, minmax(72px, 1fr)); overflow-x: auto; }
+  #event-battle-root .event-clean-member { min-width: 84px; grid-template-columns: minmax(0, 1fr) 36px; }
+}
+
+/* === v039_90 event battle: 4 enemy cards / compact top / 13 member roster grid === */
+#event-battle-root .event-battle-stage {
+  grid-template-rows: minmax(86px, 22vh) minmax(0, 1fr) !important;
+  gap: 5px !important;
+  padding-top: calc(env(safe-area-inset-top) + 5px) !important;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 5px) !important;
+}
+#event-battle-root .event-top-shell {
+  grid-template-columns: minmax(150px, 0.58fr) minmax(230px, 0.88fr) minmax(320px, 1.28fr) !important;
+  gap: 5px !important;
+  padding: 4px !important;
+  border-radius: 14px !important;
+}
+#event-battle-root .event-top-shell .event-battle-hud,
+#event-battle-root .event-top-shell .event-battle-boss-area,
+#event-battle-root .event-support-panel {
+  border-radius: 10px !important;
+  padding: 5px 6px !important;
+}
+#event-battle-root .event-battle-title { font-size: clamp(12px, 1.75vw, 18px) !important; }
+#event-battle-root .event-battle-stats { gap: 3px 8px !important; margin-top: 1px !important; font-size: clamp(9px, 1.05vw, 12px) !important; }
+#event-battle-root .event-top-shell .event-battle-boss-crystal { width: clamp(28px, 3.8vw, 44px) !important; font-size: clamp(15px, 2.4vw, 26px) !important; }
+#event-battle-root .event-top-shell .event-battle-boss-card { gap: 6px !important; }
+#event-battle-root .event-battle-boss-name { font-size: clamp(12px, 1.75vw, 18px) !important; }
+#event-battle-root .event-top-shell .event-battle-boss-desc { font-size: clamp(8px, .92vw, 10px) !important; line-height: 1.2 !important; -webkit-line-clamp: 2 !important; }
+#event-battle-root .event-top-shell .event-battle-gauges { margin-top: 2px !important; gap: 2px !important; }
+#event-battle-root .event-top-shell .event-gauge { grid-template-columns: 56px 1fr 50px !important; gap: 4px !important; font-size: clamp(8px, .92vw, 10px) !important; }
+#event-battle-root .event-top-shell .event-gauge i { height: 7px !important; }
+#event-battle-root .event-top-shell .event-battle-message { margin-top: 2px !important; font-size: clamp(8px, .95vw, 10px) !important; }
+#event-battle-root .event-support-head { margin-bottom: 3px !important; font-size: clamp(9px, 1vw, 11px) !important; }
+#event-battle-root .event-support-grid { gap: 4px !important; }
+#event-battle-root .event-support-card { padding: 4px !important; border-radius: 9px !important; gap: 1px !important; }
+#event-battle-root .event-support-card b { font-size: clamp(8px, .9vw, 10px) !important; }
+#event-battle-root .event-support-card small,
+#event-battle-root .event-support-card span { font-size: clamp(7px, .8vw, 9px) !important; line-height: 1.12 !important; }
+#event-battle-root .event-support-actions button { padding: 4px 3px !important; font-size: clamp(7px, .8vw, 9px) !important; }
+
+#event-battle-root .event-cleaning-battle {
+  grid-template-rows: minmax(96px, 0.82fr) auto minmax(0, 1.28fr) !important;
+  gap: 6px !important;
+  padding: 7px !important;
+}
+#event-battle-root .event-clean-enemy-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  grid-auto-rows: 1fr !important;
+  gap: 6px !important;
+  overflow: hidden !important;
+}
+#event-battle-root .event-clean-enemy {
+  min-height: 96px !important;
+  grid-template-columns: 26px minmax(0, 1fr) clamp(62px, 8.2vw, 104px) !important;
+  gap: 5px !important;
+  padding: 6px !important;
+  overflow: hidden !important;
+}
+#event-battle-root .event-clean-enemy-art {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 118px !important;
+  object-fit: contain !important;
+  object-position: center right !important;
+}
+#event-battle-root .event-clean-enemy b { font-size: clamp(10px, 1.18vw, 13px) !important; }
+#event-battle-root .event-clean-enemy small { font-size: clamp(8px, .95vw, 10px) !important; }
+#event-battle-root .event-clean-enemy strong { font-size: clamp(9px, 1vw, 11px) !important; }
+#event-battle-root .event-change-hint { font-size: clamp(7px, .82vw, 9px) !important; }
+
+#event-battle-root .event-clean-member-row {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  grid-template-rows: repeat(3, minmax(54px, 1fr)) !important;
+  grid-auto-rows: minmax(54px, 1fr) !important;
+  gap: 5px !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+}
+#event-battle-root .event-clean-member {
+  min-height: 0 !important;
+  height: 100% !important;
+  grid-template-columns: minmax(0, 1fr) clamp(34px, 4.8vw, 58px) !important;
+  gap: 4px !important;
+  padding: 5px !important;
+  border-radius: 10px !important;
+}
+#event-battle-root .event-clean-member span { font-size: clamp(9px, 1.1vw, 12px) !important; }
+#event-battle-root .event-clean-member b,
+#event-battle-root .event-clean-member small,
+#event-battle-root .event-clean-member em { font-size: clamp(7px, .9vw, 10px) !important; }
+#event-battle-root .event-clean-member-art {
+  display: block !important;
+  max-height: 62px !important;
+  object-fit: contain !important;
+  object-position: bottom right !important;
+}
+#event-battle-root .event-clean-member-empty {
+  opacity: 0.12 !important;
+  pointer-events: none !important;
+  border: 1px dashed rgba(255,255,255,0.16) !important;
+  background: rgba(255,255,255,0.03) !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 900px) {
+  #event-battle-root .event-battle-stage { grid-template-rows: minmax(96px, 30vh) minmax(0, 1fr) !important; }
+  #event-battle-root .event-top-shell { grid-template-columns: 0.72fr 1fr !important; padding: 4px !important; overflow-y: auto !important; }
+  #event-battle-root .event-support-grid { grid-template-columns: repeat(5, minmax(80px, 1fr)) !important; }
+  #event-battle-root .event-clean-enemy-grid { grid-template-columns: repeat(4, minmax(98px, 1fr)) !important; overflow-x: auto !important; }
+  #event-battle-root .event-clean-member-row { grid-template-columns: repeat(5, minmax(72px, 1fr)) !important; grid-template-rows: repeat(3, minmax(52px, 1fr)) !important; overflow: auto !important; }
+}
+
+/* === v039_91 event battle: member power label / office return / rolling member strip === */
+#event-battle-root .event-battle-title-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+}
+#event-battle-root .event-office-return-button {
+  flex: 0 0 auto;
+  padding: 5px 9px !important;
+  border-radius: 999px !important;
+  font-size: clamp(8px, .9vw, 11px) !important;
+  background: linear-gradient(135deg, #26374e, #445672) !important;
+  box-shadow: none !important;
+}
+#event-battle-root .event-member-strip-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 7px;
+  min-height: 0;
+  overflow: hidden;
+  font-size: clamp(9px, 1.12vw, 12px);
+  color: rgba(255,255,255,0.84);
+}
+#event-battle-root .event-member-strip-head b {
+  color: #fff;
+  font-size: clamp(11px, 1.35vw, 14px);
+  white-space: nowrap;
+}
+#event-battle-root .event-member-strip-head span {
+  flex: 0 0 auto;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  padding: 3px 8px;
+  font-weight: 900;
+  color: #fff4b8;
+  white-space: nowrap;
+}
+#event-battle-root .event-member-strip-head small {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgba(255,255,255,0.62);
+}
+#event-battle-root .event-clean-member-scroll {
+  min-height: 0;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  touch-action: pan-x;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 2px;
+}
+#event-battle-root .event-clean-member-scroll::-webkit-scrollbar { height: 6px; }
+#event-battle-root .event-clean-member-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.22); border-radius: 999px; }
+#event-battle-root .event-clean-member-row {
+  display: grid !important;
+  grid-auto-flow: column !important;
+  grid-auto-columns: calc((100% - 24px) / 5) !important;
+  grid-template-columns: none !important;
+  grid-template-rows: minmax(70px, 1fr) !important;
+  grid-auto-rows: minmax(70px, 1fr) !important;
+  width: max-content !important;
+  min-width: 100% !important;
+  overflow: visible !important;
+  gap: 6px !important;
+  scroll-snap-type: x mandatory;
+}
+#event-battle-root .event-clean-member {
+  scroll-snap-align: start;
+  min-width: 0 !important;
+  min-height: 78px !important;
+  height: 100% !important;
+}
+#event-battle-root .event-clean-member small {
+  color: #fff4b8 !important;
+  font-weight: 900 !important;
+}
+#event-battle-root .event-clean-member-empty { display: none !important; }
+#event-battle-root .event-cleaning-battle {
+  grid-template-rows: minmax(96px, 0.92fr) auto auto minmax(76px, 0.86fr) !important;
+}
+@media (max-width: 900px) {
+  #event-battle-root .event-clean-member-row {
+    grid-auto-columns: calc((100% - 20px) / 5) !important;
+    grid-template-rows: minmax(68px, 1fr) !important;
+  }
+  #event-battle-root .event-member-strip-head small { display: none; }
+}
+@media (max-width: 760px) {
+  #event-battle-root .event-clean-member-row {
+    grid-auto-columns: calc((100% - 16px) / 5) !important;
+    grid-template-rows: minmax(62px, 1fr) !important;
+  }
+  #event-battle-root .event-clean-member { grid-template-columns: minmax(0, 1fr) 30px !important; padding: 4px !important; gap: 3px !important; }
+  #event-battle-root .event-clean-member-art { max-height: 52px !important; }
+}
+
+/* === v039_92 event battle: swipeable loop member strip / first-view five members === */
+#event-battle-root .event-clean-member-scroll {
+  display: grid !important;
+  grid-template-columns: clamp(22px, 3vw, 34px) minmax(0, 1fr) clamp(22px, 3vw, 34px) !important;
+  align-items: stretch !important;
+  gap: 5px !important;
+  width: 100% !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  touch-action: pan-x !important;
+  overscroll-behavior-x: contain !important;
+  -webkit-overflow-scrolling: touch !important;
+  padding-bottom: 0 !important;
+  user-select: none !important;
+}
+#event-battle-root .event-member-roll-button {
+  min-width: 0 !important;
+  height: 100% !important;
+  padding: 0 !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255,255,255,0.14) !important;
+  background: linear-gradient(180deg, rgba(255,255,255,0.14), rgba(25,21,35,0.84)) !important;
+  color: #fff4b8 !important;
+  font-size: clamp(18px, 3.2vw, 30px) !important;
+  font-weight: 1000 !important;
+  line-height: 1 !important;
+  box-shadow: inset 0 0 12px rgba(255,255,255,0.05) !important;
+}
+#event-battle-root .event-member-roll-button:active {
+  transform: scale(0.97) !important;
+  filter: brightness(1.18) !important;
+}
+#event-battle-root .event-clean-member-scroll .event-clean-member-row {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  grid-auto-flow: row !important;
+  grid-auto-columns: auto !important;
+  grid-template-rows: minmax(72px, 1fr) !important;
+  grid-auto-rows: minmax(72px, 1fr) !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  gap: 6px !important;
+  scroll-snap-type: none !important;
+}
+#event-battle-root .event-clean-member-scroll .event-clean-member {
+  scroll-snap-align: none !important;
+  min-width: 0 !important;
+  min-height: 76px !important;
+  max-width: 100% !important;
+}
+#event-battle-root .event-member-strip-head small {
+  color: rgba(255,255,255,0.70) !important;
+}
+@media (max-width: 900px) {
+  #event-battle-root .event-clean-member-scroll .event-clean-member-row {
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    grid-template-rows: minmax(66px, 1fr) !important;
+    gap: 5px !important;
+  }
+  #event-battle-root .event-clean-member-scroll .event-clean-member { min-height: 68px !important; }
+}
+@media (max-width: 760px) {
+  #event-battle-root .event-clean-member-scroll {
+    grid-template-columns: 24px minmax(0, 1fr) 24px !important;
+    gap: 4px !important;
+  }
+  #event-battle-root .event-clean-member-scroll .event-clean-member-row {
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    grid-template-rows: minmax(60px, 1fr) !important;
+    gap: 4px !important;
+  }
+  #event-battle-root .event-member-roll-button { border-radius: 9px !important; }
+}
+
+
+/* === v039_97 event battle: larger hidamari member illustrations === */
+#event-battle-root .event-clean-member-scroll .event-clean-member {
+  grid-template-columns: minmax(0, 1fr) clamp(54px, 6.5vw, 86px) !important;
+  min-height: clamp(88px, 13.5vh, 118px) !important;
+  padding: clamp(5px, .85vw, 8px) !important;
+  gap: clamp(4px, .65vw, 8px) !important;
+  align-items: stretch !important;
+}
+#event-battle-root .event-clean-member-art {
+  width: clamp(48px, 6vw, 78px) !important;
+  height: clamp(68px, 12.5vh, 108px) !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center bottom !important;
+  align-self: end !important;
+}
+#event-battle-root .event-clean-member-main {
+  align-content: center !important;
+}
+@media (max-width: 760px) {
+  #event-battle-root .event-clean-member-scroll .event-clean-member {
+    grid-template-columns: minmax(0, 1fr) 46px !important;
+    min-height: 82px !important;
+  }
+  #event-battle-root .event-clean-member-art {
+    width: 44px !important;
+    height: 72px !important;
+  }
+}
+
+
+/* === v039_98 event battle: member art size closer to 桃 reference and rival support members === */
+#event-battle-root .event-clean-member-scroll .event-clean-member {
+  grid-template-columns: minmax(0, 1fr) clamp(76px, 9.8vw, 132px) !important;
+  min-height: clamp(104px, 16.5vh, 148px) !important;
+  overflow: hidden !important;
+}
+#event-battle-root .event-clean-member-art {
+  width: clamp(72px, 9.2vw, 124px) !important;
+  height: clamp(98px, 15.5vh, 142px) !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center bottom !important;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,.18));
+}
+#event-battle-root .event-clean-member span { font-size: clamp(10px, 1.25vw, 14px) !important; }
+#event-battle-root .event-clean-member b,
+#event-battle-root .event-clean-member small,
+#event-battle-root .event-clean-member em { font-size: clamp(8px, 1vw, 11px) !important; }
+@media (max-width: 760px) {
+  #event-battle-root .event-clean-member-scroll .event-clean-member {
+    grid-template-columns: minmax(0, 1fr) 66px !important;
+    min-height: 96px !important;
+  }
+  #event-battle-root .event-clean-member-art {
+    width: 64px !important;
+    height: 92px !important;
+  }
+}
+
+
+/* === v039_99 event battle: member art behind text overlay / avoid ellipsis === */
+#event-battle-root .event-clean-member-scroll .event-clean-member {
+  position: relative !important;
+  display: block !important;
+  min-height: clamp(102px, 16vh, 142px) !important;
+  padding: clamp(6px, .75vw, 9px) clamp(62px, 11.5vw, 140px) clamp(6px, .75vw, 9px) clamp(6px, .75vw, 9px) !important;
+  overflow: hidden !important;
+}
+#event-battle-root .event-clean-member-main {
+  position: relative !important;
+  z-index: 3 !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  display: grid !important;
+  gap: 1px !important;
+  align-content: center !important;
+  padding: 2px 4px !important;
+  border-radius: 9px !important;
+  background: linear-gradient(90deg, rgba(8,8,15,.72), rgba(8,8,15,.48) 72%, rgba(8,8,15,0));
+  text-shadow: 0 2px 5px rgba(0,0,0,.86), 0 0 6px rgba(0,0,0,.72) !important;
+}
+#event-battle-root .event-clean-member-art {
+  position: absolute !important;
+  right: clamp(-4px, .4vw, 8px) !important;
+  bottom: -2px !important;
+  z-index: 1 !important;
+  width: clamp(86px, 12vw, 150px) !important;
+  height: clamp(108px, 17vh, 156px) !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: right bottom !important;
+  opacity: .95 !important;
+  pointer-events: none !important;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,.20)) drop-shadow(0 8px 12px rgba(0,0,0,.5)) !important;
+}
+#event-battle-root .event-clean-member span,
+#event-battle-root .event-clean-member b,
+#event-battle-root .event-clean-member small,
+#event-battle-root .event-clean-member em {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  line-height: 1.08 !important;
+  min-width: 0 !important;
+}
+#event-battle-root .event-clean-member span { font-size: clamp(10px, 1.15vw, 13px) !important; }
+#event-battle-root .event-clean-member b,
+#event-battle-root .event-clean-member small,
+#event-battle-root .event-clean-member em { font-size: clamp(8px, .95vw, 11px) !important; }
+@media (max-width: 760px) {
+  #event-battle-root .event-clean-member-scroll .event-clean-member {
+    min-height: 96px !important;
+    padding-right: 74px !important;
+  }
+  #event-battle-root .event-clean-member-art {
+    width: 86px !important;
+    height: 112px !important;
+    right: -8px !important;
+  }
+}
+
+
+/* === v039_100 event battle: wide member text overlay, art behind text === */
+#event-battle-root .event-clean-member-scroll .event-clean-member {
+  position: relative !important;
+  display: block !important;
+  min-height: clamp(98px, 15vh, 136px) !important;
+  padding: clamp(5px, .65vw, 8px) !important;
+  overflow: hidden !important;
+}
+#event-battle-root .event-clean-member-scroll .event-clean-member::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(5,6,14,.86) 0%, rgba(5,6,14,.76) 58%, rgba(5,6,14,.22) 82%, rgba(5,6,14,0) 100%);
+}
+#event-battle-root .event-clean-member-main {
+  position: relative !important;
+  z-index: 4 !important;
+  width: 76% !important;
+  max-width: 76% !important;
+  min-width: 0 !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  grid-template-areas:
+    "name attr"
+    "power power"
+    "meta meta" !important;
+  align-content: center !important;
+  gap: 1px 6px !important;
+  padding: clamp(3px, .45vw, 6px) !important;
+  border-radius: 10px !important;
+  background: transparent !important;
+  text-shadow: 0 2px 5px rgba(0,0,0,.95), 0 0 8px rgba(0,0,0,.86) !important;
+}
+#event-battle-root .event-clean-member-art {
+  position: absolute !important;
+  right: clamp(-6px, .3vw, 8px) !important;
+  bottom: -4px !important;
+  z-index: 1 !important;
+  width: clamp(86px, 12.5vw, 158px) !important;
+  height: clamp(108px, 17vh, 164px) !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: right bottom !important;
+  opacity: .96 !important;
+  pointer-events: none !important;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,.22)) drop-shadow(0 8px 12px rgba(0,0,0,.58)) !important;
+}
+#event-battle-root .event-clean-member span {
+  grid-area: name !important;
+  font-size: clamp(11px, 1.32vw, 15px) !important;
+  line-height: 1.05 !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+#event-battle-root .event-clean-member b {
+  grid-area: attr !important;
+  align-self: center !important;
+  font-size: clamp(8px, .92vw, 11px) !important;
+  line-height: 1.05 !important;
+  white-space: nowrap !important;
+}
+#event-battle-root .event-clean-member small {
+  grid-area: power !important;
+  font-size: clamp(8px, .92vw, 11px) !important;
+  line-height: 1.08 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+}
+#event-battle-root .event-clean-member em {
+  grid-area: meta !important;
+  font-size: clamp(7px, .82vw, 10px) !important;
+  line-height: 1.05 !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+@media (max-width: 760px) {
+  #event-battle-root .event-clean-member-main { width: 80% !important; max-width: 80% !important; gap: 0 4px !important; }
+  #event-battle-root .event-clean-member-art { width: 82px !important; height: 108px !important; right: -10px !important; }
+  #event-battle-root .event-clean-member span { font-size: 10px !important; }
+  #event-battle-root .event-clean-member b,
+  #event-battle-root .event-clean-member small,
+  #event-battle-root .event-clean-member em { font-size: 7.5px !important; }
+}
+
+
+/* === v039_101 event battle: readable member text + large art background === */
+#event-battle-root .event-clean-member-scroll .event-clean-member {
+  position: relative !important;
+  display: block !important;
+  min-height: clamp(104px, 16vh, 142px) !important;
+  padding: clamp(7px, .75vw, 10px) !important;
+  overflow: hidden !important;
+}
+#event-battle-root .event-clean-member-scroll .event-clean-member::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(5,6,14,.91) 0%, rgba(5,6,14,.84) 52%, rgba(5,6,14,.42) 76%, rgba(5,6,14,.08) 100%) !important;
+}
+#event-battle-root .event-clean-member-main {
+  position: relative !important;
+  z-index: 4 !important;
+  width: min(72%, calc(100% - 72px)) !important;
+  max-width: min(72%, calc(100% - 72px)) !important;
+  min-width: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  gap: 2px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  text-shadow: 0 2px 5px rgba(0,0,0,.96), 0 0 8px rgba(0,0,0,.86) !important;
+}
+#event-battle-root .event-clean-member-name {
+  display: block !important;
+  width: 100% !important;
+  font-size: clamp(12px, 1.35vw, 16px) !important;
+  line-height: 1.12 !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  overflow-wrap: anywhere !important;
+}
+#event-battle-root .event-clean-member-attr,
+#event-battle-root .event-clean-member-power,
+#event-battle-root .event-clean-member-meta {
+  display: block !important;
+  width: 100% !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  overflow-wrap: anywhere !important;
+  line-height: 1.12 !important;
+}
+#event-battle-root .event-clean-member-attr { font-size: clamp(9px, 1.0vw, 12px) !important; color: #fff4b8 !important; }
+#event-battle-root .event-clean-member-power { font-size: clamp(9px, 1.0vw, 12px) !important; color: #fff4b8 !important; font-weight: 1000 !important; }
+#event-battle-root .event-clean-member-meta { font-size: clamp(8px, .9vw, 11px) !important; color: rgba(255,255,255,.76) !important; }
+#event-battle-root .event-clean-member-art {
+  position: absolute !important;
+  right: clamp(-8px, .3vw, 8px) !important;
+  bottom: -4px !important;
+  z-index: 1 !important;
+  width: clamp(94px, 13vw, 166px) !important;
+  height: clamp(114px, 18vh, 170px) !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: right bottom !important;
+  opacity: .96 !important;
+  pointer-events: none !important;
+}
+@media (max-width: 760px) {
+  #event-battle-root .event-clean-member-main { width: calc(100% - 64px) !important; max-width: calc(100% - 64px) !important; }
+  #event-battle-root .event-clean-member-art { width: 88px !important; height: 114px !important; right: -10px !important; }
+  #event-battle-root .event-clean-member-name { font-size: 10.5px !important; }
+  #event-battle-root .event-clean-member-attr,
+  #event-battle-root .event-clean-member-power,
+  #event-battle-root .event-clean-member-meta { font-size: 8px !important; }
+}

@@ -1,0 +1,88 @@
+/* v039_221 right menu viewport guard
+   右メニューを画面内に収め、低解像度・ブラウザ倍率変更時の見切れを抑制する。 */
+:root {
+  --tenotsu-right-menu-margin: 14px;
+  --tenotsu-right-menu-width: clamp(228px, 21vw, 276px);
+}
+
+.tenotsu-office-menu,
+.tenotsu-viewport-guarded-right-menu {
+  box-sizing: border-box !important;
+  width: var(--tenotsu-right-menu-width) !important;
+  min-width: 0 !important;
+  max-width: calc(100vw - var(--tenotsu-right-menu-margin) * 2) !important;
+  max-height: calc((var(--tenotsu-vh, 1vh) * 100) - var(--tenotsu-right-menu-margin) * 2) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  overscroll-behavior: contain !important;
+  scrollbar-gutter: stable both-edges;
+}
+
+.tenotsu-viewport-guarded-right-menu {
+  position: fixed !important;
+  right: max(var(--tenotsu-right-menu-margin), env(safe-area-inset-right)) !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: var(--tenotsu-z-menu, 700) !important;
+}
+
+.tenotsu-viewport-guarded-right-menu .tenotsu-office-menu-grid {
+  min-width: 0 !important;
+}
+
+.tenotsu-viewport-guarded-right-menu .tenotsu-office-menu-button {
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+}
+
+.tenotsu-viewport-guarded-right-menu .tenotsu-menu-version,
+.tenotsu-viewport-guarded-right-menu .tenotsu-menu-version-main,
+.tenotsu-viewport-guarded-right-menu .tenotsu-menu-version-sub {
+  max-width: 100% !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+}
+
+/* 高さが足りない時は中央寄せをやめ、上から収めて内部スクロールにする */
+body.tenotsu-right-menu-top-pinned .tenotsu-viewport-guarded-right-menu {
+  top: var(--tenotsu-right-menu-margin) !important;
+  transform: none !important;
+}
+
+@media (max-width: 1280px) {
+  :root {
+    --tenotsu-right-menu-margin: 10px;
+    --tenotsu-right-menu-width: clamp(216px, 20vw, 252px);
+    --tenotsu-side-menu-reserve: calc(var(--tenotsu-right-menu-width) + 22px);
+  }
+  .tenotsu-viewport-guarded-right-menu {
+    padding: 14px !important;
+  }
+  .tenotsu-viewport-guarded-right-menu .tenotsu-office-menu-grid {
+    gap: 8px !important;
+  }
+  .tenotsu-viewport-guarded-right-menu .tenotsu-office-menu-button {
+    min-height: 38px !important;
+    font-size: 13px !important;
+  }
+}
+
+@media (max-height: 760px) {
+  :root {
+    --tenotsu-right-menu-margin: 8px;
+  }
+  body.tenotsu-right-menu-top-pinned .tenotsu-viewport-guarded-right-menu,
+  .tenotsu-viewport-guarded-right-menu {
+    top: var(--tenotsu-right-menu-margin) !important;
+    transform: none !important;
+  }
+  .tenotsu-viewport-guarded-right-menu {
+    padding: 12px !important;
+  }
+  .tenotsu-viewport-guarded-right-menu .tenotsu-office-menu-grid {
+    gap: 7px !important;
+  }
+  .tenotsu-viewport-guarded-right-menu .tenotsu-office-menu-button {
+    min-height: 34px !important;
+  }
+}

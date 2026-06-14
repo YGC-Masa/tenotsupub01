@@ -1,0 +1,36 @@
+/* v039_163 boot surface guard
+   Hide HUD/text/menu surfaces until office/story rendering has actually completed.
+   This prevents black boot screen from showing stamina HUD, text box, or stray menu parts. */
+body:not([data-tenotsu-boot-ready="1"]) .tenotsu-stamina-hud,
+body:not([data-tenotsu-boot-ready="1"]) .tenotsu-text-layer,
+body:not([data-tenotsu-boot-ready="1"]) .tenotsu-office-menu,
+body:not([data-tenotsu-boot-ready="1"]) .tenotsu-version-badge,
+body[data-v039-mode="boot"] .tenotsu-stamina-hud,
+body[data-v039-mode="boot"] .tenotsu-text-layer,
+body[data-v039-mode="boot"] .tenotsu-office-menu,
+body[data-v039-mode="boot"] .tenotsu-version-badge {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+body:not([data-tenotsu-boot-ready="1"]) .tenotsu-stamina-hud *,
+body:not([data-tenotsu-boot-ready="1"]) .tenotsu-text-layer *,
+body:not([data-tenotsu-boot-ready="1"]) .tenotsu-office-menu * {
+  pointer-events: none !important;
+}
+
+.tenotsu-boot-blackout-surface {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: 49999;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: none;
+  transition: opacity 160ms ease, visibility 160ms ease;
+}
+body[data-tenotsu-boot-ready="1"] .tenotsu-boot-blackout-surface {
+  opacity: 0;
+  visibility: hidden;
+}

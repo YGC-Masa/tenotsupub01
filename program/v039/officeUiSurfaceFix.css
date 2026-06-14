@@ -1,0 +1,128 @@
+/* v039_170 office UI surface fix
+   - ST/BP HUDを左上コンパクト横並びへ移動して、右メニュー上のバージョン/設定表示を隠さない
+   - 設定POPアップがテキストボックスの裏に回らないよう、UIレイヤーを前面化 */
+
+body[data-v039-mode="office"] .tenotsu-stamina-hud,
+body[data-v039-mode="members"] .tenotsu-stamina-hud,
+body[data-v039-mode="sales"] .tenotsu-stamina-hud,
+body[data-v039-mode="town"] .tenotsu-stamina-hud,
+body[data-v039-mode="shop"] .tenotsu-stamina-hud,
+body[data-v039-mode="storeStatus"] .tenotsu-stamina-hud,
+body[data-v039-mode="tuning"] .tenotsu-stamina-hud {
+  left: max(10px, env(safe-area-inset-left)) !important;
+  right: auto !important;
+  top: max(8px, env(safe-area-inset-top)) !important;
+  min-width: 0 !important;
+  width: auto !important;
+  max-width: min(330px, calc(100vw - 20px)) !important;
+  padding: 6px 8px !important;
+  border-radius: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  transform: none !important;
+  z-index: 910 !important;
+}
+
+body[data-v039-mode="office"] .tenotsu-stamina-hud .tenotsu-resource-hud-row,
+body[data-v039-mode="members"] .tenotsu-stamina-hud .tenotsu-resource-hud-row,
+body[data-v039-mode="sales"] .tenotsu-stamina-hud .tenotsu-resource-hud-row,
+body[data-v039-mode="town"] .tenotsu-stamina-hud .tenotsu-resource-hud-row,
+body[data-v039-mode="shop"] .tenotsu-stamina-hud .tenotsu-resource-hud-row {
+  display: inline-flex !important;
+  align-items: baseline !important;
+  gap: 6px !important;
+}
+
+body[data-v039-mode="office"] .tenotsu-stamina-hud-main,
+body[data-v039-mode="members"] .tenotsu-stamina-hud-main,
+body[data-v039-mode="sales"] .tenotsu-stamina-hud-main,
+body[data-v039-mode="town"] .tenotsu-stamina-hud-main,
+body[data-v039-mode="shop"] .tenotsu-stamina-hud-main {
+  margin-top: 0 !important;
+}
+
+body[data-v039-mode="office"] .tenotsu-stamina-hud-bar,
+body[data-v039-mode="members"] .tenotsu-stamina-hud-bar,
+body[data-v039-mode="sales"] .tenotsu-stamina-hud-bar,
+body[data-v039-mode="town"] .tenotsu-stamina-hud-bar,
+body[data-v039-mode="shop"] .tenotsu-stamina-hud-bar,
+body[data-v039-mode="office"] .tenotsu-resource-hud-next,
+body[data-v039-mode="members"] .tenotsu-resource-hud-next,
+body[data-v039-mode="sales"] .tenotsu-resource-hud-next,
+body[data-v039-mode="town"] .tenotsu-resource-hud-next,
+body[data-v039-mode="shop"] .tenotsu-resource-hud-next {
+  display: none !important;
+}
+
+body[data-v039-mode="office"] .tenotsu-resource-hud-bp,
+body[data-v039-mode="members"] .tenotsu-resource-hud-bp,
+body[data-v039-mode="sales"] .tenotsu-resource-hud-bp,
+body[data-v039-mode="town"] .tenotsu-resource-hud-bp,
+body[data-v039-mode="shop"] .tenotsu-resource-hud-bp {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  padding-left: 8px !important;
+  border-top: 0 !important;
+  border-left: 1px solid rgba(255,255,255,.18) !important;
+}
+
+body[data-v039-mode="office"] .tenotsu-stamina-hud-label,
+body[data-v039-mode="members"] .tenotsu-stamina-hud-label,
+body[data-v039-mode="sales"] .tenotsu-stamina-hud-label,
+body[data-v039-mode="town"] .tenotsu-stamina-hud-label,
+body[data-v039-mode="shop"] .tenotsu-stamina-hud-label {
+  padding: 1px 6px !important;
+  font-size: 10px !important;
+}
+
+body[data-v039-mode="office"] .tenotsu-stamina-hud-main b,
+body[data-v039-mode="members"] .tenotsu-stamina-hud-main b,
+body[data-v039-mode="sales"] .tenotsu-stamina-hud-main b,
+body[data-v039-mode="town"] .tenotsu-stamina-hud-main b,
+body[data-v039-mode="shop"] .tenotsu-stamina-hud-main b {
+  font-size: 15px !important;
+}
+
+/* 設定POPアップをテキストボックスより前面へ。親レイヤーごと上げる。 */
+body:not([data-v039-mode="story"]) .tenotsu-ui-layer:has(.tenotsu-settings-panel:not([hidden])),
+body:not([data-v039-mode="story"]) .tenotsu-ui-layer:has(.tenotsu-shop-info-panel:not([hidden])) {
+  z-index: 2400 !important;
+}
+
+body:not([data-v039-mode="story"]) .tenotsu-settings-panel,
+body:not([data-v039-mode="story"]) .tenotsu-shop-info-panel {
+  z-index: 2500 !important;
+}
+
+body:not([data-v039-mode="story"]) .tenotsu-settings-panel:not([hidden]) ~ *,
+body:not([data-v039-mode="story"]) .tenotsu-shop-info-panel:not([hidden]) ~ * {
+  pointer-events: auto;
+}
+
+@media (max-width: 720px) {
+  body[data-v039-mode="office"] .tenotsu-stamina-hud,
+  body[data-v039-mode="members"] .tenotsu-stamina-hud,
+  body[data-v039-mode="sales"] .tenotsu-stamina-hud,
+  body[data-v039-mode="town"] .tenotsu-stamina-hud,
+  body[data-v039-mode="shop"] .tenotsu-stamina-hud {
+    max-width: calc(100vw - 16px) !important;
+    gap: 5px !important;
+    padding: 5px 6px !important;
+  }
+  body[data-v039-mode="office"] .tenotsu-stamina-hud-label,
+  body[data-v039-mode="members"] .tenotsu-stamina-hud-label,
+  body[data-v039-mode="sales"] .tenotsu-stamina-hud-label,
+  body[data-v039-mode="town"] .tenotsu-stamina-hud-label,
+  body[data-v039-mode="shop"] .tenotsu-stamina-hud-label {
+    font-size: 9px !important;
+    padding: 1px 5px !important;
+  }
+  body[data-v039-mode="office"] .tenotsu-stamina-hud-main b,
+  body[data-v039-mode="members"] .tenotsu-stamina-hud-main b,
+  body[data-v039-mode="sales"] .tenotsu-stamina-hud-main b,
+  body[data-v039-mode="town"] .tenotsu-stamina-hud-main b,
+  body[data-v039-mode="shop"] .tenotsu-stamina-hud-main b {
+    font-size: 13px !important;
+  }
+}

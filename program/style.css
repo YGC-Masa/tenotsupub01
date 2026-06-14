@@ -1,0 +1,7254 @@
+:root {
+  --fontSize: 1em;
+  --vh: 1vh;
+  --app-height: 100vh;
+}
+
+html, body {
+  width: 100%;
+  height: var(--app-height);
+  min-height: var(--app-height);
+  overflow: hidden;
+  overscroll-behavior: none;
+  touch-action: manipulation;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  font-family: "Arial", sans-serif;
+  font-size: var(--fontSize);
+  overflow: hidden;
+}
+
+#game-container {
+  position: relative;
+  width: 100vw;
+  height: calc(var(--vh, 1vh) * 100);
+  overflow: hidden;
+}
+
+/* 背景 */
+#background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* キャラ表示レイヤー */
+#char-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.char-slot {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  pointer-events: none;
+  display: none;
+}
+
+.char-slot.active {
+  display: flex !important;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.char-image {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+/* キャラ位置 */
+#char-left {
+  left: 5%;
+  width: 30%;
+}
+
+#char-center {
+  left: 35%;
+  width: 30%;
+}
+
+#char-right {
+  left: 65%;
+  width: 30%;
+}
+
+/* EV/CG 表示レイヤー */
+#ev-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ev-image,
+.cg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* クリックレイヤー（透過） */
+#click-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: transparent;
+  pointer-events: auto;
+}
+
+/* テキストボックス */
+#dialogue-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 1em;
+  z-index: 9;
+  box-sizing: border-box;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+
+.name-area {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+}
+
+.text-area {
+  line-height: 1.6;
+  min-height: 3em;
+}
+
+/* 選択肢 */
+.choices-area {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  text-align: center;
+  z-index: 11;
+}
+
+.choices-area button {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+.choices-area button:hover {
+  background-color: #555;
+}
+
+/* LISTパネル（右） */
+.list-panel {
+  position: absolute;
+  right: 0;
+  top: 5%;
+  width: 25%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 0.5em;
+  box-sizing: border-box;
+  background-color: rgba(255, 192, 203, 0.85);
+  z-index: 11;
+  font-size: 14px;
+}
+
+.list-panel button {
+  flex: 1;
+  margin: 0.2em 0;
+  padding: 0.4em;
+  font-size: 1em;
+  background: rgba(255, 105, 180, 0.9);
+  color: white;
+  border: 1px solid #d36c8d;
+  border-radius: 0.4em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-panel button:hover {
+  background: rgba(255, 20, 147, 0.95);
+}
+
+/* メニューパネル（左） */
+.menu-panel {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  width: 35%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 0.5em;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 12;
+  font-size: 14px;
+}
+
+.menu-panel button {
+  flex: 1;
+  margin: 0.2em 0;
+  padding: 0.4em;
+  font-size: 1em;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: 1px solid #666;
+  border-radius: 0.4em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-panel button:hover {
+  background: #444;
+}
+
+/* 音声トグル専用 */
+.menu-sound-toggle {
+  font-weight: bold;
+  padding: 0.8em 0.5em;
+  background: #222;
+  border: 2px solid #888;
+  border-radius: 0.5em;
+}
+
+/* モバイル横画面用 */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .menu-panel,
+  .list-panel {
+    top: 5%;
+    height: 75%;
+    width: 45%;
+    font-size: 12px;
+  }
+}
+
+/* モバイル縦画面用 */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .menu-panel,
+  .list-panel {
+    top: 20%;
+    height: 50%;
+    width: 45%;
+    font-size: 13px;
+  }
+}
+
+/* PC画面用 */
+@media screen and (min-width: 769px) {
+  .menu-panel,
+  .list-panel {
+    top: 5%;
+    height: 75%;
+    width: 35%;
+    font-size: 14px;
+  }
+}
+
+/* 共通非表示ユーティリティ */
+.hidden {
+  display: none !important;
+}
+
+/* ランダム画像 */
+.random-image {
+  position: absolute;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/* ランダムテキスト（付箋） */
+/* ランダムテキストレイヤー */
+#random-text-layer {
+  position: absolute;
+  bottom: 0;
+  left: 5vw;
+  width: 90vw;
+  height: 10vh;
+  z-index: 3;
+  pointer-events: none;
+  user-select: none;
+  font-family: 'Arial', sans-serif;
+}
+
+/* 付箋本体 */
+.random-text-note {
+  position: absolute;
+  font-size: 0.9em;
+  border-radius: 0.5em;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  white-space: nowrap;
+  border-left: 8px solid var(--char-color, gray);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  padding: 0.5em 1em 0.5em 1.4em;
+  background-color: rgba(255, 255, 255, 0.9); /* JSで上書きされる */
+}
+
+
+
+/* 非表示用 */
+#random-text-layer.hidden {
+  display: none !important;
+}
+
+/* === 店舗営業：デッキ接客バトル試作 === */
+.battle-root {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  background: rgba(0, 0, 0, 0.82);
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.battle-panel {
+  position: absolute;
+  inset: 3vh 3vw;
+  border: 2px solid rgba(255,255,255,0.35);
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(32,34,42,0.96), rgba(12,12,18,0.96));
+  box-shadow: 0 0 24px rgba(0,0,0,0.7);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.battle-header,
+.battle-status,
+.battle-footer {
+  padding: 0.7rem 1rem;
+  background: rgba(255,255,255,0.08);
+}
+
+.battle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.battle-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.battle-subtitle,
+.battle-help,
+.skill-desc,
+.mini-label {
+  font-size: 0.75rem;
+  opacity: 0.82;
+}
+
+.battle-close {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  border: 0;
+  font-size: 1.5rem;
+}
+
+.battle-status {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.battle-status.rush {
+  background: rgba(211, 56, 28, 0.28);
+  animation: battlePulse 0.8s infinite alternate;
+}
+
+@keyframes battlePulse {
+  from { filter: brightness(1); }
+  to { filter: brightness(1.35); }
+}
+
+.battle-main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 1rem;
+  padding: 1rem;
+  min-height: 0;
+}
+
+.customer-area,
+.staff-area {
+  display: grid;
+  gap: 0.75rem;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.customer-area {
+  grid-template-columns: 1fr;
+}
+
+.staff-area {
+  grid-template-columns: repeat(5, minmax(110px, 1fr));
+  align-content: start;
+}
+
+.customer-card,
+.staff-card,
+.battle-actions button,
+.skill-btn,
+.staff-select {
+  border-radius: 14px;
+}
+
+.customer-card,
+.staff-select,
+.skill-btn,
+.battle-actions button {
+  border: 1px solid rgba(255,255,255,0.22);
+  color: #fff;
+  background: rgba(255,255,255,0.09);
+  cursor: pointer;
+}
+
+.customer-card {
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.customer-card.rare {
+  border-color: #ffd966;
+  box-shadow: 0 0 12px rgba(255,217,102,0.35);
+}
+
+.customer-top {
+  display: flex;
+  gap: 0.45rem;
+  align-items: center;
+  font-weight: bold;
+}
+
+.customer-icon {
+  font-size: 1.4rem;
+}
+
+.customer-text {
+  margin: 0.45rem 0;
+  font-size: 1rem;
+}
+
+.staff-card {
+  border: 2px solid var(--staff-color);
+  background: rgba(255,255,255,0.075);
+  padding: 0.45rem;
+  box-shadow: inset 0 0 18px color-mix(in srgb, var(--staff-color), transparent 78%);
+}
+
+.staff-card.selected {
+  outline: 3px solid #fff;
+  transform: translateY(-2px);
+}
+
+.staff-card.cooldown .staff-select {
+  opacity: 0.65;
+}
+
+.staff-select {
+  width: 100%;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.staff-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--staff-color);
+}
+
+.staff-attr,
+.staff-stat {
+  font-size: 0.75rem;
+}
+
+.skill-btn {
+  width: 100%;
+  margin-top: 0.45rem;
+  padding: 0.45rem;
+  font-weight: bold;
+  background: color-mix(in srgb, var(--staff-color), #111 65%);
+}
+
+.skill-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.bar {
+  height: 8px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 0.15rem 0 0.35rem;
+}
+
+.bar > div {
+  height: 100%;
+  background: #fff;
+}
+
+.bar.patience > div { background: #65d9ff; }
+.bar.ct > div { background: #ff7665; }
+.bar.skill > div { background: #ffd966; }
+
+.battle-footer {
+  display: grid;
+  grid-template-columns: auto 1fr 1.2fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.battle-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.battle-actions button {
+  padding: 0.6rem 0.9rem;
+}
+
+.battle-log {
+  font-size: 0.75rem;
+  line-height: 1.45;
+  opacity: 0.9;
+}
+
+.battle-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed rgba(255,255,255,0.25);
+  border-radius: 14px;
+  min-height: 12rem;
+  opacity: 0.75;
+}
+
+@media screen and (max-width: 900px) {
+  .battle-panel { inset: 2vh 2vw; }
+  .battle-main { grid-template-columns: 1fr; }
+  .staff-area { grid-template-columns: repeat(3, minmax(100px, 1fr)); }
+  .battle-footer { grid-template-columns: 1fr; }
+}
+
+/* === 店舗営業：デッキ接客バトル表示修正版 v037-battle-viewfix === */
+.battle-root.hidden {
+  display: none !important;
+}
+
+.battle-root:not(.hidden) {
+  display: block !important;
+}
+
+.battle-root,
+.battle-root * {
+  box-sizing: border-box;
+}
+
+.battle-root {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 12000 !important;
+  width: 100vw !important;
+  height: var(--app-height) !important;
+  min-height: var(--app-height);
+  overflow: hidden !important;
+  background: rgba(5, 7, 12, 0.96) !important;
+  color: #fff !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+.battle-panel {
+  position: absolute !important;
+  inset: max(8px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) max(8px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left)) !important;
+  width: auto !important;
+  height: auto !important;
+  display: grid !important;
+  grid-template-rows: auto auto minmax(0, 1fr) auto !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  background: linear-gradient(180deg, rgba(35,37,48,0.98), rgba(10,12,18,0.98)) !important;
+}
+
+.battle-header,
+.battle-status,
+.battle-footer {
+  flex: unset !important;
+  min-height: 0 !important;
+}
+
+.battle-header {
+  padding: 8px 12px !important;
+}
+
+.battle-title {
+  font-size: clamp(15px, 2.1vw, 22px) !important;
+  line-height: 1.15 !important;
+}
+
+.battle-subtitle {
+  font-size: clamp(10px, 1.2vw, 13px) !important;
+  line-height: 1.2 !important;
+}
+
+.battle-close {
+  flex: 0 0 auto !important;
+  width: 36px !important;
+  height: 36px !important;
+  color: #111 !important;
+  background: #fff !important;
+}
+
+.battle-status {
+  display: grid !important;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  gap: 6px !important;
+  padding: 6px 10px !important;
+  font-size: clamp(10px, 1.25vw, 14px) !important;
+}
+
+.battle-status span {
+  min-width: 0 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  text-align: center !important;
+  border-radius: 999px !important;
+  background: rgba(255,255,255,0.08) !important;
+  padding: 4px 6px !important;
+}
+
+.battle-main {
+  min-height: 0 !important;
+  height: 100% !important;
+  display: grid !important;
+  grid-template-columns: minmax(240px, 0.95fr) minmax(420px, 1.55fr) !important;
+  gap: 10px !important;
+  padding: 10px !important;
+  overflow: hidden !important;
+}
+
+.customer-area,
+.staff-area {
+  min-height: 0 !important;
+  height: 100% !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  padding-right: 2px !important;
+}
+
+.customer-area {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  grid-auto-rows: minmax(96px, auto) !important;
+  align-content: start !important;
+  gap: 8px !important;
+}
+
+.staff-area {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(130px, 1fr)) !important;
+  align-content: start !important;
+  gap: 8px !important;
+}
+
+.customer-card,
+.staff-card {
+  min-width: 0 !important;
+}
+
+.customer-card {
+  padding: 8px !important;
+}
+
+.customer-icon {
+  font-size: clamp(18px, 2.5vw, 28px) !important;
+}
+
+.customer-text {
+  font-size: clamp(12px, 1.5vw, 16px) !important;
+  line-height: 1.25 !important;
+  margin: 4px 0 !important;
+}
+
+.staff-card {
+  padding: 6px !important;
+  border-width: 2px !important;
+  background: rgba(255,255,255,0.07) !important;
+  box-shadow: none !important;
+}
+
+.staff-select {
+  padding: 6px !important;
+}
+
+.staff-name {
+  font-size: clamp(13px, 1.55vw, 17px) !important;
+  line-height: 1.15 !important;
+}
+
+.staff-attr,
+.staff-stat,
+.skill-desc,
+.mini-label,
+.battle-log,
+.battle-help {
+  font-size: clamp(9px, 1.05vw, 12px) !important;
+  line-height: 1.25 !important;
+}
+
+.skill-btn {
+  margin-top: 4px !important;
+  padding: 5px 4px !important;
+  font-size: clamp(10px, 1.1vw, 12px) !important;
+  line-height: 1.15 !important;
+}
+
+.bar {
+  height: 6px !important;
+  margin: 2px 0 4px !important;
+}
+
+.battle-footer {
+  display: grid !important;
+  grid-template-columns: minmax(220px, auto) minmax(180px, 0.8fr) minmax(240px, 1.2fr) !important;
+  gap: 8px !important;
+  align-items: center !important;
+  padding: 8px 10px !important;
+}
+
+.battle-actions {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 6px !important;
+}
+
+.battle-actions button {
+  padding: 8px 10px !important;
+  min-width: 0 !important;
+  white-space: nowrap !important;
+  font-size: clamp(11px, 1.2vw, 14px) !important;
+}
+
+.battle-log {
+  max-height: 48px !important;
+  overflow-y: auto !important;
+}
+
+.battle-empty {
+  min-height: 100% !important;
+  padding: 16px !important;
+  text-align: center !important;
+}
+
+@media screen and (orientation: portrait) {
+  .battle-root:not(.hidden) {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 960px), screen and (max-height: 560px) {
+  .battle-panel {
+    border-radius: 10px !important;
+  }
+
+  .battle-header {
+    padding: 6px 8px !important;
+  }
+
+  .battle-subtitle,
+  .skill-desc {
+    display: none !important;
+  }
+
+  .battle-status {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 4px !important;
+    padding: 5px 6px !important;
+  }
+
+  .battle-main {
+    grid-template-columns: minmax(190px, 0.78fr) minmax(300px, 1.22fr) !important;
+    gap: 6px !important;
+    padding: 6px !important;
+  }
+
+  .customer-area,
+  .staff-area {
+    gap: 6px !important;
+  }
+
+  .staff-area {
+    grid-template-columns: repeat(3, minmax(96px, 1fr)) !important;
+  }
+
+  .customer-area {
+    grid-auto-rows: minmax(78px, auto) !important;
+  }
+
+  .customer-card,
+  .staff-select {
+    padding: 5px !important;
+  }
+
+  .staff-stat {
+    display: none !important;
+  }
+
+  .battle-footer {
+    grid-template-columns: auto 1fr !important;
+    padding: 6px !important;
+  }
+
+  .battle-log {
+    display: none !important;
+  }
+}
+
+@media screen and (max-height: 430px) {
+  .battle-header {
+    display: none !important;
+  }
+
+  .battle-status {
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  }
+
+  .battle-footer {
+    grid-template-columns: auto 1fr !important;
+  }
+
+  .battle-actions button {
+    padding: 6px 8px !important;
+  }
+}
+
+/* === iPhone Safari landscape compact battle layout v037-battle-ios-compact === */
+@media screen and (orientation: landscape) and (max-height: 760px) {
+  .battle-root {
+    height: 100dvh !important;
+    min-height: 100dvh !important;
+  }
+
+  .battle-panel {
+    inset: max(4px, env(safe-area-inset-top)) max(6px, env(safe-area-inset-right)) max(4px, env(safe-area-inset-bottom)) max(6px, env(safe-area-inset-left)) !important;
+    grid-template-rows: 42px 34px minmax(0, 1fr) 44px !important;
+    border-radius: 10px !important;
+  }
+
+  .battle-header {
+    padding: 4px 8px !important;
+    min-height: 0 !important;
+  }
+
+  .battle-title {
+    font-size: clamp(14px, 2.1vw, 20px) !important;
+    line-height: 1.05 !important;
+  }
+
+  .battle-subtitle {
+    display: none !important;
+  }
+
+  .battle-close {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+  }
+
+  .battle-status {
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    gap: 4px !important;
+    padding: 4px 6px !important;
+    font-size: clamp(9px, 1.4vw, 12px) !important;
+    align-items: center !important;
+  }
+
+  .battle-status span {
+    padding: 3px 4px !important;
+  }
+
+  .battle-main {
+    grid-template-columns: minmax(220px, 0.95fr) minmax(440px, 1.6fr) !important;
+    gap: 6px !important;
+    padding: 6px !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .customer-area {
+    grid-auto-rows: minmax(70px, auto) !important;
+    gap: 5px !important;
+  }
+
+  .staff-area {
+    grid-template-columns: repeat(5, minmax(78px, 1fr)) !important;
+    gap: 5px !important;
+  }
+
+  .customer-card,
+  .staff-card,
+  .staff-select {
+    border-radius: 9px !important;
+  }
+
+  .customer-card {
+    padding: 5px !important;
+  }
+
+  .customer-top {
+    gap: 4px !important;
+    font-size: 11px !important;
+    line-height: 1.05 !important;
+  }
+
+  .customer-icon {
+    font-size: 17px !important;
+  }
+
+  .customer-text {
+    font-size: 11px !important;
+    line-height: 1.1 !important;
+    margin: 2px 0 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .staff-card {
+    padding: 4px !important;
+    border-width: 2px !important;
+  }
+
+  .staff-select {
+    padding: 4px !important;
+  }
+
+  .staff-name {
+    font-size: 13px !important;
+    line-height: 1.05 !important;
+  }
+
+  .staff-attr {
+    font-size: 10px !important;
+    line-height: 1.1 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .staff-stat,
+  .skill-desc,
+  .mini-label {
+    display: none !important;
+  }
+
+  .bar {
+    height: 4px !important;
+    margin: 3px 0 !important;
+  }
+
+  .skill-btn {
+    margin-top: 3px !important;
+    padding: 4px 3px !important;
+    font-size: 9px !important;
+    line-height: 1.05 !important;
+    min-height: 24px !important;
+    white-space: normal !important;
+  }
+
+  .battle-footer {
+    grid-template-columns: auto minmax(0, 1fr) !important;
+    gap: 6px !important;
+    padding: 5px 6px !important;
+    align-items: center !important;
+    min-height: 0 !important;
+  }
+
+  .battle-actions {
+    gap: 5px !important;
+  }
+
+  .battle-actions button {
+    padding: 6px 8px !important;
+    font-size: 11px !important;
+    border-radius: 10px !important;
+  }
+
+  .battle-help {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .battle-log {
+    display: none !important;
+  }
+
+  .battle-empty {
+    min-height: 100% !important;
+    padding: 10px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* === v037-battle-tapfix: 営業中は操作メニュー非表示・店員タップ即対応 === */
+.battle-panel.running {
+  grid-template-rows: auto auto minmax(0, 1fr) !important;
+}
+
+.battle-panel.running .battle-main {
+  padding-bottom: 28px !important;
+}
+
+.battle-running-help {
+  position: absolute !important;
+  left: max(8px, env(safe-area-inset-left)) !important;
+  right: max(8px, env(safe-area-inset-right)) !important;
+  bottom: max(6px, env(safe-area-inset-bottom)) !important;
+  min-height: 20px !important;
+  padding: 4px 8px !important;
+  border-radius: 999px !important;
+  background: rgba(0,0,0,0.55) !important;
+  border: 1px solid rgba(255,255,255,0.15) !important;
+  color: rgba(255,255,255,0.9) !important;
+  font-size: clamp(10px, 1.2vw, 13px) !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  pointer-events: none !important;
+  z-index: 5 !important;
+}
+
+.battle-panel.running .customer-card {
+  cursor: default !important;
+}
+
+.battle-panel.running .staff-select:not(:disabled) {
+  cursor: pointer !important;
+}
+
+@media screen and (orientation: landscape) and (max-height: 760px) {
+  .battle-panel.running {
+    grid-template-rows: 38px 30px minmax(0, 1fr) !important;
+  }
+
+  .battle-panel.running .battle-main {
+    padding-bottom: 22px !important;
+  }
+
+  .battle-running-help {
+    bottom: max(3px, env(safe-area-inset-bottom)) !important;
+    min-height: 18px !important;
+    padding: 3px 6px !important;
+    font-size: 10px !important;
+  }
+}
+
+
+/* === v037-battle-bottomdeck: 上=表示 / 中央=家電星人 / 下=メンバー5人 === */
+.battle-panel.battle-vertical {
+  grid-template-rows: auto auto minmax(0, 1fr) auto auto !important;
+}
+
+.battle-panel.battle-vertical.running {
+  grid-template-rows: auto auto minmax(0, 1fr) auto !important;
+}
+
+.battle-panel.battle-vertical .battle-main {
+  grid-template-columns: 1fr !important;
+  padding: 8px 10px !important;
+  overflow: hidden !important;
+}
+
+.battle-panel.battle-vertical .customer-area {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  grid-auto-rows: minmax(100px, 1fr) !important;
+  gap: 8px !important;
+  align-content: stretch !important;
+  overflow: hidden !important;
+}
+
+.battle-panel.battle-vertical .customer-card {
+  height: 100% !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.battle-panel.battle-vertical .battle-member-dock {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: 150px !important;
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+  padding: 8px 10px !important;
+  overflow: hidden !important;
+  border-top: 1px solid rgba(255,255,255,0.16) !important;
+  background: rgba(0,0,0,0.24) !important;
+}
+
+.battle-panel.battle-vertical .staff-card {
+  min-height: 0 !important;
+  padding: 5px !important;
+}
+
+.battle-panel.battle-vertical .staff-select {
+  min-height: 0 !important;
+  padding: 5px !important;
+}
+
+.battle-panel.battle-vertical .staff-stat,
+.battle-panel.battle-vertical .skill-desc {
+  display: none !important;
+}
+
+.battle-panel.battle-vertical .skill-btn {
+  min-height: 24px !important;
+  padding: 4px 3px !important;
+  font-size: clamp(9px, 1.1vw, 12px) !important;
+}
+
+.battle-panel.battle-vertical .battle-footer {
+  max-height: 74px !important;
+  padding: 6px 10px !important;
+}
+
+.battle-panel.battle-vertical.running .battle-main {
+  padding-bottom: 22px !important;
+}
+
+@media screen and (orientation: landscape) and (max-height: 760px) {
+  .battle-panel.battle-vertical {
+    grid-template-rows: 36px 30px minmax(0, 1fr) 94px 38px !important;
+  }
+
+  .battle-panel.battle-vertical.running {
+    grid-template-rows: 30px 28px minmax(0, 1fr) 90px !important;
+  }
+
+  .battle-panel.battle-vertical .battle-header {
+    padding: 3px 8px !important;
+  }
+
+  .battle-panel.battle-vertical .battle-title {
+    font-size: 16px !important;
+  }
+
+  .battle-panel.battle-vertical .battle-status {
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    padding: 3px 6px !important;
+  }
+
+  .battle-panel.battle-vertical .battle-main {
+    padding: 5px 8px !important;
+  }
+
+  .battle-panel.battle-vertical .customer-area {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    grid-auto-rows: minmax(0, 1fr) !important;
+    gap: 6px !important;
+  }
+
+  .battle-panel.battle-vertical .customer-card {
+    padding: 6px !important;
+  }
+
+  .battle-panel.battle-vertical .battle-member-dock {
+    max-height: none !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 5px !important;
+    padding: 5px 8px !important;
+  }
+
+  .battle-panel.battle-vertical .staff-card {
+    padding: 4px !important;
+  }
+
+  .battle-panel.battle-vertical .staff-name {
+    font-size: 13px !important;
+  }
+
+  .battle-panel.battle-vertical .staff-attr {
+    font-size: 10px !important;
+  }
+
+  .battle-panel.battle-vertical .mini-label {
+    display: none !important;
+  }
+
+  .battle-panel.battle-vertical .bar {
+    height: 4px !important;
+    margin: 3px 0 !important;
+  }
+
+  .battle-panel.battle-vertical .skill-btn {
+    min-height: 22px !important;
+    font-size: 9px !important;
+    line-height: 1.05 !important;
+  }
+
+  .battle-panel.battle-vertical .battle-footer {
+    max-height: none !important;
+    grid-template-columns: auto minmax(0, 1fr) !important;
+    padding: 4px 8px !important;
+  }
+
+  .battle-panel.battle-vertical .battle-actions button {
+    padding: 5px 8px !important;
+  }
+
+  .battle-panel.battle-vertical .battle-running-help {
+    bottom: max(2px, env(safe-area-inset-bottom)) !important;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 430px) {
+  .battle-panel.battle-vertical.running {
+    grid-template-rows: 26px minmax(0, 1fr) 82px !important;
+  }
+
+  .battle-panel.battle-vertical.running .battle-header {
+    display: none !important;
+  }
+
+  .battle-panel.battle-vertical .customer-text {
+    font-size: 10px !important;
+  }
+
+  .battle-panel.battle-vertical .customer-icon {
+    font-size: 16px !important;
+  }
+
+  .battle-panel.battle-vertical .skill-btn {
+    min-height: 20px !important;
+    padding: 3px 2px !important;
+  }
+}
+
+/* === v037 integrated battle layout: top HUD / center enemies / bottom members === */
+#battle-root.battle-root {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 30000 !important;
+  width: 100vw !important;
+  height: var(--app-height, 100vh) !important;
+  display: block;
+  background: #050506;
+  color: #fff;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+#battle-root.hidden { display: none !important; }
+
+#battle-root .battle-stage {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: minmax(74px, 15vh) 1fr minmax(112px, 25vh);
+  gap: 0;
+  box-sizing: border-box;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  background: radial-gradient(circle at center, rgba(38, 35, 28, 0.88), #050506 72%);
+}
+
+#battle-root .battle-hud {
+  box-sizing: border-box;
+  border: 3px solid #ff2636;
+  border-radius: 0 0 12px 12px;
+  margin: 6px 8px 4px;
+  padding: 6px 12px;
+  background: rgba(12, 12, 18, 0.94);
+  min-width: 0;
+  overflow: hidden;
+}
+#battle-root .battle-hud-title {
+  font-size: clamp(14px, 2.3vw, 24px);
+  font-weight: 800;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+#battle-root .battle-hud-stats {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: clamp(8px, 1.8vw, 24px);
+  align-items: center;
+  margin-top: 4px;
+  font-size: clamp(11px, 1.75vw, 18px);
+  white-space: nowrap;
+}
+#battle-root .battle-hud-stats b { font-size: 1.08em; }
+#battle-root .battle-message {
+  margin-top: 3px;
+  font-size: clamp(10px, 1.45vw, 15px);
+  color: rgba(255,255,255,0.82);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#battle-root .battle-stage.is-rush .battle-hud {
+  animation: battleHudRush 0.55s infinite alternate;
+}
+@keyframes battleHudRush {
+  from { box-shadow: 0 0 0 rgba(255, 80, 80, 0); }
+  to { box-shadow: 0 0 18px rgba(255, 80, 80, 0.88); }
+}
+
+#battle-root .battle-enemies {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(10px, 3vw, 36px);
+  align-items: center;
+  justify-items: stretch;
+  box-sizing: border-box;
+  padding: 8px clamp(14px, 5vw, 54px);
+  min-height: 0;
+  overflow: hidden;
+}
+#battle-root .battle-enemy-card {
+  height: min(100%, 210px);
+  min-height: 112px;
+  box-sizing: border-box;
+  border: 4px solid var(--enemy-color, #ff841f);
+  border-radius: 12px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--enemy-color, #ff841f) 22%, rgba(18, 14, 10, 0.92)), rgba(18, 14, 10, 0.92));
+  padding: clamp(6px, 1.3vw, 14px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+#battle-root .battle-enemy-card.rare { box-shadow: inset 0 0 0 2px #ffd44a, 0 0 12px rgba(255, 212, 74, 0.45); }
+#battle-root .battle-enemy-card.target { box-shadow: 0 0 22px var(--enemy-color, rgba(255, 230, 100, 0.95)); transform: translateY(-2px); }
+#battle-root .enemy-head {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  min-width: 0;
+  font-weight: 800;
+  font-size: clamp(12px, 2vw, 20px);
+}
+#battle-root .enemy-icon { font-size: 1.15em; }
+#battle-root .enemy-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#battle-root .enemy-head b { margin-left: auto; color: #ffe56f; font-size: 0.78em; }
+#battle-root .enemy-attr,
+#battle-root .enemy-label {
+  font-size: clamp(9px, 1.4vw, 13px);
+  color: rgba(255,255,255,0.82);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#battle-root .battle-members {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(6px, 1.8vw, 18px);
+  box-sizing: border-box;
+  border-top: 2px solid rgba(255,255,255,0.18);
+  padding: 8px clamp(8px, 2.5vw, 28px) max(8px, env(safe-area-inset-bottom));
+  background: rgba(0, 16, 8, 0.96);
+  min-height: 0;
+  overflow: hidden;
+}
+#battle-root .battle-member-card {
+  position: relative;
+  height: 100%;
+  min-width: 0;
+  border: 4px solid #10c765;
+  border-color: var(--member-color, #10c765);
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(5, 34, 16, 0.96), rgba(4, 14, 8, 0.96));
+  color: #fff;
+  padding: clamp(5px, 1.0vw, 10px);
+  box-sizing: border-box;
+  text-align: left;
+  overflow: hidden;
+  cursor: pointer;
+
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;}
+#battle-root .battle-member-card:active { transform: scale(0.97); }
+#battle-root .battle-member-card.cooldown { opacity: 0.52; }
+#battle-root .battle-member-card.skill-ready {
+  box-shadow: 0 0 20px rgba(255, 240, 90, 0.9);
+}
+#battle-root .member-name {
+  font-size: clamp(12px, 2vw, 20px);
+  font-weight: 900;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+#battle-root .member-attr,
+#battle-root .member-power,
+#battle-root .member-label,
+#battle-root .member-skill-name {
+  font-size: clamp(8px, 1.25vw, 12px);
+  color: rgba(255,255,255,0.86);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#battle-root .member-skill-name { margin-top: 2px; color: #fff6a3; }
+
+#battle-root .battle-bar {
+  width: 100%;
+  height: clamp(5px, 1.2vh, 10px);
+  margin: 2px 0 4px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.18);
+  overflow: hidden;
+}
+#battle-root .battle-bar i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #ffae34;
+}
+#battle-root .battle-bar.patience i { background: #5fc3ff; }
+#battle-root .battle-bar.member-ct i { background: #45ff89; }
+#battle-root .battle-bar.member-skill i { background: #fff06a; }
+
+#battle-root .battle-empty {
+  grid-column: 1 / -1;
+  align-self: center;
+  justify-self: center;
+  padding: 18px 28px;
+  border: 2px dashed rgba(255,255,255,0.3);
+  border-radius: 12px;
+  color: rgba(255,255,255,0.75);
+  font-size: clamp(13px, 2vw, 20px);
+}
+
+#battle-root .battle-control-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.38);
+  z-index: 5;
+}
+#battle-root .battle-control-box {
+  width: min(560px, 84vw);
+  border: 2px solid rgba(255,255,255,0.35);
+  border-radius: 18px;
+  background: rgba(14, 16, 22, 0.96);
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.45);
+}
+#battle-root .battle-result-title {
+  font-size: clamp(18px, 3vw, 28px);
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+#battle-root .battle-control-help {
+  margin: 8px 0 14px;
+  font-size: clamp(12px, 1.7vw, 15px);
+  line-height: 1.5;
+  color: rgba(255,255,255,0.84);
+}
+#battle-root .battle-result-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 14px;
+  margin: 10px auto 16px;
+  max-width: 320px;
+  text-align: left;
+}
+#battle-root .battle-result-grid b { text-align: right; }
+#battle-root .battle-control-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+#battle-root .battle-control-buttons button {
+  min-width: 104px;
+  border: 1px solid rgba(255,255,255,0.36);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.13);
+  color: #fff;
+  padding: 9px 16px;
+  font-size: 15px;
+}
+#battle-root .battle-control-buttons button:disabled { opacity: 0.45; }
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-stage {
+    grid-template-rows: 58px 1fr 104px;
+  }
+  #battle-root .battle-hud {
+    margin: 4px 6px 2px;
+    padding: 4px 8px;
+    border-width: 2px;
+  }
+  #battle-root .battle-hud-title {
+    font-size: 14px;
+  }
+  #battle-root .battle-hud-stats {
+    gap: 8px;
+    font-size: 11px;
+    margin-top: 2px;
+  }
+  #battle-root .battle-message {
+    display: none;
+  }
+  #battle-root .battle-enemies {
+    padding: 6px 20px;
+    gap: 18px;
+  }
+  #battle-root .battle-enemy-card {
+    min-height: 92px;
+    height: 100%;
+    border-width: 3px;
+    padding: 5px;
+  }
+  #battle-root .enemy-head { font-size: 12px; }
+  #battle-root .enemy-attr,
+  #battle-root .enemy-label { font-size: 9px; }
+  #battle-root .battle-members {
+    padding: 6px 10px max(6px, env(safe-area-inset-bottom));
+    gap: 8px;
+  }
+  #battle-root .battle-member-card {
+    border-width: 3px;
+    padding: 5px;
+  }
+  #battle-root .member-name { font-size: 12px; }
+  #battle-root .member-attr,
+  #battle-root .member-power,
+  #battle-root .member-label,
+  #battle-root .member-skill-name { font-size: 9px; }
+  #battle-root .battle-bar { height: 5px; margin: 1px 0 2px; }
+  #battle-root .battle-control-box { padding: 12px; }
+}
+
+/* v037 deck battle: enemy double-tap change */
+#battle-root .battle-enemy-card {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+#battle-root .battle-enemy-card.exchanging {
+  border-style: dashed;
+  opacity: 0.9;
+  background: linear-gradient(180deg, rgba(40, 40, 48, 0.96), rgba(12, 12, 18, 0.96));
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,0.18), 0 0 18px color-mix(in srgb, var(--enemy-color, #ff841f) 55%, transparent);
+}
+#battle-root .enemy-exchange-message {
+  display: grid;
+  place-items: center;
+  min-height: 34px;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.10);
+  color: #fff;
+  font-size: clamp(12px, 1.8vw, 18px);
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.25;
+}
+#battle-root .battle-bar.exchange i {
+  background: linear-gradient(90deg, #ffffff, var(--enemy-color, #ff841f));
+}
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .enemy-exchange-message {
+    min-height: 24px;
+    font-size: 11px;
+    padding: 2px 4px;
+  }
+  #battle-root .battle-hud-stats {
+    gap: 6px;
+    font-size: 10px;
+  }
+}
+
+/* v037 deck battle: auto battle + manager help */
+#battle-root .battle-hud {
+  position: relative;
+}
+#battle-root .battle-hud-actions {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 2;
+}
+#battle-root .battle-auto-toggle,
+#battle-root .battle-help-btn {
+  border: 1px solid rgba(255,255,255,0.45);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  min-height: 28px;
+  padding: 4px 10px;
+  font-size: clamp(10px, 1.4vw, 13px);
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+#battle-root .battle-auto-toggle.on {
+  border-color: #5dff9a;
+  background: rgba(20, 160, 80, 0.55);
+  box-shadow: 0 0 12px rgba(93,255,154,0.45);
+}
+#battle-root .battle-help-stock {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 5px;
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 999px;
+  background: rgba(0,0,0,0.25);
+}
+#battle-root .battle-help-stock span {
+  font-size: clamp(9px, 1.3vw, 12px);
+  color: rgba(255,255,255,0.85);
+  font-weight: 800;
+  white-space: nowrap;
+}
+#battle-root .battle-help-btn {
+  min-width: 36px;
+  padding: 4px 7px;
+  border-color: rgba(255, 224, 100, 0.85);
+  background: rgba(180, 120, 15, 0.72);
+  color: #fff4ad;
+}
+#battle-root .battle-help-btn.available {
+  box-shadow: 0 0 12px rgba(255, 224, 100, 0.75);
+}
+#battle-root .battle-help-btn.empty {
+  opacity: 0.35;
+  border-color: rgba(255,255,255,0.22);
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.55);
+}
+#battle-root .battle-help-btn:disabled {
+  pointer-events: none;
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-hud-actions {
+    right: 5px;
+    top: 4px;
+    gap: 4px;
+  }
+  #battle-root .battle-auto-toggle,
+  #battle-root .battle-help-btn {
+    min-height: 22px;
+    padding: 3px 6px;
+    font-size: 9px;
+  }
+  #battle-root .battle-help-stock {
+    gap: 2px;
+    padding: 2px 3px;
+  }
+  #battle-root .battle-help-stock span {
+    display: none;
+  }
+  #battle-root .battle-help-btn {
+    min-width: 28px;
+  }
+  #battle-root .battle-hud-title {
+    max-width: 42vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* v037 deck battle: character-colored HIT feedback */
+#battle-root .battle-enemy-card {
+  position: relative;
+}
+#battle-root .battle-enemy-card.defeating {
+  filter: brightness(1.24);
+  box-shadow: 0 0 22px var(--enemy-color, #ff841f), inset 0 0 18px rgba(255, 255, 255, 0.24);
+}
+#battle-root .enemy-hit-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 6;
+  overflow: visible;
+}
+#battle-root .enemy-hit-pop {
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  min-width: 72px;
+  padding: 4px 9px;
+  border: 2px solid var(--hit-color, #fff);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--hit-color, #fff) 28%, rgba(0, 0, 0, 0.84));
+  color: #fff;
+  font-weight: 900;
+  font-size: clamp(14px, 2.5vw, 26px);
+  text-align: center;
+  text-shadow: 0 2px 4px #000, 0 0 8px var(--hit-color, #fff);
+  box-shadow: 0 0 18px var(--hit-color, #fff);
+  will-change: transform, opacity;
+}
+#battle-root .enemy-hit-pop span {
+  white-space: nowrap;
+}
+#battle-root .enemy-hit-pop small {
+  display: block;
+  margin-top: -2px;
+  font-size: 0.48em;
+  letter-spacing: 0.08em;
+}
+#battle-root .enemy-contract-label {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 5;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 2px solid #fff;
+  background: rgba(255, 212, 74, 0.92);
+  color: #2a1600;
+  font-weight: 900;
+  font-size: clamp(12px, 1.8vw, 18px);
+  box-shadow: 0 0 14px rgba(255, 212, 74, 0.95);
+}
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .enemy-hit-pop {
+    min-width: 52px;
+    padding: 2px 6px;
+    font-size: 13px;
+  }
+  #battle-root .enemy-contract-label {
+    right: 5px;
+    top: 5px;
+    padding: 2px 6px;
+    font-size: 11px;
+  }
+}
+
+/* v037 deck formation UI */
+#battle-root .battle-main-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(96px, 1fr));
+  gap: 10px;
+  width: min(560px, 92vw);
+  margin: 0 auto;
+}
+#battle-root .battle-main-buttons button {
+  min-width: 0;
+  width: 100%;
+}
+#battle-root .deck-edit-overlay {
+  place-items: center;
+}
+#battle-root .battle-deck-box {
+  width: min(1040px, 94vw);
+  max-height: min(92vh, var(--app-height, 100vh));
+  border: 2px solid rgba(255,255,255,0.35);
+  border-radius: 18px;
+  background: rgba(8, 10, 14, 0.97);
+  padding: 14px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.48);
+  overflow: hidden;
+}
+#battle-root .deck-select-grid {
+  display: grid;
+  grid-template-rows: repeat(3, minmax(78px, 1fr));
+  gap: 10px;
+  margin-top: 8px;
+}
+#battle-root .deck-select-row {
+  display: grid;
+  gap: 10px;
+}
+#battle-root .deck-row-five {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+#battle-root .deck-row-bottom {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(160px, 1.15fr);
+}
+#battle-root .deck-select-card {
+  position: relative;
+  min-width: 0;
+  border: 3px solid var(--member-color, #10c765);
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(5, 34, 16, 0.96), rgba(4, 14, 8, 0.96));
+  color: #fff;
+  padding: 8px;
+  box-sizing: border-box;
+  text-align: left;
+  overflow: hidden;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+#battle-root .deck-select-card b {
+  display: block;
+  font-size: clamp(13px, 2vw, 20px);
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#battle-root .deck-select-card small,
+#battle-root .deck-select-card em {
+  display: block;
+  margin-top: 2px;
+  font-size: clamp(9px, 1.3vw, 12px);
+  color: rgba(255,255,255,0.84);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-style: normal;
+}
+#battle-root .deck-select-card.selected {
+  background: #ffffff;
+  color: #08090c;
+  box-shadow: 0 0 18px rgba(255,255,255,0.75), inset 0 0 0 2px var(--member-color, #10c765);
+}
+#battle-root .deck-select-card.selected small,
+#battle-root .deck-select-card.selected em {
+  color: rgba(0,0,0,0.72);
+}
+#battle-root .deck-select-order {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: var(--member-color, #10c765);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+}
+#battle-root .deck-decision-area {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 8px;
+  min-width: 0;
+}
+#battle-root .deck-decision-main {
+  border: 2px solid rgba(255,255,255,0.42);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.22), rgba(255,255,255,0.10));
+  color: #fff;
+  font-size: clamp(18px, 2.7vw, 26px);
+  font-weight: 900;
+}
+#battle-root .deck-decision-main:disabled {
+  opacity: 0.38;
+}
+#battle-root .deck-small-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+#battle-root .deck-small-buttons button {
+  border: 1px solid rgba(255,255,255,0.36);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  padding: 7px 8px;
+  font-size: clamp(11px, 1.5vw, 14px);
+}
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-deck-box {
+    width: min(1040px, 95vw);
+    padding: 8px 10px;
+  }
+  #battle-root .deck-select-grid {
+    grid-template-rows: repeat(3, 74px);
+    gap: 7px;
+    margin-top: 5px;
+  }
+  #battle-root .deck-select-row { gap: 7px; }
+  #battle-root .deck-select-card {
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 6px;
+  }
+  #battle-root .deck-select-card b { font-size: 13px; }
+  #battle-root .deck-select-card small,
+  #battle-root .deck-select-card em { font-size: 9px; }
+  #battle-root .deck-select-order {
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+  }
+  #battle-root .battle-deck-box .battle-control-help {
+    display: block;
+    margin: 4px 0 6px;
+    font-size: 10px;
+    line-height: 1.25;
+  }
+  #battle-root .deck-decision-main { font-size: 18px; }
+  #battle-root .deck-small-buttons button { padding: 5px 4px; font-size: 11px; }
+}
+
+
+/* v037 deck battle: HELP side buttons, skill-ready inversion, cut-in effects */
+#battle-root .battle-stage {
+  position: relative;
+}
+
+#battle-root .battle-help-side {
+  position: absolute;
+  right: max(10px, env(safe-area-inset-right));
+  top: 76px;
+  z-index: 4;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: clamp(8px, 2.2vh, 18px);
+  pointer-events: auto;
+}
+
+#battle-root .battle-help-side .battle-help-btn {
+  width: clamp(58px, 7vw, 88px);
+  height: clamp(58px, 7vw, 88px);
+  border-radius: 999px;
+  border: 3px solid rgba(255, 224, 100, 0.92);
+  background: radial-gradient(circle at 35% 25%, rgba(255, 255, 255, 0.30), rgba(210, 140, 18, 0.92));
+  color: #fff4ad;
+  font-size: clamp(13px, 1.8vw, 20px);
+  font-weight: 1000;
+  letter-spacing: 0.03em;
+  text-shadow: 0 2px 4px #000, 0 0 10px rgba(255, 224, 100, 0.9);
+  box-shadow: 0 0 18px rgba(255, 224, 100, 0.7), inset 0 0 18px rgba(255, 255, 255, 0.20);
+  padding: 0;
+  min-width: 0;
+}
+
+#battle-root .battle-help-side .battle-help-btn.empty {
+  opacity: 0.24;
+  border-color: rgba(255,255,255,0.30);
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.55);
+  box-shadow: none;
+}
+
+#battle-root .battle-member-card.skill-ready {
+  background: linear-gradient(180deg, #ffffff, #d9d9d9) !important;
+  color: #111 !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(255,255,255,0.95), 0 0 28px var(--member-color, #fff) !important;
+}
+#battle-root .battle-member-card.skill-ready .member-attr,
+#battle-root .battle-member-card.skill-ready .member-power,
+#battle-root .battle-member-card.skill-ready .member-label,
+#battle-root .battle-member-card.skill-ready .member-skill-name {
+  color: #111 !important;
+}
+#battle-root .battle-member-card.skill-ready .member-skill-name {
+  font-weight: 900;
+  text-shadow: 0 0 6px rgba(255,255,255,0.8);
+}
+#battle-root .battle-member-card.skill-ready .battle-bar {
+  background: rgba(0,0,0,0.20);
+}
+
+#battle-root .battle-cutin {
+  position: absolute;
+  inset: 0;
+  z-index: 7;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  animation: battleCutinFlash 1.15s ease both;
+}
+#battle-root .battle-cutin-band {
+  width: min(860px, 92vw);
+  transform: skewX(-10deg);
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  background: linear-gradient(90deg, rgba(0,0,0,0.05), color-mix(in srgb, var(--cutin-color, #fff) 84%, rgba(0,0,0,0.88)), rgba(0,0,0,0.05));
+  padding: clamp(12px, 2vw, 24px) 20px;
+  text-align: center;
+  box-shadow: 0 0 28px var(--cutin-color, #fff), inset 0 0 32px rgba(255,255,255,0.24);
+}
+#battle-root .battle-cutin-band small,
+#battle-root .battle-cutin-band b {
+  display: block;
+  transform: skewX(10deg);
+}
+#battle-root .battle-cutin-band small {
+  font-size: clamp(13px, 2vw, 24px);
+  color: rgba(255,255,255,0.9);
+  font-weight: 900;
+  text-shadow: 0 2px 4px #000;
+  margin-bottom: 2px;
+}
+#battle-root .battle-cutin-band b {
+  font-size: clamp(28px, 6vw, 68px);
+  line-height: 1.05;
+  color: #fff;
+  text-shadow: 0 3px 5px #000, 0 0 16px var(--cutin-color, #fff);
+  letter-spacing: 0.04em;
+}
+
+@keyframes battleCutinFlash {
+  0% { transform: translateX(-18px) scale(0.98); filter: brightness(1.6); }
+  15% { transform: translateX(0) scale(1.02); filter: brightness(1.25); }
+  75% { transform: translateX(0) scale(1); filter: brightness(1); }
+  100% { transform: translateX(18px) scale(1.01); filter: brightness(1.1); }
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-help-side {
+    right: max(7px, env(safe-area-inset-right));
+    top: 64px;
+    gap: 8px;
+  }
+  #battle-root .battle-help-side .battle-help-btn {
+    width: 44px;
+    height: 44px;
+    border-width: 2px;
+    font-size: 10px;
+  }
+  #battle-root .battle-cutin-band {
+    width: min(720px, 88vw);
+    padding: 8px 14px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+  }
+  #battle-root .battle-cutin-band small { font-size: 12px; }
+  #battle-root .battle-cutin-band b { font-size: 30px; }
+}
+
+/* === v037 portrait battle CSS fix: 縦画面の高さ不足・横画面専用UIの圧縮対策 === */
+@supports (height: 100dvh) {
+  #battle-root.battle-root {
+    height: 100dvh !important;
+    min-height: 100dvh !important;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #battle-root.battle-root {
+    width: 100vw !important;
+    height: var(--app-height, 100svh) !important;
+    min-height: var(--app-height, 100svh) !important;
+    overflow: hidden !important;
+  }
+
+  #battle-root .battle-stage {
+    grid-template-rows: auto minmax(0, 1fr) auto !important;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left) !important;
+    min-height: var(--app-height, 100svh) !important;
+  }
+
+  #battle-root .battle-hud {
+    margin: 5px 6px 4px !important;
+    padding: 6px 8px !important;
+    border-width: 2px !important;
+    border-radius: 10px !important;
+  }
+
+  #battle-root .battle-hud-title {
+    font-size: 16px !important;
+    max-width: calc(100vw - 22px) !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  #battle-root .battle-hud-stats {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 3px 7px !important;
+    font-size: 11px !important;
+    white-space: normal !important;
+  }
+
+  #battle-root .battle-hud-stats span {
+    min-width: 0 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  #battle-root .battle-message {
+    font-size: 10px !important;
+    margin-top: 3px !important;
+    white-space: nowrap !important;
+  }
+
+  #battle-root .battle-hud-actions {
+    right: 6px !important;
+    top: 6px !important;
+  }
+
+  #battle-root .battle-auto-toggle {
+    min-height: 24px !important;
+    padding: 3px 7px !important;
+    font-size: 10px !important;
+  }
+
+  #battle-root .battle-help-side {
+    right: max(6px, env(safe-area-inset-right)) !important;
+    top: 104px !important;
+    gap: 7px !important;
+  }
+
+  #battle-root .battle-help-side .battle-help-btn {
+    width: 42px !important;
+    height: 42px !important;
+    border-width: 2px !important;
+    font-size: 10px !important;
+  }
+
+  #battle-root .battle-enemies {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(3, minmax(82px, 1fr)) !important;
+    gap: 8px !important;
+    padding: 8px 54px 8px 10px !important;
+    align-items: stretch !important;
+  }
+
+  #battle-root .battle-enemy-card {
+    height: 100% !important;
+    min-height: 78px !important;
+    max-height: none !important;
+    border-width: 3px !important;
+    border-radius: 12px !important;
+    padding: 6px 8px !important;
+  }
+
+  #battle-root .enemy-head {
+    font-size: 13px !important;
+  }
+
+  #battle-root .enemy-attr,
+  #battle-root .enemy-label {
+    font-size: 10px !important;
+  }
+
+  #battle-root .battle-bar {
+    height: 5px !important;
+    margin: 2px 0 3px !important;
+  }
+
+  #battle-root .battle-members {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-auto-rows: minmax(72px, auto) !important;
+    gap: 6px !important;
+    padding: 7px 8px max(7px, env(safe-area-inset-bottom)) !important;
+    max-height: 244px !important;
+    overflow: hidden !important;
+  }
+
+  #battle-root .battle-member-card:nth-child(5) {
+    grid-column: 1 / -1 !important;
+  }
+
+  #battle-root .battle-member-card {
+    min-height: 70px !important;
+    border-width: 3px !important;
+    border-radius: 10px !important;
+    padding: 6px 7px !important;
+  }
+
+  #battle-root .member-name {
+    font-size: 14px !important;
+  }
+
+  #battle-root .member-attr,
+  #battle-root .member-power,
+  #battle-root .member-label,
+  #battle-root .member-skill-name {
+    font-size: 10px !important;
+  }
+
+  #battle-root .battle-control-box {
+    width: min(92vw, 520px) !important;
+    padding: 14px !important;
+  }
+
+  #battle-root .battle-main-buttons {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: 100% !important;
+    gap: 8px !important;
+  }
+
+  #battle-root .battle-main-buttons button {
+    min-width: 0 !important;
+    padding: 9px 8px !important;
+    font-size: 13px !important;
+  }
+
+  #battle-root .battle-control-help {
+    font-size: 12px !important;
+    line-height: 1.45 !important;
+  }
+
+  #battle-root .battle-deck-box {
+    width: min(94vw, 560px) !important;
+    max-height: calc(var(--app-height, 100svh) - 24px) !important;
+    overflow-y: auto !important;
+    padding: 10px !important;
+  }
+
+  #battle-root .deck-select-grid {
+    display: grid !important;
+    grid-template-rows: none !important;
+    grid-auto-rows: auto !important;
+    gap: 7px !important;
+  }
+
+  #battle-root .deck-select-row,
+  #battle-root .deck-row-five,
+  #battle-root .deck-row-bottom {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 7px !important;
+  }
+
+  #battle-root .deck-select-card {
+    min-height: 66px !important;
+    padding: 6px !important;
+    border-width: 3px !important;
+  }
+
+  #battle-root .deck-decision-area {
+    grid-column: 1 / -1 !important;
+    grid-template-rows: 44px 34px !important;
+  }
+
+  #battle-root .deck-decision-main {
+    font-size: 18px !important;
+  }
+
+  #battle-root .deck-small-buttons button {
+    font-size: 12px !important;
+    padding: 6px !important;
+  }
+
+  #battle-root .battle-cutin-band {
+    width: min(88vw, 520px) !important;
+    padding: 10px 14px !important;
+  }
+
+  #battle-root .battle-cutin-band small { font-size: 13px !important; }
+  #battle-root .battle-cutin-band b { font-size: 30px !important; }
+}
+
+@media screen and (orientation: portrait) and (max-height: 700px) {
+  #battle-root .battle-members {
+    max-height: 210px !important;
+    grid-auto-rows: minmax(62px, auto) !important;
+  }
+  #battle-root .battle-member-card {
+    min-height: 60px !important;
+    padding: 5px !important;
+  }
+  #battle-root .member-skill-name,
+  #battle-root .member-label {
+    display: none !important;
+  }
+  #battle-root .battle-help-side {
+    top: 96px !important;
+  }
+  #battle-root .battle-help-side .battle-help-btn {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 9px !important;
+  }
+}
+
+/* === v037 portrait HELP layout fix v2 ===
+   縦画面では右側固定HELPを消し、HUD内に横並び表示する。
+   さらに縦画面は無理に圧縮せず、必要なら縦スクロールできる高さを確保する。 */
+#battle-root .battle-help-inline {
+  display: none;
+}
+#battle-root .battle-help-inline .battle-help-btn {
+  width: 44px;
+  height: 30px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 224, 100, 0.92);
+  background: radial-gradient(circle at 35% 25%, rgba(255,255,255,0.25), rgba(210,140,18,0.92));
+  color: #fff4ad;
+  font-size: 10px;
+  font-weight: 1000;
+  padding: 0;
+  min-width: 0;
+  box-shadow: 0 0 10px rgba(255, 224, 100, 0.55);
+}
+#battle-root .battle-help-inline .battle-help-btn.empty {
+  opacity: 0.24;
+  border-color: rgba(255,255,255,0.30);
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.55);
+  box-shadow: none;
+}
+
+@media screen and (orientation: portrait) {
+  #battle-root.battle-root {
+    height: 100dvh !important;
+    min-height: 100dvh !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #battle-root .battle-stage {
+    position: relative !important;
+    min-height: max(100dvh, 720px) !important;
+    height: auto !important;
+    display: grid !important;
+    grid-template-rows: auto minmax(300px, 1fr) auto !important;
+    overflow: visible !important;
+  }
+
+  #battle-root .battle-help-side {
+    display: none !important;
+  }
+
+  #battle-root .battle-hud {
+    margin-right: 6px !important;
+    overflow: visible !important;
+  }
+
+  #battle-root .battle-hud-actions {
+    position: static !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 6px !important;
+    margin-top: 5px !important;
+    width: 100% !important;
+  }
+
+  #battle-root .battle-help-inline {
+    display: flex !important;
+    gap: 5px !important;
+    align-items: center !important;
+  }
+
+  #battle-root .battle-auto-toggle {
+    min-height: 30px !important;
+    height: 30px !important;
+    padding: 3px 8px !important;
+    font-size: 10px !important;
+    white-space: nowrap !important;
+  }
+
+  #battle-root .battle-enemies {
+    padding-right: 10px !important;
+    min-height: 300px !important;
+  }
+
+  #battle-root .battle-members {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-height: 700px) {
+  #battle-root .battle-stage {
+    min-height: 700px !important;
+  }
+}
+
+
+/* === v037 portrait final fix + cutin description v3 ===
+   縦画面で短く潰れる問題を、最後尾の強制上書きで解消。
+   縦画面はスクロール許可・十分な最小高さを確保する。 */
+#battle-root .battle-cutin-band p {
+  display: block;
+  transform: skewX(10deg);
+  margin: 8px auto 0;
+  max-width: min(760px, 86vw);
+  color: rgba(255,255,255,0.96);
+  font-size: clamp(12px, 1.7vw, 20px);
+  line-height: 1.35;
+  font-weight: 800;
+  text-shadow: 0 2px 4px #000;
+}
+
+@media screen and (orientation: portrait) {
+  html, body {
+    min-height: 100dvh !important;
+  }
+
+  #battle-root.battle-root:not(.hidden) {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100dvh !important;
+    min-height: 100dvh !important;
+    max-height: none !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    display: block !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  #battle-root .battle-stage {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    min-height: max(100dvh, 860px) !important;
+    height: auto !important;
+    max-height: none !important;
+    display: grid !important;
+    grid-template-rows: auto minmax(360px, 1fr) auto !important;
+    overflow: visible !important;
+    padding-bottom: max(10px, env(safe-area-inset-bottom)) !important;
+  }
+
+  #battle-root .battle-hud {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  #battle-root .battle-message {
+    display: block !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.25 !important;
+  }
+
+  #battle-root .battle-enemies {
+    min-height: 360px !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    padding: 10px !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(3, minmax(108px, 1fr)) !important;
+  }
+
+  #battle-root .battle-enemy-card {
+    min-height: 108px !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+
+  #battle-root .battle-members {
+    min-height: 330px !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-auto-rows: minmax(96px, auto) !important;
+  }
+
+  #battle-root .battle-member-card {
+    min-height: 96px !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+
+  #battle-root .member-skill-name,
+  #battle-root .member-label {
+    display: block !important;
+  }
+
+  #battle-root .battle-help-side {
+    display: none !important;
+  }
+
+  #battle-root .battle-help-inline {
+    display: flex !important;
+  }
+
+  #battle-root .battle-control-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    min-height: 100dvh !important;
+    overflow-y: auto !important;
+    padding: 16px 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  #battle-root .battle-deck-box {
+    max-height: none !important;
+  }
+
+  #battle-root .battle-cutin-band p {
+    font-size: 12px !important;
+    line-height: 1.35 !important;
+    margin-top: 6px !important;
+  }
+}
+
+
+/* === v037 HELP layout final: HELPボタンを縦並びから上部HUD内の横並びへ統一 === */
+#battle-root .battle-help-side {
+  display: none !important;
+}
+#battle-root .battle-hud-actions {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 8px !important;
+  flex-wrap: nowrap !important;
+}
+#battle-root .battle-help-inline {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 6px !important;
+  position: static !important;
+}
+#battle-root .battle-help-inline .battle-help-btn {
+  width: clamp(46px, 8vw, 66px) !important;
+  height: clamp(28px, 4.5vh, 38px) !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  border-radius: 999px !important;
+  font-size: clamp(10px, 1.6vw, 14px) !important;
+  padding: 0 4px !important;
+  line-height: 1 !important;
+}
+@media screen and (orientation: portrait) {
+  #battle-root .battle-hud-actions {
+    justify-content: space-between !important;
+    width: 100% !important;
+    margin-top: 5px !important;
+  }
+  #battle-root .battle-help-inline {
+    flex: 0 0 auto !important;
+    gap: 5px !important;
+  }
+  #battle-root .battle-help-inline .battle-help-btn {
+    width: 44px !important;
+    height: 30px !important;
+    font-size: 10px !important;
+  }
+}
+
+
+/* v037 opening countdown / finish surface */
+#battle-root .battle-surface {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.12), rgba(0,0,0,0.42) 58%, rgba(0,0,0,0.72));
+  animation: battleSurfacePop 0.34s ease both;
+}
+#battle-root .battle-surface-card {
+  width: min(680px, 88vw);
+  min-height: 160px;
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  padding: 24px 28px;
+  border-radius: 28px;
+  border: 4px solid rgba(255,255,255,0.92);
+  background: linear-gradient(135deg, rgba(10,10,18,0.94), rgba(80,26,14,0.92));
+  box-shadow: 0 0 36px rgba(255,210,80,0.88), inset 0 0 24px rgba(255,255,255,0.14);
+  text-align: center;
+}
+#battle-root .battle-surface-card small {
+  display: block;
+  font-size: clamp(16px, 2.6vw, 30px);
+  font-weight: 900;
+  color: rgba(255,255,255,0.88);
+  text-shadow: 0 2px 5px #000;
+}
+#battle-root .battle-surface-card b {
+  display: block;
+  font-size: clamp(58px, 13vw, 150px);
+  line-height: 0.95;
+  font-weight: 1000;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-shadow: 0 4px 10px #000, 0 0 22px rgba(255,236,120,0.96);
+}
+#battle-root .battle-surface.open .battle-surface-card {
+  background: linear-gradient(135deg, rgba(90,20,12,0.96), rgba(248,139,31,0.88));
+  box-shadow: 0 0 42px rgba(255,160,60,0.95), inset 0 0 24px rgba(255,255,255,0.18);
+}
+#battle-root .battle-surface.close .battle-surface-card {
+  background: linear-gradient(135deg, rgba(20,22,34,0.96), rgba(50,60,94,0.92));
+  box-shadow: 0 0 42px rgba(120,180,255,0.75), inset 0 0 24px rgba(255,255,255,0.14);
+}
+#battle-root .battle-surface.close .battle-surface-card b {
+  font-size: clamp(42px, 8vw, 98px);
+}
+@keyframes battleSurfacePop {
+  0% { opacity: 0; transform: scale(0.96); filter: brightness(1.4); }
+  100% { opacity: 1; transform: scale(1); filter: brightness(1); }
+}
+@media screen and (orientation: portrait) {
+  #battle-root .battle-surface-card {
+    width: min(92vw, 560px);
+    min-height: 130px;
+    padding: 18px 20px;
+  }
+  #battle-root .battle-surface-card b {
+    font-size: clamp(54px, 18vw, 120px);
+  }
+  #battle-root .battle-surface.close .battle-surface-card b {
+    font-size: clamp(36px, 11vw, 74px);
+  }
+}
+
+/* === Battle version badge v037_85 === */
+.battle-version {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border: 1px solid rgba(255,255,255,0.45);
+  border-radius: 999px;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: rgba(255,255,255,0.14);
+  vertical-align: middle;
+}
+@media screen and (orientation: portrait) {
+  .battle-version {
+    margin-left: 6px;
+    padding: 1px 6px;
+    font-size: 0.68em;
+  }
+}
+
+
+/* === v037_85 landscape final check/fix ===
+   横画面では、上HUD・中央敵3体・下メンバー5人を固定し、
+   HELP/オートはHUD右側に収めて重なりを避ける。 */
+@media screen and (orientation: landscape) {
+  #battle-root.battle-root:not(.hidden) {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100dvh !important;
+    min-height: 100dvh !important;
+    overflow: hidden !important;
+  }
+
+  #battle-root .battle-stage {
+    height: 100dvh !important;
+    min-height: 0 !important;
+    display: grid !important;
+    grid-template-rows: clamp(58px, 16vh, 74px) minmax(0, 1fr) clamp(96px, 26vh, 118px) !important;
+    overflow: hidden !important;
+  }
+
+  #battle-root .battle-hud {
+    position: relative !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    grid-template-rows: auto auto !important;
+    align-items: center !important;
+    column-gap: 8px !important;
+    max-height: none !important;
+    overflow: hidden !important;
+  }
+
+  #battle-root .battle-hud-title {
+    grid-column: 1 / 2 !important;
+    grid-row: 1 / 2 !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  #battle-root .battle-hud-stats {
+    grid-column: 1 / 2 !important;
+    grid-row: 2 / 3 !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+  }
+
+  #battle-root .battle-hud-actions {
+    position: static !important;
+    grid-column: 2 / 3 !important;
+    grid-row: 1 / 3 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 6px !important;
+    width: auto !important;
+    margin: 0 !important;
+    flex: 0 0 auto !important;
+  }
+
+  #battle-root .battle-auto-toggle {
+    height: 28px !important;
+    min-height: 28px !important;
+    padding: 3px 8px !important;
+    font-size: 10px !important;
+    white-space: nowrap !important;
+  }
+
+  #battle-root .battle-help-inline {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 4px !important;
+    position: static !important;
+    flex: 0 0 auto !important;
+  }
+
+  #battle-root .battle-help-inline .battle-help-btn {
+    width: 42px !important;
+    height: 28px !important;
+    min-width: 42px !important;
+    min-height: 28px !important;
+    font-size: 9px !important;
+    padding: 0 3px !important;
+  }
+
+  #battle-root .battle-message {
+    display: none !important;
+  }
+
+  #battle-root .battle-enemies {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    grid-template-rows: 1fr !important;
+    align-items: stretch !important;
+    gap: clamp(8px, 2vw, 18px) !important;
+    min-height: 0 !important;
+    height: 100% !important;
+    overflow: hidden !important;
+    padding: 6px clamp(10px, 3vw, 28px) !important;
+  }
+
+  #battle-root .battle-enemy-card {
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: hidden !important;
+  }
+
+  #battle-root .battle-members {
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    grid-template-rows: 1fr !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: hidden !important;
+    gap: clamp(5px, 1.4vw, 10px) !important;
+  }
+
+  #battle-root .battle-member-card {
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: hidden !important;
+  }
+
+  #battle-root .battle-member-card:nth-child(5) {
+    grid-column: auto !important;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 430px) {
+  #battle-root .battle-stage {
+    grid-template-rows: 54px minmax(0, 1fr) 92px !important;
+  }
+  #battle-root .battle-hud {
+    margin: 3px 5px 2px !important;
+    padding: 3px 6px !important;
+    border-width: 2px !important;
+  }
+  #battle-root .battle-hud-title {
+    font-size: 12px !important;
+  }
+  #battle-root .battle-version {
+    padding: 1px 5px !important;
+    font-size: 0.64em !important;
+  }
+  #battle-root .battle-hud-stats {
+    gap: 5px !important;
+    font-size: 9px !important;
+  }
+  #battle-root .battle-auto-toggle {
+    height: 22px !important;
+    min-height: 22px !important;
+    padding: 2px 5px !important;
+    font-size: 8px !important;
+  }
+  #battle-root .battle-help-inline .battle-help-btn {
+    width: 32px !important;
+    min-width: 32px !important;
+    height: 22px !important;
+    min-height: 22px !important;
+    font-size: 8px !important;
+  }
+  #battle-root .battle-enemies {
+    padding: 5px 10px !important;
+    gap: 8px !important;
+  }
+  #battle-root .battle-enemy-card {
+    border-width: 3px !important;
+    border-radius: 10px !important;
+    padding: 4px 5px !important;
+  }
+  #battle-root .enemy-head { font-size: 11px !important; }
+  #battle-root .enemy-attr,
+  #battle-root .enemy-label { font-size: 8px !important; }
+  #battle-root .enemy-exchange-message { font-size: 9px !important; min-height: 20px !important; }
+  #battle-root .battle-members {
+    padding: 5px 7px max(5px, env(safe-area-inset-bottom)) !important;
+    gap: 5px !important;
+  }
+  #battle-root .battle-member-card {
+    border-width: 2px !important;
+    border-radius: 9px !important;
+    padding: 4px 5px !important;
+  }
+  #battle-root .member-name { font-size: 11px !important; }
+  #battle-root .member-attr,
+  #battle-root .member-power,
+  #battle-root .member-label,
+  #battle-root .member-skill-name { font-size: 8px !important; }
+  #battle-root .battle-bar { height: 4px !important; margin: 1px 0 2px !important; }
+}
+
+/* === v037_85: 13属性追加 + 店長HELP大型配置 === */
+#battle-root .battle-stage {
+  grid-template-rows: auto auto 1fr auto !important;
+}
+
+#battle-root .battle-help-inline {
+  display: none !important;
+}
+
+#battle-root .battle-help-large {
+  position: relative;
+  z-index: 8;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(84px, 1fr));
+  gap: 10px;
+  padding: 8px 12px 6px;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, rgba(25, 19, 45, 0.96), rgba(14, 10, 28, 0.92));
+  border-top: 1px solid rgba(255,255,255,0.18);
+  border-bottom: 2px solid rgba(160,120,255,0.45);
+}
+
+#battle-root .battle-help-large .battle-help-btn {
+  min-height: 42px;
+  border-radius: 14px;
+  border: 2px solid rgba(255,255,255,0.55);
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  color: #2b1d00;
+  background: linear-gradient(180deg, #fff3a5, #ffcc30);
+  box-shadow: 0 0 18px rgba(255, 225, 90, 0.55), inset 0 1px 0 rgba(255,255,255,0.85);
+  text-shadow: 0 1px rgba(255,255,255,0.65);
+}
+
+#battle-root .battle-help-large .battle-help-btn.empty,
+#battle-root .battle-help-large .battle-help-btn:disabled {
+  color: rgba(255,255,255,0.42);
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.18);
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#battle-root .battle-hud-actions {
+  justify-content: flex-end !important;
+}
+
+#battle-root .battle-auto-toggle {
+  min-width: 88px;
+}
+
+@media screen and (orientation: landscape) {
+  #battle-root .battle-stage {
+    grid-template-rows: auto 54px 1fr 106px !important;
+  }
+  #battle-root .battle-help-large {
+    padding: 6px 14px;
+    gap: 12px;
+  }
+  #battle-root .battle-help-large .battle-help-btn {
+    min-height: 40px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 430px) {
+  #battle-root .battle-stage {
+    grid-template-rows: auto 40px 1fr 82px !important;
+  }
+  #battle-root .battle-help-large {
+    padding: 4px 10px;
+    gap: 8px;
+  }
+  #battle-root .battle-help-large .battle-help-btn {
+    min-height: 30px;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #battle-root .battle-stage {
+    grid-template-rows: auto auto minmax(360px, 1fr) auto !important;
+  }
+  #battle-root .battle-help-large {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 8px 10px;
+  }
+  #battle-root .battle-help-large .battle-help-btn {
+    min-height: 44px;
+    font-size: 16px;
+  }
+}
+
+
+/* v037_85: 場の敵と相性が良いメンバーを発光表示 */
+.member-card.member-has-target {
+  border-color: var(--member-match-color, #ffffff) !important;
+  box-shadow:
+    0 0 12px var(--member-match-color, rgba(255,255,255,0.9)),
+    0 0 22px rgba(255,255,255,0.35);
+  animation: memberTargetPulse 1.05s ease-in-out infinite alternate;
+}
+
+.member-card.member-has-target::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255,255,255,0.22), rgba(255,255,255,0.03));
+  mix-blend-mode: screen;
+}
+
+.member-match-badge {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  z-index: 2;
+  padding: 2px 6px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  color: #111;
+  background: #fff;
+  box-shadow: 0 0 8px var(--member-match-color, rgba(255,255,255,0.9));
+  line-height: 1.2;
+}
+
+@keyframes memberTargetPulse {
+  from {
+    filter: brightness(1.05);
+    transform: translateY(0);
+  }
+  to {
+    filter: brightness(1.25);
+    transform: translateY(-1px);
+  }
+}
+
+/* 必殺OKの白反転と相性発光が同時に出た時の見やすさ調整 */
+.member-card.member-skill-ready.member-has-target,
+.member-card.skill-ready.member-has-target {
+  outline: 3px solid #ffffff;
+  outline-offset: -5px;
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  .member-match-badge {
+    font-size: 9px;
+    top: 3px;
+    right: 4px;
+    padding: 1px 5px;
+  }
+
+  .member-card.member-has-target {
+    box-shadow:
+      0 0 9px var(--member-match-color, rgba(255,255,255,0.9)),
+      0 0 16px rgba(255,255,255,0.25);
+  }
+}
+
+
+/* v037_85: タップ感度改善 */
+#battle-root .battle-member-card,
+#battle-root .battle-enemy-card,
+#battle-root button {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#battle-root .battle-member-card {
+  min-height: 92px;
+  position: relative;
+}
+
+#battle-root .battle-member-card::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-member-card {
+    min-height: 78px;
+  }
+
+  #battle-root .battle-member-card::after {
+    inset: -4px;
+  }
+}
+
+
+/* v037_85: 緋奈テスト画像・敵ダミー枠・HELP導線調整 */
+#battle-root .battle-stage {
+  grid-template-rows: minmax(66px, auto) minmax(116px, 1fr) minmax(44px, auto) minmax(112px, 25vh) !important;
+}
+
+#battle-root .battle-enemy-dummy {
+  opacity: 0.42;
+  border-style: dashed;
+  --enemy-color: rgba(255,255,255,0.38);
+  background: rgba(255,255,255,0.035);
+  box-shadow: none;
+}
+
+#battle-root .battle-enemy-dummy .enemy-head,
+#battle-root .battle-enemy-dummy .enemy-attr,
+#battle-root .battle-enemy-dummy .enemy-label {
+  color: rgba(255,255,255,0.55);
+}
+
+#battle-root .battle-help-large {
+  position: relative;
+  z-index: 8;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(74px, 1fr));
+  gap: clamp(6px, 1.6vw, 14px);
+  padding: 5px clamp(10px, 3vw, 34px);
+  box-sizing: border-box;
+  background: linear-gradient(180deg, rgba(22, 16, 42, 0.96), rgba(10, 8, 20, 0.94));
+  border-top: 1px solid rgba(255,255,255,0.18);
+  border-bottom: 2px solid rgba(160,120,255,0.45);
+}
+
+#battle-root .battle-help-large .battle-help-btn {
+  min-height: clamp(32px, 6.4vh, 52px);
+  border-radius: 14px;
+  font-size: clamp(13px, 2vw, 22px);
+}
+
+#battle-root .battle-member-card.has-card-art {
+  padding: 0 !important;
+  isolation: isolate;
+}
+
+#battle-root .member-card-art {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+#battle-root .member-card-art img {
+  position: absolute;
+  right: -12%;
+  bottom: -6%;
+  height: 122%;
+  width: auto;
+  opacity: 0.92;
+  filter: saturate(1.05) contrast(1.02);
+}
+
+#battle-root .member-card-info {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  box-sizing: border-box;
+  padding: clamp(5px, 1.0vw, 10px);
+  background: linear-gradient(90deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.62) 54%, rgba(0,0,0,0.14) 100%);
+}
+
+#battle-root .battle-member-card.has-card-art .member-name,
+#battle-root .battle-member-card.has-card-art .member-attr,
+#battle-root .battle-member-card.has-card-art .member-power,
+#battle-root .battle-member-card.has-card-art .member-label,
+#battle-root .battle-member-card.has-card-art .member-skill-name {
+  max-width: 66%;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.9);
+}
+
+#battle-root .battle-member-card.has-card-art.skill-ready .member-card-art img,
+#battle-root .battle-member-card.has-card-art.member-has-target .member-card-art img {
+  filter: brightness(1.12) saturate(1.15) contrast(1.04);
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-stage {
+    grid-template-rows: minmax(48px, auto) minmax(92px, 1fr) minmax(34px, auto) minmax(82px, 24vh) !important;
+  }
+
+  #battle-root .battle-help-large {
+    padding: 3px 10px;
+  }
+
+  #battle-root .battle-help-large .battle-help-btn {
+    min-height: 28px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+
+  #battle-root .member-card-art img {
+    right: -18%;
+    height: 130%;
+  }
+
+  #battle-root .battle-member-card.has-card-art .member-name,
+  #battle-root .battle-member-card.has-card-art .member-attr,
+  #battle-root .battle-member-card.has-card-art .member-power,
+  #battle-root .battle-member-card.has-card-art .member-label,
+  #battle-root .battle-member-card.has-card-art .member-skill-name {
+    max-width: 70%;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #battle-root .battle-stage {
+    grid-template-rows: auto minmax(360px, 1fr) auto auto !important;
+  }
+
+  #battle-root .battle-help-large {
+    order: 3;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 7px 10px;
+  }
+
+  #battle-root .battle-members {
+    order: 4;
+  }
+
+  #battle-root .member-card-art img {
+    right: -4%;
+    bottom: -8%;
+    height: 118%;
+  }
+}
+
+
+/* v037_85: 必殺技スライドカットイン画像 */
+#battle-root .battle-cutin.with-image .battle-cutin-band {
+  min-height: clamp(116px, 24vh, 230px);
+  padding: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(38%, 0.48fr) minmax(42%, 0.52fr);
+  align-items: stretch;
+  background:
+    linear-gradient(90deg,
+      color-mix(in srgb, var(--cutin-color, #fff) 46%, rgba(0,0,0,0.96)) 0%,
+      rgba(0,0,0,0.92) 48%,
+      rgba(0,0,0,0.72) 100%);
+  border-top: 3px solid var(--cutin-color, #fff);
+  border-bottom: 3px solid var(--cutin-color, #fff);
+  box-shadow: 0 0 28px color-mix(in srgb, var(--cutin-color, #fff) 65%, transparent);
+  animation: cutinSlideBand 0.22s ease-out both;
+}
+
+#battle-root .battle-cutin-image {
+  position: relative;
+  height: 100%;
+  min-width: 0;
+  overflow: hidden;
+  clip-path: polygon(0 0, 92% 0, 100% 100%, 0% 100%);
+}
+
+#battle-root .battle-cutin-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.06), rgba(0,0,0,0.0) 56%, rgba(0,0,0,0.45)),
+    linear-gradient(180deg, transparent, rgba(0,0,0,0.32));
+  pointer-events: none;
+}
+
+#battle-root .battle-cutin-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 45%;
+  transform: scale(1.04);
+  filter: saturate(1.08) contrast(1.03);
+}
+
+#battle-root .battle-cutin-text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 0;
+  padding: clamp(12px, 2vw, 28px);
+  text-align: left;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-text small {
+  color: var(--cutin-color, #fff);
+  font-size: clamp(14px, 2.2vw, 26px);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-text b {
+  font-size: clamp(24px, 5.2vw, 60px);
+  line-height: 1.03;
+  white-space: normal;
+  text-shadow:
+    0 3px 10px rgba(0,0,0,0.9),
+    0 0 18px color-mix(in srgb, var(--cutin-color, #fff) 70%, transparent);
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-text p {
+  max-width: 100%;
+  margin: 4px 0 0;
+  font-size: clamp(11px, 1.5vw, 18px);
+  line-height: 1.35;
+  opacity: 0.92;
+  text-align: left;
+}
+
+@keyframes cutinSlideBand {
+  from {
+    transform: translateX(-7%) skewX(-3deg);
+    filter: brightness(1.3);
+  }
+  to {
+    transform: translateX(0) skewX(0);
+    filter: brightness(1);
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-cutin.with-image .battle-cutin-band {
+    min-height: clamp(86px, 28vh, 150px);
+    grid-template-columns: 44% 56%;
+  }
+
+  #battle-root .battle-cutin-text {
+    padding: 8px 12px;
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-text b {
+    font-size: clamp(20px, 4.6vw, 40px);
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-text p {
+    font-size: clamp(9px, 1.3vw, 13px);
+    line-height: 1.25;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #battle-root .battle-cutin.with-image .battle-cutin-band {
+    min-height: 190px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 95px 1fr;
+  }
+
+  #battle-root .battle-cutin-image {
+    clip-path: none;
+  }
+
+  #battle-root .battle-cutin-image img {
+    object-position: center 45%;
+  }
+
+  #battle-root .battle-cutin-text {
+    align-items: center;
+    text-align: center;
+    padding: 10px 14px 16px;
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-text p {
+    text-align: center;
+  }
+}
+
+
+/* v037_85: 最前面演出がHELP/メンバー操作を塞がないようにする */
+#battle-root .battle-cutin,
+#battle-root .battle-cutin *,
+#battle-root .battle-surface,
+#battle-root .battle-surface * {
+  pointer-events: none !important;
+}
+
+#battle-root .battle-help-large,
+#battle-root .battle-help-large .battle-help-btn,
+#battle-root .battle-members,
+#battle-root .battle-member-card {
+  pointer-events: auto;
+}
+
+
+/* v037_85: HELP任意化・白フラッシュ・カットイン/表示調整 */
+#battle-root .battle-help-large {
+  z-index: 4 !important;
+}
+
+#battle-root .battle-enemies,
+#battle-root .battle-members {
+  z-index: 5;
+}
+
+#battle-root .battle-cutin,
+#battle-root .battle-surface,
+#battle-root .battle-control-overlay,
+#battle-root .battle-white-flash {
+  z-index: 30 !important;
+}
+
+#battle-root .battle-cutin,
+#battle-root .battle-cutin *,
+#battle-root .battle-surface,
+#battle-root .battle-surface *,
+#battle-root .battle-white-flash {
+  pointer-events: none !important;
+}
+
+#battle-root .battle-control-overlay,
+#battle-root .battle-control-overlay * {
+  pointer-events: auto;
+}
+
+#battle-root .battle-white-flash {
+  position: absolute;
+  inset: 0;
+  background: #ffffff;
+  mix-blend-mode: screen;
+  animation: battleWhiteFlash 0.36s ease-out forwards;
+}
+
+@keyframes battleWhiteFlash {
+  from { opacity: 0.95; }
+  to { opacity: 0; }
+}
+
+/* 必殺可能時はカード白反転をやめ、名前帯だけをキャラカラーにする */
+#battle-root .battle-member-card.skill-ready {
+  background: linear-gradient(180deg, rgba(5, 34, 16, 0.96), rgba(4, 14, 8, 0.96)) !important;
+  color: #fff !important;
+  box-shadow: 0 0 18px var(--member-color, rgba(255, 240, 90, 0.9));
+}
+
+#battle-root .battle-member-card.skill-ready .member-name {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 7px;
+  color: #111 !important;
+  background: var(--member-color, #fff06a);
+  text-shadow: none !important;
+  box-shadow: 0 0 10px var(--member-color, rgba(255,255,255,0.7));
+}
+
+#battle-root .battle-member-card.skill-ready .member-skill-name {
+  color: #fff6a3 !important;
+}
+
+/* 画像あり必殺カットイン：画像はキャラ名の上に表示 */
+#battle-root .battle-cutin.with-image .battle-cutin-band {
+  min-height: clamp(152px, 31vh, 280px);
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(90deg,
+      color-mix(in srgb, var(--cutin-color, #fff) 36%, rgba(0,0,0,0.96)) 0%,
+      rgba(0,0,0,0.92) 50%,
+      rgba(0,0,0,0.74) 100%);
+  border-top: 3px solid var(--cutin-color, #fff);
+  border-bottom: 3px solid var(--cutin-color, #fff);
+  box-shadow: 0 0 30px color-mix(in srgb, var(--cutin-color, #fff) 65%, transparent);
+  animation: cutinSlideBand 0.22s ease-out both;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-text {
+  width: min(92vw, 920px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: clamp(10px, 2vw, 22px);
+  text-align: center;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-image {
+  width: min(72vw, 720px);
+  height: clamp(62px, 15vh, 126px);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid color-mix(in srgb, var(--cutin-color, #fff) 65%, white);
+  box-shadow:
+    0 0 18px color-mix(in srgb, var(--cutin-color, #fff) 65%, transparent),
+    inset 0 0 18px rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.08);
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 45%;
+  transform: scale(1.035);
+  filter: saturate(1.08) contrast(1.04);
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-text small {
+  margin-top: 2px;
+  color: var(--cutin-color, #fff);
+  font-size: clamp(14px, 2vw, 26px);
+  font-weight: 900;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-text b {
+  font-size: clamp(26px, 5.2vw, 60px);
+  line-height: 1.03;
+  text-shadow:
+    0 3px 10px rgba(0,0,0,0.9),
+    0 0 18px color-mix(in srgb, var(--cutin-color, #fff) 70%, transparent);
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-text p {
+  margin: 4px 0 0;
+  max-width: min(88vw, 760px);
+  font-size: clamp(11px, 1.45vw, 18px);
+  line-height: 1.35;
+  opacity: 0.94;
+}
+
+@keyframes cutinSlideBand {
+  from {
+    transform: translateX(-7%) skewX(-3deg);
+    filter: brightness(1.25);
+  }
+  to {
+    transform: translateX(0) skewX(0);
+    filter: brightness(1);
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-cutin.with-image .battle-cutin-band {
+    min-height: clamp(118px, 33vh, 165px);
+  }
+  #battle-root .battle-cutin.with-image .battle-cutin-image {
+    height: clamp(46px, 13vh, 78px);
+    border-radius: 10px;
+  }
+  #battle-root .battle-cutin.with-image .battle-cutin-text {
+    gap: 2px;
+    padding: 6px 12px;
+  }
+  #battle-root .battle-cutin.with-image .battle-cutin-text b {
+    font-size: clamp(22px, 4.5vw, 42px);
+  }
+  #battle-root .battle-cutin.with-image .battle-cutin-text p {
+    font-size: clamp(9px, 1.25vw, 13px);
+    line-height: 1.25;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #battle-root .battle-cutin.with-image .battle-cutin-band {
+    min-height: 220px;
+  }
+  #battle-root .battle-cutin.with-image .battle-cutin-image {
+    width: min(88vw, 520px);
+    height: 82px;
+  }
+}
+
+
+/* v037_85: 必殺技カットイン画像をキャラ名横・右上へ */
+#battle-root .battle-cutin.with-image .battle-cutin-band {
+  min-height: clamp(150px, 32vh, 280px) !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-text {
+  width: min(88vw, 820px) !important;
+  min-height: 0 !important;
+  padding: clamp(12px, 2vw, 24px) !important;
+  display: grid !important;
+  grid-template-rows: auto auto auto;
+  gap: 4px !important;
+  text-align: left !important;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.42), rgba(0,0,0,0.14));
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 42%);
+  align-items: center;
+  gap: clamp(10px, 2vw, 22px);
+  width: 100%;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-head small {
+  display: block;
+  min-width: 0;
+  color: var(--cutin-color, #fff);
+  font-size: clamp(16px, 2.4vw, 30px);
+  font-weight: 900;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-image {
+  justify-self: end;
+  width: min(42vw, 360px) !important;
+  height: clamp(42px, 10vh, 82px) !important;
+  margin: 0 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  clip-path: none !important;
+  border: 2px solid color-mix(in srgb, var(--cutin-color, #fff) 65%, white) !important;
+  box-shadow:
+    0 0 16px color-mix(in srgb, var(--cutin-color, #fff) 65%, transparent),
+    inset 0 0 14px rgba(255,255,255,0.22) !important;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-image img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 46% !important;
+  transform: scale(1.03) !important;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-text b {
+  display: block;
+  font-size: clamp(30px, 5.4vw, 62px);
+  line-height: 1.03;
+  text-align: left;
+  text-shadow:
+    0 3px 10px rgba(0,0,0,0.9),
+    0 0 18px color-mix(in srgb, var(--cutin-color, #fff) 70%, transparent);
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-text p {
+  margin: 2px 0 0;
+  max-width: min(82vw, 760px) !important;
+  font-size: clamp(11px, 1.45vw, 18px);
+  line-height: 1.35;
+  opacity: 0.94;
+  text-align: left;
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-cutin.with-image .battle-cutin-band {
+    min-height: clamp(118px, 35vh, 170px) !important;
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-text {
+    padding: 7px 12px !important;
+    gap: 1px !important;
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-head {
+    grid-template-columns: minmax(0, 1fr) minmax(150px, 38%);
+    gap: 8px;
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-image {
+    width: min(34vw, 280px) !important;
+    height: clamp(32px, 9vh, 58px) !important;
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-head small {
+    font-size: clamp(13px, 2vw, 20px);
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-text b {
+    font-size: clamp(24px, 4.7vw, 44px);
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-text p {
+    font-size: clamp(9px, 1.25vw, 13px);
+    line-height: 1.25;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #battle-root .battle-cutin.with-image .battle-cutin-text {
+    width: min(92vw, 560px) !important;
+    text-align: center !important;
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-head {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 6px;
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-image {
+    justify-self: center;
+    width: min(82vw, 440px) !important;
+    height: 66px !important;
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-text b,
+  #battle-root .battle-cutin.with-image .battle-cutin-text p {
+    text-align: center;
+  }
+}
+
+
+/* v037_85: 敵3枠を常時固定表示 */
+#battle-root .battle-enemies {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+#battle-root .battle-enemy-card {
+  width: 100%;
+}
+
+
+/* v037_85: 緋奈必殺カットイン画像の表示補強 */
+#battle-root .battle-cutin.with-image .battle-cutin-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(160px, 40%);
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-image {
+  display: block !important;
+  justify-self: end;
+  width: min(42vw, 360px) !important;
+  height: clamp(42px, 10vh, 82px) !important;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid color-mix(in srgb, var(--cutin-color, #fff) 65%, white);
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 0 16px color-mix(in srgb, var(--cutin-color, #fff) 65%, transparent);
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-image img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 46% !important;
+  transform: scale(1.03);
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-cutin.with-image .battle-cutin-image {
+    width: min(34vw, 280px) !important;
+    height: clamp(32px, 9vh, 58px) !important;
+  }
+}
+
+
+/* v037_85: リーダー/タイムセールWAVE */
+#battle-root .battle-timesale-banner {
+  margin-top: 4px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(255, 0, 0, 0.22);
+  border: 2px solid rgba(255, 40, 40, 0.78);
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.06em;
+  animation: timeSaleBlink 0.52s steps(2, end) infinite;
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.95), 0 2px 4px rgba(0,0,0,0.85);
+}
+
+@keyframes timeSaleBlink {
+  0% { opacity: 1; filter: brightness(1.25); }
+  50% { opacity: 0.35; filter: brightness(0.8); }
+  100% { opacity: 1; filter: brightness(1.25); }
+}
+
+#battle-root .battle-member-card.leader-card {
+  box-shadow:
+    0 0 0 2px rgba(255,255,255,0.45),
+    0 0 18px var(--member-color, rgba(255,255,255,0.75));
+}
+
+#battle-root .leader-badge {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 1px 5px;
+  border-radius: 999px;
+  font-size: 0.58em;
+  font-style: normal;
+  font-weight: 900;
+  color: #111;
+  background: #fff;
+  vertical-align: middle;
+  text-shadow: none;
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-timesale-banner {
+    margin-top: 2px;
+    padding: 1px 6px;
+    font-size: 10px;
+  }
+
+  #battle-root .leader-badge {
+    font-size: 0.5em;
+    padding: 0 4px;
+  }
+}
+
+
+/* v037_85: WAVE結果表示/必殺待機色/カットイン安定化修正 */
+
+/* 必殺待機中も説明文字は白系を維持 */
+#battle-root .battle-member-card.skill-ready .member-attr,
+#battle-root .battle-member-card.skill-ready .member-power,
+#battle-root .battle-member-card.skill-ready .member-label,
+#battle-root .battle-member-card.skill-ready .member-skill-name {
+  color: rgba(255,255,255,0.9) !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+/* 名前帯だけキャラカラー。その他は黒化しない */
+#battle-root .battle-member-card.skill-ready .member-name {
+  color: #111 !important;
+  background: var(--member-color, #fff06a) !important;
+}
+
+/* カットイン画像を必殺説明帯から分離し、上部独立サーフェスへ */
+#battle-root .battle-cutin.with-image {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-items: start;
+  justify-items: center;
+  gap: clamp(6px, 1.2vh, 12px);
+  padding-top: clamp(10px, 4vh, 36px);
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-photo-surface {
+  width: min(58vw, 560px);
+  height: clamp(46px, 12vh, 94px);
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 2px solid color-mix(in srgb, var(--cutin-color, #fff) 65%, white);
+  background: rgba(0,0,0,0.58);
+  box-shadow:
+    0 0 16px color-mix(in srgb, var(--cutin-color, #fff) 65%, transparent),
+    0 5px 18px rgba(0,0,0,0.45);
+  transform: translateZ(0);
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-photo-surface img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 46%;
+  transform: scale(1.03);
+}
+
+/* 説明帯は画像でサイズ変動しない固定寄りにする */
+#battle-root .battle-cutin.with-image .battle-cutin-band {
+  min-height: auto !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: min(90vw, 860px);
+  padding: clamp(10px, 2vh, 18px) clamp(14px, 3vw, 28px) !important;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-text {
+  width: 100% !important;
+  display: block !important;
+  text-align: center !important;
+  padding: 0 !important;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-head {
+  display: block !important;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-head small {
+  display: block;
+  text-align: center;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-text b,
+#battle-root .battle-cutin.with-image .battle-cutin-text p {
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 旧カットイン画像枠は使わない */
+#battle-root .battle-cutin.with-image .battle-cutin-image {
+  display: none !important;
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-cutin.with-image {
+    padding-top: 6px;
+    gap: 4px;
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-photo-surface {
+    width: min(44vw, 420px);
+    height: clamp(34px, 10vh, 60px);
+    border-radius: 10px;
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-band {
+    padding: 7px 12px !important;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #battle-root .battle-cutin.with-image .battle-cutin-photo-surface {
+    width: min(84vw, 520px);
+    height: 72px;
+  }
+}
+
+
+/* v037_85: 人物カットインは必殺技説明サーフェス内に固定表示。画像自体にはエフェクトをかけない */
+#battle-root .battle-cutin.with-image {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-top: 0 !important;
+  gap: 0 !important;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-photo-surface,
+#battle-root .battle-cutin.with-image .battle-cutin-image {
+  display: none !important;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-band {
+  position: relative !important;
+  width: min(92vw, 920px) !important;
+  min-height: clamp(138px, 27vh, 230px) !important;
+  padding: clamp(14px, 2.4vh, 24px) clamp(190px, 28vw, 370px) clamp(14px, 2.4vh, 24px) clamp(18px, 4vw, 42px) !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-text {
+  width: auto !important;
+  display: block !important;
+  text-align: left !important;
+  padding: 0 !important;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-head {
+  display: block !important;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-head small,
+#battle-root .battle-cutin.with-image .battle-cutin-text b,
+#battle-root .battle-cutin.with-image .battle-cutin-text p {
+  text-align: left !important;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-photo-fixed {
+  position: absolute;
+  right: clamp(12px, 3vw, 34px);
+  top: 50%;
+  width: clamp(160px, 27vw, 340px);
+  height: clamp(62px, 15vh, 126px);
+  transform: translateY(-50%);
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 2px solid color-mix(in srgb, var(--cutin-color, #fff) 65%, white);
+  background: rgba(0,0,0,0.58);
+  box-shadow:
+    0 0 16px color-mix(in srgb, var(--cutin-color, #fff) 55%, transparent),
+    0 5px 18px rgba(0,0,0,0.45);
+  animation: none !important;
+  transition: none !important;
+}
+
+#battle-root .battle-cutin.with-image .battle-cutin-photo-fixed img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 46%;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+  filter: saturate(1.05) contrast(1.02);
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-cutin.with-image .battle-cutin-band {
+    min-height: clamp(108px, 31vh, 158px) !important;
+    padding: 8px clamp(150px, 27vw, 290px) 8px 14px !important;
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-photo-fixed {
+    right: 10px;
+    width: clamp(132px, 25vw, 250px);
+    height: clamp(42px, 12vh, 70px);
+    border-radius: 10px;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #battle-root .battle-cutin.with-image .battle-cutin-band {
+    width: min(92vw, 560px) !important;
+    min-height: 214px !important;
+    padding: 90px 14px 14px !important;
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-text,
+  #battle-root .battle-cutin.with-image .battle-cutin-head small,
+  #battle-root .battle-cutin.with-image .battle-cutin-text b,
+  #battle-root .battle-cutin.with-image .battle-cutin-text p {
+    text-align: center !important;
+  }
+
+  #battle-root .battle-cutin.with-image .battle-cutin-photo-fixed {
+    top: 12px;
+    left: 50%;
+    right: auto;
+    width: min(78vw, 430px);
+    height: 66px;
+    transform: translateX(-50%);
+  }
+}
+
+
+/* v037_85: 人物画と技説明を完全に別サーフェス化 */
+#battle-root .battle-cutin.with-image.split-surface {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(160px, 30vw);
+  grid-template-areas: "text portrait";
+  align-items: center !important;
+  justify-content: center !important;
+  gap: clamp(10px, 2vw, 24px) !important;
+  width: 100%;
+  box-sizing: border-box;
+  padding: clamp(10px, 3vh, 28px) clamp(14px, 4vw, 46px) !important;
+}
+
+/* 技説明サーフェスだけ演出対象 */
+#battle-root .battle-cutin.with-image.split-surface .battle-cutin-text-surface {
+  grid-area: text;
+  position: relative !important;
+  width: 100% !important;
+  max-width: 760px !important;
+  min-height: auto !important;
+  box-sizing: border-box !important;
+  padding: clamp(14px, 2.5vh, 24px) clamp(18px, 4vw, 42px) !important;
+  overflow: hidden !important;
+}
+
+/* 人物画サーフェスは別レイヤー。アニメーション/揺れ/拡大を完全無効化 */
+#battle-root .battle-cutin.with-image.split-surface .battle-cutin-portrait-surface {
+  grid-area: portrait;
+  position: relative !important;
+  justify-self: stretch;
+  align-self: center;
+  width: clamp(160px, 28vw, 360px) !important;
+  height: clamp(64px, 15vh, 128px) !important;
+  overflow: hidden !important;
+  border-radius: 14px;
+  border: 2px solid color-mix(in srgb, var(--cutin-color, #fff) 65%, white);
+  background: rgba(0,0,0,0.58);
+  box-shadow:
+    0 0 16px color-mix(in srgb, var(--cutin-color, #fff) 55%, transparent),
+    0 5px 18px rgba(0,0,0,0.45);
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+  will-change: auto !important;
+  contain: layout paint style;
+}
+
+#battle-root .battle-cutin.with-image.split-surface .battle-cutin-portrait-surface img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 46% !important;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+  filter: saturate(1.05) contrast(1.02);
+  will-change: auto !important;
+}
+
+/* v037_85以前の同一サーフェス用画像枠を完全に殺す */
+#battle-root .battle-cutin.with-image .battle-cutin-photo-fixed,
+#battle-root .battle-cutin.with-image .battle-cutin-photo-surface,
+#battle-root .battle-cutin.with-image .battle-cutin-image {
+  display: none !important;
+}
+
+/* テキスト側の配置を安定化 */
+#battle-root .battle-cutin.with-image.split-surface .battle-cutin-text {
+  width: 100% !important;
+  display: block !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+#battle-root .battle-cutin.with-image.split-surface .battle-cutin-head,
+#battle-root .battle-cutin.with-image.split-surface .battle-cutin-head small,
+#battle-root .battle-cutin.with-image.split-surface .battle-cutin-text b,
+#battle-root .battle-cutin.with-image.split-surface .battle-cutin-text p {
+  text-align: left !important;
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-cutin.with-image.split-surface {
+    grid-template-columns: minmax(0, 1fr) minmax(126px, 24vw);
+    gap: 8px !important;
+    padding: 6px 14px !important;
+  }
+
+  #battle-root .battle-cutin.with-image.split-surface .battle-cutin-text-surface {
+    padding: 8px 14px !important;
+  }
+
+  #battle-root .battle-cutin.with-image.split-surface .battle-cutin-portrait-surface {
+    width: clamp(126px, 24vw, 250px) !important;
+    height: clamp(42px, 12vh, 70px) !important;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #battle-root .battle-cutin.with-image.split-surface {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "portrait"
+      "text";
+    gap: 8px !important;
+    padding: 12px 14px !important;
+  }
+
+  #battle-root .battle-cutin.with-image.split-surface .battle-cutin-portrait-surface {
+    justify-self: center;
+    width: min(82vw, 430px) !important;
+    height: 66px !important;
+  }
+
+  #battle-root .battle-cutin.with-image.split-surface .battle-cutin-text-surface {
+    width: min(92vw, 560px) !important;
+    justify-self: center;
+    padding: 12px 14px !important;
+  }
+
+  #battle-root .battle-cutin.with-image.split-surface .battle-cutin-text,
+  #battle-root .battle-cutin.with-image.split-surface .battle-cutin-head,
+  #battle-root .battle-cutin.with-image.split-surface .battle-cutin-head small,
+  #battle-root .battle-cutin.with-image.split-surface .battle-cutin-text b,
+  #battle-root .battle-cutin.with-image.split-surface .battle-cutin-text p {
+    text-align: center !important;
+  }
+}
+
+
+/* v037_85: バトル背景画像 */
+#battle-root .battle-stage {
+  background:
+    linear-gradient(180deg, rgba(0,0,0,0.38), rgba(0,0,0,0.62)),
+    var(--battle-bg-url),
+    radial-gradient(circle at center, rgba(38, 35, 28, 0.88), #050506 72%) !important;
+  background-size: cover, cover, cover !important;
+  background-position: center center, center center, center center !important;
+  background-repeat: no-repeat !important;
+}
+
+#battle-root .battle-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at center, rgba(255, 224, 150, 0.08), rgba(0,0,0,0.22) 70%),
+    linear-gradient(180deg, rgba(0,0,0,0.14), rgba(0,0,0,0.34));
+  z-index: 0;
+}
+
+#battle-root .battle-hud,
+#battle-root .battle-enemies,
+#battle-root .battle-help-large,
+#battle-root .battle-members,
+#battle-root .battle-control-overlay,
+#battle-root .battle-cutin,
+#battle-root .battle-surface,
+#battle-root .battle-white-flash {
+  position: relative;
+}
+
+#battle-root .battle-hud { z-index: 5; }
+#battle-root .battle-enemies { z-index: 4; }
+#battle-root .battle-help-large { z-index: 4; }
+#battle-root .battle-members { z-index: 4; }
+#battle-root .battle-control-overlay,
+#battle-root .battle-cutin,
+#battle-root .battle-surface,
+#battle-root .battle-white-flash { z-index: 30; }
+
+/* 背景が明るいので敵/メンバーの視認性を少し補強 */
+#battle-root .battle-enemy-card {
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--enemy-color, #ff841f) 20%, rgba(16, 12, 10, 0.94)),
+      rgba(10, 10, 12, 0.92)) !important;
+  backdrop-filter: blur(1.5px);
+}
+
+#battle-root .battle-members {
+  background: rgba(0, 16, 8, 0.82) !important;
+  backdrop-filter: blur(2px);
+}
+
+#battle-root .battle-help-large {
+  background: linear-gradient(180deg, rgba(22, 16, 42, 0.82), rgba(10, 8, 20, 0.86)) !important;
+  backdrop-filter: blur(2px);
+}
+
+
+/* v037_85: 必殺カットインCSS全面見直し
+   人物画は技説明サーフェスから完全分離。画像側にはエフェクトを一切かけない。 */
+
+/* 親battle-cutin自体はただの透明コンテナにして、ここにもアニメーションをかけない */
+#battle-root .battle-cutin.has-fixed-portrait {
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  pointer-events: none !important;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+  filter: none !important;
+  will-change: auto !important;
+}
+
+/* 技説明だけが演出サーフェス */
+#battle-root .battle-cutin-text-layer {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  width: min(62vw, 720px) !important;
+  transform: translate(-58%, -50%) !important;
+  pointer-events: none !important;
+  animation: cutinTextOnlyIn 0.18s ease-out both !important;
+  transition: none !important;
+  z-index: 31 !important;
+}
+
+#battle-root .battle-cutin-text-layer .battle-cutin-band {
+  width: 100% !important;
+  min-height: auto !important;
+  padding: clamp(14px, 2.2vh, 24px) clamp(18px, 3vw, 36px) !important;
+  box-sizing: border-box !important;
+  background:
+    linear-gradient(90deg,
+      color-mix(in srgb, var(--cutin-color, #fff) 34%, rgba(0,0,0,0.94)) 0%,
+      rgba(0,0,0,0.90) 58%,
+      rgba(0,0,0,0.72) 100%) !important;
+  border-top: 3px solid var(--cutin-color, #fff) !important;
+  border-bottom: 3px solid var(--cutin-color, #fff) !important;
+  border-radius: 18px !important;
+  box-shadow:
+    0 0 26px color-mix(in srgb, var(--cutin-color, #fff) 55%, transparent),
+    0 8px 28px rgba(0,0,0,0.45) !important;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+  overflow: hidden !important;
+}
+
+#battle-root .battle-cutin-text-layer .battle-cutin-text {
+  display: block !important;
+  width: 100% !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+#battle-root .battle-cutin-text-layer .battle-cutin-head,
+#battle-root .battle-cutin-text-layer .battle-cutin-head small,
+#battle-root .battle-cutin-text-layer .battle-cutin-text b,
+#battle-root .battle-cutin-text-layer .battle-cutin-text p {
+  text-align: left !important;
+}
+
+#battle-root .battle-cutin-text-layer .battle-cutin-text b {
+  display: block !important;
+  font-size: clamp(28px, 5vw, 58px) !important;
+  line-height: 1.03 !important;
+}
+
+#battle-root .battle-cutin-text-layer .battle-cutin-text p {
+  max-width: 100% !important;
+  margin: 4px 0 0 !important;
+}
+
+/* 人物画は完全固定の別サーフェス。親の揺れ/スライド/拡大影響を受けない */
+#battle-root .battle-cutin-portrait-fixed {
+  position: absolute !important;
+  right: clamp(22px, 6vw, 92px) !important;
+  top: 50% !important;
+  width: clamp(180px, 28vw, 390px) !important;
+  height: clamp(70px, 15vh, 132px) !important;
+  z-index: 32 !important;
+  overflow: hidden !important;
+  border-radius: 16px !important;
+  border: 2px solid color-mix(in srgb, var(--cutin-color, #fff) 68%, white) !important;
+  background: rgba(0,0,0,0.62) !important;
+  box-shadow:
+    0 0 16px color-mix(in srgb, var(--cutin-color, #fff) 48%, transparent),
+    0 5px 18px rgba(0,0,0,0.45) !important;
+  pointer-events: none !important;
+
+  /* 固定のため transform/animation/transition を完全無効化。位置はtop/rightで固定 */
+  transform: translateY(-50%) !important;
+  animation: none !important;
+  transition: none !important;
+  filter: none !important;
+  will-change: auto !important;
+  contain: layout paint style !important;
+}
+
+#battle-root .battle-cutin-portrait-fixed img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 46% !important;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+  will-change: auto !important;
+  filter: saturate(1.05) contrast(1.02) !important;
+}
+
+/* 旧実装の画像枠を全て殺す。これが残ると右側や説明帯内に出る */
+#battle-root .battle-cutin.with-image .battle-cutin-photo-fixed,
+#battle-root .battle-cutin.with-image .battle-cutin-photo-surface,
+#battle-root .battle-cutin.with-image .battle-cutin-image,
+#battle-root .battle-cutin.with-image.split-surface .battle-cutin-portrait-surface,
+#battle-root .battle-cutin.with-image .battle-cutin-band .battle-cutin-photo-fixed,
+#battle-root .battle-cutin.with-image .battle-cutin-band .battle-cutin-image {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* 古いwith-imageレイアウトの影響を消す */
+#battle-root .battle-cutin.with-image:not(.has-fixed-portrait),
+#battle-root .battle-cutin.with-image.split-surface {
+  display: block !important;
+  grid-template-columns: none !important;
+  grid-template-areas: none !important;
+  gap: 0 !important;
+}
+
+@keyframes cutinTextOnlyIn {
+  from {
+    opacity: 0;
+    transform: translate(-62%, -50%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-58%, -50%);
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-cutin-text-layer {
+    width: min(60vw, 620px) !important;
+    transform: translate(-60%, -50%) !important;
+  }
+
+  #battle-root .battle-cutin-text-layer .battle-cutin-band {
+    padding: 8px 14px !important;
+    border-radius: 12px !important;
+  }
+
+  #battle-root .battle-cutin-text-layer .battle-cutin-text b {
+    font-size: clamp(24px, 4.5vw, 42px) !important;
+  }
+
+  #battle-root .battle-cutin-text-layer .battle-cutin-text p {
+    font-size: clamp(9px, 1.25vw, 13px) !important;
+    line-height: 1.25 !important;
+  }
+
+  #battle-root .battle-cutin-portrait-fixed {
+    right: clamp(14px, 5vw, 56px) !important;
+    width: clamp(142px, 25vw, 280px) !important;
+    height: clamp(42px, 12vh, 70px) !important;
+    border-radius: 10px !important;
+  }
+
+  @keyframes cutinTextOnlyIn {
+    from {
+      opacity: 0;
+      transform: translate(-64%, -50%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-60%, -50%);
+    }
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #battle-root .battle-cutin-text-layer {
+    top: 56% !important;
+    left: 50% !important;
+    width: min(90vw, 560px) !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  #battle-root .battle-cutin-text-layer .battle-cutin-text,
+  #battle-root .battle-cutin-text-layer .battle-cutin-head,
+  #battle-root .battle-cutin-text-layer .battle-cutin-head small,
+  #battle-root .battle-cutin-text-layer .battle-cutin-text b,
+  #battle-root .battle-cutin-text-layer .battle-cutin-text p {
+    text-align: center !important;
+  }
+
+  #battle-root .battle-cutin-portrait-fixed {
+    top: 32% !important;
+    left: 50% !important;
+    right: auto !important;
+    width: min(82vw, 430px) !important;
+    height: 66px !important;
+    transform: translateX(-50%) !important;
+  }
+
+  @keyframes cutinTextOnlyIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -45%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+
+/* v037_85: 新必殺カットイン。旧battle-cutin系から完全分離 */
+#battle-root .skillCutinLayerV19 {
+  position: absolute;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+#battle-root .skillTextSurfaceV19 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(58vw, 720px);
+  transform: translate(-66%, -50%);
+  animation: skillTextInV19 0.18s ease-out both;
+  pointer-events: none;
+}
+
+#battle-root .skillTextInnerV19 {
+  box-sizing: border-box;
+  width: 100%;
+  padding: clamp(12px, 2vh, 22px) clamp(16px, 3vw, 34px);
+  border-top: 3px solid var(--cutin-color, #fff);
+  border-bottom: 3px solid var(--cutin-color, #fff);
+  border-radius: 18px;
+  background:
+    linear-gradient(90deg,
+      color-mix(in srgb, var(--cutin-color, #fff) 34%, rgba(0,0,0,0.96)) 0%,
+      rgba(0,0,0,0.92) 58%,
+      rgba(0,0,0,0.76) 100%);
+  box-shadow:
+    0 0 28px color-mix(in srgb, var(--cutin-color, #fff) 55%, transparent),
+    0 8px 28px rgba(0,0,0,0.45);
+  color: #fff;
+  text-align: left;
+}
+
+#battle-root .skillTextInnerV19 small {
+  display: block;
+  color: var(--cutin-color, #fff);
+  font-size: clamp(15px, 2.2vw, 26px);
+  font-weight: 900;
+  line-height: 1.15;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.85);
+}
+
+#battle-root .skillTextInnerV19 b {
+  display: block;
+  margin-top: 1px;
+  font-size: clamp(30px, 5vw, 58px);
+  line-height: 1.03;
+  font-weight: 900;
+  color: #fff;
+  text-shadow:
+    0 3px 10px rgba(0,0,0,0.95),
+    0 0 18px color-mix(in srgb, var(--cutin-color, #fff) 70%, transparent);
+}
+
+#battle-root .skillTextInnerV19 p {
+  margin: 4px 0 0;
+  font-size: clamp(11px, 1.45vw, 18px);
+  line-height: 1.35;
+  font-weight: 800;
+  color: rgba(255,255,255,0.94);
+  text-shadow: 0 2px 6px rgba(0,0,0,0.85);
+}
+
+/* 人物画サーフェス。完全別管理・アニメーションなし */
+#battle-root .skillPortraitFixedV19 {
+  position: absolute;
+  right: clamp(22px, 7vw, 110px);
+  top: 50%;
+  width: clamp(180px, 28vw, 390px);
+  height: clamp(70px, 15vh, 132px);
+  transform: translateY(-50%);
+  overflow: hidden;
+  border-radius: 16px;
+  border: 2px solid color-mix(in srgb, var(--cutin-color, #fff) 68%, white);
+  background: rgba(0,0,0,0.62);
+  box-shadow:
+    0 0 16px color-mix(in srgb, var(--cutin-color, #fff) 48%, transparent),
+    0 5px 18px rgba(0,0,0,0.45);
+  pointer-events: none;
+  animation: none !important;
+  transition: none !important;
+  filter: none !important;
+  will-change: auto !important;
+  contain: layout paint style !important;
+}
+
+#battle-root .skillPortraitFixedV19 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 46%;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+  will-change: auto !important;
+  filter: saturate(1.05) contrast(1.02);
+}
+
+/* 旧カットイン画像系は念のため完全停止 */
+#battle-root .battle-cutin-image,
+#battle-root .battle-cutin-photo-fixed,
+#battle-root .battle-cutin-photo-surface,
+#battle-root .battle-cutin-portrait-surface,
+#battle-root .battle-cutin-portrait-fixed {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+@keyframes skillTextInV19 {
+  from {
+    opacity: 0;
+    transform: translate(-70%, -50%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-66%, -50%);
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .skillTextSurfaceV19 {
+    width: min(58vw, 620px);
+    transform: translate(-68%, -50%);
+  }
+
+  #battle-root .skillTextInnerV19 {
+    padding: 8px 14px;
+    border-radius: 12px;
+  }
+
+  #battle-root .skillTextInnerV19 b {
+    font-size: clamp(24px, 4.5vw, 42px);
+  }
+
+  #battle-root .skillTextInnerV19 p {
+    font-size: clamp(9px, 1.25vw, 13px);
+    line-height: 1.25;
+  }
+
+  #battle-root .skillPortraitFixedV19 {
+    right: clamp(12px, 5vw, 56px);
+    width: clamp(142px, 25vw, 280px);
+    height: clamp(42px, 12vh, 70px);
+    border-radius: 10px;
+  }
+
+  @keyframes skillTextInV19 {
+    from {
+      opacity: 0;
+      transform: translate(-72%, -50%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-68%, -50%);
+    }
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #battle-root .skillPortraitFixedV19 {
+    top: 32%;
+    left: 50%;
+    right: auto;
+    width: min(82vw, 430px);
+    height: 66px;
+    transform: translateX(-50%);
+  }
+
+  #battle-root .skillTextSurfaceV19 {
+    top: 56%;
+    left: 50%;
+    width: min(90vw, 560px);
+    transform: translate(-50%, -50%);
+  }
+
+  #battle-root .skillTextInnerV19 {
+    text-align: center;
+  }
+
+  @keyframes skillTextInV19 {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -45%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+
+/* v037_85: ブラウザ版カットイン安定化・初期レイアウト補正 */
+
+/* ブラウザ/PWA差を抑える基本高さ */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+#battle-root {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  overflow: hidden !important;
+  contain: layout paint size !important;
+}
+
+/* バトル表示前後でグリッドサイズが変わらないよう固定寄りにする */
+#battle-root .battle-stage {
+  position: absolute !important;
+  inset: 0 !important;
+  display: grid !important;
+  grid-template-rows:
+    minmax(72px, auto)
+    minmax(0, 1fr)
+    minmax(42px, auto)
+    minmax(112px, 25vh) !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  contain: layout paint size !important;
+}
+
+/* 開始前でも敵3枠が同じ大きさで出るよう補正 */
+#battle-root .battle-enemies {
+  min-height: 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  align-items: center !important;
+  justify-items: stretch !important;
+  overflow: hidden !important;
+  contain: layout paint !important;
+}
+
+#battle-root .battle-enemy-card,
+#battle-root .battle-enemy-dummy {
+  min-height: clamp(96px, 22vh, 210px) !important;
+  height: min(100%, 210px) !important;
+  max-height: 210px !important;
+  box-sizing: border-box !important;
+}
+
+/* メンバーエリアも開始前後で高さが跳ねないよう補正 */
+#battle-root .battle-members {
+  min-height: 96px !important;
+  max-height: 25vh !important;
+  overflow: hidden !important;
+  contain: layout paint !important;
+}
+
+#battle-root .battle-member-card {
+  min-height: 82px !important;
+}
+
+/* 操作前オーバーレイは画面サイズ計算に参加しない */
+#battle-root .battle-control-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  display: grid !important;
+  place-items: center !important;
+  pointer-events: auto !important;
+  contain: layout paint !important;
+}
+
+/* カットインを完全固定オーバーレイ化。親も子もレイアウト再計算を起こさない */
+#battle-root .skillCutinLayerV19 {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 60 !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+  contain: layout paint size !important;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+  filter: none !important;
+}
+
+/* 技名サーフェスもアニメーション停止。点滅/揺れを廃止 */
+#battle-root .skillTextSurfaceV19 {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  width: min(58vw, 720px) !important;
+  transform: translate(-66%, -50%) !important;
+  animation: none !important;
+  transition: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+  pointer-events: none !important;
+  will-change: auto !important;
+  contain: layout paint style !important;
+}
+
+#battle-root .skillTextInnerV19 {
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+  filter: none !important;
+  will-change: auto !important;
+  backface-visibility: hidden !important;
+}
+
+/* 技名・説明文字のチラつき防止 */
+#battle-root .skillTextInnerV19 small,
+#battle-root .skillTextInnerV19 b,
+#battle-root .skillTextInnerV19 p {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+  will-change: auto !important;
+  backface-visibility: hidden !important;
+}
+
+/* 人物画像は前版に続き完全固定 */
+#battle-root .skillPortraitFixedV19 {
+  position: absolute !important;
+  right: clamp(22px, 7vw, 110px) !important;
+  top: 50% !important;
+  width: clamp(180px, 28vw, 390px) !important;
+  height: clamp(70px, 15vh, 132px) !important;
+  transform: translateY(-50%) !important;
+  animation: none !important;
+  transition: none !important;
+  filter: none !important;
+  will-change: auto !important;
+  contain: layout paint style !important;
+}
+
+#battle-root .skillPortraitFixedV19 img {
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+  will-change: auto !important;
+}
+
+/* テキストカットイン用keyframesを無効化 */
+@keyframes skillTextInV19 {
+  from { opacity: 1; transform: translate(-66%, -50%); }
+  to { opacity: 1; transform: translate(-66%, -50%); }
+}
+
+/* 横長ブラウザ・iPhone Safari横向き相当 */
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-stage {
+    grid-template-rows:
+      minmax(54px, auto)
+      minmax(0, 1fr)
+      minmax(34px, auto)
+      minmax(86px, 24vh) !important;
+  }
+
+  #battle-root .battle-hud {
+    margin: 4px 8px 2px !important;
+    padding: 4px 10px !important;
+  }
+
+  #battle-root .battle-enemy-card,
+  #battle-root .battle-enemy-dummy {
+    min-height: 82px !important;
+    max-height: 160px !important;
+  }
+
+  #battle-root .battle-members {
+    min-height: 78px !important;
+    max-height: 24vh !important;
+  }
+
+  #battle-root .battle-member-card {
+    min-height: 72px !important;
+  }
+
+  #battle-root .skillTextSurfaceV19 {
+    width: min(58vw, 620px) !important;
+    transform: translate(-68%, -50%) !important;
+  }
+
+  #battle-root .skillPortraitFixedV19 {
+    right: clamp(12px, 5vw, 56px) !important;
+    width: clamp(142px, 25vw, 280px) !important;
+    height: clamp(42px, 12vh, 70px) !important;
+  }
+
+  @keyframes skillTextInV19 {
+    from { opacity: 1; transform: translate(-68%, -50%); }
+    to { opacity: 1; transform: translate(-68%, -50%); }
+  }
+}
+
+/* 縦画面はスクロールではなく固定レイアウトを維持 */
+@media screen and (orientation: portrait) {
+  #battle-root {
+    overflow: hidden !important;
+  }
+
+  #battle-root .battle-stage {
+    grid-template-rows:
+      auto
+      minmax(330px, 1fr)
+      auto
+      auto !important;
+  }
+
+  #battle-root .skillPortraitFixedV19 {
+    top: 32% !important;
+    left: 50% !important;
+    right: auto !important;
+    width: min(82vw, 430px) !important;
+    height: 66px !important;
+    transform: translateX(-50%) !important;
+  }
+
+  #battle-root .skillTextSurfaceV19 {
+    top: 56% !important;
+    left: 50% !important;
+    width: min(90vw, 560px) !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  @keyframes skillTextInV19 {
+    from { opacity: 1; transform: translate(-50%, -50%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+  }
+}
+
+
+/* v037_85: カウント中央寄せ・タイムセール演出強化 */
+#battle-root .battle-surface {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 35 !important;
+  display: grid !important;
+  place-items: center !important;
+  pointer-events: none !important;
+  transform: none !important;
+  padding: 0 !important;
+}
+
+#battle-root .battle-surface-card {
+  position: relative !important;
+  left: auto !important;
+  top: auto !important;
+  transform: none !important;
+  margin: 0 !important;
+  min-width: min(78vw, 620px);
+  max-width: min(88vw, 760px);
+  padding: clamp(18px, 4vh, 42px) clamp(24px, 6vw, 72px) !important;
+  border-radius: 24px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#battle-root .battle-surface-card small {
+  display: block;
+  margin-bottom: 8px;
+  font-size: clamp(15px, 2.4vw, 28px);
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+#battle-root .battle-surface-card b {
+  display: block;
+  font-size: clamp(42px, 10vw, 120px);
+  line-height: 1;
+  font-weight: 1000;
+}
+
+/* タイムセール前アナウンス */
+#battle-root .battle-surface.timesale-intro .battle-surface-card {
+  background: linear-gradient(180deg, rgba(80,0,0,0.96), rgba(32,0,0,0.94)) !important;
+  border: 4px solid #ff3a3a !important;
+  box-shadow: 0 0 34px rgba(255, 0, 0, 0.62), inset 0 0 18px rgba(255,255,255,0.12);
+  color: #fff;
+}
+
+#battle-root .battle-surface.timesale-intro .battle-surface-card b {
+  font-size: clamp(30px, 6vw, 72px);
+  color: #fff2f2;
+  text-shadow: 0 0 14px rgba(255, 0, 0, 0.95), 0 3px 8px rgba(0,0,0,0.8);
+}
+
+#battle-root .battle-surface.timesale-intro .battle-surface-card small {
+  color: #ffdddd;
+}
+
+/* タイムセール3カウントは赤系 */
+#battle-root .battle-surface.timesale-count .battle-surface-card,
+#battle-root .battle-surface.timesale-open .battle-surface-card {
+  background: linear-gradient(180deg, rgba(185,0,0,0.98), rgba(72,0,0,0.96)) !important;
+  border: 5px solid #ff2626 !important;
+  box-shadow:
+    0 0 42px rgba(255, 0, 0, 0.75),
+    0 0 90px rgba(255, 60, 0, 0.35),
+    inset 0 0 20px rgba(255,255,255,0.16);
+  color: #fff;
+}
+
+#battle-root .battle-surface.timesale-count .battle-surface-card b,
+#battle-root .battle-surface.timesale-open .battle-surface-card b {
+  color: #ffffff;
+  text-shadow:
+    0 0 12px rgba(255,255,255,0.9),
+    0 0 24px rgba(255,0,0,1),
+    0 5px 12px rgba(0,0,0,0.85);
+}
+
+#battle-root .battle-surface.timesale-count .battle-surface-card small,
+#battle-root .battle-surface.timesale-open .battle-surface-card small {
+  color: #ffe3e3;
+  text-shadow: 0 0 10px rgba(255,0,0,0.95), 0 2px 6px rgba(0,0,0,0.8);
+}
+
+/* タイムセール中バナー：点滅を分かりやすく */
+#battle-root .battle-timesale-banner {
+  margin-top: 5px !important;
+  padding: 4px 10px !important;
+  border-radius: 999px !important;
+  background: #ff0000 !important;
+  border: 3px solid #ffffff !important;
+  color: #ffffff !important;
+  font-weight: 1000 !important;
+  text-align: center !important;
+  letter-spacing: 0.08em !important;
+  animation: timeSaleHardBlinkV21 0.42s steps(1, end) infinite !important;
+  text-shadow:
+    0 0 8px rgba(255,255,255,0.95),
+    0 0 16px rgba(255,0,0,1),
+    0 2px 4px rgba(0,0,0,0.9) !important;
+  box-shadow:
+    0 0 18px rgba(255,0,0,0.85),
+    inset 0 0 8px rgba(255,255,255,0.4) !important;
+}
+
+@keyframes timeSaleHardBlinkV21 {
+  0%, 49% {
+    opacity: 1;
+    visibility: visible;
+    background: #ff0000;
+    color: #ffffff;
+    border-color: #ffffff;
+    filter: brightness(1.35);
+  }
+  50%, 100% {
+    opacity: 0.12;
+    visibility: visible;
+    background: #3a0000;
+    color: #ffb0b0;
+    border-color: #700000;
+    filter: brightness(0.55);
+  }
+}
+
+/* 古い点滅keyframesを実質上書き */
+@keyframes timeSaleBlink {
+  0%, 49% { opacity: 1; filter: brightness(1.35); }
+  50%, 100% { opacity: 0.12; filter: brightness(0.55); }
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-surface-card {
+    min-width: min(72vw, 520px);
+    padding: 14px 32px !important;
+    border-radius: 18px;
+  }
+
+  #battle-root .battle-surface-card b {
+    font-size: clamp(34px, 8vw, 82px);
+  }
+
+  #battle-root .battle-surface.timesale-intro .battle-surface-card b {
+    font-size: clamp(24px, 5vw, 46px);
+  }
+
+  #battle-root .battle-surface-card small {
+    font-size: clamp(12px, 2vw, 20px);
+    margin-bottom: 4px;
+  }
+
+  #battle-root .battle-timesale-banner {
+    margin-top: 2px !important;
+    padding: 2px 8px !important;
+    border-width: 2px !important;
+    font-size: 10px !important;
+  }
+}
+
+
+/* v037_85: 終了表示・店長フラッシュ・HELPダブルクリック修正 */
+
+/* タイムセール終了後は点滅バナーではなく営業終了を固定表示 */
+#battle-root .battle-finished-banner {
+  margin-top: 5px !important;
+  padding: 4px 10px !important;
+  border-radius: 999px !important;
+  background: #1f1f1f !important;
+  border: 3px solid #ffffff !important;
+  color: #ffffff !important;
+  font-weight: 1000 !important;
+  text-align: center !important;
+  letter-spacing: 0.08em !important;
+  animation: none !important;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.9) !important;
+  box-shadow: 0 0 14px rgba(255,255,255,0.35), inset 0 0 8px rgba(255,255,255,0.15) !important;
+}
+
+/* 店長HELP白フラッシュは最前面。ただしクリックは邪魔しない */
+#battle-root .battle-white-flash {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 999 !important;
+  pointer-events: none !important;
+  background: #ffffff !important;
+  mix-blend-mode: screen !important;
+}
+
+/* 通常営業終了/タイムセール開始などの情報サーフェスは必殺カットインより前 */
+#battle-root .battle-surface {
+  z-index: 120 !important;
+}
+
+#battle-root .battle-control-overlay {
+  z-index: 130 !important;
+}
+
+/* 必殺カットインは情報サーフェスより奥 */
+#battle-root .skillCutinLayerV19 {
+  z-index: 60 !important;
+}
+
+/* HELPはクリック可能に維持 */
+#battle-root .battle-help-btn.empty {
+  opacity: 0.48 !important;
+  cursor: pointer !important;
+}
+
+#battle-root .battle-help-btn.available {
+  cursor: pointer !important;
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .battle-finished-banner {
+    margin-top: 2px !important;
+    padding: 2px 8px !important;
+    border-width: 2px !important;
+    font-size: 10px !important;
+  }
+}
+
+
+/* v037_85: z-index整理・リザルト優先・店長フラッシュ可視化 */
+
+/*
+z-index設計:
+  0-10   背景・疑似背景
+  20     HUD / 敵 / HELP / メンバーなど通常操作面
+  40     必殺説明・人物カットイン
+  80     タイムセール中バナー
+  120    店長HELP白フラッシュ
+  180    通常営業終了・タイムセール開始・営業終了などの情報サーフェス
+  200    リザルト / メニュー / デッキ編成などの操作系サーフェス
+*/
+
+#battle-root .battle-stage::before {
+  z-index: 0 !important;
+}
+
+#battle-root .battle-hud,
+#battle-root .battle-enemies,
+#battle-root .battle-help-large,
+#battle-root .battle-members {
+  position: relative !important;
+  z-index: 20 !important;
+}
+
+#battle-root .battle-timesale-banner,
+#battle-root .battle-finished-banner {
+  position: relative !important;
+  z-index: 80 !important;
+}
+
+#battle-root .skillCutinLayerV19,
+#battle-root .skillTextSurfaceV19,
+#battle-root .skillPortraitFixedV19 {
+  z-index: 40 !important;
+}
+
+#battle-root .battle-white-flash {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 120 !important;
+  pointer-events: none !important;
+  background: rgba(255,255,255,0.92) !important;
+  mix-blend-mode: normal !important;
+  animation: battleWhiteFlashV23 0.36s ease-out forwards !important;
+  opacity: 1;
+}
+
+@keyframes battleWhiteFlashV23 {
+  0% { opacity: 0.98; }
+  55% { opacity: 0.62; }
+  100% { opacity: 0; }
+}
+
+#battle-root .battle-surface {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 180 !important;
+  pointer-events: none !important;
+}
+
+#battle-root .battle-control-overlay,
+#battle-root .battle-control-box,
+#battle-root .deck-editor-overlay,
+#battle-root .deck-editor-panel {
+  z-index: 200 !important;
+}
+
+/* result/finished中はタイムセール中バナーを出さない */
+#battle-root .battle-stage:has(.battle-control-overlay) .battle-timesale-banner,
+#battle-root .battle-stage:has(.battle-finished-banner) .battle-timesale-banner {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* :has非対応環境向けの念押し */
+#battle-root .battle-finished-banner ~ .battle-timesale-banner,
+#battle-root .battle-timesale-banner ~ .battle-finished-banner {
+  animation: none !important;
+}
+
+
+/* v037_85: 店長HELP押下復旧 */
+#battle-root .battle-help-large {
+  position: relative !important;
+  z-index: 90 !important;
+  pointer-events: auto !important;
+}
+
+#battle-root .battle-help-btn {
+  pointer-events: auto !important;
+  touch-action: manipulation !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+#battle-root .battle-help-btn.empty {
+  opacity: 0.5 !important;
+  cursor: pointer !important;
+}
+
+#battle-root .battle-help-btn.available {
+  cursor: pointer !important;
+}
+
+
+/* v037_85: 乱連打前提のHELPレスポンス改善 */
+#battle-root .battle-help-large {
+  position: relative !important;
+  z-index: 90 !important;
+  pointer-events: auto !important;
+}
+
+#battle-root .battle-help-btn {
+  pointer-events: auto !important;
+  touch-action: manipulation !important;
+  -webkit-tap-highlight-color: transparent !important;
+  user-select: none !important;
+  cursor: pointer !important;
+  transform: translateZ(0);
+}
+
+#battle-root .battle-help-btn:active {
+  transform: translateY(1px) scale(0.98) translateZ(0);
+  filter: brightness(1.2);
+}
+
+#battle-root .battle-help-btn.empty {
+  opacity: 0.55 !important;
+}
+
+#battle-root .battle-help-btn.available {
+  opacity: 1 !important;
+  box-shadow:
+    0 0 12px rgba(255, 224, 106, 0.85),
+    inset 0 0 8px rgba(255,255,255,0.22) !important;
+}
+
+
+/* v037_85: 必殺説明・人物カットインの前面化と縦位置調整 */
+/*
+z-index微調整:
+  90  HELPボタン
+  110 必殺説明・人物カットイン
+  120 店長HELP白フラッシュ
+  180 情報サーフェス
+  200 リザルト/操作系
+*/
+
+#battle-root .battle-help-large {
+  z-index: 90 !important;
+}
+
+#battle-root .skillCutinLayerV19 {
+  z-index: 110 !important;
+  pointer-events: none !important;
+}
+
+#battle-root .skillTextSurfaceV19,
+#battle-root .skillPortraitFixedV19 {
+  z-index: 111 !important;
+}
+
+/* 横画面：少し上寄せしてHELPバーと被りにくくする */
+#battle-root .skillTextSurfaceV19 {
+  top: 43% !important;
+  transform: translate(-66%, -50%) !important;
+}
+
+#battle-root .skillPortraitFixedV19 {
+  top: 43% !important;
+  transform: translateY(-50%) !important;
+}
+
+/* 店長フラッシュは引き続きカットインより前 */
+#battle-root .battle-white-flash {
+  z-index: 120 !important;
+}
+
+/* 情報/リザルトはさらに前 */
+#battle-root .battle-surface {
+  z-index: 180 !important;
+}
+
+#battle-root .battle-control-overlay,
+#battle-root .battle-control-box,
+#battle-root .deck-editor-overlay,
+#battle-root .deck-editor-panel {
+  z-index: 200 !important;
+}
+
+/* 低い横画面ではさらに上へ */
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .skillTextSurfaceV19 {
+    top: 39% !important;
+    transform: translate(-68%, -50%) !important;
+  }
+
+  #battle-root .skillPortraitFixedV19 {
+    top: 39% !important;
+    transform: translateY(-50%) !important;
+  }
+}
+
+/* 縦画面：画像と説明が下に落ちすぎないよう上寄せ */
+@media screen and (orientation: portrait) {
+  #battle-root .skillPortraitFixedV19 {
+    top: 24% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  #battle-root .skillTextSurfaceV19 {
+    top: 43% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+}
+
+
+/* v037_85: 家電星人画像差し込み */
+#battle-root .battle-enemy-card {
+  position: relative;
+  overflow: hidden;
+}
+
+#battle-root .enemy-art {
+  position: absolute;
+  right: clamp(6px, 1.2vw, 14px);
+  top: clamp(28px, 4.2vh, 52px);
+  width: clamp(52px, 8.2vw, 98px);
+  height: clamp(52px, 8.2vw, 98px);
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.12);
+  border: 2px solid color-mix(in srgb, var(--enemy-color, #fff) 58%, white);
+  box-shadow:
+    0 0 10px color-mix(in srgb, var(--enemy-color, #fff) 45%, transparent),
+    0 4px 10px rgba(0,0,0,0.35);
+  pointer-events: none;
+  z-index: 1;
+}
+
+#battle-root .enemy-art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#battle-root .battle-enemy-card:has(.enemy-art) .enemy-attr,
+#battle-root .battle-enemy-card:has(.enemy-art) .enemy-label,
+#battle-root .battle-enemy-card:has(.enemy-art) .battle-bar {
+  max-width: calc(100% - clamp(62px, 9.2vw, 112px));
+}
+
+#battle-root .battle-enemy-card:has(.enemy-art) .enemy-name {
+  max-width: calc(100% - clamp(68px, 10vw, 120px));
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .enemy-art {
+    right: 6px;
+    top: 25px;
+    width: clamp(38px, 7vw, 62px);
+    height: clamp(38px, 7vw, 62px);
+    border-radius: 10px;
+    border-width: 1px;
+  }
+
+  #battle-root .battle-enemy-card:has(.enemy-art) .enemy-attr,
+  #battle-root .battle-enemy-card:has(.enemy-art) .enemy-label,
+  #battle-root .battle-enemy-card:has(.enemy-art) .battle-bar {
+    max-width: calc(100% - 50px);
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #battle-root .enemy-art {
+    width: 54px;
+    height: 54px;
+    top: 30px;
+    right: 8px;
+  }
+}
+
+
+/* v037_85: 藍・翠 バトルキャラカード画像 / 必殺カットイン画像 */
+#battle-root .battle-member-card {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+#battle-root .member-card-image {
+  position: absolute;
+  right: 6px;
+  bottom: 2px;
+  width: clamp(42px, 6vw, 72px);
+  height: clamp(64px, 10vh, 104px);
+  opacity: 0.92;
+  pointer-events: none;
+  z-index: 1;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.55));
+}
+
+#battle-root .member-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom right;
+  display: block;
+}
+
+#battle-root .battle-member-card > b,
+#battle-root .battle-member-card > strong,
+#battle-root .battle-member-card > small,
+#battle-root .battle-member-card > span,
+#battle-root .battle-member-card .member-name,
+#battle-root .battle-member-card .member-attr,
+#battle-root .battle-member-card .member-ct {
+  position: relative;
+  z-index: 2;
+}
+
+#battle-root .battle-member-card:has(.member-card-image)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.24), rgba(0,0,0,0.02) 58%, rgba(0,0,0,0.20));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 目元カットイン向け */
+#battle-root .skillPortraitFixedV19 img {
+  object-position: center center !important;
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px) {
+  #battle-root .member-card-image {
+    right: 4px;
+    bottom: 0;
+    width: clamp(34px, 5.2vw, 54px);
+    height: clamp(50px, 9vh, 76px);
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #battle-root .member-card-image {
+    width: 48px;
+    height: 70px;
+    right: 5px;
+    bottom: 1px;
+  }
+}
+
+/* v037_85: 美空カード/カットイン画像を追加 */
+#battle-root .skillPortraitFixedV19 img { object-position: center center !important; }
+
+/* v037_85: 夜空カード/カットイン画像を追加 */
+#battle-root .skillPortraitFixedV19 img { object-position: center center !important; }
+
+/* v037_85: 桃カード/カットイン画像を追加 */
+#battle-root .skillPortraitFixedV19 img { object-position: center center !important; }
+
+/* v037_85: 彩愛カード/カットイン画像を追加 */
+#battle-root .skillPortraitFixedV19 img { object-position: center center !important; }
+
+/* v037_85: 里美カード/カットイン画像を追加 */
+#battle-root .skillPortraitFixedV19 img { object-position: center center !important; }
+
+/* v037_85: 萌カード/カットイン画像を追加 */
+#battle-root .skillPortraitFixedV19 img { object-position: center center !important; }
+
+/* v037_85: 緋奈カード/カットイン画像を既存アセット差し替え */
+#battle-root .skillPortraitFixedV19 img { object-position: center center !important; }
+
+
+/* v037_85 engine startup safety */
+#flash,
+.flash,
+.startup-flash,
+#startup-flash {
+  pointer-events: none !important;
+}
+
+#menu-panel:not(.hidden),
+#list-panel:not(.hidden),
+#battle-root:not(.hidden) {
+  pointer-events: auto !important;
+}
+
+.engine-fallback-button,
+.menu-item[data-engine-action] {
+  cursor: pointer;
+}
+
+
+/* v037_85: 起動フロー / タイトル表示 / 事務所6大メニュー */
+.boot-flow {
+  position: fixed;
+  inset: 0;
+  z-index: 200000;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at center, rgba(255,255,255,0.20), transparent 24%),
+    linear-gradient(135deg, rgba(255,244,215,0.96), rgba(255,215,170,0.96));
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.42s ease;
+}
+.boot-flow.hidden { display: none !important; }
+.boot-flow.is-out { opacity: 0; }
+.boot-flash {
+  position: absolute;
+  inset: 0;
+  background: white;
+  animation: tenotsuBootFlash 0.75s ease-out forwards;
+}
+.boot-card {
+  position: relative;
+  min-width: min(78vw, 520px);
+  padding: 28px 32px;
+  border-radius: 28px;
+  text-align: center;
+  color: #5a341e;
+  background: rgba(255,255,255,0.72);
+  border: 2px solid rgba(255,255,255,0.88);
+  box-shadow: 0 20px 70px rgba(110,70,20,0.24);
+  transform: translateY(8px);
+  animation: tenotsuBootCard 0.95s ease-out forwards;
+}
+.boot-logo {
+  font-size: clamp(30px, 7vw, 56px);
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-shadow: 0 2px 0 rgba(255,255,255,0.9);
+}
+.boot-version {
+  margin-top: 8px;
+  font-weight: 800;
+  opacity: 0.82;
+}
+.boot-sub {
+  margin-top: 14px;
+  font-weight: 700;
+  opacity: 0.78;
+}
+@keyframes tenotsuBootFlash {
+  0% { opacity: 1; }
+  38% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes tenotsuBootCard {
+  0% { opacity: 0; transform: translateY(18px) scale(0.98); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.office-menu-main,
+#list-panel .list-item,
+#menu-panel .office-menu-main {
+  min-height: 48px;
+}
+@media screen and (orientation: portrait) {
+  .boot-card {
+    min-width: min(86vw, 520px);
+    padding: 24px 20px;
+  }
+}
+
+
+/* v037_85: 事務所6大メニュー */
+#list-panel:not(.hidden),
+#menu-panel:not(.hidden) {
+  max-width: min(720px, 94vw);
+}
+#list-panel .list-item,
+#menu-panel .office-menu-main {
+  min-height: 52px;
+  font-weight: 800;
+}
+#menu-panel .office-status,
+#list-panel button:nth-of-type(1),
+#list-panel button:nth-of-type(2) {
+  outline: 1px solid rgba(90, 170, 255, 0.28);
+}
+#menu-panel .office-game,
+#list-panel button:nth-of-type(3),
+#list-panel button:nth-of-type(4) {
+  outline: 1px solid rgba(255, 180, 60, 0.30);
+}
+#menu-panel .office-other,
+#list-panel button:nth-of-type(5),
+#list-panel button:nth-of-type(6) {
+  outline: 1px solid rgba(180, 180, 180, 0.28);
+}
+
+
+/* v037_85: 売上/店長ステータス/アルバム */
+.status-card {
+  width: min(680px, 92vw);
+  margin: 0 auto;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.26);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+  color: inherit;
+}
+.status-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.12rem;
+}
+.status-card p {
+  margin: 6px 0;
+  line-height: 1.45;
+}
+.album-list {
+  max-height: 34vh;
+  overflow: auto;
+  text-align: left;
+  padding-left: 1.2em;
+}
+.album-list li {
+  margin: 8px 0;
+}
+
+
+/* v037_85: 店舗ランク/街Lv/店長ランク/装備 */
+.status-card hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.24);
+  margin: 10px 0;
+}
+
+.status-card small {
+  opacity: 0.82;
+  line-height: 1.35;
+}
+
+
+/* v037_85: 店長Lv60 EXP表示 */
+.status-card b {
+  font-weight: 900;
+}
+
+.status-card button[data-engine-action^="claim-"] {
+  outline: 1px solid rgba(120, 220, 150, 0.35);
+}
+
+
+/* v037_85: 外回りADV / 3択コミュ / アイテム */
+.adv-card h3 {
+  letter-spacing: 0.04em;
+}
+
+.adv-card button[data-result="GOOD"],
+.adv-card button[data-engine-action="adv-answer"][data-result="GOOD"] {
+  outline: 1px solid rgba(120, 240, 150, 0.45);
+}
+
+.adv-card button[data-result="FINE"],
+.adv-card button[data-engine-action="adv-answer"][data-result="FINE"] {
+  outline: 1px solid rgba(120, 190, 255, 0.42);
+}
+
+.adv-card button[data-result="BAD"],
+.adv-card button[data-engine-action="adv-answer"][data-result="BAD"] {
+  outline: 1px solid rgba(255, 120, 120, 0.35);
+}
+
+
+/* v037_85: 長押し左メニュー / 思い出ストーリー管理表 */
+.left-office-menu h3,
+.memory-card h3 {
+  margin-top: 0;
+}
+
+.left-menu-note {
+  opacity: 0.82;
+  font-size: 0.92em;
+}
+
+.memory-table-wrap {
+  width: 100%;
+  max-height: 42vh;
+  overflow: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.18);
+  margin: 10px 0;
+}
+
+.memory-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+
+.memory-table th,
+.memory-table td {
+  padding: 7px 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  text-align: left;
+  vertical-align: top;
+}
+
+.memory-table th {
+  position: sticky;
+  top: 0;
+  background: rgba(30,30,40,0.92);
+  z-index: 1;
+}
+
+.mini-action {
+  border: 1px solid rgba(255,255,255,0.28);
+  border-radius: 999px;
+  padding: 4px 9px;
+  background: rgba(255,255,255,0.12);
+  color: inherit;
+}
+
+.mini-action:disabled {
+  opacity: 0.45;
+}
+
+
+/* v037_85: タイトル後メニュー保管 */
+.memory-card .menu-item[data-engine-action="title-return-archive"] {
+  outline: 1px solid rgba(255, 230, 140, 0.36);
+}
+
+
+/* v037_85: ストーリー終了フェード / 長押し左メニュー修正 */
+#dialogue-box.story-end-fadeout {
+  opacity: 0 !important;
+  transition: opacity 0.55s ease !important;
+}
+
+.left-office-menu {
+  width: min(560px, 88vw);
+  margin: 0 auto;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(20, 24, 34, 0.88);
+  border: 1px solid rgba(255,255,255,0.24);
+  box-shadow: 0 14px 44px rgba(0,0,0,0.36);
+  box-sizing: border-box;
+}
+
+.left-office-menu-title {
+  font-weight: 900;
+  font-size: 1.08rem;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.left-office-menu-note {
+  text-align: center;
+  opacity: 0.82;
+  font-size: 0.86rem;
+  margin: 0 0 10px;
+}
+
+.left-office-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.left-office-grid .menu-item {
+  width: 100%;
+  min-height: 46px;
+  margin: 0 !important;
+  white-space: normal;
+  line-height: 1.2;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 680px) {
+  .left-office-menu {
+    width: min(94vw, 520px);
+    padding: 10px;
+  }
+  .left-office-grid {
+    gap: 6px;
+  }
+  .left-office-grid .menu-item {
+    min-height: 42px;
+    font-size: 0.9rem;
+  }
+}
+
+
+/* v037_85: 左メニューを旧システムメニュー内容へ戻す / 右メニュー保護 */
+.left-system-menu {
+  max-width: min(420px, 86vw);
+}
+
+.left-system-menu .left-office-grid {
+  grid-template-columns: 1fr;
+}
+
+#random-images-layer,
+#random-text-layer {
+  z-index: 1 !important;
+}
+
+#menu-panel,
+#list-panel,
+.status-card,
+.left-office-menu {
+  position: relative;
+  z-index: 20;
+}
+
+
+/* v037_85: 左右メニュー役割固定
+   menu-panel = 左システムメニュー
+   list-panel = 右6大メニュー/リスト
+*/
+#menu-panel {
+  position: fixed !important;
+  left: max(12px, env(safe-area-inset-left)) !important;
+  right: auto !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: min(300px, 30vw) !important;
+  max-width: 300px !important;
+  z-index: 12000 !important;
+  box-sizing: border-box !important;
+}
+
+#list-panel {
+  position: fixed !important;
+  right: max(12px, env(safe-area-inset-right)) !important;
+  left: auto !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: min(360px, 34vw) !important;
+  max-width: 360px !important;
+  z-index: 11000 !important;
+  box-sizing: border-box !important;
+}
+
+#menu-panel.hidden,
+#list-panel.hidden {
+  display: none !important;
+}
+
+#menu-panel button,
+#list-panel button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#menu-panel .left-office-menu,
+#menu-panel .status-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+#list-panel .status-card {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+@media screen and (max-width: 760px) {
+  #menu-panel {
+    width: min(280px, 44vw) !important;
+  }
+  #list-panel {
+    width: min(320px, 48vw) !important;
+  }
+}
+
+
+/* v037_85: 秘密の言葉 / 左メニュー明るめ */
+#menu-panel {
+  background: rgba(255, 248, 224, 0.94) !important;
+  border: 2px solid rgba(255, 206, 120, 0.86) !important;
+  box-shadow: 0 12px 38px rgba(120, 74, 16, 0.28) !important;
+  color: #4a2a12 !important;
+}
+
+#menu-panel button,
+#menu-panel .menu-item {
+  background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,226,166,0.92)) !important;
+  color: #4a2a12 !important;
+  border: 1px solid rgba(210, 132, 32, 0.56) !important;
+  box-shadow: 0 2px 8px rgba(120,74,16,0.14) !important;
+}
+
+#menu-panel button:hover,
+#menu-panel .menu-item:hover {
+  background: linear-gradient(180deg, rgba(255,255,255,1), rgba(255,207,120,0.96)) !important;
+}
+
+.secret-word-card {
+  text-align: center;
+}
+
+.secret-word-input {
+  display: block;
+  width: min(420px, 88%);
+  margin: 12px auto;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.36);
+  background: rgba(255,255,255,0.92);
+  color: #222;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.secret-word-message {
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(255, 245, 170, 0.18);
+  border: 1px solid rgba(255,255,255,0.24);
+  font-weight: 700;
+}
+
+.secret-word-used {
+  opacity: 0.72;
+  font-size: 0.86rem;
+}
+
+
+/* v037_85: 同一人物表情切替はフェードなし */
+.character.no-expression-fade {
+  transition: none !important;
+  animation: none !important;
+  opacity: 1 !important;
+}
+
+.menu-item.active,
+button.active {
+  outline: 2px solid rgba(255, 214, 90, 0.9);
+  box-shadow: 0 0 10px rgba(255, 214, 90, 0.45);
+}
+
+
+/* v037_85: 中央大型ストーリー管理表 / 同一人物フェード停止 */
+.story-management-surface {
+  position: fixed !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: min(980px, 88vw) !important;
+  max-width: 980px !important;
+  max-height: min(76vh, 720px) !important;
+  overflow: hidden !important;
+  z-index: 15000 !important;
+  padding: 18px !important;
+  box-sizing: border-box !important;
+}
+
+.story-management-surface .memory-table-wrap {
+  max-height: min(58vh, 560px) !important;
+}
+
+.character.char-same-expression-swap,
+.character-slot img.char-same-expression-swap {
+  transition: none !important;
+  animation: none !important;
+  opacity: 1 !important;
+}
+
+.character.char-fade-in,
+.character-slot img.char-fade-in {
+  animation: tenotsuCharFadeIn 0.22s ease-out both;
+}
+
+@keyframes tenotsuCharFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+/* v037_85: UI/スクロール/管理表配置調整 */
+#menu-panel {
+  width: min(390px, 38vw) !important;
+  max-width: 390px !important;
+  max-height: min(78vh, 720px) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+  padding-right: 8px;
+}
+
+#list-panel {
+  max-height: min(78vh, 720px) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+}
+
+.status-card,
+.memory-card,
+.secret-word-card,
+.left-office-menu {
+  max-height: min(74vh, 680px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+  box-sizing: border-box;
+}
+
+.memory-table-wrap {
+  overflow-y: auto !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+}
+
+.story-management-surface.center-between-side-menus {
+  position: fixed !important;
+  left: calc(min(390px, 38vw) + 24px) !important;
+  right: calc(min(360px, 34vw) + 24px) !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: min(80vh, 760px) !important;
+  z-index: 14000 !important;
+  overflow: hidden !important;
+}
+
+.story-management-surface.center-between-side-menus .memory-table-wrap {
+  max-height: min(62vh, 620px) !important;
+}
+
+@media screen and (max-width: 900px) {
+  #menu-panel {
+    width: min(340px, 88vw) !important;
+    max-width: 88vw !important;
+    left: 8px !important;
+  }
+
+  #list-panel {
+    width: min(340px, 88vw) !important;
+    max-width: 88vw !important;
+    right: 8px !important;
+  }
+
+  .story-management-surface.center-between-side-menus {
+    left: 50% !important;
+    right: auto !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: min(94vw, 760px) !important;
+    max-height: 78vh !important;
+    overflow-y: auto !important;
+  }
+
+  .status-card,
+  .memory-card,
+  .secret-word-card,
+  .left-office-menu {
+    max-height: 72vh !important;
+  }
+}
+
+
+/* v037_85: 中央別ウィンドウ / 思い出アルバム */
+#center-surface-panel {
+  position: fixed;
+  left: calc(min(390px, 38vw) + 24px);
+  right: calc(min(360px, 34vw) + 24px);
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: min(82vh, 780px);
+  z-index: 16000;
+  background: rgba(22, 24, 34, 0.94);
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 18px;
+  box-shadow: 0 18px 54px rgba(0,0,0,0.42);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.center-surface-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 14px;
+  background: rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.14);
+}
+
+.center-surface-close {
+  width: 34px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.12);
+  color: inherit;
+}
+
+.center-surface-body {
+  max-height: calc(min(82vh, 780px) - 52px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+  padding: 14px;
+}
+
+#center-surface-panel .story-management-surface {
+  position: static !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  transform: none !important;
+  width: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  padding: 8px !important;
+  overflow: visible !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.memory-album-surface,
+.event-cg-viewer {
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.album-thumb {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.08);
+  color: inherit;
+  text-align: center;
+}
+
+.album-thumb img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.event-cg-viewer img {
+  display: block;
+  max-width: 100%;
+  max-height: 62vh;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.event-cg-caption,
+.surface-note {
+  opacity: 0.82;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 900px) {
+  #center-surface-panel {
+    left: 50%;
+    right: auto;
+    width: min(94vw, 760px);
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+/* v037_85: 思い出アルバム カラー/モノクロサムネ統合 */
+.album-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.16);
+}
+
+.album-card .album-thumb {
+  width: 100%;
+}
+
+.album-card-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.78rem;
+  opacity: 0.82;
+}
+
+.album-mono-note {
+  opacity: 0.7;
+}
+
+.album-card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.album-card-actions .mini-action {
+  width: 100%;
+  min-height: 32px;
+  border-radius: 10px;
+}
+
+
+/* v037_93: ストーリー中の右メニュー抑止と本文白固定 */
+body.story-playing #list-panel,
+body.story-playing .right-main-panel,
+body.story-playing .right-menu,
+body.story-playing .right-panel {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+body.story-playing #name,
+body.story-playing #text,
+body.story-playing #dialogue-box,
+body.story-playing .dialogue-box,
+body.story-playing .scenario-text,
+body.story-playing .message-text {
+  color: #ffffff !important;
+}
+/* /v037_93 */
+
+/* v038_27: タイトル画面はメニュー表示を許可 */
+body.title-screen #list-panel {
+  pointer-events: auto !important;
+}
+
+
+/* v037_93: 事務所モード */
+body.office-screen #list-panel {
+  display: flex !important;
+  pointer-events: auto !important;
+}
+
+body.office-screen #dialogue-box {
+  display: none !important;
+}
+
+body.office-screen #list-panel.right-main-panel,
+body.office-screen #list-panel {
+  top: 50% !important;
+  right: max(18px, env(safe-area-inset-right)) !important;
+  width: min(360px, 32vw) !important;
+  min-height: min(540px, 78vh) !important;
+  max-height: 82vh !important;
+  padding: 14px !important;
+  gap: 10px !important;
+  justify-content: center !important;
+  background: rgba(255, 248, 224, 0.92) !important;
+  border: 2px solid rgba(255, 194, 95, 0.86) !important;
+  border-radius: 22px !important;
+  box-shadow: 0 18px 52px rgba(86, 50, 10, 0.26) !important;
+  backdrop-filter: blur(6px);
+}
+
+body.office-screen #list-panel button {
+  flex: 0 0 auto !important;
+  min-height: 58px !important;
+  font-size: clamp(15px, 1.7vw, 19px) !important;
+  font-weight: 900 !important;
+  color: #5b3518 !important;
+  background: linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,232,172,0.92)) !important;
+  border: 1px solid rgba(219, 148, 48, 0.72) !important;
+  border-radius: 16px !important;
+  text-shadow: none !important;
+}
+
+body.office-screen #list-panel button:nth-of-type(1),
+body.office-screen #list-panel button:nth-of-type(2) {
+  background: linear-gradient(180deg, rgba(239,248,255,0.96), rgba(206,232,255,0.92)) !important;
+}
+
+body.office-screen #list-panel button:nth-of-type(3),
+body.office-screen #list-panel button:nth-of-type(4) {
+  background: linear-gradient(180deg, rgba(255,246,220,0.98), rgba(255,213,137,0.94)) !important;
+}
+
+body.office-screen #list-panel button:nth-of-type(5),
+body.office-screen #list-panel button:nth-of-type(6) {
+  background: linear-gradient(180deg, rgba(246,255,235,0.98), rgba(215,240,185,0.94)) !important;
+}
+
+@media screen and (max-width: 760px) {
+  body.office-screen #list-panel.right-main-panel,
+  body.office-screen #list-panel {
+    width: min(320px, 46vw) !important;
+    right: 8px !important;
+  }
+  body.office-screen #list-panel button {
+    min-height: 48px !important;
+    font-size: 14px !important;
+  }
+}
+/* /v037_93 */
+
+/* v037_93: ブラックフェードとストーリー管理表文字色 */
+#tenotsu-black-fade-layer {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 30000;
+}
+
+.story-management-surface,
+.story-management-surface * {
+  color: #ffffff !important;
+}
+.story-management-surface table,
+.story-management-surface th,
+.story-management-surface td {
+  color: #ffffff !important;
+}
+body.story-playing #name,
+body.story-playing #speaker-name,
+body.story-playing .speaker-name {
+  color: inherit;
+}
+body.story-playing #text,
+body.story-playing #message,
+body.story-playing #scenario-text,
+body.story-playing .scenario-text,
+body.story-playing .message-text,
+body.story-playing .text-body {
+  color: #ffffff !important;
+}
+/* /v037_93 */
+
+/* v038_27: office right menu label cleanup */
+.office6 .menu-item, .office-menu-main { letter-spacing: 0.03em; }
+/* /v038_27 */
+
+/* v038_27: 事務所/タイトルのランダム立ち絵とコメント */
+body.office-screen #random-images-layer,
+body.office-screen #random-text-layer,
+body.title-screen #random-images-layer,
+body.title-screen #random-text-layer {
+  display: block !important;
+  pointer-events: none !important;
+}
+
+.exchange-counter-card {
+  background: linear-gradient(180deg, rgba(12, 12, 26, 0.88), rgba(18, 10, 28, 0.92)) !important;
+  border: 1px solid rgba(174, 113, 255, 0.42) !important;
+  color: #f5ecff !important;
+  box-shadow: 0 18px 48px rgba(18, 0, 40, 0.44) !important;
+}
+.exchange-counter-card * {
+  color: #f5ecff !important;
+}
+
+
+/* v038_27 office mode hardening */
+body[data-game-mode="title"] #list-panel,
+body.mode-title #list-panel,
+body[data-game-mode="title"] .right-menu,
+body.mode-title .right-menu {
+  display: none !important;
+}
+body[data-game-mode="office"] #list-panel,
+body.mode-office #list-panel,
+body[data-game-mode="office"] .right-menu,
+body.mode-office .right-menu {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+.tenotsu-six-main-menu {
+  background: rgba(255, 248, 224, 0.94) !important;
+  color: #4a2f16 !important;
+  border: 2px solid rgba(255, 178, 64, 0.75) !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,.28) !important;
+}
+.tenotsu-six-main-title {
+  font-weight: 700; font-size: 18px; padding: 10px 12px; color: #7a3f00; text-align: center;
+}
+.tenotsu-six-main-grid {
+  display: grid; grid-template-columns: 1fr; gap: 8px; padding: 10px 12px 14px;
+}
+.tenotsu-six-main-button {
+  width: 100%; min-height: 44px; border-radius: 12px;
+  border: 1px solid rgba(226,136,32,.7);
+  background: linear-gradient(180deg,#fff7df,#ffe5aa);
+  color: #44270b; font-size: 16px; font-weight: 700; cursor: pointer;
+}
+.office-character-layer {
+  position: absolute; left: 8%; right: 22%; bottom: 0; top: 0;
+  pointer-events: none; z-index: 18; display: block;
+}
+.office-character-stand {
+  position: absolute; bottom: 0; max-height: 88%; width: auto; object-fit: contain;
+  filter: drop-shadow(0 10px 14px rgba(0,0,0,.35));
+}
+.office-character-stand-0 { left: 36%; z-index: 3; transform: translateX(-50%) scale(1.0); }
+.office-character-stand-1 { left: 18%; z-index: 2; transform: translateX(-50%) scale(.92); opacity: .96; }
+.office-character-stand-2 { left: 54%; z-index: 1; transform: translateX(-50%) scale(.90); opacity: .94; }
+.office-comment-box,
+.title-comment-box {
+  position: absolute; left: 5%; right: 24%; bottom: 24px; min-height: 64px;
+  padding: 12px 18px; background: rgba(20,20,24,.78); color: #fff;
+  border: 1px solid rgba(255,255,255,.35); border-radius: 14px; z-index: 42;
+  pointer-events: none; box-shadow: 0 8px 28px rgba(0,0,0,.32);
+}
+.comment-speaker { font-weight: 700; margin-right: 1em; color: #ffd46b; }
+.comment-text { color: #fff; }
+body[data-game-mode="story"] .office-character-layer,
+body.mode-story .office-character-layer,
+body[data-game-mode="battle"] .office-character-layer,
+body[data-game-mode="story"] .office-comment-box,
+body.mode-story .office-comment-box,
+body[data-game-mode="battle"] .office-comment-box {
+  display: none !important;
+}
+/* /v038_27 office mode hardening */
+
+
+/* v038_27 office character layer visible fix */
+.office-character-layer {
+  position: absolute !important;
+  left: 0 !important;
+  right: 22% !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  z-index: 35 !important;
+  pointer-events: none !important;
+  display: block !important;
+  visibility: visible !important;
+  overflow: hidden !important;
+}
+.office-character-stand {
+  position: absolute !important;
+  bottom: -2% !important;
+  max-height: 86% !important;
+  width: auto !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 10px 14px rgba(0,0,0,.35)) !important;
+}
+.office-character-stand-0 { left: 29% !important; z-index: 3 !important; transform: translateX(-50%) scale(1.02) !important; }
+.office-character-stand-1 { left: 15% !important; z-index: 2 !important; transform: translateX(-50%) scale(.92) !important; opacity: .96 !important; }
+.office-character-stand-2 { left: 45% !important; z-index: 1 !important; transform: translateX(-50%) scale(.90) !important; opacity: .94 !important; }
+.tenotsu-six-main-menu, #list-panel { z-index: 80 !important; }
+.office-comment-box, .title-comment-box { z-index: 90 !important; }
+body[data-game-mode="story"] .office-character-layer,
+body.mode-story .office-character-layer,
+body[data-game-mode="battle"] .office-character-layer,
+body[data-game-mode="title"] .office-character-layer,
+body.mode-title .office-character-layer { display: none !important; }
+/* /v038_27 office character layer visible fix */
+
+
+/* v038_27 office character visible layer fix */
+#office-character-layer,
+.office-character-layer {
+  position: fixed !important;
+  left: 0 !important;
+  right: 260px !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  z-index: 25 !important;
+  pointer-events: none !important;
+  display: block;
+}
+
+#office-character-layer img,
+.office-character-stand {
+  position: fixed !important;
+  top: auto !important;
+  bottom: 4% !important;
+  width: auto !important;
+  max-width: 430px !important;
+  max-height: 86vh !important;
+  height: auto !important;
+  object-fit: contain !important;
+  pointer-events: none !important;
+  display: block !important;
+  filter: drop-shadow(0 14px 20px rgba(0,0,0,.35)) !important;
+  opacity: .98 !important;
+}
+
+.office-character-stand-0 {
+  left: 20% !important;
+  transform: translateX(-50%) scale(1) !important;
+  z-index: 30 !important;
+}
+.office-character-stand-1 {
+  left: 37% !important;
+  transform: translateX(-50%) scale(.92) !important;
+  z-index: 29 !important;
+}
+.office-character-stand-2 {
+  left: 52% !important;
+  transform: translateX(-50%) scale(.88) !important;
+  z-index: 28 !important;
+}
+
+#list-panel,
+.right-menu,
+.right-panel,
+.tenotsu-six-main-menu {
+  z-index: 80 !important;
+}
+
+#office-comment-box,
+.office-comment-box,
+.title-comment-box {
+  z-index: 90 !important;
+}
+
+body[data-game-mode="shop"] #office-character-layer,
+body.mode-shop #office-character-layer,
+body[data-game-mode="shop"] .office-character-layer,
+body.mode-shop .office-character-layer {
+  display: none !important;
+}
+/* /v038_27 office character visible layer fix */
+
+
+/* v038_27 office character 3-position layout */
+#office-character-layer,
+.office-character-layer {
+  position: fixed !important;
+  left: 0 !important;
+  right: 300px !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  z-index: 25 !important;
+  pointer-events: none !important;
+  display: block;
+}
+
+#office-character-layer img,
+.office-character-stand {
+  position: fixed !important;
+  top: auto !important;
+  bottom: 3.5% !important;
+  width: auto !important;
+  max-width: 430px !important;
+  max-height: 87vh !important;
+  height: auto !important;
+  object-fit: contain !important;
+  pointer-events: none !important;
+  display: block !important;
+  filter: drop-shadow(0 14px 20px rgba(0,0,0,.35)) !important;
+  opacity: .98 !important;
+}
+
+.office-character-stand-0 {
+  left: 31% !important;
+  transform: translateX(-50%) scale(1.02) !important;
+  z-index: 34 !important;
+}
+.office-character-stand-1 {
+  left: 15% !important;
+  transform: translateX(-50%) scale(.90) !important;
+  z-index: 32 !important;
+}
+.office-character-stand-2 {
+  left: 48% !important;
+  transform: translateX(-50%) scale(.90) !important;
+  z-index: 31 !important;
+}
+
+body[data-game-mode="office"] #game,
+body.mode-office #game,
+body[data-game-mode="office"] #main,
+body.mode-office #main,
+body[data-game-mode="office"] .game-screen,
+body.mode-office .game-screen {
+  background-image: url("../images/assets/bgev/bg_office_hidamari.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+body[data-game-mode="shop"] #game,
+body.mode-shop #game,
+body[data-game-mode="shop"] #main,
+body.mode-shop #main,
+body[data-game-mode="shop"] .game-screen,
+body.mode-shop .game-screen {
+  background-image: url("../images/assets/bgev/bg_exchange_item_counter.png");
+  background-size: cover;
+  background-position: center center;
+}
+/* /v038_27 office character 3-position layout */
+
+
+/* v038_27 office foreground overlay */
+#tenotsu-office-character-overlay,
+.tenotsu-office-character-overlay {
+  position: fixed !important;
+  left: 0 !important;
+  right: 300px !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  z-index: 70 !important;
+  pointer-events: none !important;
+  display: block;
+  overflow: visible !important;
+}
+
+.tenotsu-office-stand {
+  position: fixed !important;
+  top: auto !important;
+  bottom: 4% !important;
+  width: auto !important;
+  max-width: 440px !important;
+  max-height: 88vh !important;
+  height: auto !important;
+  object-fit: contain !important;
+  pointer-events: none !important;
+  display: block !important;
+  opacity: .985 !important;
+  filter: drop-shadow(0 14px 22px rgba(0,0,0,.42)) !important;
+}
+
+.tenotsu-office-stand-0 {
+  left: 32% !important;
+  transform: translateX(-50%) scale(1.03) !important;
+  z-index: 73 !important;
+}
+.tenotsu-office-stand-1 {
+  left: 15% !important;
+  transform: translateX(-50%) scale(.92) !important;
+  z-index: 72 !important;
+}
+.tenotsu-office-stand-2 {
+  left: 49% !important;
+  transform: translateX(-50%) scale(.92) !important;
+  z-index: 71 !important;
+}
+
+#list-panel,
+.right-menu,
+.right-panel,
+.tenotsu-six-main-menu {
+  z-index: 120 !important;
+}
+
+#tenotsu-bottom-comment,
+#office-comment-box,
+.office-comment-box,
+.title-comment-box {
+  z-index: 140 !important;
+}
+
+body[data-game-mode="title"] #tenotsu-office-character-overlay,
+body.mode-title #tenotsu-office-character-overlay,
+body[data-game-mode="story"] #tenotsu-office-character-overlay,
+body.mode-story #tenotsu-office-character-overlay,
+body[data-game-mode="shop"] #tenotsu-office-character-overlay,
+body.mode-shop #tenotsu-office-character-overlay,
+body[data-game-mode="battle"] #tenotsu-office-character-overlay {
+  display: none !important;
+}
+
+body[data-game-mode="office"],
+body.mode-office,
+body[data-game-mode="office"] #game,
+body.mode-office #game,
+body[data-game-mode="office"] #main,
+body.mode-office #main,
+body[data-game-mode="office"] .game-screen,
+body.mode-office .game-screen {
+  background-image: url("../images/assets/bgev/bg_office_hidamari.png") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+body[data-game-mode="shop"],
+body.mode-shop,
+body[data-game-mode="shop"] #game,
+body.mode-shop #game,
+body[data-game-mode="shop"] #main,
+body.mode-shop #main,
+body[data-game-mode="shop"] .game-screen,
+body.mode-shop .game-screen {
+  background-image: url("../images/assets/bgev/bg_exchange_item_counter.png") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+body[data-game-mode="shop"] #left-menu,
+body.mode-shop #left-menu,
+body[data-game-mode="shop"] .left-menu,
+body.mode-shop .left-menu,
+body[data-game-mode="shop"] #leftPanel,
+body.mode-shop #leftPanel {
+  pointer-events: none !important;
+}
+/* /v038_27 office foreground overlay */
+
+
+/* v038_27 canonical layer index cleanup
+   0   background
+   10  title/random decorative images
+   20  normal story ADV characters
+   30  event CG / CG background
+   45  click forwarding layer
+   60  dialogue box
+   65  choices
+   70  office foreground characters
+   120 right/left menus
+   140 bottom comment
+   9000+ fade/dialog/system
+*/
+:root {
+  --z-bg: 0;
+  --z-random: 10;
+  --z-story-char: 20;
+  --z-ev: 30;
+  --z-click: 45;
+  --z-dialogue: 60;
+  --z-choices: 65;
+  --z-office-char: 70;
+  --z-menu: 120;
+  --z-comment: 140;
+  --z-fade: 9000;
+  --z-system: 20000;
+  --z-boot: 200000;
+}
+
+#game-container {
+  position: relative !important;
+  isolation: isolate !important;
+  z-index: 0 !important;
+}
+
+#background,
+[data-layer="background"] {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: var(--z-bg) !important;
+  pointer-events: none !important;
+}
+
+#random-images-layer,
+#random-text-layer,
+[data-layer="title-random"] {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: var(--z-random) !important;
+  pointer-events: none !important;
+}
+
+#char-layer,
+[data-layer="story-character"] {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: var(--z-story-char) !important;
+  pointer-events: none !important;
+}
+
+#char-layer .char-slot,
+#char-layer .char-image,
+.char-slot,
+.char-image {
+  z-index: var(--z-story-char) !important;
+}
+
+#ev-layer,
+[data-layer="event-cg"] {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: var(--z-ev) !important;
+  pointer-events: none !important;
+}
+
+#ev-layer .ev-image,
+#ev-layer .cg-image,
+.ev-image,
+.cg-image {
+  z-index: var(--z-ev) !important;
+}
+
+#click-layer,
+[data-layer="click"] {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: var(--z-click) !important;
+}
+
+#dialogue-box,
+[data-layer="dialogue"] {
+  z-index: var(--z-dialogue) !important;
+}
+
+#choices,
+.choices-area,
+[data-layer="choices"] {
+  z-index: var(--z-choices) !important;
+}
+
+#tenotsu-office-character-overlay,
+.tenotsu-office-character-overlay {
+  z-index: var(--z-office-char) !important;
+}
+
+.tenotsu-office-stand-0 { z-index: calc(var(--z-office-char) + 3) !important; }
+.tenotsu-office-stand-1 { z-index: calc(var(--z-office-char) + 2) !important; }
+.tenotsu-office-stand-2 { z-index: calc(var(--z-office-char) + 1) !important; }
+
+#list-panel,
+#menu-panel,
+.right-menu,
+.right-panel,
+.menu-panel,
+.list-panel,
+.tenotsu-six-main-menu,
+[data-layer="right-menu"],
+[data-layer="left-menu"] {
+  z-index: var(--z-menu) !important;
+}
+
+#tenotsu-bottom-comment,
+#office-comment-box,
+.office-comment-box,
+.title-comment-box {
+  z-index: var(--z-comment) !important;
+}
+
+.fade-overlay,
+#fade-overlay,
+.black-fade,
+#black-fade,
+.screen-fade {
+  z-index: var(--z-fade) !important;
+}
+
+#ios-pwa-notice,
+#rotate-warning {
+  z-index: var(--z-system) !important;
+}
+
+.boot-flow {
+  z-index: var(--z-boot) !important;
+}
+/* /v038_27 canonical layer index cleanup */
+
+
+/* v038_27 definitive layer/click/character fix */
+:root {
+  --z-bg: 0;
+  --z-random: 40;
+  --z-story-char: 120;
+  --z-ev: 180;
+  --z-click: 260;
+  --z-dialogue: 420;
+  --z-choices: 440;
+  --z-office-char: 520;
+  --z-menu: 800;
+  --z-comment: 900;
+  --z-battle: 30000;
+  --z-fade: 50000;
+  --z-system: 70000;
+  --z-boot: 200000;
+}
+
+#game-container {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+}
+
+#background,
+[data-layer="background"] {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  z-index: var(--z-bg) !important;
+  pointer-events: none !important;
+}
+
+#random-images-layer,
+#random-text-layer {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: var(--z-random) !important;
+  pointer-events: none !important;
+}
+
+#char-layer {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: var(--z-story-char) !important;
+  pointer-events: none !important;
+  overflow: visible !important;
+}
+
+#char-layer .char-slot {
+  position: absolute !important;
+  bottom: 0 !important;
+  top: auto !important;
+  z-index: var(--z-story-char) !important;
+  pointer-events: none !important;
+  overflow: visible !important;
+}
+
+#char-layer .char-slot.active {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-end !important;
+}
+
+#char-layer img,
+#char-layer .char-image {
+  position: relative !important;
+  left: auto !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  display: block !important;
+  width: auto !important;
+  max-width: 100% !important;
+  max-height: 90vh !important;
+  height: auto !important;
+  object-fit: contain !important;
+  z-index: var(--z-story-char) !important;
+  opacity: 1 !important;
+  pointer-events: none !important;
+  transform: none;
+  filter: drop-shadow(0 12px 18px rgba(0,0,0,.35)) !important;
+}
+
+#ev-layer,
+.ev-image,
+.cg-image {
+  z-index: var(--z-ev) !important;
+  pointer-events: none !important;
+}
+
+#click-layer {
+  z-index: var(--z-click) !important;
+}
+
+#dialogue-box {
+  position: fixed !important;
+  left: 5% !important;
+  right: 12% !important;
+  bottom: max(18px, env(safe-area-inset-bottom)) !important;
+  top: auto !important;
+  width: auto !important;
+  min-height: 64px !important;
+  z-index: var(--z-dialogue) !important;
+  pointer-events: auto !important;
+}
+
+#choices,
+.choices-area {
+  z-index: var(--z-choices) !important;
+}
+
+#tenotsu-office-character-overlay {
+  position: fixed !important;
+  inset: 0 300px 0 0 !important;
+  z-index: var(--z-office-char) !important;
+  pointer-events: none !important;
+  display: block;
+  overflow: visible !important;
+}
+
+#tenotsu-office-character-overlay img,
+.tenotsu-office-stand {
+  position: fixed !important;
+  top: auto !important;
+  bottom: 4% !important;
+  width: auto !important;
+  max-width: 440px !important;
+  max-height: 88vh !important;
+  height: auto !important;
+  object-fit: contain !important;
+  pointer-events: none !important;
+  display: block !important;
+  opacity: .985 !important;
+  filter: drop-shadow(0 14px 22px rgba(0,0,0,.42)) !important;
+}
+
+.tenotsu-office-stand-0 { left: 32% !important; transform: translateX(-50%) scale(1.03) !important; z-index: 523 !important; }
+.tenotsu-office-stand-1 { left: 15% !important; transform: translateX(-50%) scale(.92) !important; z-index: 522 !important; }
+.tenotsu-office-stand-2 { left: 49% !important; transform: translateX(-50%) scale(.92) !important; z-index: 521 !important; }
+
+#list-panel,
+#menu-panel,
+.right-menu,
+.right-panel,
+.menu-panel,
+.list-panel,
+.tenotsu-six-main-menu {
+  z-index: var(--z-menu) !important;
+}
+
+#tenotsu-bottom-comment,
+#office-comment-box,
+.office-comment-box,
+.title-comment-box {
+  z-index: var(--z-comment) !important;
+}
+
+#battle-root {
+  z-index: var(--z-battle) !important;
+  pointer-events: auto !important;
+}
+#battle-root:not(.hidden),
+#battle-root:not(.hidden) * {
+  pointer-events: auto;
+}
+
+body[data-game-mode="battle"] #click-layer,
+body.mode-battle #click-layer {
+  pointer-events: none !important;
+  display: none !important;
+}
+
+body[data-game-mode="battle"] #dialogue-box,
+body.mode-battle #dialogue-box,
+body[data-game-mode="battle"] #list-panel,
+body.mode-battle #list-panel,
+body[data-game-mode="battle"] #menu-panel,
+body.mode-battle #menu-panel {
+  pointer-events: none !important;
+}
+
+.fade-overlay,
+#fade-overlay,
+.black-fade,
+#black-fade,
+.screen-fade {
+  z-index: var(--z-fade) !important;
+}
+
+#ios-pwa-notice,
+#rotate-warning {
+  z-index: var(--z-system) !important;
+}
+.boot-flow {
+  z-index: var(--z-boot) !important;
+}
+/* /v038_27 definitive layer/click/character fix */
+
+
+/* v038_27 office no-background test build */
+body[data-game-mode="office"] #background,
+body.mode-office #background,
+body[data-game-mode="office"] [data-layer="background"],
+body.mode-office [data-layer="background"],
+body[data-game-mode="office"] #bg,
+body.mode-office #bg,
+body[data-game-mode="office"] #bgev,
+body.mode-office #bgev,
+body[data-game-mode="office"] .background,
+body.mode-office .background,
+body[data-game-mode="office"] .bg,
+body.mode-office .bg,
+body[data-game-mode="office"] .bgev {
+  display: none !important;
+  opacity: 0 !important;
+  background-image: none !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+body[data-game-mode="office"],
+body.mode-office,
+body[data-game-mode="office"] #game-container,
+body.mode-office #game-container,
+body[data-game-mode="office"] #game,
+body.mode-office #game,
+body[data-game-mode="office"] #main,
+body.mode-office #main,
+body[data-game-mode="office"] .game-screen,
+body.mode-office .game-screen {
+  background: transparent !important;
+  background-image: none !important;
+}
+
+body[data-game-mode="office"] #tenotsu-office-character-overlay,
+body.mode-office #tenotsu-office-character-overlay {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 520 !important;
+}
+
+body[data-game-mode="office"] #tenotsu-office-character-overlay img,
+body.mode-office #tenotsu-office-character-overlay img,
+body[data-game-mode="office"] .tenotsu-office-stand,
+body.mode-office .tenotsu-office-stand {
+  display: block !important;
+  visibility: visible !important;
+  opacity: .985 !important;
+  z-index: 523 !important;
+}
+
+body[data-game-mode="office"] #dialogue-box,
+body.mode-office #dialogue-box {
+  position: fixed !important;
+  left: 5% !important;
+  right: 12% !important;
+  top: auto !important;
+  bottom: max(18px, env(safe-area-inset-bottom)) !important;
+  width: auto !important;
+  z-index: 900 !important;
+}
+/* /v038_27 office no-background test build */
+
+
+/* v038_27 direct office background suppression */
+img[src*="bg_office_hidamari"],
+[style*="bg_office_hidamari"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  background-image: none !important;
+  pointer-events: none !important;
+}
+
+body.mode-office,
+body[data-game-mode="office"],
+body.mode-office #game-container,
+body[data-game-mode="office"] #game-container,
+body.mode-office #game,
+body[data-game-mode="office"] #game,
+body.mode-office #main,
+body[data-game-mode="office"] #main,
+body.mode-office .game-screen,
+body[data-game-mode="office"] .game-screen {
+  background: transparent !important;
+  background-image: none !important;
+}
+/* /v038_27 direct office background suppression */
+
+
+/* v038_27 office forced foreground diagnostic render */
+#tenotsu-office-force-layer {
+  position: fixed !important;
+  inset: 0 300px 0 0 !important;
+  z-index: 600 !important;
+  pointer-events: none !important;
+  display: block;
+  visibility: visible !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+}
+
+.tenotsu-office-force-stand {
+  position: fixed !important;
+  bottom: 3.5% !important;
+  top: auto !important;
+  width: auto !important;
+  max-width: 440px !important;
+  max-height: 88vh !important;
+  height: auto !important;
+  object-fit: contain !important;
+  pointer-events: none !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  filter: drop-shadow(0 14px 22px rgba(0,0,0,.42)) !important;
+}
+
+.tenotsu-office-force-stand-0 {
+  left: 32% !important;
+  transform: translateX(-50%) scale(1.03) !important;
+  z-index: 603 !important;
+}
+.tenotsu-office-force-stand-1 {
+  left: 15% !important;
+  transform: translateX(-50%) scale(.92) !important;
+  z-index: 602 !important;
+}
+.tenotsu-office-force-stand-2 {
+  left: 49% !important;
+  transform: translateX(-50%) scale(.92) !important;
+  z-index: 601 !important;
+}
+
+#tenotsu-office-force-comment {
+  position: fixed !important;
+  left: 5% !important;
+  right: 24% !important;
+  bottom: max(18px, env(safe-area-inset-bottom)) !important;
+  top: auto !important;
+  z-index: 950 !important;
+  min-height: 64px !important;
+  padding: 12px 18px !important;
+  border-radius: 14px !important;
+  color: #fff !important;
+  background: rgba(20,20,24,.78) !important;
+  border: 1px solid rgba(255,255,255,.35) !important;
+  box-shadow: 0 8px 28px rgba(0,0,0,.32) !important;
+  pointer-events: none !important;
+}
+
+#tenotsu-office-force-comment .comment-speaker {
+  color: #ffd46b !important;
+  font-weight: 700 !important;
+  margin-right: 1em !important;
+}
+
+#tenotsu-office-force-comment .comment-text {
+  color: #fff !important;
+}
+
+body.mode-office,
+body[data-game-mode="office"] {
+  background: linear-gradient(135deg, #1e2533, #11151d) !important;
+  background-image: linear-gradient(135deg, #1e2533, #11151d) !important;
+}
+/* /v038_27 office forced foreground diagnostic render */

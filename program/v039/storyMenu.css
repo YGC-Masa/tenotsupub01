@@ -1,0 +1,241 @@
+/* v039_123 story menu + story layering + member story block nav */
+.tenotsu-story-menu-title{font-weight:900;font-size:22px;color:#fff2c8;margin-bottom:6px;text-align:center;text-shadow:0 2px 5px rgba(0,0,0,.55)}
+.tenotsu-story-menu-subtitle{font-size:13px;line-height:1.6;color:rgba(255,255,255,.86);text-align:center;margin-bottom:10px}.tenotsu-story-menu-tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:10px}.tenotsu-story-menu-tab{min-height:36px;border-radius:10px;border:1px solid rgba(255,226,163,.55);background:rgba(40,30,24,.86);color:#fff;font-weight:800;cursor:pointer}.tenotsu-story-menu-tab.active{background:linear-gradient(180deg,#fff4d6,#d9a64d);color:#3a2510}.tenotsu-story-menu-debug{font-size:12px;color:#ffe2a3;text-align:right;margin:0 2px 8px}.tenotsu-story-menu-list{display:grid;gap:8px;max-height:min(58vh,560px);overflow:auto;padding-right:4px}.tenotsu-story-menu-card{position:relative;text-align:left;border-radius:12px;border:1px solid rgba(255,226,163,.42);background:rgba(20,18,22,.82);color:#fff;padding:10px 12px;cursor:pointer;pointer-events:auto}.tenotsu-story-menu-card:hover{filter:brightness(1.08)}.tenotsu-story-menu-card.locked{opacity:.55;cursor:not-allowed}.tenotsu-story-menu-card.cleared{border-color:rgba(144,238,144,.58)}.tenotsu-story-menu-card-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.tenotsu-story-menu-card-head b{font-size:14px;line-height:1.45;color:#fff2c8}.tenotsu-story-menu-card-head i{font-size:11px;color:rgba(255,255,255,.66);font-style:normal;white-space:nowrap}.tenotsu-story-menu-card-meta,.tenotsu-story-menu-card-summary,.tenotsu-story-menu-card-state{display:block}.tenotsu-story-menu-card-meta{font-size:12px;color:#bde7ff;margin-top:4px}.tenotsu-story-menu-card-summary{font-size:12px;line-height:1.55;color:rgba(255,255,255,.84);margin-top:4px}.tenotsu-story-menu-card-state{position:absolute;right:10px;bottom:8px;font-size:11px;color:#ffe2a3}.tenotsu-story-menu-empty{padding:20px;border-radius:12px;background:rgba(20,18,22,.72);color:#fff;text-align:center}.tenotsu-story-menu-actions{margin-top:12px;display:flex;justify-content:flex-end}
+body[data-v039-mode="storyMenu"] .tenotsu-office-character-layer{display:none!important;visibility:hidden!important}
+body[data-v039-mode="storyMenu"] .tenotsu-text-layer{right:5%}
+@media (max-width: 900px){.tenotsu-story-menu-tabs{grid-template-columns:repeat(2,1fr)}.tenotsu-story-menu-list{max-height:50vh}}
+
+
+/* v039_108: event CG surface is above character sprites and below text UI. */
+#tenotsu-event-cg-surface,.tenotsu-event-cg-layer{position:fixed!important;inset:0!important;z-index:260!important;pointer-events:none!important;background:transparent!important;}
+#tenotsu-event-cg-surface[hidden],.tenotsu-event-cg-layer[hidden],body:not(.tenotsu-event-cg-active) #tenotsu-event-cg-surface{display:none!important;visibility:hidden!important;opacity:0!important;}
+#tenotsu-event-cg-surface .tenotsu-event-cg-image,.tenotsu-event-cg-image{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center center!important;display:block!important;}
+body[data-v039-mode="story"] #tenotsu-story-body-sprite-layer,body.tenotsu-story-active #tenotsu-story-body-sprite-layer{z-index:200!important;}
+body[data-v039-mode="story"] .tenotsu-text-layer,body.tenotsu-story-active .tenotsu-text-layer{z-index:1200!important;}
+
+/* v039_109 town encounter / member story slot additions */
+.tenotsu-town-encounter-status{display:flex;gap:10px;align-items:center;justify-content:space-between;margin:10px 0;padding:10px;border:1px solid rgba(255,255,255,.18);border-radius:12px;background:rgba(0,0,0,.25)}
+.tenotsu-town-encounter-status span{display:block;font-size:12px;opacity:.75}.tenotsu-town-encounter-status b{font-size:18px}.tenotsu-town-season-pills{display:flex;gap:6px;flex-wrap:wrap}.tenotsu-town-season-pill{padding:4px 8px;border-radius:999px;background:rgba(255,255,255,.08);font-size:12px}.tenotsu-town-season-pill.active{background:rgba(255,230,130,.28);border:1px solid rgba(255,230,130,.5)}
+.tenotsu-town-place-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}.tenotsu-town-place-card{min-height:118px;text-align:left;border:1px solid rgba(255,255,255,.18);border-radius:14px;background:rgba(0,0,0,.28);color:#fff;padding:12px;display:flex;flex-direction:column;gap:5px}.tenotsu-town-place-card b{font-size:16px}.tenotsu-town-place-card small{font-size:12px;opacity:.82;line-height:1.45}.tenotsu-town-place-card i{margin-top:auto;font-style:normal;font-size:12px;color:#ffe39c}.tenotsu-town-place-card.disabled{opacity:.45}.tenotsu-town-place-card.revealed{border-color:rgba(255,225,130,.42)}.place-type{font-size:11px;opacity:.75}
+.tenotsu-town-detail{margin-top:10px;padding:12px;border:1px solid rgba(255,255,255,.14);border-radius:14px;background:rgba(0,0,0,.22)}.tenotsu-town-detail-title{font-size:18px;font-weight:700}.tenotsu-town-detail-meta,.tenotsu-town-detail-summary{font-size:13px;opacity:.84;margin-top:4px;line-height:1.5}.tenotsu-town-tool-row{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.tenotsu-town-tool{border:1px solid rgba(255,230,160,.4);border-radius:999px;background:rgba(255,215,120,.16);color:#fff;padding:8px 12px}.tenotsu-town-candidate-list{display:grid;gap:8px}.tenotsu-town-candidate{border:1px solid rgba(255,255,255,.13);border-radius:12px;background:rgba(255,255,255,.06);padding:9px}.tenotsu-town-candidate b,.tenotsu-town-candidate span,.tenotsu-town-candidate small{display:block}.tenotsu-town-candidate span{font-size:12px;color:#ffe39c}.tenotsu-town-candidate small{font-size:12px;opacity:.8;line-height:1.45}.tenotsu-town-candidate.empty{opacity:.75}.tenotsu-town-start-note{font-size:12px;opacity:.72;margin-top:8px}
+.tenotsu-member-detail-head-v109{display:grid;grid-template-columns:auto minmax(220px,1fr) minmax(260px,360px);gap:14px;align-items:start}.tenotsu-member-story-box{border:1px solid rgba(255,255,255,.16);border-radius:14px;background:rgba(0,0,0,.24);padding:10px}.tenotsu-member-story-head{display:flex;justify-content:space-between;gap:8px;align-items:start;margin-bottom:8px}.tenotsu-member-story-label{display:block;font-size:12px;opacity:.75}.tenotsu-member-story-head b{display:block;font-size:17px}.tenotsu-member-story-head small{display:block;font-size:11px;opacity:.75}.tenotsu-member-story-debug{display:flex;gap:4px}.tenotsu-member-story-debug button{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:#fff;border-radius:8px;padding:4px 8px}.tenotsu-member-story-slot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.tenotsu-member-story-slot{text-align:left;border:1px solid rgba(255,255,255,.16);border-radius:11px;background:rgba(255,255,255,.07);color:#fff;padding:8px;min-height:76px}.tenotsu-member-story-slot.main{border-color:rgba(180,150,255,.38);background:rgba(120,80,220,.14)}.tenotsu-member-story-slot.cleared{border-color:rgba(120,240,180,.45)}.tenotsu-member-story-slot.locked{opacity:.55}.tenotsu-member-story-slot .slot-label{display:block;font-size:11px;color:#ffe39c}.tenotsu-member-story-slot b{display:block;font-size:12px;line-height:1.35;margin-top:2px}.tenotsu-member-story-slot small{display:block;font-size:11px;opacity:.75;margin-top:3px}.tenotsu-member-story-note{font-size:11px;opacity:.72;line-height:1.45;margin-top:8px}
+@media (max-width: 900px){.tenotsu-town-place-grid{grid-template-columns:1fr}.tenotsu-member-detail-head-v109{grid-template-columns:1fr}.tenotsu-member-story-slot-grid{grid-template-columns:1fr}}
+
+/* v039_110: recollection album label, town season direct buttons, member layout split */
+.tenotsu-story-menu-card::after{
+  content:"再生";
+  position:absolute;
+  right:10px;
+  top:38px;
+  font-size:11px;
+  padding:3px 8px;
+  border-radius:999px;
+  background:rgba(255,226,163,.18);
+  border:1px solid rgba(255,226,163,.35);
+  color:#fff2c8;
+}
+.tenotsu-story-menu-card.locked::after{content:"未解放";opacity:.7}
+.tenotsu-town-season-pill{
+  border:1px solid rgba(255,255,255,.14);
+  color:#fff;
+  cursor:pointer;
+  pointer-events:auto;
+}
+.tenotsu-town-season-pill:hover{filter:brightness(1.12)}
+.tenotsu-event-start:not(:disabled),.tenotsu-town-tool:not(:disabled){cursor:pointer;pointer-events:auto;}
+.tenotsu-event-start:disabled{opacity:.45;cursor:not-allowed;}
+
+body[data-v039-mode="members"] .tenotsu-members-panel{
+  width:min(1120px,72vw);
+  max-height:min(720px,88vh);
+}
+.tenotsu-members-body-v110{
+  display:grid;
+  grid-template-columns:minmax(220px,270px) minmax(300px,1fr) minmax(280px,340px);
+  gap:14px;
+  align-items:stretch;
+}
+.tenotsu-member-detail-head-v110{
+  display:grid;
+  grid-template-columns:120px 1fr;
+  gap:14px;
+  align-items:end;
+}
+.tenotsu-member-story-side{
+  min-height:260px;
+  padding:12px;
+  border-radius:16px;
+  background:rgba(35,18,26,.32);
+  border:2px solid rgba(255,95,95,.42);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);
+  overflow:auto;
+}
+.tenotsu-member-story-side .tenotsu-member-story-box{
+  height:100%;
+  box-sizing:border-box;
+  background:rgba(0,0,0,.20);
+}
+.tenotsu-member-story-empty{
+  opacity:.78;
+  text-align:center;
+  line-height:1.7;
+  padding:54px 12px;
+  border-radius:14px;
+  border:1px dashed rgba(255,255,255,.2);
+  background:rgba(0,0,0,.16);
+}
+.tenotsu-member-story-side .tenotsu-member-story-slot-grid{
+  grid-template-columns:1fr;
+}
+.tenotsu-member-story-side .tenotsu-member-story-slot{
+  min-height:64px;
+}
+@media (max-width: 1100px){
+  body[data-v039-mode="members"] .tenotsu-members-panel{width:min(980px,78vw)}
+  .tenotsu-members-body-v110{grid-template-columns:minmax(210px,250px) minmax(280px,1fr);}
+  .tenotsu-member-story-side{grid-column:2;}
+}
+@media (max-width: 900px){
+  body[data-v039-mode="members"] .tenotsu-members-panel{width:min(760px,92vw)}
+  .tenotsu-members-body-v110{grid-template-columns:1fr;}
+  .tenotsu-member-story-side{grid-column:auto;}
+}
+
+
+/* v039_112: story sprites are knee-shot assets. Always ground them to the screen bottom. */
+#tenotsu-story-body-sprite-layer .tenotsu-story-body-standing.bottom-align,
+#tenotsu-story-body-sprite-layer .tenotsu-story-logical-sprite {
+  bottom: 0 !important;
+  object-position: center bottom !important;
+  transform-origin: center bottom !important;
+}
+
+
+/* v039_123: 10Lv block switch for member affection stories */
+.tenotsu-member-story-block-nav{display:grid;grid-template-columns:auto 1fr auto auto;gap:6px;align-items:center;margin:8px 0 10px;padding:7px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
+.tenotsu-member-story-block-nav button{border:1px solid rgba(255,226,163,.34);background:rgba(255,226,163,.12);color:#fff;border-radius:9px;padding:6px 9px;font-weight:800;cursor:pointer}.tenotsu-member-story-block-nav button:disabled{opacity:.35;cursor:not-allowed}.tenotsu-member-story-block-nav button.current{font-size:11px;white-space:nowrap;background:rgba(160,220,255,.12);border-color:rgba(160,220,255,.28)}.tenotsu-member-story-block-nav b{display:block;font-size:13px;color:#fff2c8}.tenotsu-member-story-block-nav small{display:block;font-size:10px;opacity:.72}
+@media (max-width:900px){.tenotsu-member-story-block-nav{grid-template-columns:auto 1fr auto}.tenotsu-member-story-block-nav button.current{grid-column:1 / -1}}
+
+
+/* v039_223: recollection album seasonal/event submenu layout */
+body[data-v039-mode="storyMenu"] .tenotsu-story-menu-tabs{
+  display:grid !important;
+  grid-template-columns:repeat(6,minmax(0,1fr)) !important;
+  gap:7px !important;
+  margin:8px 0 10px !important;
+}
+body[data-v039-mode="storyMenu"] .tenotsu-story-menu-tab{
+  min-height:34px !important;
+  padding:6px 7px !important;
+  border-radius:10px !important;
+  border:1px solid rgba(255,226,163,.50) !important;
+  background:rgba(40,30,24,.86) !important;
+  color:#fff !important;
+  font-weight:900 !important;
+  cursor:pointer !important;
+  pointer-events:auto !important;
+  white-space:nowrap !important;
+}
+body[data-v039-mode="storyMenu"] .tenotsu-story-menu-tab.active{
+  background:linear-gradient(180deg,#fff4d6,#d9a64d) !important;
+  color:#3a2510 !important;
+}
+body[data-v039-mode="storyMenu"] .tenotsu-story-menu-list{
+  max-height:calc((var(--tenotsu-vh, 1vh) * 100) - 260px) !important;
+  min-height:160px !important;
+  overflow-y:auto !important;
+  overflow-x:hidden !important;
+  padding-right:6px !important;
+}
+body[data-v039-mode="storyMenu"] .tenotsu-story-menu-subtitle{
+  max-width:760px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+@media (max-width: 980px){
+  body[data-v039-mode="storyMenu"] .tenotsu-story-menu-tabs{grid-template-columns:repeat(3,minmax(0,1fr)) !important;}
+  body[data-v039-mode="storyMenu"] .tenotsu-story-menu-list{max-height:calc((var(--tenotsu-vh, 1vh) * 100) - 300px) !important;}
+}
+@media (max-width: 620px){
+  body[data-v039-mode="storyMenu"] .tenotsu-story-menu-tabs{grid-template-columns:repeat(2,minmax(0,1fr)) !important;}
+}
+
+
+/* v039_227: 外回りメニュー縦見切れ対策 */
+body[data-v039-mode="town"] .tenotsu-town-panel,
+.tenotsu-town-panel.tenotsu-town-scroll-guard {
+  max-height: calc((var(--tenotsu-vh, 1vh) * 100) - 36px) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  overscroll-behavior: contain !important;
+  scrollbar-gutter: stable both-edges;
+  padding-bottom: max(18px, env(safe-area-inset-bottom)) !important;
+}
+body[data-v039-mode="town"] .tenotsu-town-place-grid {
+  max-height: min(44vh, 430px) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  padding-right: 4px !important;
+}
+body[data-v039-mode="town"] .tenotsu-town-candidate-list {
+  max-height: min(32vh, 320px) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  padding-right: 4px !important;
+}
+@media (max-height: 760px) {
+  body[data-v039-mode="town"] .tenotsu-town-panel {
+    top: 10px !important;
+    bottom: 10px !important;
+    max-height: calc((var(--tenotsu-vh, 1vh) * 100) - 20px) !important;
+  }
+  body[data-v039-mode="town"] .tenotsu-town-place-grid { max-height: 34vh !important; }
+  body[data-v039-mode="town"] .tenotsu-town-candidate-list { max-height: 26vh !important; }
+}
+
+
+/* v039_228: 回想アルバム本体スクロール再調整 */
+body[data-v039-mode="storyMenu"] .tenotsu-town-panel{
+  top: max(18px, env(safe-area-inset-top)) !important;
+  bottom: max(128px, env(safe-area-inset-bottom)) !important;
+  transform: none !important;
+  max-height: none !important;
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+body[data-v039-mode="storyMenu"] .tenotsu-story-menu-title,
+body[data-v039-mode="storyMenu"] .tenotsu-story-menu-subtitle,
+body[data-v039-mode="storyMenu"] .tenotsu-story-menu-tabs,
+body[data-v039-mode="storyMenu"] .tenotsu-story-menu-debug,
+body[data-v039-mode="storyMenu"] .tenotsu-story-menu-actions{
+  flex: 0 0 auto !important;
+}
+body[data-v039-mode="storyMenu"] .tenotsu-story-menu-list{
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  padding-right: 8px !important;
+  scrollbar-gutter: stable both-edges;
+}
+body[data-v039-mode="storyMenu"] .tenotsu-story-menu-tabs{
+  grid-template-columns: repeat(6, minmax(72px, 1fr)) !important;
+}
+body[data-v039-mode="storyMenu"] .tenotsu-story-menu-card{
+  min-height: 76px !important;
+}
+body[data-v039-mode="storyMenu"] .tenotsu-story-menu-card-summary{
+  padding-right: 64px !important;
+}
+@media (max-height: 760px){
+  body[data-v039-mode="storyMenu"] .tenotsu-town-panel{
+    top: 10px !important;
+    bottom: 110px !important;
+    padding: 14px !important;
+  }
+  body[data-v039-mode="storyMenu"] .tenotsu-story-menu-subtitle{display:none !important;}
+}

@@ -1,0 +1,620 @@
+/* v039_73 biribiri rival battle special input/help/cutin adjustment */
+#rival-battle-root.rival-battle-root {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 32000 !important;
+  width: 100vw !important;
+  height: var(--app-height, 100vh) !important;
+  display: block;
+  color: #fff;
+  background: #08060a;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: none;
+}
+#rival-battle-root.hidden { display: none !important; }
+#rival-battle-root * { box-sizing: border-box; }
+#rival-battle-root,
+#rival-battle-root * {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+}
+#rival-battle-root button {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+#rival-battle-root .rival-battle-stage {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: minmax(70px, 13vh) minmax(82px, 16vh) 1fr minmax(46px, 6.5vh) minmax(104px, 22vh);
+  gap: 6px;
+  padding: max(6px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) max(8px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 52, 44, 0.26), transparent 28%),
+    radial-gradient(circle at 86% 18%, rgba(255, 209, 80, 0.18), transparent 26%),
+    linear-gradient(180deg, #1a0710 0%, #08070b 58%, #050509 100%);
+}
+#rival-battle-root .rival-hud {
+  border: 2px solid rgba(255, 55, 51, 0.92);
+  border-radius: 14px;
+  background: rgba(18, 12, 18, 0.92);
+  box-shadow: 0 0 18px rgba(255, 45, 38, 0.26), inset 0 0 0 1px rgba(255,255,255,0.08);
+  padding: 7px 12px;
+  overflow: hidden;
+}
+#rival-battle-root .rival-hud-title {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-weight: 900;
+  font-size: clamp(15px, 2.4vw, 24px);
+  line-height: 1.1;
+  white-space: nowrap;
+}
+#rival-battle-root .rival-hud-title span {
+  font-size: 0.58em;
+  opacity: 0.78;
+  font-weight: 700;
+}
+#rival-battle-root .rival-hud-stats {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: clamp(7px, 1.4vw, 22px);
+  margin-top: 4px;
+  font-size: clamp(10px, 1.55vw, 16px);
+  white-space: nowrap;
+  overflow: hidden;
+}
+#rival-battle-root .rival-hud-stats b { color: #ffe66e; font-size: 1.06em; }
+#rival-battle-root .rival-message {
+  margin-top: 3px;
+  font-size: clamp(10px, 1.45vw, 15px);
+  opacity: 0.88;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#rival-battle-root .rival-cpu-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  min-height: 0;
+}
+#rival-battle-root .rival-cpu-card {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--rival-color, #ff4138);
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(12, 12, 22, 0.88));
+  box-shadow: 0 0 13px color-mix(in srgb, var(--rival-color, #ff4138) 45%, transparent);
+}
+#rival-battle-root .rival-cpu-card img {
+  position: absolute;
+  right: 3%;
+  bottom: -20%;
+  height: 156%;
+  max-width: none;
+  object-fit: contain;
+  pointer-events: none;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.55));
+}
+#rival-battle-root .rival-cpu-info {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 7px;
+  padding: 5px 7px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.58);
+  backdrop-filter: blur(2px);
+}
+#rival-battle-root .rival-cpu-info b { display: block; font-size: clamp(13px, 2vw, 20px); }
+#rival-battle-root .rival-cpu-info small { display: block; opacity: 0.88; font-size: clamp(9px, 1.35vw, 13px); }
+#rival-battle-root .rival-cpu-info i,
+#rival-battle-root .rival-bar {
+  display: block;
+  height: 7px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.17);
+  margin-top: 4px;
+}
+#rival-battle-root .rival-cpu-info i span,
+#rival-battle-root .rival-bar i {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--rival-color, #ff453d), #ffe66e);
+}
+#rival-battle-root .rival-enemy-row {
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  min-height: 0;
+  align-content: stretch;
+}
+#rival-battle-root .rival-battle-stage.is-rush .rival-enemy-row {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+#rival-battle-root .rival-battle-stage.is-rush .rival-hud {
+  box-shadow: 0 0 24px rgba(255, 220, 82, 0.45), inset 0 0 0 1px rgba(255,255,255,0.10);
+}
+#rival-battle-root .rival-battle-stage.is-rush .rival-rush-stat b {
+  color: #ffef7a;
+}
+#rival-battle-root .rival-enemy-card {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border: 2px solid color-mix(in srgb, var(--enemy-color, #ff8844) 70%, #ffffff 12%);
+  border-radius: 14px;
+  background: rgba(17, 18, 23, 0.90);
+  padding: 7px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06);
+}
+#rival-battle-root .rival-enemy-card.selected { outline: 3px solid #ffe66e; }
+#rival-battle-root .rival-enemy-card.rare { box-shadow: 0 0 16px rgba(255, 214, 82, 0.35), inset 0 0 0 1px rgba(255,255,255,0.08); }
+#rival-battle-root .rival-enemy-card.charmed { animation: rivalCharmPulse 0.7s infinite alternate; }
+#rival-battle-root .rival-enemy-head { display: flex; gap: 4px; align-items: center; min-width: 0; }
+#rival-battle-root .rival-enemy-head b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: clamp(11px, 1.6vw, 16px); }
+#rival-battle-root .rival-enemy-head em { margin-left: auto; font-style: normal; font-size: 10px; color: #ffe66e; }
+#rival-battle-root .rival-enemy-art {
+  height: clamp(42px, 10vh, 94px);
+  display: grid;
+  place-items: center;
+  margin: 2px 0 3px;
+}
+#rival-battle-root .rival-enemy-art img { max-height: 100%; max-width: 100%; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.42)); }
+#rival-battle-root .rival-enemy-meta,
+#rival-battle-root .rival-enemy-card label {
+  display: block;
+  font-size: clamp(9px, 1.28vw, 12px);
+  color: rgba(255,255,255,0.82);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#rival-battle-root .rival-charm-count {
+  position: absolute;
+  top: 31px;
+  left: 7px;
+  right: 7px;
+  padding: 3px 5px;
+  border-radius: 8px;
+  background: rgba(255, 162, 83, 0.95);
+  color: #271104;
+  font-weight: 900;
+  text-align: center;
+  font-size: 11px;
+  z-index: 4;
+}
+#rival-battle-root .rival-bar { height: 6px; margin: 2px 0 5px; }
+#rival-battle-root .rival-bar i { background: linear-gradient(90deg, var(--enemy-color, #ff8844), #fff0a0); }
+#rival-battle-root .rival-bar.patience i { background: linear-gradient(90deg, #70d6ff, #ffffff); }
+#rival-battle-root .rival-bar.skill i { background: linear-gradient(90deg, #ffd83b, #ff4050); }
+#rival-battle-root .rival-hit {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, 0);
+  color: var(--hit-color, #fff);
+  text-shadow: 0 2px 5px rgba(0,0,0,0.85);
+  font-weight: 900;
+  pointer-events: none;
+  z-index: 5;
+  text-align: center;
+}
+#rival-battle-root .rival-hit small { display: block; font-size: 10px; }
+#rival-battle-root .rival-help-row {
+  position: relative;
+  z-index: 7;
+  pointer-events: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 8px;
+  min-height: 0;
+  padding: 0;
+}
+#rival-battle-root .rival-help-btn {
+  width: 100%;
+  min-width: 0;
+  min-height: 40px;
+  border: 2px solid rgba(255,255,255,0.28);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.09);
+  color: rgba(255,255,255,0.55);
+  font-weight: 900;
+}
+#rival-battle-root .rival-help-btn.available {
+  border-color: #ffe66e;
+  color: #261700;
+  background: linear-gradient(180deg, #fff6a5, #ffcc2e);
+  box-shadow: 0 0 14px rgba(255, 226, 78, 0.48);
+}
+#rival-battle-root .rival-staff-row {
+  position: relative;
+  z-index: 6;
+  pointer-events: auto;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  min-height: 0;
+}
+#rival-battle-root .rival-staff-card {
+  position: relative;
+  pointer-events: auto;
+  min-width: 0;
+  min-height: 0;
+  border: 2px solid var(--staff-color, #fff);
+  border-radius: 14px;
+  background: rgba(13, 15, 20, 0.93);
+  color: #fff;
+  padding: 8px;
+  text-align: left;
+  overflow: hidden;
+}
+#rival-battle-root .rival-staff-card.ready { box-shadow: 0 0 14px color-mix(in srgb, var(--staff-color, #fff) 42%, transparent); }
+#rival-battle-root .rival-staff-card em { color: #ffe66e; font-weight: 800; }
+#rival-battle-root .rival-staff-card.cooling { opacity: 0.78; }
+#rival-battle-root .rival-staff-card.sealed { filter: grayscale(0.65); border-color: #9aa; }
+#rival-battle-root .rival-staff-card b { display: block; font-size: clamp(13px, 2vw, 20px); }
+#rival-battle-root .rival-staff-card span,
+#rival-battle-root .rival-staff-card small,
+#rival-battle-root .rival-staff-card em { display: block; font-size: clamp(9px, 1.25vw, 13px); opacity: 0.88; font-style: normal; }
+#rival-battle-root .rival-control-overlay,
+#rival-battle-root .rival-surface {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.38);
+  pointer-events: auto;
+}
+#rival-battle-root .rival-control-card {
+  width: min(86vw, 760px);
+  max-height: min(88vh, 720px);
+  overflow: auto;
+  border: 3px solid #ff423c;
+  border-radius: 22px;
+  background: rgba(17, 12, 18, 0.96);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.55), 0 0 24px rgba(255, 60, 52, 0.38);
+  padding: 16px;
+}
+#rival-battle-root .rival-eyecatch {
+  height: clamp(110px, 24vh, 220px);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  background: #111;
+}
+#rival-battle-root .rival-eyecatch img { width: 100%; height: 100%; object-fit: cover; }
+#rival-battle-root .rival-control-title {
+  font-size: clamp(22px, 4vw, 42px);
+  font-weight: 1000;
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+#rival-battle-root .rival-control-card p,
+#rival-battle-root .rival-result-note {
+  color: rgba(255,255,255,0.86);
+  line-height: 1.55;
+  font-size: 14px;
+}
+#rival-battle-root .rival-rule-grid,
+#rival-battle-root .rival-result-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 12px 0;
+}
+#rival-battle-root .rival-rule-grid span,
+#rival-battle-root .rival-result-grid span { display: block; font-size: 12px; opacity: 0.75; }
+#rival-battle-root .rival-rule-grid b,
+#rival-battle-root .rival-result-grid b {
+  display: block;
+  color: #ffe66e;
+  font-size: clamp(16px, 2.4vw, 24px);
+}
+#rival-battle-root .rival-result-grid div,
+#rival-battle-root .rival-rule-grid span:nth-child(odd),
+#rival-battle-root .rival-rule-grid b:nth-child(even) {
+  min-width: 0;
+}
+#rival-battle-root .rival-result-grid div {
+  padding: 8px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.08);
+}
+#rival-battle-root .rival-control-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+#rival-battle-root .rival-control-buttons button {
+  border: 0;
+  border-radius: 999px;
+  padding: 11px 20px;
+  font-weight: 900;
+  color: #240809;
+  background: linear-gradient(180deg, #fff2a1, #ffcf38);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.34);
+}
+#rival-battle-root .rival-ending-card,
+#rival-battle-root .rival-surface > div {
+  padding: 22px 36px;
+  border: 3px solid #ffe66e;
+  border-radius: 22px;
+  background: rgba(16, 9, 15, 0.95);
+  text-align: center;
+  box-shadow: 0 0 30px rgba(255, 230, 110, 0.38);
+}
+#rival-battle-root .rival-ending-card small,
+#rival-battle-root .rival-surface small { display: block; color: #ffe66e; font-size: 16px; }
+#rival-battle-root .rival-ending-card b,
+#rival-battle-root .rival-surface b { display: block; font-size: clamp(34px, 8vw, 86px); line-height: 1; }
+#rival-battle-root .rival-ending-card span { display: block; margin-top: 8px; font-size: 18px; }
+#rival-battle-root .rival-cutin-layer {
+  position: absolute;
+  left: max(8px, env(safe-area-inset-left));
+  right: max(8px, env(safe-area-inset-right));
+  top: calc(max(6px, env(safe-area-inset-top)) + 29vh + 14px);
+  bottom: calc(max(8px, env(safe-area-inset-bottom)) + 28vh + 12px);
+  z-index: 8;
+  display: grid;
+  place-items: stretch;
+  grid-template-columns: 1fr minmax(180px, 34vw);
+  gap: 10px;
+  padding: 8px 14px;
+  pointer-events: none;
+  overflow: hidden;
+  border: 2px solid color-mix(in srgb, var(--cutin-color, #ff423c) 78%, #ffffff 12%);
+  border-radius: 16px;
+  background: linear-gradient(90deg, rgba(0,0,0,0.76), rgba(0,0,0,0.18));
+  box-shadow: 0 0 18px color-mix(in srgb, var(--cutin-color, #ff423c) 35%, transparent);
+}
+#rival-battle-root .rival-cutin-image {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  min-height: 0;
+}
+#rival-battle-root .rival-cutin-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.65));
+}
+#rival-battle-root .rival-cutin-text {
+  align-self: center;
+  justify-self: stretch;
+  border-left: 8px solid var(--cutin-color, #ff423c);
+  padding: 12px 16px;
+  background: rgba(0,0,0,0.62);
+  box-shadow: 0 0 22px color-mix(in srgb, var(--cutin-color, #ff423c) 40%, transparent);
+}
+#rival-battle-root .rival-cutin-text small { display: block; color: var(--cutin-color, #ff423c); font-weight: 900; font-size: clamp(12px, 1.9vw, 20px); }
+#rival-battle-root .rival-cutin-text b { display: block; font-size: clamp(20px, 3.6vw, 44px); line-height: 1.05; }
+#rival-battle-root .rival-cutin-text p { font-size: clamp(11px, 1.55vw, 16px); }
+#rival-battle-root .rival-surface.rush > div {
+  border-color: #ffef7a;
+  box-shadow: 0 0 34px rgba(255, 233, 92, 0.52);
+}
+#rival-battle-root .rival-battle-stage.is-rush .rival-enemy-art {
+  height: clamp(34px, 8vh, 72px);
+}
+@keyframes rivalCharmPulse {
+  from { box-shadow: 0 0 0 rgba(255, 180, 80, 0), inset 0 0 0 1px rgba(255,255,255,0.05); }
+  to { box-shadow: 0 0 22px rgba(255, 180, 80, 0.62), inset 0 0 0 1px rgba(255,255,255,0.14); }
+}
+@media (max-width: 720px) {
+  #rival-battle-root .rival-battle-stage { grid-template-rows: minmax(70px, 13vh) minmax(76px, 15vh) 1fr minmax(36px, 5.5vh) minmax(102px, 23vh); gap: 5px; }
+  #rival-battle-root .rival-enemy-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #rival-battle-root .rival-battle-stage.is-rush .rival-enemy-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  #rival-battle-root .rival-cutin-layer { top: calc(max(6px, env(safe-area-inset-top)) + 28vh + 14px); bottom: calc(max(8px, env(safe-area-inset-bottom)) + 31vh + 10px); grid-template-columns: 1fr minmax(120px, 34vw); padding: 7px 10px; }
+  #rival-battle-root .rival-result-grid,
+  #rival-battle-root .rival-rule-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* v039_72 rival battle input/cutin/rush override */
+#rival-battle-root,
+#rival-battle-root * {
+  touch-action: none !important;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* v039_73: prevent single-tap special burst / full-width HELP / cutin image right of skill name */
+#rival-battle-root .rival-help-row {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+#rival-battle-root .rival-help-btn {
+  border-radius: 12px;
+  font-size: clamp(12px, 1.9vw, 18px);
+  letter-spacing: 0.08em;
+}
+#rival-battle-root .rival-cutin-layer {
+  grid-template-columns: minmax(0, 1fr) minmax(120px, clamp(150px, 24vw, 270px));
+  align-items: center;
+  top: calc(max(6px, env(safe-area-inset-top)) + 27vh + 10px);
+  bottom: calc(max(8px, env(safe-area-inset-bottom)) + 30vh + 10px);
+}
+#rival-battle-root .rival-cutin-text {
+  align-self: center;
+  min-width: 0;
+}
+#rival-battle-root .rival-cutin-image {
+  justify-self: stretch;
+  align-self: stretch;
+}
+#rival-battle-root .rival-cutin-image img {
+  justify-self: end;
+}
+@media (max-width: 720px) {
+  #rival-battle-root .rival-battle-stage { grid-template-rows: minmax(70px, 13vh) minmax(76px, 15vh) 1fr minmax(44px, 6.5vh) minmax(102px, 23vh); }
+  #rival-battle-root .rival-cutin-layer {
+    top: calc(max(6px, env(safe-area-inset-top)) + 28vh + 10px);
+    bottom: calc(max(8px, env(safe-area-inset-bottom)) + 32vh + 8px);
+    grid-template-columns: minmax(0, 1fr) minmax(90px, 28vw);
+  }
+}
+
+/* v039_75: VSビリビリ強化・必殺可能枠発光・デッキ編成 */
+#rival-battle-root .rival-staff-card.special-ready,
+#rival-battle-root .rival-staff-card.skill-ready {
+  border-color: #fff27a;
+  background: linear-gradient(180deg, rgba(35, 32, 8, 0.98), rgba(12, 16, 18, 0.96));
+  box-shadow:
+    0 0 0 2px color-mix(in srgb, var(--staff-color, #fff27a) 56%, transparent),
+    0 0 22px color-mix(in srgb, var(--staff-color, #fff27a) 78%, transparent),
+    inset 0 0 18px rgba(255, 240, 110, 0.14);
+  animation: rivalSpecialReadyPulse 0.82s ease-in-out infinite alternate;
+}
+#rival-battle-root .rival-staff-card.special-ready b,
+#rival-battle-root .rival-staff-card.skill-ready b {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 8px;
+  color: #190b05;
+  background: var(--staff-color, #fff27a);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--staff-color, #fff27a) 72%, transparent);
+}
+#rival-battle-root .rival-staff-card.special-ready em,
+#rival-battle-root .rival-staff-card.skill-ready em {
+  color: #fff8a8;
+  text-shadow: 0 0 10px rgba(255, 240, 120, 0.74);
+}
+#rival-battle-root .rival-staff-card.special-ready .rival-bar.skill i,
+#rival-battle-root .rival-staff-card.skill-ready .rival-bar.skill i {
+  background: linear-gradient(90deg, #fff9a5, #ffcc33, #ff4c4c);
+  box-shadow: 0 0 12px rgba(255, 230, 90, 0.86);
+}
+@keyframes rivalSpecialReadyPulse {
+  from { transform: translateY(0); filter: brightness(1.04); }
+  to { transform: translateY(-1px); filter: brightness(1.18); }
+}
+
+#rival-battle-root .rival-deck-overlay {
+  z-index: 24;
+}
+#rival-battle-root .rival-deck-box {
+  width: min(900px, 92vw);
+  max-height: min(88vh, 720px);
+  overflow: auto;
+  padding: clamp(12px, 2.2vw, 20px);
+  border: 3px solid #ffe66e;
+  border-radius: 20px;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(18, 12, 16, 0.96), rgba(35, 16, 12, 0.95));
+  box-shadow: 0 0 28px rgba(255, 214, 68, 0.38), inset 0 0 0 1px rgba(255,255,255,0.12);
+}
+#rival-battle-root .rival-control-help {
+  margin: 6px 0 12px;
+  color: rgba(255,255,255,0.88);
+  font-size: clamp(12px, 1.7vw, 15px);
+  font-weight: 700;
+}
+#rival-battle-root .rival-deck-select-grid {
+  display: grid;
+  gap: 8px;
+}
+#rival-battle-root .rival-deck-select-row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+}
+#rival-battle-root .rival-deck-select-bottom {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(148px, 1.1fr);
+}
+#rival-battle-root .rival-deck-select-card {
+  position: relative;
+  min-height: 92px;
+  padding: 8px 8px 7px;
+  border: 2px solid color-mix(in srgb, var(--staff-color, #fff) 45%, rgba(255,255,255,0.28));
+  border-radius: 14px;
+  color: #fff;
+  background: rgba(255,255,255,0.08);
+  text-align: left;
+  overflow: hidden;
+}
+#rival-battle-root .rival-deck-select-card.selected {
+  color: #1c1006;
+  border-color: #fff8bc;
+  background: linear-gradient(180deg, var(--staff-color, #ffe66e), #fff4a2);
+  box-shadow: 0 0 16px color-mix(in srgb, var(--staff-color, #ffe66e) 72%, transparent);
+}
+#rival-battle-root .rival-deck-select-card b,
+#rival-battle-root .rival-deck-select-card small,
+#rival-battle-root .rival-deck-select-card em {
+  display: block;
+  line-height: 1.25;
+  font-style: normal;
+}
+#rival-battle-root .rival-deck-select-card b { font-size: clamp(13px, 1.9vw, 18px); font-weight: 1000; }
+#rival-battle-root .rival-deck-select-card small { opacity: 0.84; font-weight: 800; }
+#rival-battle-root .rival-deck-select-card em { margin-top: 4px; font-size: clamp(10px, 1.35vw, 13px); opacity: 0.86; }
+#rival-battle-root .rival-deck-order {
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 1000;
+  color: #261600;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+#rival-battle-root .rival-deck-order:empty { display: none; }
+#rival-battle-root .rival-deck-decision-area {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 8px;
+  min-height: 92px;
+}
+#rival-battle-root .rival-deck-decision-main,
+#rival-battle-root .rival-deck-small-buttons button {
+  border: 0;
+  border-radius: 12px;
+  font-weight: 1000;
+}
+#rival-battle-root .rival-deck-decision-main {
+  font-size: clamp(18px, 2.6vw, 28px);
+  color: #250b05;
+  background: linear-gradient(180deg, #fff6a4, #ffcc38);
+}
+#rival-battle-root .rival-deck-decision-main:disabled { opacity: 0.42; filter: grayscale(0.65); }
+#rival-battle-root .rival-deck-small-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+#rival-battle-root .rival-deck-small-buttons button {
+  min-height: 36px;
+  color: #fff;
+  background: rgba(255,255,255,0.16);
+  border: 1px solid rgba(255,255,255,0.22);
+}
+@media (max-width: 720px) {
+  #rival-battle-root .rival-deck-select-row,
+  #rival-battle-root .rival-deck-select-bottom { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #rival-battle-root .rival-deck-decision-area { grid-column: 1 / -1; }
+  #rival-battle-root .rival-deck-select-card { min-height: 76px; }
+}
